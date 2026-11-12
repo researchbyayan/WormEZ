@@ -1,0 +1,11 @@
+{
+  "WormEZ.html": "a3cf03a0fbaf4c25739ef21c3e09d47b50d5374efb7f525117587aa94a583aef",
+  "dist-ui/wormez-ui.js": "75349f2a200924d252a3b7454f6047f0d5e3e5501695f7d5575e80a2f72a43a1",
+  "dist-ui/wormez-ui.css": "68271d01d4a7e7da788263b718c90a1fe56fd5daa5a8cc4e881152a677405459",
+  "lib/tracking.js": "7222ac722c5ed1eae8a6e47d794161cd737ed3b94e2bdffd9179adde9ee5b419",
+  "lib/anatomy.js": "58044c39025e3d9d1dcd13acf59bad7222e69f586686e7e8544849e5e4f24051",
+  "lib/one-euro.js": "b195ff0df0c6545ae0e78e3ef08f4421bc9d4dae66347ab39f7f3d20baa19b2b",
+  "lib/area-change.js": "83b1ac71639a8afbe988d86c7c9cd12c2e9ad9f0c872c67bad09ccec495a490d",
+  "electron/main.js": "509aa8c5e740243a5a99e4bd4830cfe41f15c558f5efeac3dd9e828bdeb9bad9",
+  "electron/preload.js": "4323a7962ddfdd8c5b6ae97114ae377f4843921081b81ea3d98e690e0bb07f32"
+}

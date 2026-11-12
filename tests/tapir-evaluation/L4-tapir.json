@@ -1,0 +1,1097 @@
+{
+  "clip": "L4",
+  "frames": 120,
+  "checkpoint": "tapir_checkpoint_panning.pt",
+  "crop": [
+    512,
+    224,
+    256
+  ],
+  "model_load_s": 0.56,
+  "inference_s": 31.15,
+  "visible_frames": 120,
+  "median_relative_motion_difference_px": 1.05,
+  "note": "Motion difference compares two algorithms, not biological ground truth.",
+  "tracks": [
+    {
+      "frame": 0,
+      "tapir_x": 640.3435821533203,
+      "tapir_y": 356.45953369140625,
+      "tapir_visible": true,
+      "wormez_x": 639.8535533905932,
+      "wormez_y": 356.1464466094067,
+      "wormez_status": "manual"
+    },
+    {
+      "frame": 1,
+      "tapir_x": 640.1300964355469,
+      "tapir_y": 356.3565979003906,
+      "tapir_visible": true,
+      "wormez_x": 639.8535533905932,
+      "wormez_y": 356.1464466094067,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 2,
+      "tapir_x": 639.9071044921875,
+      "tapir_y": 356.52610778808594,
+      "tapir_visible": true,
+      "wormez_x": 638.7071067811866,
+      "wormez_y": 356.29289321881345,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 3,
+      "tapir_x": 639.9804611206055,
+      "tapir_y": 356.4572296142578,
+      "tapir_visible": true,
+      "wormez_x": 638.7071067811866,
+      "wormez_y": 356.29289321881345,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 4,
+      "tapir_x": 640.11669921875,
+      "tapir_y": 356.95086669921875,
+      "tapir_visible": true,
+      "wormez_x": 640.286406083067,
+      "wormez_y": 357,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 5,
+      "tapir_x": 639.8919830322266,
+      "tapir_y": 356.1475830078125,
+      "tapir_visible": true,
+      "wormez_x": 639.786406083067,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 6,
+      "tapir_x": 640.0343627929688,
+      "tapir_y": 356.84930419921875,
+      "tapir_visible": true,
+      "wormez_x": 640,
+      "wormez_y": 357,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 7,
+      "tapir_x": 639.7062759399414,
+      "tapir_y": 356.4693603515625,
+      "tapir_visible": true,
+      "wormez_x": 638.5070609832491,
+      "wormez_y": 356.49293901675094,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 8,
+      "tapir_x": 639.7721557617188,
+      "tapir_y": 356.4921112060547,
+      "tapir_visible": true,
+      "wormez_x": 640.1245211244963,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 9,
+      "tapir_x": 639.9453201293945,
+      "tapir_y": 357.08738708496094,
+      "tapir_visible": true,
+      "wormez_x": 639.8431299098798,
+      "wormez_y": 357,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 10,
+      "tapir_x": 639.3935546875,
+      "tapir_y": 355.9761962890625,
+      "tapir_visible": true,
+      "wormez_x": 639.286406083067,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 11,
+      "tapir_x": 639.9797439575195,
+      "tapir_y": 356.9827880859375,
+      "tapir_visible": true,
+      "wormez_x": 640,
+      "wormez_y": 357,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 12,
+      "tapir_x": 639.5661163330078,
+      "tapir_y": 356.7880859375,
+      "tapir_visible": true,
+      "wormez_x": 639.8535533905932,
+      "wormez_y": 356.1464466094067,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 13,
+      "tapir_x": 639.0849075317383,
+      "tapir_y": 356.51795959472656,
+      "tapir_visible": true,
+      "wormez_x": 638.8489662929165,
+      "wormez_y": 356.1510337070835,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 14,
+      "tapir_x": 639.7045211791992,
+      "tapir_y": 357.734130859375,
+      "tapir_visible": true,
+      "wormez_x": 640.5758006993524,
+      "wormez_y": 357,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 15,
+      "tapir_x": 638.3811569213867,
+      "tapir_y": 356.67466735839844,
+      "tapir_visible": true,
+      "wormez_x": 639.5,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 16,
+      "tapir_x": 638.7180633544922,
+      "tapir_y": 357.54173278808594,
+      "tapir_visible": true,
+      "wormez_x": 640.286406083067,
+      "wormez_y": 357,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 17,
+      "tapir_x": 638.9781799316406,
+      "tapir_y": 357.0675354003906,
+      "tapir_visible": true,
+      "wormez_x": 639.5710454098348,
+      "wormez_y": 357,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 18,
+      "tapir_x": 638.7973556518555,
+      "tapir_y": 356.9530487060547,
+      "tapir_visible": true,
+      "wormez_x": 640.0431757078173,
+      "wormez_y": 356.95682429218266,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 19,
+      "tapir_x": 639.4249954223633,
+      "tapir_y": 357.3890075683594,
+      "tapir_visible": true,
+      "wormez_x": 640.286406083067,
+      "wormez_y": 357,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 20,
+      "tapir_x": 638.8340835571289,
+      "tapir_y": 357.1947784423828,
+      "tapir_visible": true,
+      "wormez_x": 640.4935128642536,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 21,
+      "tapir_x": 639.4619598388672,
+      "tapir_y": 357.5338134765625,
+      "tapir_visible": true,
+      "wormez_x": 639.5,
+      "wormez_y": 357,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 22,
+      "tapir_x": 639.5436935424805,
+      "tapir_y": 357.15574645996094,
+      "tapir_visible": true,
+      "wormez_x": 639.5,
+      "wormez_y": 356.5,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 23,
+      "tapir_x": 640.1838989257812,
+      "tapir_y": 357.1276092529297,
+      "tapir_visible": true,
+      "wormez_x": 641.2000457979375,
+      "wormez_y": 356.7999542020625,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 24,
+      "tapir_x": 640.3881988525391,
+      "tapir_y": 357.1883087158203,
+      "tapir_visible": true,
+      "wormez_x": 641.2000457979375,
+      "wormez_y": 356.7999542020625,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 25,
+      "tapir_x": 640.3039855957031,
+      "tapir_y": 357.48284912109375,
+      "tapir_visible": true,
+      "wormez_x": 641.3967290984107,
+      "wormez_y": 356.6032709015894,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 26,
+      "tapir_x": 640.3076782226562,
+      "tapir_y": 357.61395263671875,
+      "tapir_visible": true,
+      "wormez_x": 641.3967290984107,
+      "wormez_y": 356.6032709015894,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 27,
+      "tapir_x": 640.6911926269531,
+      "tapir_y": 357.34608459472656,
+      "tapir_visible": true,
+      "wormez_x": 641.3967290984107,
+      "wormez_y": 356.6032709015894,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 28,
+      "tapir_x": 641.2326812744141,
+      "tapir_y": 357.4476013183594,
+      "tapir_visible": true,
+      "wormez_x": 641.5456495933896,
+      "wormez_y": 356.45435040661033,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 29,
+      "tapir_x": 640.9673309326172,
+      "tapir_y": 357.6806335449219,
+      "tapir_visible": true,
+      "wormez_x": 641.1260373904188,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 30,
+      "tapir_x": 642.8242797851562,
+      "tapir_y": 357.57757568359375,
+      "tapir_visible": true,
+      "wormez_x": 642.2829074805389,
+      "wormez_y": 357,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 31,
+      "tapir_x": 642.8197479248047,
+      "tapir_y": 357.0843811035156,
+      "tapir_visible": true,
+      "wormez_x": 641.310324931751,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 32,
+      "tapir_x": 643.2211761474609,
+      "tapir_y": 357.4269104003906,
+      "tapir_visible": true,
+      "wormez_x": 641.3366427741335,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 33,
+      "tapir_x": 643.3487548828125,
+      "tapir_y": 357.3404083251953,
+      "tapir_visible": true,
+      "wormez_x": 641.4954129023232,
+      "wormez_y": 356.5045870976768,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 34,
+      "tapir_x": 643.0299072265625,
+      "tapir_y": 356.84820556640625,
+      "tapir_visible": true,
+      "wormez_x": 641.526203049384,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 35,
+      "tapir_x": 643.7961730957031,
+      "tapir_y": 357.3666534423828,
+      "tapir_visible": true,
+      "wormez_x": 642,
+      "wormez_y": 356.21709251946106,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 36,
+      "tapir_x": 643.6689300537109,
+      "tapir_y": 357.01007080078125,
+      "tapir_visible": true,
+      "wormez_x": 642.0164103308612,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 37,
+      "tapir_x": 644.1092681884766,
+      "tapir_y": 357.01316833496094,
+      "tapir_visible": true,
+      "wormez_x": 641.8366427741335,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 38,
+      "tapir_x": 644.4188537597656,
+      "tapir_y": 357.1429748535156,
+      "tapir_visible": true,
+      "wormez_x": 642.8686939181658,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 39,
+      "tapir_x": 643.8166198730469,
+      "tapir_y": 356.8495635986328,
+      "tapir_visible": true,
+      "wormez_x": 641.9900924884787,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 40,
+      "tapir_x": 644.367919921875,
+      "tapir_y": 357.1727600097656,
+      "tapir_visible": true,
+      "wormez_x": 643.1468461091873,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 41,
+      "tapir_x": 644.5503692626953,
+      "tapir_y": 356.5149230957031,
+      "tapir_visible": true,
+      "wormez_x": 642.786406083067,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 42,
+      "tapir_x": 644.9163818359375,
+      "tapir_y": 356.7818298339844,
+      "tapir_visible": true,
+      "wormez_x": 642.9935128642536,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 43,
+      "tapir_x": 644.8087921142578,
+      "tapir_y": 356.86338806152344,
+      "tapir_visible": true,
+      "wormez_x": 643.4935128642536,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 44,
+      "tapir_x": 644.2638092041016,
+      "tapir_y": 356.74037170410156,
+      "tapir_visible": true,
+      "wormez_x": 643.1360613713517,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 45,
+      "tapir_x": 645.8197326660156,
+      "tapir_y": 356.9544982910156,
+      "tapir_visible": true,
+      "wormez_x": 643.9983795375855,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 46,
+      "tapir_x": 645.0401763916016,
+      "tapir_y": 357.04505920410156,
+      "tapir_visible": true,
+      "wormez_x": 642.7119734545184,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 47,
+      "tapir_x": 645.2346343994141,
+      "tapir_y": 356.98919677734375,
+      "tapir_visible": true,
+      "wormez_x": 644.7071067811866,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 48,
+      "tapir_x": 645.4152526855469,
+      "tapir_y": 357.0044250488281,
+      "tapir_visible": true,
+      "wormez_x": 644.6409280446836,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 49,
+      "tapir_x": 645.3246154785156,
+      "tapir_y": 357.0083465576172,
+      "tapir_visible": true,
+      "wormez_x": 644.2071067811866,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 50,
+      "tapir_x": 645.9034576416016,
+      "tapir_y": 356.9439697265625,
+      "tapir_visible": true,
+      "wormez_x": 644.1425485070981,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 51,
+      "tapir_x": 645.5263061523438,
+      "tapir_y": 357.1828308105469,
+      "tapir_visible": true,
+      "wormez_x": 644.2087272436011,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 52,
+      "tapir_x": 645.5636749267578,
+      "tapir_y": 357.142333984375,
+      "tapir_visible": true,
+      "wormez_x": 644.1425485070981,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 53,
+      "tapir_x": 645.4595947265625,
+      "tapir_y": 357.1893615722656,
+      "tapir_visible": true,
+      "wormez_x": 644.2087272436011,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 54,
+      "tapir_x": 645.9792785644531,
+      "tapir_y": 357.17236328125,
+      "tapir_visible": true,
+      "wormez_x": 644.7087272436011,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 55,
+      "tapir_x": 645.3377990722656,
+      "tapir_y": 356.9128875732422,
+      "tapir_visible": true,
+      "wormez_x": 643.9951333266681,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 56,
+      "tapir_x": 645.7429351806641,
+      "tapir_y": 357.0409698486328,
+      "tapir_visible": true,
+      "wormez_x": 644.7087272436011,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 57,
+      "tapir_x": 645.2760467529297,
+      "tapir_y": 357.0273895263672,
+      "tapir_visible": true,
+      "wormez_x": 644.1425485070981,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 58,
+      "tapir_x": 644.9852142333984,
+      "tapir_y": 356.95933532714844,
+      "tapir_visible": true,
+      "wormez_x": 644.1475924493686,
+      "wormez_y": 355.8524075506313,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 59,
+      "tapir_x": 645.6131286621094,
+      "tapir_y": 357.0248718261719,
+      "tapir_visible": true,
+      "wormez_x": 644.1732804209813,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 60,
+      "tapir_x": 644.2471618652344,
+      "tapir_y": 356.8763427734375,
+      "tapir_visible": true,
+      "wormez_x": 644.5016204624145,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 61,
+      "tapir_x": 644.5319061279297,
+      "tapir_y": 357.0487976074219,
+      "tapir_visible": true,
+      "wormez_x": 645.0016204624145,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 62,
+      "tapir_x": 644.3277282714844,
+      "tapir_y": 357.0263214111328,
+      "tapir_visible": true,
+      "wormez_x": 644.7874086904698,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 63,
+      "tapir_x": 644.2185211181641,
+      "tapir_y": 357.0570831298828,
+      "tapir_visible": true,
+      "wormez_x": 644.7874086904698,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 64,
+      "tapir_x": 644.7133331298828,
+      "tapir_y": 357.1916809082031,
+      "tapir_visible": true,
+      "wormez_x": 644.6797675567277,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 65,
+      "tapir_x": 644.2974548339844,
+      "tapir_y": 356.89707946777344,
+      "tapir_visible": true,
+      "wormez_x": 643.4117081187484,
+      "wormez_y": 355.5882918812516,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 66,
+      "tapir_x": 644.9214782714844,
+      "tapir_y": 357.16473388671875,
+      "tapir_visible": true,
+      "wormez_x": 644.4786099169867,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 67,
+      "tapir_x": 644.6983947753906,
+      "tapir_y": 357.07659912109375,
+      "tapir_visible": true,
+      "wormez_x": 644.4850970527331,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 68,
+      "tapir_x": 644.3685455322266,
+      "tapir_y": 357.25128173828125,
+      "tapir_visible": true,
+      "wormez_x": 644.2087272436011,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 69,
+      "tapir_x": 644.3013916015625,
+      "tapir_y": 357.1942138671875,
+      "tapir_visible": true,
+      "wormez_x": 644.4786099169867,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 70,
+      "tapir_x": 643.9761505126953,
+      "tapir_y": 357.1768493652344,
+      "tapir_visible": true,
+      "wormez_x": 643.6425485070981,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 71,
+      "tapir_x": 644.7603759765625,
+      "tapir_y": 357.09825134277344,
+      "tapir_visible": true,
+      "wormez_x": 644.4951333266681,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 72,
+      "tapir_x": 644.5404052734375,
+      "tapir_y": 357.1324005126953,
+      "tapir_visible": true,
+      "wormez_x": 644.2071067811866,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 73,
+      "tapir_x": 644.9418029785156,
+      "tapir_y": 356.9723358154297,
+      "tapir_visible": true,
+      "wormez_x": 644.2071067811866,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 74,
+      "tapir_x": 644.8870849609375,
+      "tapir_y": 356.8889923095703,
+      "tapir_visible": true,
+      "wormez_x": 644.1797675567277,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 75,
+      "tapir_x": 646.8767852783203,
+      "tapir_y": 356.3138427734375,
+      "tapir_visible": true,
+      "wormez_x": 644.1895602752505,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 76,
+      "tapir_x": 646.9378814697266,
+      "tapir_y": 356.38905334472656,
+      "tapir_visible": true,
+      "wormez_x": 644.4980140741844,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 77,
+      "tapir_x": 646.6631469726562,
+      "tapir_y": 356.19068908691406,
+      "tapir_visible": true,
+      "wormez_x": 644.1895602752505,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 78,
+      "tapir_x": 647.3121337890625,
+      "tapir_y": 356.1693572998047,
+      "tapir_visible": true,
+      "wormez_x": 645.7893946162853,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 79,
+      "tapir_x": 647.4174194335938,
+      "tapir_y": 356.08460998535156,
+      "tapir_visible": true,
+      "wormez_x": 645.2735614678062,
+      "wormez_y": 355.72643853219375,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 80,
+      "tapir_x": 648.2990264892578,
+      "tapir_y": 355.9419403076172,
+      "tapir_visible": true,
+      "wormez_x": 645.1743895899309,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 81,
+      "tapir_x": 647.5739440917969,
+      "tapir_y": 355.9403381347656,
+      "tapir_visible": true,
+      "wormez_x": 645.4894620249279,
+      "wormez_y": 355.5105379750721,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 82,
+      "tapir_x": 647.7440338134766,
+      "tapir_y": 355.83287048339844,
+      "tapir_visible": true,
+      "wormez_x": 645.4894620249279,
+      "wormez_y": 355.5105379750721,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 83,
+      "tapir_x": 647.6409301757812,
+      "tapir_y": 356.00169372558594,
+      "tapir_visible": true,
+      "wormez_x": 646.1991673297566,
+      "wormez_y": 355.8008326702434,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 84,
+      "tapir_x": 647.5637512207031,
+      "tapir_y": 355.7778015136719,
+      "tapir_visible": true,
+      "wormez_x": 645.9786099169867,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 85,
+      "tapir_x": 647.9275054931641,
+      "tapir_y": 355.9620361328125,
+      "tapir_visible": true,
+      "wormez_x": 646.3384283178444,
+      "wormez_y": 355.6615716821556,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 86,
+      "tapir_x": 647.7847137451172,
+      "tapir_y": 355.8974304199219,
+      "tapir_visible": true,
+      "wormez_x": 645.9786099169867,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 87,
+      "tapir_x": 647.9772033691406,
+      "tapir_y": 355.6378479003906,
+      "tapir_visible": true,
+      "wormez_x": 646.3502010368401,
+      "wormez_y": 355.6497989631599,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 88,
+      "tapir_x": 648.0322570800781,
+      "tapir_y": 355.9031219482422,
+      "tapir_visible": true,
+      "wormez_x": 646.2735614678062,
+      "wormez_y": 355.72643853219375,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 89,
+      "tapir_x": 647.9340972900391,
+      "tapir_y": 355.8561096191406,
+      "tapir_visible": true,
+      "wormez_x": 647.0442943993025,
+      "wormez_y": 355,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 90,
+      "tapir_x": 647.9587249755859,
+      "tapir_y": 356.4351348876953,
+      "tapir_visible": true,
+      "wormez_x": 646.6732804209813,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 91,
+      "tapir_x": 647.7385559082031,
+      "tapir_y": 356.01995849609375,
+      "tapir_visible": true,
+      "wormez_x": 646.8852538754998,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 92,
+      "tapir_x": 647.9603576660156,
+      "tapir_y": 356.3716278076172,
+      "tapir_visible": true,
+      "wormez_x": 646.6732804209813,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 93,
+      "tapir_x": 647.7329711914062,
+      "tapir_y": 356.32484436035156,
+      "tapir_visible": true,
+      "wormez_x": 646,
+      "wormez_y": 355.3267195790187,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 94,
+      "tapir_x": 647.9365997314453,
+      "tapir_y": 356.3067932128906,
+      "tapir_visible": true,
+      "wormez_x": 647.1225277607227,
+      "wormez_y": 355.87747223927727,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 95,
+      "tapir_x": 648.2608337402344,
+      "tapir_y": 356.36683654785156,
+      "tapir_visible": true,
+      "wormez_x": 646.8803872021679,
+      "wormez_y": 356,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 96,
+      "tapir_x": 648.1450805664062,
+      "tapir_y": 356.21827697753906,
+      "tapir_visible": true,
+      "wormez_x": 647,
+      "wormez_y": 355.8267195790187,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 97,
+      "tapir_x": 648.4183349609375,
+      "tapir_y": 356.30857849121094,
+      "tapir_visible": true,
+      "wormez_x": 647.8901799206907,
+      "wormez_y": 355,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 98,
+      "tapir_x": 648.5735626220703,
+      "tapir_y": 356.2088928222656,
+      "tapir_visible": true,
+      "wormez_x": 647.8901799206907,
+      "wormez_y": 355,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 99,
+      "tapir_x": 648.4670104980469,
+      "tapir_y": 356.30992126464844,
+      "tapir_visible": true,
+      "wormez_x": 647.8901799206907,
+      "wormez_y": 355,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 100,
+      "tapir_x": 648.0942993164062,
+      "tapir_y": 356.3292694091797,
+      "tapir_visible": true,
+      "wormez_x": 647.8901799206907,
+      "wormez_y": 355,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 101,
+      "tapir_x": 647.9986267089844,
+      "tapir_y": 356.4466552734375,
+      "tapir_visible": true,
+      "wormez_x": 648.4643862847623,
+      "wormez_y": 355,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 102,
+      "tapir_x": 648.3614196777344,
+      "tapir_y": 356.4011688232422,
+      "tapir_visible": true,
+      "wormez_x": 647.4759663583176,
+      "wormez_y": 355,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 103,
+      "tapir_x": 648.316162109375,
+      "tapir_y": 356.05006408691406,
+      "tapir_visible": true,
+      "wormez_x": 647.9643862847623,
+      "wormez_y": 355,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 104,
+      "tapir_x": 648.3260498046875,
+      "tapir_y": 356.3103942871094,
+      "tapir_visible": true,
+      "wormez_x": 647.6830731395041,
+      "wormez_y": 355,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 105,
+      "tapir_x": 649.4294128417969,
+      "tapir_y": 355.9888458251953,
+      "tapir_visible": true,
+      "wormez_x": 648.6865903782394,
+      "wormez_y": 355,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 106,
+      "tapir_x": 649.1122131347656,
+      "tapir_y": 356.12928771972656,
+      "tapir_visible": true,
+      "wormez_x": 647.5140945301245,
+      "wormez_y": 355,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 107,
+      "tapir_x": 649.6430358886719,
+      "tapir_y": 355.9398193359375,
+      "tapir_visible": true,
+      "wormez_x": 648.1895602752505,
+      "wormez_y": 355,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 108,
+      "tapir_x": 649.1015777587891,
+      "tapir_y": 355.9619598388672,
+      "tapir_visible": true,
+      "wormez_x": 648.4795113575112,
+      "wormez_y": 355,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 109,
+      "tapir_x": 649.2939605712891,
+      "tapir_y": 356.1427459716797,
+      "tapir_visible": true,
+      "wormez_x": 648.2097969665722,
+      "wormez_y": 355,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 110,
+      "tapir_x": 649.1664276123047,
+      "tapir_y": 355.8977966308594,
+      "tapir_visible": true,
+      "wormez_x": 647.7044632225175,
+      "wormez_y": 355,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 111,
+      "tapir_x": 649.2521514892578,
+      "tapir_y": 356.1249694824219,
+      "tapir_visible": true,
+      "wormez_x": 647.9857763677757,
+      "wormez_y": 355,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 112,
+      "tapir_x": 649.5347747802734,
+      "tapir_y": 355.9798583984375,
+      "tapir_visible": true,
+      "wormez_x": 648.5068228215117,
+      "wormez_y": 355,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 113,
+      "tapir_x": 649.3200225830078,
+      "tapir_y": 355.9311828613281,
+      "tapir_visible": true,
+      "wormez_x": 648.5068228215117,
+      "wormez_y": 355,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 114,
+      "tapir_x": 649.2709503173828,
+      "tapir_y": 356.0122375488281,
+      "tapir_visible": true,
+      "wormez_x": 648.4656623463299,
+      "wormez_y": 355,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 115,
+      "tapir_x": 649.3156433105469,
+      "tapir_y": 355.95880126953125,
+      "tapir_visible": true,
+      "wormez_x": 647.9119237298685,
+      "wormez_y": 355,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 116,
+      "tapir_x": 649.4145355224609,
+      "tapir_y": 355.9265899658203,
+      "tapir_visible": true,
+      "wormez_x": 648.6807728642984,
+      "wormez_y": 355,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 117,
+      "tapir_x": 649.2629547119141,
+      "tapir_y": 355.8722381591797,
+      "tapir_visible": true,
+      "wormez_x": 648.6963587208069,
+      "wormez_y": 355,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 118,
+      "tapir_x": 649.3275756835938,
+      "tapir_y": 356.0316619873047,
+      "tapir_visible": true,
+      "wormez_x": 649,
+      "wormez_y": 355,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 119,
+      "tapir_x": 649.3032531738281,
+      "tapir_y": 356.0728759765625,
+      "tapir_visible": true,
+      "wormez_x": 648.7071067811866,
+      "wormez_y": 355,
+      "wormez_status": "verified"
+    }
+  ]
+}

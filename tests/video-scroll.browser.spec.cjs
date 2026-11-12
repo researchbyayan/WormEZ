@@ -1,0 +1,7 @@
+const {test,expect}=require('@playwright/test'),path=require('node:path');test.setTimeout(120000);
+test('scrolling over the video reaches controls below it; modified wheel still zooms',async({page})=>{
+ await page.setViewportSize({width:1024,height:700});await page.goto('file://'+path.resolve('WormEZ.html'));await page.setInputFiles('#fileInput','samples/clean_worm.webm');await page.waitForFunction(()=>__wormez.state.loaded&&!__wormez.state.running&&!__wormez.state.preparing);await page.locator('#fitFrame').click();await page.evaluate(()=>scrollTo(0,0));
+ let box=await page.locator('#overlayCanvas').boundingBox();await page.mouse.move(box.x+box.width/2,Math.min(500,box.y+box.height/2));const zoom=await page.evaluate(()=>__wormez.state.zoomScale);await page.mouse.wheel(0,500);await expect.poll(()=>page.evaluate(()=>scrollY)).toBeGreaterThan(100);expect(await page.evaluate(()=>__wormez.state.zoomScale)).toBe(zoom);
+ await page.evaluate(()=>scrollTo(0,0));box=await page.locator('#overlayCanvas').boundingBox();await page.mouse.move(box.x+box.width/2,Math.min(500,box.y+box.height/2));await page.keyboard.down('Control');await page.mouse.wheel(0,-300);await page.keyboard.up('Control');await expect.poll(()=>page.evaluate(()=>__wormez.state.zoomScale)).toBeGreaterThan(zoom);expect(await page.evaluate(()=>scrollY)).toBe(0);
+ await page.locator('#canvasWrap').screenshot({path:'tests/thorough-validation/scroll-and-outline.png'});
+});

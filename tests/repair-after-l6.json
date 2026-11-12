@@ -1,0 +1,363 @@
+{
+  "qualityHash": "c43d13496e0a94e49471894ef38f7e5533ca647763b16dd47ae8b72918ec02b7",
+  "mode": "engine-stress",
+  "preflight": {
+    "phase": "ready",
+    "anchors": [
+      {
+        "frame": 0,
+        "x": 630,
+        "y": 352.360461898272
+      },
+      {
+        "frame": 454,
+        "x": 617,
+        "y": 316.23189316909617
+      },
+      {
+        "frame": 908,
+        "x": 590.0103130746587,
+        "y": 280
+      },
+      {
+        "frame": 1362,
+        "x": 552.8508644071949,
+        "y": 257
+      },
+      {
+        "frame": 1816,
+        "x": 507.76375569441336,
+        "y": 263
+      },
+      {
+        "frame": 2270,
+        "x": 504.0729235322504,
+        "y": 219.4270764677496
+      },
+      {
+        "frame": 2724,
+        "x": 530.5,
+        "y": 168.50756107375867
+      },
+      {
+        "frame": 3178,
+        "x": 521.5,
+        "y": 122.28000403258731
+      },
+      {
+        "frame": 3632,
+        "x": 365.36426007624067,
+        "y": 53
+      }
+    ],
+    "unavailable": [],
+    "boundaries": {
+      "start": 0,
+      "end": 3632
+    }
+  },
+  "analysisWallMs": 6256.0999999996275,
+  "file": "03-05-2026 da Gal4 x w1118 L6.MP4",
+  "bodyLength": 16.76007080078125,
+  "width": 1280,
+  "height": 720,
+  "baseline": false,
+  "accelerated": true,
+  "points": [
+    {
+      "frame": 0,
+      "x": 630,
+      "y": 352.360461898272,
+      "status": "manual"
+    },
+    {
+      "frame": 1,
+      "x": 630.6031491820221,
+      "y": 353,
+      "status": "verified"
+    },
+    {
+      "frame": 2,
+      "x": 630,
+      "y": 352.25193466883957,
+      "status": "verified"
+    },
+    {
+      "frame": 3,
+      "x": 630,
+      "y": 352.0977751518322,
+      "status": "verified"
+    },
+    {
+      "frame": 4,
+      "x": 630.0002852375142,
+      "y": 352.50028523751416,
+      "status": "verified"
+    },
+    {
+      "frame": 5,
+      "x": 630,
+      "y": 351.75193466883957,
+      "status": "verified"
+    },
+    {
+      "frame": 6,
+      "x": 630.5,
+      "y": 353.09990561414884,
+      "status": "verified"
+    },
+    {
+      "frame": 7,
+      "x": 629.5,
+      "y": 351.5049706434288,
+      "status": "verified"
+    },
+    {
+      "frame": 8,
+      "x": 630,
+      "y": 351.10548805943284,
+      "status": "verified"
+    },
+    {
+      "frame": 9,
+      "x": 630,
+      "y": 352.06299822738043,
+      "status": "verified"
+    },
+    {
+      "frame": 10,
+      "x": 629.5,
+      "y": 350.60631538846246,
+      "status": "verified"
+    },
+    {
+      "frame": 11,
+      "x": 630,
+      "y": 352.1028186618018,
+      "status": "verified"
+    },
+    {
+      "frame": 12,
+      "x": 629.250403386761,
+      "y": 350.5,
+      "status": "verified"
+    },
+    {
+      "frame": 13,
+      "x": 629.250403386761,
+      "y": 350.5,
+      "status": "verified"
+    },
+    {
+      "frame": 14,
+      "x": 630,
+      "y": 350.8567969584665,
+      "status": "verified"
+    },
+    {
+      "frame": 15,
+      "x": 629.1991411235508,
+      "y": 350.5,
+      "status": "verified"
+    },
+    {
+      "frame": 16,
+      "x": 629.4487377367898,
+      "y": 350.5,
+      "status": "verified"
+    },
+    {
+      "frame": 17,
+      "x": 629.5,
+      "y": 350,
+      "status": "verified"
+    },
+    {
+      "frame": 18,
+      "x": 629.1991411235508,
+      "y": 350.5,
+      "status": "verified"
+    },
+    {
+      "frame": 19,
+      "x": 629.6037955315937,
+      "y": 350,
+      "status": "verified"
+    },
+    {
+      "frame": 20,
+      "x": 629.5,
+      "y": 350.23968403182414,
+      "status": "verified"
+    },
+    {
+      "frame": 21,
+      "x": 629.5,
+      "y": 350.13629188699144,
+      "status": "verified"
+    },
+    {
+      "frame": 22,
+      "x": 629.1392661363258,
+      "y": 349.63926613632583,
+      "status": "verified"
+    },
+    {
+      "frame": 23,
+      "x": 629,
+      "y": 350.1283397785029,
+      "status": "verified"
+    },
+    {
+      "frame": 24,
+      "x": 629.1392661363258,
+      "y": 349.63926613632583,
+      "status": "verified"
+    },
+    {
+      "frame": 25,
+      "x": 629,
+      "y": 349.25,
+      "status": "verified"
+    },
+    {
+      "frame": 26,
+      "x": 629,
+      "y": 349.25,
+      "status": "verified"
+    },
+    {
+      "frame": 27,
+      "x": 629,
+      "y": 349.3432170923571,
+      "status": "verified"
+    },
+    {
+      "frame": 28,
+      "x": 629,
+      "y": 349.3432170923571,
+      "status": "verified"
+    },
+    {
+      "frame": 29,
+      "x": 629,
+      "y": 349.48966370176385,
+      "status": "verified"
+    },
+    {
+      "frame": 30,
+      "x": 629.1435820044325,
+      "y": 349.64358200443246,
+      "status": "verified"
+    },
+    {
+      "frame": 31,
+      "x": 629,
+      "y": 349.2080484871183,
+      "status": "verified"
+    },
+    {
+      "frame": 32,
+      "x": 629,
+      "y": 349.2080484871183,
+      "status": "verified"
+    },
+    {
+      "frame": 33,
+      "x": 629.1435820044325,
+      "y": 349.64358200443246,
+      "status": "verified"
+    },
+    {
+      "frame": 34,
+      "x": 629.0400286138391,
+      "y": 349.5400286138392,
+      "status": "verified"
+    },
+    {
+      "frame": 35,
+      "x": 629.1589257661235,
+      "y": 349.65892576612356,
+      "status": "verified"
+    },
+    {
+      "frame": 36,
+      "x": 629,
+      "y": 349.7030556179811,
+      "status": "verified"
+    },
+    {
+      "frame": 37,
+      "x": 629,
+      "y": 349.7030556179811,
+      "status": "verified"
+    },
+    {
+      "frame": 38,
+      "x": 629,
+      "y": 349.14628536364614,
+      "status": "verified"
+    },
+    {
+      "frame": 39,
+      "x": 629,
+      "y": 349.7924898320524,
+      "status": "verified"
+    }
+  ],
+  "profile": {
+    "readMs": 949.6000000024214,
+    "trackingMs": 1370.800000000745,
+    "frames": 80,
+    "workerFrames": 80,
+    "retryFrames": 0,
+    "pixelFractionSum": 6.365754123263892,
+    "cameraMs": 117.5,
+    "detectMs": 203.60000000242144,
+    "flowMs": 205.3999999994412,
+    "anatomyMs": 121.49999999906868,
+    "coreMs": 776.0999999996275,
+    "conversionMs": 139.09999999962747,
+    "activeMs": 4944,
+    "stage": "opencv",
+    "sections": 1,
+    "workerThreads": 1,
+    "peakActivePasses": 1,
+    "seamDisputes": 0,
+    "resourcePolicy": {
+      "threads": 1,
+      "passes": 2,
+      "availableMemoryBytes": null,
+      "memorySource": "browser-conservative"
+    },
+    "retryIntervals": 0,
+    "backwardReruns": 0
+  },
+  "decoder": [
+    {
+      "buffered": 40,
+      "fallback": 0,
+      "decoded": 60,
+      "peakBufferedFrames": 30,
+      "cacheHits": 0,
+      "backend": "WebCodecs",
+      "sharedPeakFrames": 9,
+      "sharedLimitFrames": 9
+    },
+    {
+      "buffered": 40,
+      "fallback": 0,
+      "decoded": 60,
+      "peakBufferedFrames": 30,
+      "cacheHits": 9,
+      "backend": "WebCodecs",
+      "sharedPeakFrames": 9,
+      "sharedLimitFrames": 9
+    }
+  ],
+  "coverage": 1,
+  "frames": 40,
+  "tapir": null,
+  "errors": [],
+  "peakBrowserRssMB": 1291.5859375
+}

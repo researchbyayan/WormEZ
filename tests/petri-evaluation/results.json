@@ -1,0 +1,157 @@
+{
+  "model": "user-supplied moldez_dish_finder/4",
+  "dataset": [
+    {
+      "file": "test/1c8590d7-8bee-465b-b286-ae4ea9cec32d_jpeg.rf.f37cd7d812f32477f2ec355b26167e69.jpg",
+      "dish_iou": 0.9856360675052847,
+      "seconds": 6.486491166000633,
+      "complete_rims": 1
+    },
+    {
+      "file": "test/IMG_3506_jpeg.rf.aef93c4371f9d4aa608156d7fc7b087d.jpg",
+      "dish_iou": 0.9938799860113966,
+      "seconds": 0.4805533580001793,
+      "complete_rims": 0
+    },
+    {
+      "file": "test/IMG_3511_jpeg.rf.9679ca3cf4ca98667e25b20b0a2899c9.jpg",
+      "dish_iou": 0.9912062232881346,
+      "seconds": 0.6145724479974888,
+      "complete_rims": 0
+    },
+    {
+      "file": "test/IMG_3686_jpeg.rf.369672425575a65b96aa3a2728af8542.jpg",
+      "dish_iou": 0.9919303374024744,
+      "seconds": 0.4924155850021634,
+      "complete_rims": 0
+    },
+    {
+      "file": "test/b3bc216a-0bea-4697-80fe-a1a1e3afcb87_jpeg.rf.8f696aae770a32a33f3487000bafbc5d.jpg",
+      "dish_iou": 0.9869673325902426,
+      "seconds": 0.5389402410000912,
+      "complete_rims": 1
+    },
+    {
+      "file": "valid/375d75b1-c491-4b00-95f4-f05b880dea71_jpeg.rf.b9ac7cfa353817929d3e63a3bd8d556f.jpg",
+      "dish_iou": 0.9733242599523647,
+      "seconds": 0.47979460900023696,
+      "complete_rims": 1
+    },
+    {
+      "file": "valid/9779e02b-9ef9-4a5b-944d-0864496c3c77_jpeg.rf.441d0852c18678cf31f78a6b8813a450.jpg",
+      "dish_iou": 0.9857229158276278,
+      "seconds": 0.5140956180002831,
+      "complete_rims": 1
+    },
+    {
+      "file": "valid/IMG_3504_jpeg.rf.10d1f254dc82b070a7b64a08b8c441a3.jpg",
+      "dish_iou": 0.9907273045375488,
+      "seconds": 0.49545074999696226,
+      "complete_rims": 0
+    },
+    {
+      "file": "valid/IMG_3509_jpeg.rf.f4e5cc292c3100733313983b71d789ab.jpg",
+      "dish_iou": 0.9891860952400421,
+      "seconds": 0.548174083000049,
+      "complete_rims": 0
+    },
+    {
+      "file": "valid/IMG_3510_jpeg.rf.55489b5adabf6d2a30386473ddb989bd.jpg",
+      "dish_iou": 0.9906617076499077,
+      "seconds": 0.5451505070013809,
+      "complete_rims": 0
+    },
+    {
+      "file": "valid/IMG_3680_jpeg.rf.5fb665834e65cf4938504e87a2271c28.jpg",
+      "dish_iou": 0.9870649732250268,
+      "seconds": 0.49141373800011934,
+      "complete_rims": 1
+    },
+    {
+      "file": "valid/IMG_3681_jpeg.rf.c6bb7dd67af5e6ef8d2a6585ee47415c.jpg",
+      "dish_iou": 0.993504424596853,
+      "seconds": 0.5601278620015364,
+      "complete_rims": 0
+    },
+    {
+      "file": "valid/af91d1b7-629b-4a66-b1f0-31eca3eda0c5_jpeg.rf.3b09c7773f62ab3a592e5c591f19bdc4.jpg",
+      "dish_iou": 0.9800261044970929,
+      "seconds": 0.5361305629994604,
+      "complete_rims": 1
+    },
+    {
+      "file": "valid/b124eaf4-1dcc-4285-8802-69ab4c330892_jpeg.rf.67b9b22e9b04b9832f5c1a3a0184969e.jpg",
+      "dish_iou": 0.9816775467661418,
+      "seconds": 0.5863867199986998,
+      "complete_rims": 1
+    },
+    {
+      "file": "valid/d73a095e-2acf-4b73-8b56-e1db1d0bd222_jpeg.rf.43f1738afa8a8025ca2f189b8b5f297b.jpg",
+      "dish_iou": 0.9797304748671122,
+      "seconds": 0.6483624470020004,
+      "complete_rims": 1
+    }
+  ],
+  "recordings": [
+    {
+      "file": "03-05-2026 da Gal4 x w1118 L4.MP4",
+      "frame": 0,
+      "seconds": 0.5891081079971627,
+      "boxes": [],
+      "width": 1280,
+      "height": 720,
+      "reason": "No full dish-sized region was found. Use a frame that shows the whole dish."
+    },
+    {
+      "file": "03-05-2026 da Gal4 x w1118 L6.MP4",
+      "frame": 0,
+      "seconds": 0.5721408350000274,
+      "boxes": [
+        {
+          "x": 228,
+          "y": 6,
+          "width": 797,
+          "height": 711,
+          "raw_mask_area": 446181,
+          "ellipse": {
+            "x": 627.2498168945312,
+            "y": 360.3480224609375,
+            "width": 718.401123046875,
+            "height": 789.9598388671875,
+            "angle": 1.4631156691752867
+          }
+        }
+      ],
+      "width": 1280,
+      "height": 720,
+      "reason": ""
+    },
+    {
+      "file": "straight final.mp4",
+      "frame": 0,
+      "seconds": 0.5418948240003374,
+      "boxes": [],
+      "width": 1280,
+      "height": 720,
+      "reason": "No full dish-sized region was found. Use a frame that shows the whole dish."
+    },
+    {
+      "file": "curved final.mp4",
+      "frame": 0,
+      "seconds": 0.5409661699995922,
+      "boxes": [],
+      "width": 1280,
+      "height": 720,
+      "reason": "No full dish-sized region was found. Use a frame that shows the whole dish."
+    },
+    {
+      "file": "irregular.mp4",
+      "frame": 0,
+      "seconds": 0.5409872189993621,
+      "boxes": [],
+      "width": 1280,
+      "height": 720,
+      "reason": "No full dish-sized region was found. Use a frame that shows the whole dish."
+    }
+  ]
+}

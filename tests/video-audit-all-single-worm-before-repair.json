@@ -1,0 +1,1247 @@
+[
+  {
+    "file": "03-05-2026 da Gal4 x w1118 L4.MP4",
+    "seconds": 25,
+    "issue": null,
+    "errors": [],
+    "state": {
+      "phase": "reviewingBoundary",
+      "loaded": true,
+      "running": false,
+      "totalFrames": 3648,
+      "message": "No reliable proposals were found. Add anchors on the first and last visible frames.",
+      "status": "Preparing local decoder · frame 1/3648",
+      "proposals": [],
+      "worms": 0,
+      "directDecoder": true,
+      "errors": [
+        {
+          "stage": "Quick scan",
+          "message": "Video frame could not be decoded",
+          "frame": 0,
+          "count": 1
+        }
+      ]
+    }
+  },
+  {
+    "file": "03-05-2026 da Gal4 x w1118 L6.MP4",
+    "seconds": 54,
+    "issue": null,
+    "errors": [],
+    "state": {
+      "phase": "reviewingBoundary",
+      "loaded": true,
+      "running": false,
+      "totalFrames": 3633,
+      "message": "Review the first and last visible anchors, then the clear interior suggestions.",
+      "status": "Ready to review · press Start analysis",
+      "proposals": [
+        {
+          "frame": 0,
+          "x": 630,
+          "y": 351.81852119577667,
+          "boundary": "start",
+          "status": "proposal"
+        },
+        {
+          "frame": 454,
+          "x": 617,
+          "y": 316.0053609275189,
+          "status": "proposal"
+        },
+        {
+          "frame": 908,
+          "x": 590.0265215355054,
+          "y": 280.02652153550537,
+          "status": "proposal"
+        },
+        {
+          "frame": 1362,
+          "x": 552.6180339887499,
+          "y": 257,
+          "status": "proposal"
+        },
+        {
+          "frame": 1816,
+          "x": 509.0792993018805,
+          "y": 263,
+          "status": "proposal"
+        },
+        {
+          "frame": 2270,
+          "x": 504,
+          "y": 219.78939461628536,
+          "status": "proposal"
+        },
+        {
+          "frame": 2724,
+          "x": 530.5212159307703,
+          "y": 168.4787840692297,
+          "status": "proposal"
+        },
+        {
+          "frame": 3632,
+          "x": 365.6541342617681,
+          "y": 52.34586573823193,
+          "boundary": "end",
+          "status": "proposal"
+        }
+      ],
+      "worms": 0,
+      "directDecoder": true,
+      "errors": []
+    }
+  },
+  {
+    "file": "curved final.mp4",
+    "seconds": 73,
+    "issue": null,
+    "errors": [],
+    "state": {
+      "phase": "reviewingBoundary",
+      "loaded": true,
+      "running": false,
+      "totalFrames": 331,
+      "message": "Review the first and last visible anchors, then the clear interior suggestions.",
+      "status": "Ready to review · press Start analysis",
+      "proposals": [
+        {
+          "frame": 0,
+          "x": 529.9197806174542,
+          "y": 471.25,
+          "boundary": "start",
+          "status": "proposal"
+        },
+        {
+          "frame": 30,
+          "x": 502.88595296162265,
+          "y": 466.3854166666667,
+          "boundary": "end",
+          "status": "proposal"
+        },
+        {
+          "frame": 41,
+          "x": 469.40625,
+          "y": 451.5134869004304,
+          "status": "proposal"
+        },
+        {
+          "frame": 83,
+          "x": 441.54053250635275,
+          "y": 431.47803250635275,
+          "status": "proposal"
+        },
+        {
+          "frame": 124,
+          "x": 347.0552677554683,
+          "y": 352.6875,
+          "status": "proposal"
+        },
+        {
+          "frame": 165,
+          "x": 311.9479166666667,
+          "y": 297.23495915126955,
+          "status": "proposal"
+        },
+        {
+          "frame": 206,
+          "x": 289.7291666666667,
+          "y": 260.74153770723285,
+          "status": "proposal"
+        }
+      ],
+      "worms": 0,
+      "directDecoder": true,
+      "errors": []
+    }
+  },
+  {
+    "file": "irregular.mp4",
+    "seconds": 49,
+    "issue": null,
+    "errors": [],
+    "state": {
+      "phase": "reviewingBoundary",
+      "loaded": true,
+      "running": false,
+      "totalFrames": 446,
+      "message": "Review the first and last visible anchors, then the clear interior suggestions.",
+      "status": "Ready to review · press Start analysis",
+      "proposals": [
+        {
+          "frame": 0,
+          "x": 409.9059605507278,
+          "y": 300.5726272173945,
+          "boundary": "start",
+          "status": "proposal"
+        },
+        {
+          "frame": 56,
+          "x": 556.9257319988712,
+          "y": 400.25,
+          "status": "proposal"
+        },
+        {
+          "frame": 111,
+          "x": 678.122222719656,
+          "y": 409.1458333333333,
+          "status": "proposal"
+        },
+        {
+          "frame": 167,
+          "x": 767.4850639167042,
+          "y": 383.5357694166291,
+          "status": "proposal"
+        },
+        {
+          "frame": 223,
+          "x": 825.25,
+          "y": 399.27960239103317,
+          "status": "proposal"
+        },
+        {
+          "frame": 278,
+          "x": 742.1644176226949,
+          "y": 439.875,
+          "status": "proposal"
+        },
+        {
+          "frame": 334,
+          "x": 548.5901645370213,
+          "y": 417.8333333333333,
+          "status": "proposal"
+        },
+        {
+          "frame": 389,
+          "x": 512.5267875601371,
+          "y": 407,
+          "status": "proposal"
+        },
+        {
+          "frame": 445,
+          "x": 467.5416666666667,
+          "y": 232.6576211364383,
+          "boundary": "end",
+          "status": "proposal"
+        }
+      ],
+      "worms": 0,
+      "directDecoder": true,
+      "errors": []
+    }
+  },
+  {
+    "file": "straight final.mp4",
+    "seconds": 27,
+    "issue": null,
+    "errors": [],
+    "state": {
+      "phase": "reviewingBoundary",
+      "loaded": true,
+      "running": false,
+      "totalFrames": 324,
+      "message": "Review the first and last visible anchors, then the clear interior suggestions.",
+      "status": "Ready to review · press Start analysis",
+      "proposals": [
+        {
+          "frame": 0,
+          "x": 442.0065247994147,
+          "y": 263.4166666666667,
+          "boundary": "start",
+          "status": "proposal"
+        },
+        {
+          "frame": 40,
+          "x": 437.35807245623664,
+          "y": 258.71875,
+          "status": "proposal"
+        },
+        {
+          "frame": 81,
+          "x": 476.0416666666667,
+          "y": 290.60762396306427,
+          "status": "proposal"
+        },
+        {
+          "frame": 121,
+          "x": 531.0733809917724,
+          "y": 330.0733809917724,
+          "status": "proposal"
+        },
+        {
+          "frame": 162,
+          "x": 577.75,
+          "y": 379.37025071913115,
+          "status": "proposal"
+        },
+        {
+          "frame": 202,
+          "x": 620.2365207264331,
+          "y": 439.5,
+          "status": "proposal"
+        },
+        {
+          "frame": 242,
+          "x": 665.8822212125111,
+          "y": 493.4655545458445,
+          "status": "proposal"
+        },
+        {
+          "frame": 283,
+          "x": 704.8512219445926,
+          "y": 532.9033052779259,
+          "status": "proposal"
+        },
+        {
+          "frame": 323,
+          "x": 766.3814333116758,
+          "y": 563.6730999783424,
+          "boundary": "end",
+          "status": "proposal"
+        }
+      ],
+      "worms": 0,
+      "directDecoder": true,
+      "errors": []
+    }
+  },
+  {
+    "file": "Additional videos to analyze/Copy of 9.15.26 ELAV-GS homozygote L1.MP4",
+    "seconds": 28,
+    "issue": null,
+    "errors": [],
+    "state": {
+      "phase": "reviewingBoundary",
+      "loaded": true,
+      "running": false,
+      "totalFrames": 3483,
+      "message": "No reliable proposals were found. Add anchors on the first and last visible frames.",
+      "status": "Finding worm · frame 1/3483",
+      "proposals": [],
+      "worms": 0,
+      "directDecoder": true,
+      "errors": [
+        {
+          "stage": "Quick scan",
+          "message": "Multiple or unclear candidates — click the worm, then Track.",
+          "frame": 120,
+          "count": 1
+        }
+      ]
+    }
+  },
+  {
+    "file": "Additional videos to analyze/Copy of 9.15.26 ELAV-GS homozygote L2.MP4",
+    "seconds": 32,
+    "issue": null,
+    "errors": [],
+    "state": {
+      "phase": "reviewingBoundary",
+      "loaded": true,
+      "running": false,
+      "totalFrames": 3558,
+      "message": "Review the first and last visible anchors, then the clear interior suggestions.",
+      "status": "Ready to review · press Start analysis",
+      "proposals": [
+        {
+          "frame": 0,
+          "x": 465,
+          "y": 411.29289321881345,
+          "boundary": "start",
+          "status": "proposal"
+        },
+        {
+          "frame": 445,
+          "x": 458,
+          "y": 384.7902674488283,
+          "status": "proposal"
+        },
+        {
+          "frame": 889,
+          "x": 447.4427327195534,
+          "y": 390.5572672804466,
+          "status": "proposal"
+        },
+        {
+          "frame": 1334,
+          "x": 452.3961699491045,
+          "y": 396,
+          "status": "proposal"
+        },
+        {
+          "frame": 1779,
+          "x": 470,
+          "y": 416.6388888875142,
+          "status": "proposal"
+        },
+        {
+          "frame": 2223,
+          "x": 462,
+          "y": 420.7427204964242,
+          "status": "proposal"
+        },
+        {
+          "frame": 2668,
+          "x": 467,
+          "y": 410,
+          "status": "proposal"
+        },
+        {
+          "frame": 3112,
+          "x": 464.6464466094067,
+          "y": 416.3535533905933,
+          "status": "proposal"
+        },
+        {
+          "frame": 3557,
+          "x": 434.00599002841386,
+          "y": 436,
+          "boundary": "end",
+          "status": "proposal"
+        }
+      ],
+      "worms": 0,
+      "directDecoder": true,
+      "errors": []
+    }
+  },
+  {
+    "file": "Additional videos to analyze/Copy of 9.15.26 ELAV-GS homozygote L3.MP4",
+    "seconds": 11,
+    "issue": null,
+    "errors": [],
+    "state": {
+      "phase": "reviewingBoundary",
+      "loaded": true,
+      "running": false,
+      "totalFrames": 3603,
+      "message": "No reliable proposals were found. Add anchors on the first and last visible frames.",
+      "status": "Finding worm · frame 1/3603",
+      "proposals": [],
+      "worms": 0,
+      "directDecoder": true,
+      "errors": [
+        {
+          "stage": "Quick scan",
+          "message": "Multiple or unclear candidates — click the worm, then Track.",
+          "frame": 120,
+          "count": 1
+        }
+      ]
+    }
+  },
+  {
+    "file": "Additional videos to analyze/Copy of 9.15.26 ELAV-GS homozygote L4.MP4",
+    "seconds": 9,
+    "issue": null,
+    "errors": [],
+    "state": {
+      "phase": "reviewingBoundary",
+      "loaded": true,
+      "running": false,
+      "totalFrames": 3438,
+      "message": "Review the first and last visible anchors, then the clear interior suggestions.",
+      "status": "Ready to review · press Start analysis",
+      "proposals": [
+        {
+          "frame": 0,
+          "x": 485,
+          "y": 398.7285619191723,
+          "boundary": "start",
+          "status": "proposal"
+        },
+        {
+          "frame": 430,
+          "x": 486.33402331075405,
+          "y": 401,
+          "status": "proposal"
+        },
+        {
+          "frame": 859,
+          "x": 484.67162930895455,
+          "y": 399.67162930895455,
+          "status": "proposal"
+        },
+        {
+          "frame": 1289,
+          "x": 486,
+          "y": 392.4708734205087,
+          "status": "proposal"
+        },
+        {
+          "frame": 1719,
+          "x": 484,
+          "y": 400.4759663583176,
+          "status": "proposal"
+        },
+        {
+          "frame": 2148,
+          "x": 477.0928965218875,
+          "y": 401.0928965218875,
+          "status": "proposal"
+        },
+        {
+          "frame": 2578,
+          "x": 466.9546299822655,
+          "y": 400,
+          "status": "proposal"
+        },
+        {
+          "frame": 3007,
+          "x": 467,
+          "y": 416.5,
+          "status": "proposal"
+        },
+        {
+          "frame": 3437,
+          "x": 474,
+          "y": 436.24271893840967,
+          "boundary": "end",
+          "status": "proposal"
+        }
+      ],
+      "worms": 0,
+      "directDecoder": true,
+      "errors": []
+    }
+  },
+  {
+    "file": "Additional videos to analyze/Copy of 9.8.26 w_ELAV-GS L1.MP4",
+    "seconds": 7,
+    "issue": null,
+    "errors": [],
+    "state": {
+      "phase": "reviewingBoundary",
+      "loaded": true,
+      "running": false,
+      "totalFrames": 3573,
+      "message": "No reliable proposals were found. Add anchors on the first and last visible frames.",
+      "status": "Finding worm · frame 1/3573",
+      "proposals": [],
+      "worms": 0,
+      "directDecoder": true,
+      "errors": [
+        {
+          "stage": "Quick scan",
+          "message": "Multiple or unclear candidates — click the worm, then Track.",
+          "frame": 120,
+          "count": 1
+        }
+      ]
+    }
+  },
+  {
+    "file": "Additional videos to analyze/Copy of 9.8.26 w_ELAV-GS L2.MP4",
+    "seconds": 6,
+    "issue": null,
+    "errors": [],
+    "state": {
+      "phase": "reviewingBoundary",
+      "loaded": true,
+      "running": false,
+      "totalFrames": 3423,
+      "message": "No reliable proposals were found. Add anchors on the first and last visible frames.",
+      "status": "Finding worm · frame 1/3423",
+      "proposals": [],
+      "worms": 0,
+      "directDecoder": true,
+      "errors": [
+        {
+          "stage": "Quick scan",
+          "message": "Multiple or unclear candidates — click the worm, then Track.",
+          "frame": 120,
+          "count": 1
+        }
+      ]
+    }
+  },
+  {
+    "file": "Additional videos to analyze/Copy of 9.8.26 w_ELAV-GS L3.MP4",
+    "seconds": 10,
+    "issue": null,
+    "errors": [],
+    "state": {
+      "phase": "reviewingBoundary",
+      "loaded": true,
+      "running": false,
+      "totalFrames": 3423,
+      "message": "Review the first and last visible anchors, then the clear interior suggestions.",
+      "status": "Ready to review · press Start analysis",
+      "proposals": [
+        {
+          "frame": 0,
+          "x": 820,
+          "y": 400,
+          "boundary": "start",
+          "status": "proposal"
+        },
+        {
+          "frame": 428,
+          "x": 819,
+          "y": 404,
+          "status": "proposal"
+        },
+        {
+          "frame": 856,
+          "x": 819,
+          "y": 403.5,
+          "status": "proposal"
+        },
+        {
+          "frame": 1283,
+          "x": 819,
+          "y": 404,
+          "status": "proposal"
+        },
+        {
+          "frame": 1711,
+          "x": 819,
+          "y": 404,
+          "status": "proposal"
+        },
+        {
+          "frame": 2139,
+          "x": 819,
+          "y": 404,
+          "status": "proposal"
+        },
+        {
+          "frame": 2567,
+          "x": 819,
+          "y": 402.5,
+          "status": "proposal"
+        },
+        {
+          "frame": 2994,
+          "x": 819,
+          "y": 403,
+          "boundary": "end",
+          "status": "proposal"
+        }
+      ],
+      "worms": 0,
+      "directDecoder": true,
+      "errors": []
+    }
+  },
+  {
+    "file": "Additional videos to analyze/Copy of 9.8.26 w_ELAV-GS L4.MP4",
+    "seconds": 6,
+    "issue": null,
+    "errors": [],
+    "state": {
+      "phase": "reviewingBoundary",
+      "loaded": true,
+      "running": false,
+      "totalFrames": 3483,
+      "message": "No reliable proposals were found. Add anchors on the first and last visible frames.",
+      "status": "Finding worm · frame 1/3483",
+      "proposals": [],
+      "worms": 0,
+      "directDecoder": true,
+      "errors": [
+        {
+          "stage": "Quick scan",
+          "message": "Multiple or unclear candidates — click the worm, then Track.",
+          "frame": 120,
+          "count": 1
+        }
+      ]
+    }
+  },
+  {
+    "file": "Additional videos to analyze/Copy of MAH08642.MP4",
+    "seconds": 5,
+    "issue": null,
+    "errors": [],
+    "state": {
+      "phase": "reviewingBoundary",
+      "loaded": true,
+      "running": false,
+      "totalFrames": 3288,
+      "message": "No reliable proposals were found. Add anchors on the first and last visible frames.",
+      "status": "Finding worm · frame 1/3288",
+      "proposals": [],
+      "worms": 0,
+      "directDecoder": true,
+      "errors": [
+        {
+          "stage": "Quick scan",
+          "message": "Multiple or unclear candidates — click the worm, then Track.",
+          "frame": 120,
+          "count": 1
+        }
+      ]
+    }
+  },
+  {
+    "file": "Additional videos to analyze/Copy of MAH08643.MP4",
+    "seconds": 6,
+    "issue": null,
+    "errors": [],
+    "state": {
+      "phase": "reviewingBoundary",
+      "loaded": true,
+      "running": false,
+      "totalFrames": 4144,
+      "message": "No reliable proposals were found. Add anchors on the first and last visible frames.",
+      "status": "Finding worm · frame 1/4144",
+      "proposals": [],
+      "worms": 0,
+      "directDecoder": true,
+      "errors": [
+        {
+          "stage": "Quick scan",
+          "message": "Multiple or unclear candidates — click the worm, then Track.",
+          "frame": 120,
+          "count": 1
+        }
+      ]
+    }
+  },
+  {
+    "file": "Additional videos to analyze/Copy of MAH08644.MP4",
+    "seconds": 5,
+    "issue": null,
+    "errors": [],
+    "state": {
+      "phase": "reviewingBoundary",
+      "loaded": true,
+      "running": false,
+      "totalFrames": 5210,
+      "message": "No reliable proposals were found. Add anchors on the first and last visible frames.",
+      "status": "Finding worm · frame 1/5210",
+      "proposals": [],
+      "worms": 0,
+      "directDecoder": true,
+      "errors": [
+        {
+          "stage": "Quick scan",
+          "message": "Multiple or unclear candidates — click the worm, then Track.",
+          "frame": 120,
+          "count": 1
+        }
+      ]
+    }
+  },
+  {
+    "file": "Additional videos to analyze/Copy of MAH08645.MP4",
+    "seconds": 5,
+    "issue": null,
+    "errors": [],
+    "state": {
+      "phase": "reviewingBoundary",
+      "loaded": true,
+      "running": false,
+      "totalFrames": 4339,
+      "message": "No reliable proposals were found. Add anchors on the first and last visible frames.",
+      "status": "Finding worm · frame 1/4339",
+      "proposals": [],
+      "worms": 0,
+      "directDecoder": true,
+      "errors": [
+        {
+          "stage": "Quick scan",
+          "message": "Multiple or unclear candidates — click the worm, then Track.",
+          "frame": 120,
+          "count": 1
+        }
+      ]
+    }
+  },
+  {
+    "file": "Additional videos to analyze/Copy of MAH08675.MP4",
+    "seconds": 7,
+    "issue": null,
+    "errors": [],
+    "state": {
+      "phase": "reviewingBoundary",
+      "loaded": true,
+      "running": false,
+      "totalFrames": 5495,
+      "message": "Review the first and last visible anchors, then the clear interior suggestions.",
+      "status": "Ready to review · press Start analysis",
+      "proposals": [
+        {
+          "frame": 0,
+          "x": 33,
+          "y": 68.39392689284755,
+          "boundary": "start",
+          "status": "proposal"
+        },
+        {
+          "frame": 687,
+          "x": 35.00000000000001,
+          "y": 86,
+          "status": "proposal"
+        },
+        {
+          "frame": 1374,
+          "x": 35.78872507421955,
+          "y": 86,
+          "status": "proposal"
+        },
+        {
+          "frame": 2060,
+          "x": 36,
+          "y": 85.47324898946773,
+          "status": "proposal"
+        },
+        {
+          "frame": 2747,
+          "x": 35.149887867121556,
+          "y": 85.85011213287844,
+          "status": "proposal"
+        },
+        {
+          "frame": 3434,
+          "x": 35,
+          "y": 85.99250755668291,
+          "status": "proposal"
+        },
+        {
+          "frame": 4121,
+          "x": 35.767766952966376,
+          "y": 84.23223304703363,
+          "status": "proposal"
+        },
+        {
+          "frame": 4807,
+          "x": 35,
+          "y": 85.17157287525382,
+          "status": "proposal"
+        },
+        {
+          "frame": 5494,
+          "x": 33.870547741603524,
+          "y": 80.12945225839648,
+          "boundary": "end",
+          "status": "proposal"
+        }
+      ],
+      "worms": 0,
+      "directDecoder": true,
+      "errors": []
+    }
+  },
+  {
+    "file": "Additional videos to analyze/Copy of MAH08676.MP4",
+    "seconds": 6,
+    "issue": null,
+    "errors": [],
+    "state": {
+      "phase": "reviewingBoundary",
+      "loaded": true,
+      "running": false,
+      "totalFrames": 8483,
+      "message": "No reliable proposals were found. Add anchors on the first and last visible frames.",
+      "status": "Finding worm · frame 1/8483",
+      "proposals": [],
+      "worms": 0,
+      "directDecoder": true,
+      "errors": [
+        {
+          "stage": "Quick scan",
+          "message": "Multiple or unclear candidates — click the worm, then Track.",
+          "frame": 120,
+          "count": 1
+        }
+      ]
+    }
+  },
+  {
+    "file": "Additional videos to analyze/Copy of MAH08677.MP4",
+    "seconds": 5,
+    "issue": null,
+    "errors": [],
+    "state": {
+      "phase": "reviewingBoundary",
+      "loaded": true,
+      "running": false,
+      "totalFrames": 3648,
+      "message": "No reliable proposals were found. Add anchors on the first and last visible frames.",
+      "status": "Finding worm · frame 1/3648",
+      "proposals": [],
+      "worms": 0,
+      "directDecoder": true,
+      "errors": [
+        {
+          "stage": "Quick scan",
+          "message": "Multiple or unclear candidates — click the worm, then Track.",
+          "frame": 120,
+          "count": 1
+        }
+      ]
+    }
+  },
+  {
+    "file": "Additional videos to analyze/Copy of MAH08678.MP4",
+    "seconds": 6,
+    "issue": null,
+    "errors": [],
+    "state": {
+      "phase": "reviewingBoundary",
+      "loaded": true,
+      "running": false,
+      "totalFrames": 4144,
+      "message": "No reliable proposals were found. Add anchors on the first and last visible frames.",
+      "status": "Finding worm · frame 1/4144",
+      "proposals": [],
+      "worms": 0,
+      "directDecoder": true,
+      "errors": [
+        {
+          "stage": "Quick scan",
+          "message": "Multiple or unclear candidates — click the worm, then Track.",
+          "frame": 120,
+          "count": 1
+        }
+      ]
+    }
+  },
+  {
+    "file": "WormEZ/samples/clean_worm.webm",
+    "seconds": 3,
+    "issue": null,
+    "errors": [],
+    "state": {
+      "phase": "reviewingBoundary",
+      "loaded": true,
+      "running": false,
+      "totalFrames": 60,
+      "message": "Review the first and last visible anchors, then the clear interior suggestions.",
+      "status": "Ready to review · press Start analysis",
+      "proposals": [
+        {
+          "frame": 0,
+          "x": 59,
+          "y": 99,
+          "boundary": "start",
+          "status": "proposal"
+        },
+        {
+          "frame": 7,
+          "x": 73,
+          "y": 105,
+          "status": "proposal"
+        },
+        {
+          "frame": 15,
+          "x": 89,
+          "y": 107,
+          "status": "proposal"
+        },
+        {
+          "frame": 22,
+          "x": 103,
+          "y": 102,
+          "status": "proposal"
+        },
+        {
+          "frame": 30,
+          "x": 119,
+          "y": 94,
+          "status": "proposal"
+        },
+        {
+          "frame": 37,
+          "x": 129,
+          "y": 91,
+          "status": "proposal"
+        },
+        {
+          "frame": 44,
+          "x": 129,
+          "y": 91,
+          "status": "proposal"
+        },
+        {
+          "frame": 52,
+          "x": 129,
+          "y": 91,
+          "status": "proposal"
+        },
+        {
+          "frame": 59,
+          "x": 129,
+          "y": 91,
+          "boundary": "end",
+          "status": "proposal"
+        }
+      ],
+      "worms": 0,
+      "directDecoder": false,
+      "errors": []
+    }
+  },
+  {
+    "file": "WormEZ/samples/distractor_worm.webm",
+    "seconds": 3,
+    "issue": null,
+    "errors": [],
+    "state": {
+      "phase": "reviewingBoundary",
+      "loaded": true,
+      "running": false,
+      "totalFrames": 60,
+      "message": "Review the first and last visible anchors, then the clear interior suggestions.",
+      "status": "Ready to review · press Start analysis",
+      "proposals": [
+        {
+          "frame": 0,
+          "x": 59,
+          "y": 99,
+          "boundary": "start",
+          "status": "proposal"
+        },
+        {
+          "frame": 7,
+          "x": 73,
+          "y": 99,
+          "status": "proposal"
+        },
+        {
+          "frame": 15,
+          "x": 89,
+          "y": 99,
+          "status": "proposal"
+        },
+        {
+          "frame": 22,
+          "x": 103,
+          "y": 99,
+          "status": "proposal"
+        },
+        {
+          "frame": 30,
+          "x": 119,
+          "y": 99,
+          "status": "proposal"
+        },
+        {
+          "frame": 37,
+          "x": 129,
+          "y": 99,
+          "status": "proposal"
+        },
+        {
+          "frame": 44,
+          "x": 129,
+          "y": 99,
+          "status": "proposal"
+        },
+        {
+          "frame": 52,
+          "x": 129,
+          "y": 99,
+          "status": "proposal"
+        },
+        {
+          "frame": 59,
+          "x": 129,
+          "y": 99,
+          "boundary": "end",
+          "status": "proposal"
+        }
+      ],
+      "worms": 0,
+      "directDecoder": false,
+      "errors": []
+    }
+  },
+  {
+    "file": "WormEZ/samples/occlusion_worm.webm",
+    "seconds": 3,
+    "issue": null,
+    "errors": [],
+    "state": {
+      "phase": "reviewingBoundary",
+      "loaded": true,
+      "running": false,
+      "totalFrames": 60,
+      "message": "Review the first and last visible anchors, then the clear interior suggestions.",
+      "status": "Ready to review · press Start analysis",
+      "proposals": [
+        {
+          "frame": 0,
+          "x": 59,
+          "y": 99,
+          "boundary": "start",
+          "status": "proposal"
+        },
+        {
+          "frame": 7,
+          "x": 73,
+          "y": 99,
+          "status": "proposal"
+        },
+        {
+          "frame": 15,
+          "x": 89,
+          "y": 99,
+          "status": "proposal"
+        },
+        {
+          "frame": 30,
+          "x": 119,
+          "y": 99,
+          "status": "proposal"
+        },
+        {
+          "frame": 37,
+          "x": 129,
+          "y": 99,
+          "status": "proposal"
+        },
+        {
+          "frame": 44,
+          "x": 129,
+          "y": 99,
+          "status": "proposal"
+        },
+        {
+          "frame": 52,
+          "x": 129,
+          "y": 99,
+          "status": "proposal"
+        },
+        {
+          "frame": 59,
+          "x": 129,
+          "y": 99,
+          "boundary": "end",
+          "status": "proposal"
+        }
+      ],
+      "worms": 0,
+      "directDecoder": false,
+      "errors": []
+    }
+  },
+  {
+    "file": "WormEZ/samples/stationary_worm.webm",
+    "seconds": 3,
+    "issue": null,
+    "errors": [],
+    "state": {
+      "phase": "reviewingBoundary",
+      "loaded": true,
+      "running": false,
+      "totalFrames": 60,
+      "message": "Review the first and last visible anchors, then the clear interior suggestions.",
+      "status": "Ready to review · press Start analysis",
+      "proposals": [
+        {
+          "frame": 0,
+          "x": 59,
+          "y": 99,
+          "boundary": "start",
+          "status": "proposal"
+        },
+        {
+          "frame": 7,
+          "x": 59,
+          "y": 99,
+          "status": "proposal"
+        },
+        {
+          "frame": 15,
+          "x": 59,
+          "y": 99,
+          "status": "proposal"
+        },
+        {
+          "frame": 22,
+          "x": 59,
+          "y": 99,
+          "status": "proposal"
+        },
+        {
+          "frame": 30,
+          "x": 59,
+          "y": 99,
+          "status": "proposal"
+        },
+        {
+          "frame": 37,
+          "x": 59,
+          "y": 99,
+          "status": "proposal"
+        },
+        {
+          "frame": 44,
+          "x": 59,
+          "y": 99,
+          "status": "proposal"
+        },
+        {
+          "frame": 52,
+          "x": 59,
+          "y": 99,
+          "status": "proposal"
+        },
+        {
+          "frame": 59,
+          "x": 59,
+          "y": 99,
+          "boundary": "end",
+          "status": "proposal"
+        }
+      ],
+      "worms": 0,
+      "directDecoder": false,
+      "errors": []
+    }
+  },
+  {
+    "file": "WormEZ/samples/synthetic_worm.webm",
+    "seconds": 4,
+    "issue": null,
+    "errors": [],
+    "state": {
+      "phase": "reviewingBoundary",
+      "loaded": true,
+      "running": false,
+      "totalFrames": 150,
+      "message": "No reliable proposals were found. Add anchors on the first and last visible frames.",
+      "status": "Finding worm · frame 1/150",
+      "proposals": [],
+      "worms": 0,
+      "directDecoder": false,
+      "errors": [
+        {
+          "stage": "Quick scan",
+          "message": "Multiple or unclear candidates — click the worm, then Track.",
+          "frame": 120,
+          "count": 1
+        }
+      ]
+    }
+  },
+  {
+    "file": "WormEZ/samples/two_worms.webm",
+    "seconds": 2,
+    "issue": null,
+    "errors": [],
+    "state": {
+      "phase": "reviewingBoundary",
+      "loaded": true,
+      "running": false,
+      "totalFrames": 60,
+      "message": "No reliable proposals were found. Add anchors on the first and last visible frames.",
+      "status": "Finding worm · frame 1/60",
+      "proposals": [],
+      "worms": 0,
+      "directDecoder": false,
+      "errors": [
+        {
+          "stage": "Quick scan",
+          "message": "Multiple or unclear candidates — click the worm, then Track.",
+          "frame": 59,
+          "count": 1
+        }
+      ]
+    }
+  }
+]

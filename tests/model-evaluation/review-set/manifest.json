@@ -1,0 +1,3383 @@
+{
+  "schema": 1,
+  "notes": "Proposals are unreviewed. Only explicit human approval creates a label.",
+  "trainCount": 100,
+  "testCount": 25,
+  "frames": [
+    {
+      "id": "L4:0",
+      "clip": "03-05-2026 da Gal4 x w1118 L4.MP4",
+      "frame": 0,
+      "seconds": 0.0,
+      "split": "train",
+      "image": "review-set/L4-00000.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 648,
+          "y": 356
+        },
+        "C": {
+          "x": 639.8535533905932,
+          "y": 356.1464466094067
+        },
+        "T": {
+          "x": 632,
+          "y": 357
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "L4:130",
+      "clip": "03-05-2026 da Gal4 x w1118 L4.MP4",
+      "frame": 130,
+      "seconds": 4.3377,
+      "split": "train",
+      "image": "review-set/L4-00130.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 656.8,
+          "y": 350.4
+        },
+        "C": {
+          "x": 649.4112662390658,
+          "y": 355
+        },
+        "T": {
+          "x": 640,
+          "y": 356
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "L4:260",
+      "clip": "03-05-2026 da Gal4 x w1118 L4.MP4",
+      "frame": 260,
+      "seconds": 8.6753,
+      "split": "test",
+      "image": "review-set/L4-00260.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 667.8,
+          "y": 343.4
+        },
+        "C": {
+          "x": 660.1283587585268,
+          "y": 349
+        },
+        "T": {
+          "x": 652.0597149997093,
+          "y": 352.4850712500727
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "L4:390",
+      "clip": "03-05-2026 da Gal4 x w1118 L4.MP4",
+      "frame": 390,
+      "seconds": 13.013,
+      "split": "train",
+      "image": "review-set/L4-00390.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 674.4142135623731,
+          "y": 337.5857864376269
+        },
+        "C": {
+          "x": 668,
+          "y": 344.58590860128515
+        },
+        "T": {
+          "x": 660.1055728090001,
+          "y": 349.44721359549993
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "L4:520",
+      "clip": "03-05-2026 da Gal4 x w1118 L4.MP4",
+      "frame": 520,
+      "seconds": 17.3507,
+      "split": "train",
+      "image": "review-set/L4-00520.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 680.8944271909999,
+          "y": 330.21114561800016
+        },
+        "C": {
+          "x": 676,
+          "y": 337.7502779922914
+        },
+        "T": {
+          "x": 668.5038491169864,
+          "y": 342.6641005886757
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "L4:650",
+      "clip": "03-05-2026 da Gal4 x w1118 L4.MP4",
+      "frame": 650,
+      "seconds": 21.6883,
+      "split": "train",
+      "image": "review-set/L4-00650.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 686.371390676354,
+          "y": 320.07152330911475
+        },
+        "C": {
+          "x": 682.9872412387007,
+          "y": 328.0127587612993
+        },
+        "T": {
+          "x": 677.5857864376269,
+          "y": 334.4142135623731
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "L4:780",
+      "clip": "03-05-2026 da Gal4 x w1118 L4.MP4",
+      "frame": 780,
+      "seconds": 26.026,
+      "split": "train",
+      "image": "review-set/L4-00780.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 690.4850712500727,
+          "y": 311.05971499970934
+        },
+        "C": {
+          "x": 688,
+          "y": 319.1814788042234
+        },
+        "T": {
+          "x": 684.1055728090001,
+          "y": 326.78885438199984
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "L4:910",
+      "clip": "03-05-2026 da Gal4 x w1118 L4.MP4",
+      "frame": 910,
+      "seconds": 30.3637,
+      "split": "test",
+      "image": "review-set/L4-00910.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 693.3922322702764,
+          "y": 299.03883864861814
+        },
+        "C": {
+          "x": 691,
+          "y": 307.284255281811
+        },
+        "T": {
+          "x": 688.5527864045,
+          "y": 314.8944271909999
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "L4:1040",
+      "clip": "03-05-2026 da Gal4 x w1118 L4.MP4",
+      "frame": 1040,
+      "seconds": 34.7013,
+      "split": "train",
+      "image": "review-set/L4-01040.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 696,
+          "y": 286
+        },
+        "C": {
+          "x": 695,
+          "y": 295.20176865045477
+        },
+        "T": {
+          "x": 692.5149287499273,
+          "y": 303.94028500029066
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "L4:1170",
+      "clip": "03-05-2026 da Gal4 x w1118 L4.MP4",
+      "frame": 1170,
+      "seconds": 39.039,
+      "split": "train",
+      "image": "review-set/L4-01170.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 698,
+          "y": 274
+        },
+        "C": {
+          "x": 697,
+          "y": 283.28290748053894
+        },
+        "T": {
+          "x": 695.5149287499273,
+          "y": 291.94028500029066
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "L4:1300",
+      "clip": "03-05-2026 da Gal4 x w1118 L4.MP4",
+      "frame": 1300,
+      "seconds": 43.3767,
+      "split": "train",
+      "image": "review-set/L4-01300.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 703,
+          "y": 266
+        },
+        "C": {
+          "x": 699.1464466094068,
+          "y": 273.8535533905933
+        },
+        "T": {
+          "x": 697,
+          "y": 283
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "L4:1430",
+      "clip": "03-05-2026 da Gal4 x w1118 L4.MP4",
+      "frame": 1430,
+      "seconds": 47.7143,
+      "split": "train",
+      "image": "review-set/L4-01430.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 707.028991510855,
+          "y": 259.28501414857493
+        },
+        "C": {
+          "x": 703,
+          "y": 266.3141690025402
+        },
+        "T": {
+          "x": 699.8858279709377,
+          "y": 273.7854300726558
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "L4:1564",
+      "clip": "03-05-2026 da Gal4 x w1118 L4.MP4",
+      "frame": 1564,
+      "seconds": 52.1855,
+      "split": "test",
+      "image": "review-set/L4-01564.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 711.8944271909999,
+          "y": 251.21114561800016
+        },
+        "C": {
+          "x": 708,
+          "y": 258.22554954089264
+        },
+        "T": {
+          "x": 703.4,
+          "y": 264.8
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "L4:1694",
+      "clip": "03-05-2026 da Gal4 x w1118 L4.MP4",
+      "frame": 1694,
+      "seconds": 56.5231,
+      "split": "train",
+      "image": "review-set/L4-01694.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 712,
+          "y": 238
+        },
+        "C": {
+          "x": 712,
+          "y": 245.70061964544013
+        },
+        "T": {
+          "x": 710.6077677297236,
+          "y": 252.96116135138183
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "L4:1824",
+      "clip": "03-05-2026 da Gal4 x w1118 L4.MP4",
+      "frame": 1824,
+      "seconds": 60.8608,
+      "split": "train",
+      "image": "review-set/L4-01824.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 712,
+          "y": 223
+        },
+        "C": {
+          "x": 712,
+          "y": 231
+        },
+        "T": {
+          "x": 712,
+          "y": 239
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "L4:1959",
+      "clip": "03-05-2026 da Gal4 x w1118 L4.MP4",
+      "frame": 1959,
+      "seconds": 65.3653,
+      "split": "train",
+      "image": "review-set/L4-01959.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 710.8038838648619,
+          "y": 211.01941932430907
+        },
+        "C": {
+          "x": 712,
+          "y": 217.7977598921454
+        },
+        "T": {
+          "x": 712,
+          "y": 225
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "L4:2089",
+      "clip": "03-05-2026 da Gal4 x w1118 L4.MP4",
+      "frame": 2089,
+      "seconds": 69.703,
+      "split": "train",
+      "image": "review-set/L4-02089.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 707.8038838648619,
+          "y": 197.01941932430907
+        },
+        "C": {
+          "x": 709,
+          "y": 203.4983795375855
+        },
+        "T": {
+          "x": 710.3922322702764,
+          "y": 209.96116135138183
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "L4:2219",
+      "clip": "03-05-2026 da Gal4 x w1118 L4.MP4",
+      "frame": 2219,
+      "seconds": 74.0406,
+      "split": "test",
+      "image": "review-set/L4-02219.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 702,
+          "y": 186
+        },
+        "C": {
+          "x": 704,
+          "y": 190.2022401078546
+        },
+        "T": {
+          "x": 705.1961161351381,
+          "y": 195.98058067569093
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "L4:2349",
+      "clip": "03-05-2026 da Gal4 x w1118 L4.MP4",
+      "frame": 2349,
+      "seconds": 78.3783,
+      "split": "train",
+      "image": "review-set/L4-02349.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 696.5527864045,
+          "y": 174.10557280900008
+        },
+        "C": {
+          "x": 699,
+          "y": 178.49113729529455
+        },
+        "T": {
+          "x": 700.8944271909999,
+          "y": 183.78885438199984
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "L4:2488",
+      "clip": "03-05-2026 da Gal4 x w1118 L4.MP4",
+      "frame": 2488,
+      "seconds": 83.0163,
+      "split": "train",
+      "image": "review-set/L4-02488.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 681.7506099048911,
+          "y": 158.43826238111393
+        },
+        "C": {
+          "x": 688,
+          "y": 165.02010386668078
+        },
+        "T": {
+          "x": 693.2,
+          "y": 171.6
+        }
+      },
+      "reviewed": false,
+      "headStatus": "unassigned",
+      "headNeedsReview": true
+    },
+    {
+      "id": "L4:2620",
+      "clip": "03-05-2026 da Gal4 x w1118 L4.MP4",
+      "frame": 2620,
+      "seconds": 87.4207,
+      "split": "train",
+      "image": "review-set/L4-02620.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 675.628609323646,
+          "y": 147.07152330911475
+        },
+        "C": {
+          "x": 679.0106746890024,
+          "y": 154.01067468900237
+        },
+        "T": {
+          "x": 683.6,
+          "y": 159.8
+        }
+      },
+      "reviewed": false,
+      "headStatus": "unassigned",
+      "headNeedsReview": true
+    },
+    {
+      "id": "L4:2750",
+      "clip": "03-05-2026 da Gal4 x w1118 L4.MP4",
+      "frame": 2750,
+      "seconds": 91.7583,
+      "split": "train",
+      "image": "review-set/L4-02750.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 668.4855042445724,
+          "y": 135.14250707428747
+        },
+        "C": {
+          "x": 672.150860119283,
+          "y": 142.15086011928307
+        },
+        "T": {
+          "x": 677.2493900951089,
+          "y": 148.56173761888607
+        }
+      },
+      "reviewed": false,
+      "headStatus": "unassigned",
+      "headNeedsReview": true
+    },
+    {
+      "id": "L4:2880",
+      "clip": "03-05-2026 da Gal4 x w1118 L4.MP4",
+      "frame": 2880,
+      "seconds": 96.096,
+      "split": "test",
+      "image": "review-set/L4-02880.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 663.628609323646,
+          "y": 122.07152330911474
+        },
+        "C": {
+          "x": 666.218722003812,
+          "y": 128.218722003812
+        },
+        "T": {
+          "x": 668.2425356250363,
+          "y": 133.97014250014533
+        }
+      },
+      "reviewed": false,
+      "headStatus": "unassigned",
+      "headNeedsReview": true
+    },
+    {
+      "id": "L4:3010",
+      "clip": "03-05-2026 da Gal4 x w1118 L4.MP4",
+      "frame": 3010,
+      "seconds": 100.4337,
+      "split": "train",
+      "image": "review-set/L4-03010.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 656.2,
+          "y": 110.6
+        },
+        "C": {
+          "x": 660,
+          "y": 116.86935481264634
+        },
+        "T": {
+          "x": 664.4142135623731,
+          "y": 121.41421356237309
+        }
+      },
+      "reviewed": false,
+      "headStatus": "unassigned",
+      "headNeedsReview": true
+    },
+    {
+      "id": "L4:3191",
+      "clip": "03-05-2026 da Gal4 x w1118 L4.MP4",
+      "frame": 3191,
+      "seconds": 106.473,
+      "split": "train",
+      "image": "review-set/L4-03191.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 642.5038491169864,
+          "y": 101.3358994113243
+        },
+        "C": {
+          "x": 648,
+          "y": 104.27111209072203
+        },
+        "T": {
+          "x": 652.4142135623731,
+          "y": 108.41421356237309
+        }
+      },
+      "reviewed": false,
+      "headStatus": "unassigned",
+      "headNeedsReview": true
+    },
+    {
+      "id": "L6:0",
+      "clip": "03-05-2026 da Gal4 x w1118 L6.MP4",
+      "frame": 0,
+      "seconds": 0.0,
+      "split": "train",
+      "image": "review-set/L6-00000.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 627.1055728090001,
+          "y": 345.21114561800016
+        },
+        "C": {
+          "x": 630,
+          "y": 351.81852119577667
+        },
+        "T": {
+          "x": 631.4850712500727,
+          "y": 358.94028500029066
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "L6:113",
+      "clip": "03-05-2026 da Gal4 x w1118 L6.MP4",
+      "frame": 113,
+      "seconds": 3.7704,
+      "split": "train",
+      "image": "review-set/L6-00113.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 624.628609323646,
+          "y": 337.07152330911475
+        },
+        "C": {
+          "x": 627.3617250542159,
+          "y": 344.3617250542158
+        },
+        "T": {
+          "x": 629.3922322702764,
+          "y": 351.96116135138186
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "L6:225",
+      "clip": "03-05-2026 da Gal4 x w1118 L6.MP4",
+      "frame": 225,
+      "seconds": 7.5075,
+      "split": "test",
+      "image": "review-set/L6-00225.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 620.8858279709377,
+          "y": 328.2145699273442
+        },
+        "C": {
+          "x": 623,
+          "y": 334.71606670661146
+        },
+        "T": {
+          "x": 625.371390676354,
+          "y": 340.92847669088525
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "L6:338",
+      "clip": "03-05-2026 da Gal4 x w1118 L6.MP4",
+      "frame": 338,
+      "seconds": 11.2779,
+      "split": "train",
+      "image": "review-set/L6-00338.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 616.6077677297236,
+          "y": 315.03883864861814
+        },
+        "C": {
+          "x": 618.9768654522018,
+          "y": 322.97686545220176
+        },
+        "T": {
+          "x": 622.1141720290623,
+          "y": 330.7854300726558
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "L6:453",
+      "clip": "03-05-2026 da Gal4 x w1118 L6.MP4",
+      "frame": 453,
+      "seconds": 15.1151,
+      "split": "train",
+      "image": "review-set/L6-00453.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 615,
+          "y": 312
+        },
+        "C": {
+          "x": 618,
+          "y": 318.0587828989334
+        },
+        "T": {
+          "x": 620.1141720290623,
+          "y": 324.7854300726558
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "L6:565",
+      "clip": "03-05-2026 da Gal4 x w1118 L6.MP4",
+      "frame": 565,
+      "seconds": 18.8522,
+      "split": "train",
+      "image": "review-set/L6-00565.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 608.4855042445724,
+          "y": 300.14250707428744
+        },
+        "C": {
+          "x": 612.7306801292076,
+          "y": 306.7306801292076
+        },
+        "T": {
+          "x": 616.6,
+          "y": 312.8
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "L6:682",
+      "clip": "03-05-2026 da Gal4 x w1118 L6.MP4",
+      "frame": 682,
+      "seconds": 22.7561,
+      "split": "train",
+      "image": "review-set/L6-00682.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 598.2928932188134,
+          "y": 290.29289321881345
+        },
+        "C": {
+          "x": 603.4918974656053,
+          "y": 295.4918974656054
+        },
+        "T": {
+          "x": 608.6246950475544,
+          "y": 301.780868809443
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "L6:796",
+      "clip": "03-05-2026 da Gal4 x w1118 L6.MP4",
+      "frame": 796,
+      "seconds": 26.5599,
+      "split": "test",
+      "image": "review-set/L6-00796.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 591.3753049524456,
+          "y": 282.219131190557
+        },
+        "C": {
+          "x": 596.5589805098357,
+          "y": 288.55898050983564
+        },
+        "T": {
+          "x": 602.6,
+          "y": 293.2
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "L6:908",
+      "clip": "03-05-2026 da Gal4 x w1118 L6.MP4",
+      "frame": 908,
+      "seconds": 30.2969,
+      "split": "train",
+      "image": "review-set/L6-00908.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 585,
+          "y": 274
+        },
+        "C": {
+          "x": 590.0265215355054,
+          "y": 280.02652153550537
+        },
+        "T": {
+          "x": 594.028991510855,
+          "y": 286.71498585142507
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "L6:1021",
+      "clip": "03-05-2026 da Gal4 x w1118 L6.MP4",
+      "frame": 1021,
+      "seconds": 34.0674,
+      "split": "train",
+      "image": "review-set/L6-01021.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 576.7506099048911,
+          "y": 262.43826238111393
+        },
+        "C": {
+          "x": 582,
+          "y": 269.07237913266846
+        },
+        "T": {
+          "x": 587.2493900951089,
+          "y": 275.56173761888607
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "L6:1134",
+      "clip": "03-05-2026 da Gal4 x w1118 L6.MP4",
+      "frame": 1134,
+      "seconds": 37.8378,
+      "split": "train",
+      "image": "review-set/L6-01134.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 569.2928932188134,
+          "y": 255.29289321881345
+        },
+        "C": {
+          "x": 574.8511075168727,
+          "y": 260.8511075168728
+        },
+        "T": {
+          "x": 579.4987801902176,
+          "y": 267.12347523777214
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "L6:1246",
+      "clip": "03-05-2026 da Gal4 x w1118 L6.MP4",
+      "frame": 1246,
+      "seconds": 41.5749,
+      "split": "train",
+      "image": "review-set/L6-01246.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 559.0194193243091,
+          "y": 255.8038838648618
+        },
+        "C": {
+          "x": 565.9226234680589,
+          "y": 257
+        },
+        "T": {
+          "x": 572.9417420270728,
+          "y": 258.58834840541454
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "L6:1359",
+      "clip": "03-05-2026 da Gal4 x w1118 L6.MP4",
+      "frame": 1359,
+      "seconds": 45.3453,
+      "split": "test",
+      "image": "review-set/L6-01359.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 546,
+          "y": 259
+        },
+        "C": {
+          "x": 552.9109272075633,
+          "y": 257
+        },
+        "T": {
+          "x": 560,
+          "y": 257
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "L6:1472",
+      "clip": "03-05-2026 da Gal4 x w1118 L6.MP4",
+      "frame": 1472,
+      "seconds": 49.1157,
+      "split": "train",
+      "image": "review-set/L6-01472.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 532.0194193243091,
+          "y": 261.1961161351382
+        },
+        "C": {
+          "x": 539.4983795375855,
+          "y": 260
+        },
+        "T": {
+          "x": 546.9611613513819,
+          "y": 258.6077677297236
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "L6:1596",
+      "clip": "03-05-2026 da Gal4 x w1118 L6.MP4",
+      "frame": 1596,
+      "seconds": 53.2532,
+      "split": "train",
+      "image": "review-set/L6-01596.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 518,
+          "y": 262
+        },
+        "C": {
+          "x": 525.2928932188134,
+          "y": 261
+        },
+        "T": {
+          "x": 533,
+          "y": 261
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "L6:1709",
+      "clip": "03-05-2026 da Gal4 x w1118 L6.MP4",
+      "frame": 1709,
+      "seconds": 57.0236,
+      "split": "train",
+      "image": "review-set/L6-01709.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 506,
+          "y": 264
+        },
+        "C": {
+          "x": 512.9935128642536,
+          "y": 263
+        },
+        "T": {
+          "x": 519.9611613513819,
+          "y": 261.6077677297236
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "L6:1822",
+      "clip": "03-05-2026 da Gal4 x w1118 L6.MP4",
+      "frame": 1822,
+      "seconds": 60.7941,
+      "split": "train",
+      "image": "review-set/L6-01822.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 502.14250707428744,
+          "y": 259.4855042445725
+        },
+        "C": {
+          "x": 508.8774708864169,
+          "y": 263
+        },
+        "T": {
+          "x": 515.9402850002907,
+          "y": 261.5149287499273
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "L6:1934",
+      "clip": "03-05-2026 da Gal4 x w1118 L6.MP4",
+      "frame": 1934,
+      "seconds": 64.5311,
+      "split": "test",
+      "image": "review-set/L6-01934.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 498,
+          "y": 250
+        },
+        "C": {
+          "x": 501,
+          "y": 256.20710678118655
+        },
+        "T": {
+          "x": 505.70710678118655,
+          "y": 261.70710678118655
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "L6:2047",
+      "clip": "03-05-2026 da Gal4 x w1118 L6.MP4",
+      "frame": 2047,
+      "seconds": 68.3016,
+      "split": "train",
+      "image": "review-set/L6-02047.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 496.8038838648618,
+          "y": 236.01941932430907
+        },
+        "C": {
+          "x": 498,
+          "y": 242.95462998226552
+        },
+        "T": {
+          "x": 499.1961161351382,
+          "y": 249.98058067569093
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "L6:2160",
+      "clip": "03-05-2026 da Gal4 x w1118 L6.MP4",
+      "frame": 2160,
+      "seconds": 72.072,
+      "split": "train",
+      "image": "review-set/L6-02160.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 501.1961161351382,
+          "y": 226.01941932430907
+        },
+        "C": {
+          "x": 499.7122258461292,
+          "y": 232
+        },
+        "T": {
+          "x": 498.5149287499273,
+          "y": 237.94028500029066
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "L6:2272",
+      "clip": "03-05-2026 da Gal4 x w1118 L6.MP4",
+      "frame": 2272,
+      "seconds": 75.8091,
+      "split": "train",
+      "image": "review-set/L6-02272.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 506.8944271909999,
+          "y": 213.21114561800016
+        },
+        "C": {
+          "x": 505,
+          "y": 219
+        },
+        "T": {
+          "x": 502.1055728090001,
+          "y": 223.78885438199984
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "L6:2385",
+      "clip": "03-05-2026 da Gal4 x w1118 L6.MP4",
+      "frame": 2385,
+      "seconds": 79.5795,
+      "split": "train",
+      "image": "review-set/L6-02385.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 513.1141720290623,
+          "y": 199.21456992734423
+        },
+        "C": {
+          "x": 510,
+          "y": 205.32561041006912
+        },
+        "T": {
+          "x": 508.6077677297236,
+          "y": 211.96116135138183
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "L6:2498",
+      "clip": "03-05-2026 da Gal4 x w1118 L6.MP4",
+      "frame": 2498,
+      "seconds": 83.3499,
+      "split": "test",
+      "image": "review-set/L6-02498.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 519,
+          "y": 187
+        },
+        "C": {
+          "x": 517,
+          "y": 192.20710678118655
+        },
+        "T": {
+          "x": 514,
+          "y": 197
+        }
+      },
+      "reviewed": false,
+      "headStatus": "unassigned",
+      "headNeedsReview": true
+    },
+    {
+      "id": "L6:2610",
+      "clip": "03-05-2026 da Gal4 x w1118 L6.MP4",
+      "frame": 2610,
+      "seconds": 87.087,
+      "split": "train",
+      "image": "review-set/L6-02610.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 525.8944271909999,
+          "y": 174.21114561800016
+        },
+        "C": {
+          "x": 522.183464730039,
+          "y": 181
+        },
+        "T": {
+          "x": 520.0298574998546,
+          "y": 188.88057000058132
+        }
+      },
+      "reviewed": false,
+      "headStatus": "unassigned",
+      "headNeedsReview": true
+    },
+    {
+      "id": "L6:2723",
+      "clip": "03-05-2026 da Gal4 x w1118 L6.MP4",
+      "frame": 2723,
+      "seconds": 90.8574,
+      "split": "train",
+      "image": "review-set/L6-02723.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 532.8944271909999,
+          "y": 162.21114561800016
+        },
+        "C": {
+          "x": 530,
+          "y": 168.00861017654418
+        },
+        "T": {
+          "x": 527.8858279709377,
+          "y": 174.78543007265577
+        }
+      },
+      "reviewed": false,
+      "headStatus": "unassigned",
+      "headNeedsReview": true
+    },
+    {
+      "id": "straight:0",
+      "clip": "straight final.mp4",
+      "frame": 0,
+      "seconds": 0.0,
+      "split": "train",
+      "image": "review-set/straight-00000.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 436.7615889696176,
+          "y": 203.5960275759562
+        },
+        "C": {
+          "x": 442.0065247994147,
+          "y": 263.4166666666667
+        },
+        "T": {
+          "x": 493.78531954535526,
+          "y": 284.78587218185794
+        }
+      },
+      "reviewed": false,
+      "headStatus": "unassigned",
+      "headNeedsReview": true
+    },
+    {
+      "id": "straight:13",
+      "clip": "straight final.mp4",
+      "frame": 13,
+      "seconds": 0.4338,
+      "split": "train",
+      "image": "review-set/straight-00013.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 433.4255231633108,
+          "y": 203.37238418344612
+        },
+        "C": {
+          "x": 443.0540075392184,
+          "y": 265.9166666666667
+        },
+        "T": {
+          "x": 475.91300207937053,
+          "y": 318.5950051984263
+        }
+      },
+      "reviewed": false,
+      "headStatus": "unassigned",
+      "headNeedsReview": true
+    },
+    {
+      "id": "straight:27",
+      "clip": "straight final.mp4",
+      "frame": 27,
+      "seconds": 0.9009,
+      "split": "test",
+      "image": "review-set/straight-00027.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 435.6499223594996,
+          "y": 205.95015528100075
+        },
+        "C": {
+          "x": 440.75510935125277,
+          "y": 262.50510935125277
+        },
+        "T": {
+          "x": 469.875,
+          "y": 311.875
+        }
+      },
+      "reviewed": false,
+      "headStatus": "unassigned",
+      "headNeedsReview": true
+    },
+    {
+      "id": "straight:40",
+      "clip": "straight final.mp4",
+      "frame": 40,
+      "seconds": 1.3347,
+      "split": "train",
+      "image": "review-set/straight-00040.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 434.0130416806873,
+          "y": 204.453083305292
+        },
+        "C": {
+          "x": 437.35807245623664,
+          "y": 258.71875
+        },
+        "T": {
+          "x": 468.5729166666667,
+          "y": 305.92708333333337
+        }
+      },
+      "reviewed": false,
+      "headStatus": "unassigned",
+      "headNeedsReview": true
+    },
+    {
+      "id": "straight:54",
+      "clip": "straight final.mp4",
+      "frame": 54,
+      "seconds": 1.8018,
+      "split": "train",
+      "image": "review-set/straight-00054.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 477.98058067569093,
+          "y": 308.9029033784546
+        },
+        "C": {
+          "x": 443,
+          "y": 267.6819972430744
+        },
+        "T": {
+          "x": 411.85504244572473,
+          "y": 217.42507074287457
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "straight:67",
+      "clip": "straight final.mp4",
+      "frame": 67,
+      "seconds": 2.2356,
+      "split": "train",
+      "image": "review-set/straight-00067.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 495.4498554257004,
+          "y": 316.7180271285016
+        },
+        "C": {
+          "x": 456.00933802090356,
+          "y": 279.01975468757024
+        },
+        "T": {
+          "x": 414.45638521171134,
+          "y": 236.17135816936906
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "straight:81",
+      "clip": "straight final.mp4",
+      "frame": 81,
+      "seconds": 2.7027,
+      "split": "train",
+      "image": "review-set/straight-00081.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 521.7165892975563,
+          "y": 331.5831399105574
+        },
+        "C": {
+          "x": 476.0416666666667,
+          "y": 290.60762396306427
+        },
+        "T": {
+          "x": 427.24583333333334,
+          "y": 251.49166666666665
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "straight:94",
+      "clip": "straight final.mp4",
+      "frame": 94,
+      "seconds": 3.1365,
+      "split": "test",
+      "image": "review-set/straight-00094.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 535.78125,
+          "y": 347.90625
+        },
+        "C": {
+          "x": 494.9964134798192,
+          "y": 302.8297468131525
+        },
+        "T": {
+          "x": 440.592204775268,
+          "y": 266.11573953182744
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "straight:108",
+      "clip": "straight final.mp4",
+      "frame": 108,
+      "seconds": 3.6036,
+      "split": "train",
+      "image": "review-set/straight-00108.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 551.1251148633187,
+          "y": 358.50045945327486
+        },
+        "C": {
+          "x": 513.3300262868901,
+          "y": 316.25
+        },
+        "T": {
+          "x": 458.8820733077827,
+          "y": 280.5660366538914
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "straight:121",
+      "clip": "straight final.mp4",
+      "frame": 121,
+      "seconds": 4.0374,
+      "split": "train",
+      "image": "review-set/straight-00121.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 565.8944271909999,
+          "y": 377.78885438199984
+        },
+        "C": {
+          "x": 531.0733809917724,
+          "y": 330.0733809917724
+        },
+        "T": {
+          "x": 481.9791847198287,
+          "y": 289.9791847198287
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "straight:135",
+      "clip": "straight final.mp4",
+      "frame": 135,
+      "seconds": 4.5045,
+      "split": "train",
+      "image": "review-set/straight-00135.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 579,
+          "y": 393
+        },
+        "C": {
+          "x": 547.5671364341065,
+          "y": 344.56713643410643
+        },
+        "T": {
+          "x": 499.4,
+          "y": 305.8
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "straight:148",
+      "clip": "straight final.mp4",
+      "frame": 148,
+      "seconds": 4.9383,
+      "split": "train",
+      "image": "review-set/straight-00148.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 592.2539524872388,
+          "y": 411.7866432822885
+        },
+        "C": {
+          "x": 561.9375,
+          "y": 360.10124378372706
+        },
+        "T": {
+          "x": 520.1859322522089,
+          "y": 318.18593225220894
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "straight:162",
+      "clip": "straight final.mp4",
+      "frame": 162,
+      "seconds": 5.4054,
+      "split": "test",
+      "image": "review-set/straight-00162.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 608.8509931060108,
+          "y": 430.6274827650274
+        },
+        "C": {
+          "x": 577.75,
+          "y": 379.37025071913115
+        },
+        "T": {
+          "x": 540.068803057156,
+          "y": 332.7813384285932
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "straight:175",
+      "clip": "straight final.mp4",
+      "frame": 175,
+      "seconds": 5.8392,
+      "split": "train",
+      "image": "review-set/straight-00175.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 624.4014800069683,
+          "y": 449.9904600139367
+        },
+        "C": {
+          "x": 591.4375,
+          "y": 399.33388612756573
+        },
+        "T": {
+          "x": 555.7375,
+          "y": 352.4
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "straight:188",
+      "clip": "straight final.mp4",
+      "frame": 188,
+      "seconds": 6.2729,
+      "split": "train",
+      "image": "review-set/straight-00188.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 639.1926929308679,
+          "y": 469.6067323271694
+        },
+        "C": {
+          "x": 605.1209447921655,
+          "y": 420.12094479216535
+        },
+        "T": {
+          "x": 569.3333333333334,
+          "y": 369.16666666666663
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "straight:202",
+      "clip": "straight final.mp4",
+      "frame": 202,
+      "seconds": 6.7401,
+      "split": "train",
+      "image": "review-set/straight-00202.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 652.0808304061813,
+          "y": 489.69686768212034
+        },
+        "C": {
+          "x": 620.2365207264331,
+          "y": 439.5
+        },
+        "T": {
+          "x": 580.2258148817876,
+          "y": 394.95840559573924
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "straight:215",
+      "clip": "straight final.mp4",
+      "frame": 215,
+      "seconds": 7.1738,
+      "split": "train",
+      "image": "review-set/straight-00215.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 669.2344441137526,
+          "y": 508.9118039020963
+        },
+        "C": {
+          "x": 633.144521054681,
+          "y": 456.76952105468104
+        },
+        "T": {
+          "x": 594.0875,
+          "y": 404.3145833333333
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "straight:229",
+      "clip": "straight final.mp4",
+      "frame": 229,
+      "seconds": 7.641,
+      "split": "test",
+      "image": "review-set/straight-00229.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 690.29375,
+          "y": 517.36875
+        },
+        "C": {
+          "x": 648.21875,
+          "y": 476.4507324382051
+        },
+        "T": {
+          "x": 609.9892113190137,
+          "y": 429.02046131901375
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "straight:242",
+      "clip": "straight final.mp4",
+      "frame": 242,
+      "seconds": 8.0747,
+      "split": "train",
+      "image": "review-set/straight-00242.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 703.8119219007531,
+          "y": 540.7768142790326
+        },
+        "C": {
+          "x": 665.8822212125111,
+          "y": 493.4655545458445
+        },
+        "T": {
+          "x": 627.0038541316152,
+          "y": 441.20562492989666
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "straight:256",
+      "clip": "straight final.mp4",
+      "frame": 256,
+      "seconds": 8.5419,
+      "split": "train",
+      "image": "review-set/straight-00256.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 722.0247722123761,
+          "y": 561.3468425761824
+        },
+        "C": {
+          "x": 679.8566419383858,
+          "y": 508.4399752717191
+        },
+        "T": {
+          "x": 632.1662946523471,
+          "y": 456.166294652347
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "straight:269",
+      "clip": "straight final.mp4",
+      "frame": 269,
+      "seconds": 8.9756,
+      "split": "train",
+      "image": "review-set/straight-00269.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 733.1416211864401,
+          "y": 563.5582878531068
+        },
+        "C": {
+          "x": 688.9745099578176,
+          "y": 518.339093291151
+        },
+        "T": {
+          "x": 646.2625,
+          "y": 473.73333333333323
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "straight:283",
+      "clip": "straight final.mp4",
+      "frame": 283,
+      "seconds": 9.4428,
+      "split": "train",
+      "image": "review-set/straight-00283.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 755.7437073594191,
+          "y": 562.1591581385504
+        },
+        "C": {
+          "x": 704.8512219445926,
+          "y": 532.9033052779259
+        },
+        "T": {
+          "x": 663.9594418984276,
+          "y": 488.9802752317609
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "straight:296",
+      "clip": "straight final.mp4",
+      "frame": 296,
+      "seconds": 9.8765,
+      "split": "test",
+      "image": "review-set/straight-00296.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 774.606169679216,
+          "y": 566.8962339358432
+        },
+        "C": {
+          "x": 719.73530531194,
+          "y": 542.67280531194
+        },
+        "T": {
+          "x": 680.675,
+          "y": 503.4
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "straight:310",
+      "clip": "straight final.mp4",
+      "frame": 310,
+      "seconds": 10.3437,
+      "split": "train",
+      "image": "review-set/straight-00310.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 801.6902590832788,
+          "y": 576.1427702999781
+        },
+        "C": {
+          "x": 745.7083333333334,
+          "y": 555.6391201199643
+        },
+        "T": {
+          "x": 695.761966047645,
+          "y": 522.7304061714494
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "straight:323",
+      "clip": "straight final.mp4",
+      "frame": 323,
+      "seconds": 10.7774,
+      "split": "train",
+      "image": "review-set/straight-00323.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 816.6751348538259,
+          "y": 581.6933603040987
+        },
+        "C": {
+          "x": 766.3814333116758,
+          "y": 563.6730999783424
+        },
+        "T": {
+          "x": 720.6745602262104,
+          "y": 540.6464028023929
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "curved:0",
+      "clip": "curved final.mp4",
+      "frame": 0,
+      "seconds": 0.0,
+      "split": "train",
+      "image": "review-set/curved-00000.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 453.82291666666663,
+          "y": 520.6458333333334
+        },
+        "C": {
+          "x": 509.3328619912288,
+          "y": 549.5520833333334
+        },
+        "T": {
+          "x": 576.6965730576705,
+          "y": 541.2794353884658
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "curved:14",
+      "clip": "curved final.mp4",
+      "frame": 14,
+      "seconds": 0.4671,
+      "split": "train",
+      "image": "review-set/curved-00014.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 435.3911382866258,
+          "y": 509.3205691433129
+        },
+        "C": {
+          "x": 493.33304401517364,
+          "y": 541.125
+        },
+        "T": {
+          "x": 561.6599326998033,
+          "y": 542.1860269200787
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "curved:27",
+      "clip": "curved final.mp4",
+      "frame": 27,
+      "seconds": 0.9009,
+      "split": "test",
+      "image": "review-set/curved-00027.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 417.6143930836634,
+          "y": 488.20264937582505
+        },
+        "C": {
+          "x": 475.58942855574986,
+          "y": 532.1727618890832
+        },
+        "T": {
+          "x": 526.3333333333334,
+          "y": 573
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "curved:41",
+      "clip": "curved final.mp4",
+      "frame": 41,
+      "seconds": 1.368,
+      "split": "train",
+      "image": "review-set/curved-00041.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 396.5313640342405,
+          "y": 484.4021061401814
+        },
+        "C": {
+          "x": 457.52341345126047,
+          "y": 522.0625
+        },
+        "T": {
+          "x": 510.82706052648524,
+          "y": 566.5936359657595
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "curved:55",
+      "clip": "curved final.mp4",
+      "frame": 55,
+      "seconds": 1.8352,
+      "split": "train",
+      "image": "review-set/curved-00055.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 379.9468561307195,
+          "y": 467.67655306535977
+        },
+        "C": {
+          "x": 437.54415093538614,
+          "y": 508.45040093538614
+        },
+        "T": {
+          "x": 489.1875,
+          "y": 556.25
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "curved:68",
+      "clip": "curved final.mp4",
+      "frame": 68,
+      "seconds": 2.2689,
+      "split": "train",
+      "image": "review-set/curved-00068.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 364.5139320225002,
+          "y": 451.6319660112501
+        },
+        "C": {
+          "x": 420.70196460269455,
+          "y": 496.70196460269455
+        },
+        "T": {
+          "x": 471.75,
+          "y": 546.5
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "curved:82",
+      "clip": "curved final.mp4",
+      "frame": 82,
+      "seconds": 2.7361,
+      "split": "train",
+      "image": "review-set/curved-00082.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 352.917133234588,
+          "y": 433.3188747531365
+        },
+        "C": {
+          "x": 402.0265631750992,
+          "y": 483.79739650843254
+        },
+        "T": {
+          "x": 442.64664445521953,
+          "y": 533.2042777239026
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "curved:96",
+      "clip": "curved final.mp4",
+      "frame": 96,
+      "seconds": 3.2032,
+      "split": "test",
+      "image": "review-set/curved-00096.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 337.25264292119505,
+          "y": 415.9824703181604
+        },
+        "C": {
+          "x": 382.9771820775069,
+          "y": 466.3105154108402
+        },
+        "T": {
+          "x": 425,
+          "y": 515.9166666666666
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "curved:109",
+      "clip": "curved final.mp4",
+      "frame": 109,
+      "seconds": 3.637,
+      "split": "train",
+      "image": "review-set/curved-00109.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 323.696759080094,
+          "y": 391.7060181601881
+        },
+        "C": {
+          "x": 361.2395833333333,
+          "y": 444.26786093921464
+        },
+        "T": {
+          "x": 395.1359033397983,
+          "y": 497.9350666343415
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "curved:123",
+      "clip": "curved final.mp4",
+      "frame": 123,
+      "seconds": 4.1041,
+      "split": "train",
+      "image": "review-set/curved-00123.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 307.0727776558958,
+          "y": 367.06506941397396
+        },
+        "C": {
+          "x": 345.9997442264283,
+          "y": 422.4997442264283
+        },
+        "T": {
+          "x": 376.73143384120135,
+          "y": 480.90533079399324
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "curved:137",
+      "clip": "curved final.mp4",
+      "frame": 137,
+      "seconds": 4.5712,
+      "split": "train",
+      "image": "review-set/curved-00137.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 297.35527910793047,
+          "y": 350.23316138491305
+        },
+        "C": {
+          "x": 335.4375,
+          "y": 406.93758587656873
+        },
+        "T": {
+          "x": 363.18104215242215,
+          "y": 465.13791569515575
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "curved:150",
+      "clip": "curved final.mp4",
+      "frame": 150,
+      "seconds": 5.005,
+      "split": "train",
+      "image": "review-set/curved-00150.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 281.2636552040915,
+          "y": 343.6389356258484
+        },
+        "C": {
+          "x": 323.3854166666667,
+          "y": 390.2052592954094
+        },
+        "T": {
+          "x": 349.41666666666663,
+          "y": 448.7604166666667
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "curved:164",
+      "clip": "curved final.mp4",
+      "frame": 164,
+      "seconds": 5.4721,
+      "split": "test",
+      "image": "review-set/curved-00164.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 275.1375497372852,
+          "y": 313.0938743432131
+        },
+        "C": {
+          "x": 313.6875,
+          "y": 373.7364663405709
+        },
+        "T": {
+          "x": 343.875,
+          "y": 437.6875
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "curved:178",
+      "clip": "curved final.mp4",
+      "frame": 178,
+      "seconds": 5.9393,
+      "split": "train",
+      "image": "review-set/curved-00178.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 266.7373252627806,
+          "y": 300.3935752627806
+        },
+        "C": {
+          "x": 305.63854842331654,
+          "y": 363.48229842331654
+        },
+        "T": {
+          "x": 336.21875,
+          "y": 427.65625
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "curved:191",
+      "clip": "curved final.mp4",
+      "frame": 191,
+      "seconds": 6.373,
+      "split": "train",
+      "image": "review-set/curved-00191.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 261.3333333333333,
+          "y": 289.3333333333333
+        },
+        "C": {
+          "x": 297.4884562903552,
+          "y": 350.8217896236886
+        },
+        "T": {
+          "x": 324.68591639277804,
+          "y": 414.2852090180547
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "curved:205",
+      "clip": "curved final.mp4",
+      "frame": 205,
+      "seconds": 6.8402,
+      "split": "train",
+      "image": "review-set/curved-00205.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 258.08859471704034,
+          "y": 272.4742235852016
+        },
+        "C": {
+          "x": 289.9845707637199,
+          "y": 337.8595707637199
+        },
+        "T": {
+          "x": 315.3846701931408,
+          "y": 398.2306596137184
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "curved:219",
+      "clip": "curved final.mp4",
+      "frame": 219,
+      "seconds": 7.3073,
+      "split": "train",
+      "image": "review-set/curved-00219.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 255.28811499021566,
+          "y": 257.5114416503594
+        },
+        "C": {
+          "x": 279.78125,
+          "y": 321.33706480906636
+        },
+        "T": {
+          "x": 307.32874484400736,
+          "y": 382.8458591132967
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "curved:232",
+      "clip": "curved final.mp4",
+      "frame": 232,
+      "seconds": 7.7411,
+      "split": "test",
+      "image": "review-set/curved-00232.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 260.4166666666667,
+          "y": 242.30208333333334
+        },
+        "C": {
+          "x": 274.7395833333333,
+          "y": 307.8027451511226
+        },
+        "T": {
+          "x": 297.69350172349726,
+          "y": 364.6047873579235
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "curved:246",
+      "clip": "curved final.mp4",
+      "frame": 246,
+      "seconds": 8.2082,
+      "split": "train",
+      "image": "review-set/curved-00246.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 260.14490004732096,
+          "y": 222.44216643006203
+        },
+        "C": {
+          "x": 267.7030516788382,
+          "y": 286.91138501217154
+        },
+        "T": {
+          "x": 284.99004997633955,
+          "y": 344.9247501183023
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "curved:260",
+      "clip": "curved final.mp4",
+      "frame": 260,
+      "seconds": 8.6753,
+      "split": "train",
+      "image": "review-set/curved-00260.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 261.96407364229145,
+          "y": 202.57185271541712
+        },
+        "C": {
+          "x": 263.68876988069644,
+          "y": 268.3541666666667
+        },
+        "T": {
+          "x": 282.5625,
+          "y": 329.2916666666667
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "curved:273",
+      "clip": "curved final.mp4",
+      "frame": 273,
+      "seconds": 9.1091,
+      "split": "train",
+      "image": "review-set/curved-00273.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 255.5,
+          "y": 184.625
+        },
+        "C": {
+          "x": 260.75,
+          "y": 247.88455886857844
+        },
+        "T": {
+          "x": 266.1877486864262,
+          "y": 307.5306282839345
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "curved:287",
+      "clip": "curved final.mp4",
+      "frame": 287,
+      "seconds": 9.5762,
+      "split": "train",
+      "image": "review-set/curved-00287.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 259.9819145642132,
+          "y": 163.465427178934
+        },
+        "C": {
+          "x": 258.4375,
+          "y": 227.37819647588142
+        },
+        "T": {
+          "x": 260.6140964677189,
+          "y": 287.58430706456215
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "curved:302",
+      "clip": "curved final.mp4",
+      "frame": 302,
+      "seconds": 10.0767,
+      "split": "test",
+      "image": "review-set/curved-00302.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 271.6145833333333,
+          "y": 128.44791666666666
+        },
+        "C": {
+          "x": 258.5833333333333,
+          "y": 193.12863155896127
+        },
+        "T": {
+          "x": 264.375,
+          "y": 264.55208333333337
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "curved:315",
+      "clip": "curved final.mp4",
+      "frame": 315,
+      "seconds": 10.5105,
+      "split": "train",
+      "image": "review-set/curved-00315.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 259.5416666666667,
+          "y": 120.70833333333334
+        },
+        "C": {
+          "x": 258.1875,
+          "y": 184.73425383618226
+        },
+        "T": {
+          "x": 265.4209718983853,
+          "y": 247.57111046343715
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "curved:330",
+      "clip": "curved final.mp4",
+      "frame": 330,
+      "seconds": 11.011,
+      "split": "train",
+      "image": "review-set/curved-00330.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 260.637617800705,
+          "y": 108.1869109964749
+        },
+        "C": {
+          "x": 258.75,
+          "y": 173.44998113054152
+        },
+        "T": {
+          "x": 253.25,
+          "y": 238.625
+        }
+      },
+      "reviewed": false,
+      "headStatus": "unassigned",
+      "headNeedsReview": true
+    },
+    {
+      "id": "irregular:0",
+      "clip": "irregular.mp4",
+      "frame": 0,
+      "seconds": 0.0,
+      "split": "train",
+      "image": "review-set/irregular-00000.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 444.6664456120656,
+          "y": 359.5827806968307
+        },
+        "C": {
+          "x": 409.9059605507278,
+          "y": 300.5726272173945
+        },
+        "T": {
+          "x": 376.2061462793006,
+          "y": 249.30260193683023
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "irregular:12",
+      "clip": "irregular.mp4",
+      "frame": 12,
+      "seconds": 0.4004,
+      "split": "train",
+      "image": "review-set/irregular-00012.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 476.9166666666667,
+          "y": 381.98958333333337
+        },
+        "C": {
+          "x": 442.5625,
+          "y": 328.3436236300535
+        },
+        "T": {
+          "x": 389.54377929546916,
+          "y": 289.8031396477346
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "irregular:24",
+      "clip": "irregular.mp4",
+      "frame": 24,
+      "seconds": 0.8008,
+      "split": "test",
+      "image": "review-set/irregular-00024.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 526.7427098198909,
+          "y": 389.08187529731157
+        },
+        "C": {
+          "x": 468.22623873607006,
+          "y": 357.5595720694034
+        },
+        "T": {
+          "x": 416,
+          "y": 317
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "irregular:37",
+      "clip": "irregular.mp4",
+      "frame": 37,
+      "seconds": 1.2346,
+      "split": "train",
+      "image": "review-set/irregular-00037.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 558.6031399925421,
+          "y": 418.9661833146886
+        },
+        "C": {
+          "x": 504.8418169431638,
+          "y": 381.5520833333333
+        },
+        "T": {
+          "x": 451.46676169442384,
+          "y": 339.0317426888724
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "irregular:49",
+      "clip": "irregular.mp4",
+      "frame": 49,
+      "seconds": 1.635,
+      "split": "train",
+      "image": "review-set/irregular-00049.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 606.6145833333334,
+          "y": 408.4895833333333
+        },
+        "C": {
+          "x": 540.0084671260247,
+          "y": 395.91471712602464
+        },
+        "T": {
+          "x": 476.5199359444327,
+          "y": 368.33940385555326
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "irregular:61",
+      "clip": "irregular.mp4",
+      "frame": 61,
+      "seconds": 2.0354,
+      "split": "train",
+      "image": "review-set/irregular-00061.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 640.2957867260059,
+          "y": 419.03832401186776
+        },
+        "C": {
+          "x": 569.84015066355,
+          "y": 404.01723399688336
+        },
+        "T": {
+          "x": 506.89578387792693,
+          "y": 381.0364459694818
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "irregular:73",
+      "clip": "irregular.mp4",
+      "frame": 73,
+      "seconds": 2.4358,
+      "split": "train",
+      "image": "review-set/irregular-00073.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 652.0416666666667,
+          "y": 424.3333333333333
+        },
+        "C": {
+          "x": 581.8265530881176,
+          "y": 404.409886421451
+        },
+        "T": {
+          "x": 513.1148976688287,
+          "y": 386.19381286709915
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "irregular:85",
+      "clip": "irregular.mp4",
+      "frame": 85,
+      "seconds": 2.8362,
+      "split": "test",
+      "image": "review-set/irregular-00085.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 679.4362624917512,
+          "y": 414.28725249835026
+        },
+        "C": {
+          "x": 612.9151509828183,
+          "y": 411.75
+        },
+        "T": {
+          "x": 547.5770763934715,
+          "y": 401.6595847213057
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "irregular:98",
+      "clip": "irregular.mp4",
+      "frame": 98,
+      "seconds": 3.2699,
+      "split": "train",
+      "image": "review-set/irregular-00098.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 716.8343229393683,
+          "y": 410.46061458787364
+        },
+        "C": {
+          "x": 648.0973952565591,
+          "y": 412.5625
+        },
+        "T": {
+          "x": 579.1140885303158,
+          "y": 410.77718229393685
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "irregular:110",
+      "clip": "irregular.mp4",
+      "frame": 110,
+      "seconds": 3.6703,
+      "split": "train",
+      "image": "review-set/irregular-00110.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 742.034435326951,
+          "y": 392.9862258692196
+        },
+        "C": {
+          "x": 673.2211914550095,
+          "y": 408.5
+        },
+        "T": {
+          "x": 602.313503748474,
+          "y": 414.0466240628815
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "irregular:260",
+      "clip": "irregular.mp4",
+      "frame": 260,
+      "seconds": 8.6753,
+      "split": "train",
+      "image": "review-set/irregular-00260.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 808.6846584384265,
+          "y": 331.92116460960665
+        },
+        "C": {
+          "x": 711.6167041860472,
+          "y": 353.75
+        },
+        "T": {
+          "x": 607.0825321283136,
+          "y": 357.1665064256627
+        }
+      },
+      "reviewed": false,
+      "headStatus": "unassigned",
+      "headNeedsReview": true
+    },
+    {
+      "id": "irregular:277",
+      "clip": "irregular.mp4",
+      "frame": 277,
+      "seconds": 9.2426,
+      "split": "train",
+      "image": "review-set/irregular-00277.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 681.7291666666667,
+          "y": 438.375
+        },
+        "C": {
+          "x": 745.463489120263,
+          "y": 439.7395833333333
+        },
+        "T": {
+          "x": 808.6354166666666,
+          "y": 439.7395833333333
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "irregular:289",
+      "clip": "irregular.mp4",
+      "frame": 289,
+      "seconds": 9.643,
+      "split": "test",
+      "image": "review-set/irregular-00289.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 632.375,
+          "y": 439.375
+        },
+        "C": {
+          "x": 694.4424741950513,
+          "y": 435.4424741950514
+        },
+        "T": {
+          "x": 762.5727748652002,
+          "y": 443.68955497304006
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "irregular:302",
+      "clip": "irregular.mp4",
+      "frame": 302,
+      "seconds": 10.0767,
+      "split": "train",
+      "image": "review-set/irregular-00302.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 591.4375,
+          "y": 429.25
+        },
+        "C": {
+          "x": 661.1428127628683,
+          "y": 432.125
+        },
+        "T": {
+          "x": 727.4859262157378,
+          "y": 444.8568704862951
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "irregular:314",
+      "clip": "irregular.mp4",
+      "frame": 314,
+      "seconds": 10.4771,
+      "split": "train",
+      "image": "review-set/irregular-00314.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 550.1590096013937,
+          "y": 418.1922185869453
+        },
+        "C": {
+          "x": 615.4086364047942,
+          "y": 429.8333333333333
+        },
+        "T": {
+          "x": 681.7563588876067,
+          "y": 438.35462688837595
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "irregular:326",
+      "clip": "irregular.mp4",
+      "frame": 326,
+      "seconds": 10.8775,
+      "split": "train",
+      "image": "review-set/irregular-00326.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 530.4554637227541,
+          "y": 395.6074093068852
+        },
+        "C": {
+          "x": 581.118329665729,
+          "y": 423.53125
+        },
+        "T": {
+          "x": 642.1914313862296,
+          "y": 438.27657255449185
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "irregular:338",
+      "clip": "irregular.mp4",
+      "frame": 338,
+      "seconds": 11.2779,
+      "split": "train",
+      "image": "review-set/irregular-00338.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 473.21443558952575,
+          "y": 403.63247045123836
+        },
+        "C": {
+          "x": 535.799836496101,
+          "y": 415.8333333333333
+        },
+        "T": {
+          "x": 577.03125,
+          "y": 445.80208333333337
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "irregular:351",
+      "clip": "irregular.mp4",
+      "frame": 351,
+      "seconds": 11.7117,
+      "split": "test",
+      "image": "review-set/irregular-00351.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 432,
+          "y": 400.15625
+        },
+        "C": {
+          "x": 503.5253957024518,
+          "y": 411.3125
+        },
+        "T": {
+          "x": 554.71875,
+          "y": 440
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "irregular:363",
+      "clip": "irregular.mp4",
+      "frame": 363,
+      "seconds": 12.1121,
+      "split": "train",
+      "image": "review-set/irregular-00363.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 435.8097561552949,
+          "y": 378.2558435921582
+        },
+        "C": {
+          "x": 495.71218196520607,
+          "y": 410.78125
+        },
+        "T": {
+          "x": 569.59375,
+          "y": 418.125
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "irregular:375",
+      "clip": "irregular.mp4",
+      "frame": 375,
+      "seconds": 12.5125,
+      "split": "train",
+      "image": "review-set/irregular-00375.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 425.210982867233,
+          "y": 405.75572009322
+        },
+        "C": {
+          "x": 499.59344897514495,
+          "y": 408.37469897514495
+        },
+        "T": {
+          "x": 573.5177534463245,
+          "y": 422.4639673559315
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "irregular:387",
+      "clip": "irregular.mp4",
+      "frame": 387,
+      "seconds": 12.9129,
+      "split": "train",
+      "image": "review-set/irregular-00387.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 501,
+          "y": 347
+        },
+        "C": {
+          "x": 512.8197880212633,
+          "y": 408
+        },
+        "T": {
+          "x": 577.8446454055273,
+          "y": 423.56892908110547
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "irregular:402",
+      "clip": "irregular.mp4",
+      "frame": 402,
+      "seconds": 13.4134,
+      "split": "train",
+      "image": "review-set/irregular-00402.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 492.4680830557389,
+          "y": 294.4654152786943
+        },
+        "C": {
+          "x": 506.82461499613595,
+          "y": 376.07461499613595
+        },
+        "T": {
+          "x": 557.3945798439589,
+          "y": 425.5986449609897
+        }
+      },
+      "reviewed": false,
+      "headStatus": "unassigned",
+      "headNeedsReview": true
+    },
+    {
+      "id": "irregular:421",
+      "clip": "irregular.mp4",
+      "frame": 421,
+      "seconds": 14.0474,
+      "split": "test",
+      "image": "review-set/irregular-00421.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 471.6458333333333,
+          "y": 230
+        },
+        "C": {
+          "x": 494.4583333333333,
+          "y": 322.32539156305455
+        },
+        "T": {
+          "x": 558.3333333333334,
+          "y": 371.4375
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "irregular:433",
+      "clip": "irregular.mp4",
+      "frame": 433,
+      "seconds": 14.4478,
+      "split": "train",
+      "image": "review-set/irregular-00433.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 453.49767670183536,
+          "y": 195.144633509177
+        },
+        "C": {
+          "x": 479.3797787544362,
+          "y": 264.1089454211028
+        },
+        "T": {
+          "x": 493.6875,
+          "y": 336.5104166666667
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    },
+    {
+      "id": "irregular:445",
+      "clip": "irregular.mp4",
+      "frame": 445,
+      "seconds": 14.8482,
+      "split": "train",
+      "image": "review-set/irregular-00445.jpg",
+      "width": 1280,
+      "height": 720,
+      "proposal": {
+        "H": {
+          "x": 440.2641503335257,
+          "y": 165.30620916714747
+        },
+        "C": {
+          "x": 467.5416666666667,
+          "y": 232.6576211364383
+        },
+        "T": {
+          "x": 484.69437966073275,
+          "y": 300.43435169633625
+        }
+      },
+      "reviewed": false,
+      "headStatus": "motion inferred",
+      "headNeedsReview": false
+    }
+  ]
+}

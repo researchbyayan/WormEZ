@@ -1,0 +1,72 @@
+{
+  "recording": "03-05-2026 da Gal4 x w1118 L4.MP4",
+  "range": [
+    0,
+    89
+  ],
+  "baseline": {
+    "file": "03-05-2026 da Gal4 x w1118 L4.MP4",
+    "baseline": true,
+    "profile": {
+      "readMs": 11716.40000000596,
+      "trackingMs": 2226.1000000163913,
+      "frames": 192,
+      "activeMs": 8043,
+      "stage": "opencv"
+    },
+    "decoder": [
+      {
+        "buffered": 96,
+        "fallback": 0,
+        "decoded": 120,
+        "peakBufferedFrames": 30,
+        "backend": "WebCodecs"
+      },
+      {
+        "buffered": 96,
+        "fallback": 0,
+        "decoded": 90,
+        "peakBufferedFrames": 30,
+        "backend": "WebCodecs"
+      }
+    ],
+    "coverage": 1,
+    "frames": 90,
+    "tapir": null,
+    "errors": []
+  },
+  "optimized": {
+    "file": "03-05-2026 da Gal4 x w1118 L4.MP4",
+    "baseline": false,
+    "profile": {
+      "readMs": 7601.199999991804,
+      "trackingMs": 1212.6999999955297,
+      "frames": 192,
+      "activeMs": 4801,
+      "stage": "opencv"
+    },
+    "decoder": [
+      {
+        "buffered": 96,
+        "fallback": 0,
+        "decoded": 120,
+        "peakBufferedFrames": 30,
+        "backend": "WebCodecs"
+      },
+      {
+        "buffered": 96,
+        "fallback": 0,
+        "decoded": 90,
+        "peakBufferedFrames": 30,
+        "backend": "WebCodecs"
+      }
+    ],
+    "coverage": 1,
+    "frames": 90,
+    "tapir": null,
+    "errors": []
+  },
+  "speedup": 1.6752759841699645,
+  "identicalAcceptedCoordinates": true,
+  "limitation": "Short interval, not a full-recording runtime guarantee. Baseline restores former hidden repaint and extra worker buffer copy. Timing varies with machine load."
+}

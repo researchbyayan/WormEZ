@@ -1,0 +1,2112 @@
+{
+  "scope": "Five complete recordings; automated approval of unreviewed scan proposals for workflow testing, not biological accuracy. No motion-model recovery or estimated gap connections.",
+  "started": "2026-11-10T06:01:47.046Z",
+  "cases": [
+    {
+      "file": "03-05-2026 da Gal4 x w1118 L4.MP4",
+      "checks": [
+        {
+          "name": "load and quick scan",
+          "passed": true,
+          "value": {
+            "frames": 3648,
+            "proposals": 8
+          }
+        },
+        {
+          "name": "review and boundary gating",
+          "passed": true,
+          "value": [
+            {
+              "frame": 0,
+              "x": 639.5732233047033,
+              "y": 356.9267766952966
+            },
+            {
+              "frame": 456,
+              "x": 673.5,
+              "y": 340.11633626146255
+            },
+            {
+              "frame": 912,
+              "x": 691.5999056141488,
+              "y": 306.5
+            },
+            {
+              "frame": 1368,
+              "x": 701.3570425020947,
+              "y": 269.5
+            },
+            {
+              "frame": 1824,
+              "x": 712,
+              "y": 231.25
+            },
+            {
+              "frame": 2279,
+              "x": 701.9721819076827,
+              "y": 184.47218190768277
+            },
+            {
+              "frame": 2735,
+              "x": 673.5,
+              "y": 143.4414248520112
+            },
+            {
+              "frame": 3191,
+              "x": 646.6120930195509,
+              "y": 103.5
+            },
+            {
+              "frame": 3647,
+              "x": 594,
+              "y": 86
+            }
+          ]
+        },
+        {
+          "name": "pause/resume",
+          "passed": true
+        },
+        {
+          "name": "complete frame coverage and no automatic model stage",
+          "passed": true,
+          "value": {
+            "frames": 3648,
+            "coverage": 0.8604714912280702,
+            "gaps": 15
+          }
+        },
+        {
+          "name": "overlays at start, midpoint and end",
+          "passed": true,
+          "value": true
+        },
+        {
+          "name": "exports and area result",
+          "passed": true,
+          "value": {
+            "pdfBytes": 289877,
+            "xlsxBytes": 1282578,
+            "area": "Approximate mean larval area: 56 px\u00b2 \u00b7 Observed range: 24\u201385 px\u00b2. Set a known reference area or dish size for physical units."
+          }
+        },
+        {
+          "name": "no runtime errors or internet requests",
+          "passed": true,
+          "value": true
+        }
+      ],
+      "started": "2026-11-10T06:01:47.046Z",
+      "build": "1.2.28+20261109.thorough-fixes",
+      "boundaryReview": "End manually placed at source-pixel (594,86), visually inspected in l4-source-last.png",
+      "analysisSeconds": 197.377,
+      "result": {
+        "frames": 3648,
+        "total": 3648,
+        "coverage": 0.8604714912280702,
+        "uncertain": [
+          {
+            "start": 1858,
+            "end": 1862
+          },
+          {
+            "start": 2285,
+            "end": 2296
+          },
+          {
+            "start": 2324,
+            "end": 2326
+          },
+          {
+            "start": 2354,
+            "end": 2371
+          },
+          {
+            "start": 2381,
+            "end": 2386
+          },
+          {
+            "start": 2391,
+            "end": 2403
+          },
+          {
+            "start": 2407,
+            "end": 2508
+          },
+          {
+            "start": 2537,
+            "end": 2544
+          },
+          {
+            "start": 2547,
+            "end": 2550
+          },
+          {
+            "start": 3291,
+            "end": 3294
+          },
+          {
+            "start": 3297,
+            "end": 3307
+          },
+          {
+            "start": 3317,
+            "end": 3367
+          },
+          {
+            "start": 3372,
+            "end": 3435
+          },
+          {
+            "start": 3437,
+            "end": 3468
+          },
+          {
+            "start": 3471,
+            "end": 3646
+          }
+        ],
+        "decoder": [
+          {
+            "buffered": 3648,
+            "fallback": 0,
+            "decoded": 3644,
+            "peakBufferedFrames": 31,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 3648,
+            "fallback": 0,
+            "decoded": 3644,
+            "peakBufferedFrames": 31,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 3,
+            "fallback": 0,
+            "decoded": 0,
+            "peakBufferedFrames": 0,
+            "cacheHits": 3,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 3,
+            "fallback": 0,
+            "decoded": 0,
+            "peakBufferedFrames": 0,
+            "cacheHits": 3,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 3,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 1,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 3,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 7,
+            "fallback": 0,
+            "decoded": 60,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 7,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 5,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 14,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 14,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 5,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 5,
+            "fallback": 0,
+            "decoded": 0,
+            "peakBufferedFrames": 0,
+            "cacheHits": 5,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 20,
+            "fallback": 0,
+            "decoded": 60,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 20,
+            "fallback": 0,
+            "decoded": 60,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 8,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 8,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 4,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 15,
+            "fallback": 0,
+            "decoded": 60,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 15,
+            "fallback": 0,
+            "decoded": 60,
+            "peakBufferedFrames": 30,
+            "cacheHits": 4,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 104,
+            "fallback": 0,
+            "decoded": 120,
+            "peakBufferedFrames": 31,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 104,
+            "fallback": 0,
+            "decoded": 120,
+            "peakBufferedFrames": 31,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 10,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 10,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 4,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 6,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 6,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 3,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 6,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 6,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 13,
+            "fallback": 0,
+            "decoded": 60,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 13,
+            "fallback": 0,
+            "decoded": 60,
+            "peakBufferedFrames": 30,
+            "cacheHits": 3,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 53,
+            "fallback": 0,
+            "decoded": 90,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 53,
+            "fallback": 0,
+            "decoded": 90,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 66,
+            "fallback": 0,
+            "decoded": 90,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 66,
+            "fallback": 0,
+            "decoded": 90,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 34,
+            "fallback": 0,
+            "decoded": 60,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 34,
+            "fallback": 0,
+            "decoded": 60,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 178,
+            "fallback": 0,
+            "decoded": 194,
+            "peakBufferedFrames": 31,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 178,
+            "fallback": 0,
+            "decoded": 194,
+            "peakBufferedFrames": 31,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          }
+        ],
+        "model": null,
+        "profile": {
+          "readMs": 84370.70000007749,
+          "trackingMs": 270279.49999989197,
+          "frames": 8386,
+          "workerFrames": 8386,
+          "retryFrames": 1090,
+          "pixelFractionSum": 632.6715527344124,
+          "cameraMs": 17438.69999999553,
+          "detectMs": 36698.20000003651,
+          "flowMs": 17130.999999996275,
+          "anatomyMs": 5867.799999950454,
+          "coreMs": 92459.6000000406,
+          "conversionMs": 37866.699999984354,
+          "activeMs": 183034,
+          "stage": "opencv",
+          "sections": 1,
+          "workerThreads": 1,
+          "peakActivePasses": 2,
+          "seamDisputes": 0,
+          "resourcePolicy": {
+            "threads": 1,
+            "passes": 2,
+            "availableMemoryBytes": null,
+            "memorySource": "browser-conservative"
+          },
+          "retryIntervals": 17,
+          "backwardReruns": 0
+        }
+      },
+      "passed": true,
+      "finished": "2026-11-10T06:05:50.100Z"
+    },
+    {
+      "file": "03-05-2026 da Gal4 x w1118 L6.MP4",
+      "checks": [
+        {
+          "name": "load and quick scan",
+          "passed": true,
+          "value": {
+            "frames": 3633,
+            "proposals": 8
+          }
+        },
+        {
+          "name": "review and boundary gating",
+          "passed": true,
+          "value": [
+            {
+              "frame": 0,
+              "x": 630,
+              "y": 352.360461898272
+            },
+            {
+              "frame": 454,
+              "x": 617,
+              "y": 316.23189316909617
+            },
+            {
+              "frame": 908,
+              "x": 590.0103130746587,
+              "y": 280
+            },
+            {
+              "frame": 1362,
+              "x": 552.8508644071949,
+              "y": 257
+            },
+            {
+              "frame": 1816,
+              "x": 507.76375569441336,
+              "y": 263
+            },
+            {
+              "frame": 2270,
+              "x": 504.0729235322504,
+              "y": 219.4270764677496
+            },
+            {
+              "frame": 2724,
+              "x": 530.5,
+              "y": 168.50756107375867
+            },
+            {
+              "frame": 3178,
+              "x": 521.5,
+              "y": 122.28000403258731
+            },
+            {
+              "frame": 3632,
+              "x": 463,
+              "y": 90
+            }
+          ]
+        },
+        {
+          "name": "complete frame coverage and no automatic model stage",
+          "passed": true,
+          "value": {
+            "frames": 3633,
+            "coverage": 0.9149463253509497,
+            "gaps": 34
+          }
+        },
+        {
+          "name": "overlays at start, midpoint and end",
+          "passed": true,
+          "value": true
+        },
+        {
+          "name": "exports and area result",
+          "passed": true,
+          "value": {
+            "pdfBytes": 280755,
+            "xlsxBytes": 1291056,
+            "area": "Approximate mean larval area: 47 px\u00b2 \u00b7 Observed range: 22\u201367 px\u00b2. Set a known reference area or dish size for physical units."
+          }
+        },
+        {
+          "name": "no runtime errors or internet requests",
+          "passed": true,
+          "value": true
+        }
+      ],
+      "started": "2026-11-10T14:36:28.042Z",
+      "build": "1.2.28+20261109.thorough-fixes",
+      "boundaryReview": "End manually placed from visually inspected source-last PNG; L4 (594,86), L6 (463,90)",
+      "analysisSeconds": 412.923,
+      "result": {
+        "frames": 3633,
+        "total": 3633,
+        "coverage": 0.9149463253509497,
+        "uncertain": [
+          {
+            "start": 352,
+            "end": 352
+          },
+          {
+            "start": 354,
+            "end": 354
+          },
+          {
+            "start": 632,
+            "end": 635
+          },
+          {
+            "start": 1546,
+            "end": 1551
+          },
+          {
+            "start": 1571,
+            "end": 1576
+          },
+          {
+            "start": 2423,
+            "end": 2425
+          },
+          {
+            "start": 2427,
+            "end": 2429
+          },
+          {
+            "start": 2444,
+            "end": 2461
+          },
+          {
+            "start": 2484,
+            "end": 2487
+          },
+          {
+            "start": 2542,
+            "end": 2553
+          },
+          {
+            "start": 2558,
+            "end": 2560
+          },
+          {
+            "start": 2566,
+            "end": 2568
+          },
+          {
+            "start": 2571,
+            "end": 2574
+          },
+          {
+            "start": 2576,
+            "end": 2583
+          },
+          {
+            "start": 2681,
+            "end": 2683
+          },
+          {
+            "start": 2691,
+            "end": 2701
+          },
+          {
+            "start": 3236,
+            "end": 3238
+          },
+          {
+            "start": 3259,
+            "end": 3262
+          },
+          {
+            "start": 3309,
+            "end": 3311
+          },
+          {
+            "start": 3317,
+            "end": 3322
+          },
+          {
+            "start": 3345,
+            "end": 3351
+          },
+          {
+            "start": 3377,
+            "end": 3399
+          },
+          {
+            "start": 3410,
+            "end": 3423
+          },
+          {
+            "start": 3426,
+            "end": 3429
+          },
+          {
+            "start": 3432,
+            "end": 3438
+          },
+          {
+            "start": 3441,
+            "end": 3450
+          },
+          {
+            "start": 3458,
+            "end": 3492
+          },
+          {
+            "start": 3495,
+            "end": 3501
+          },
+          {
+            "start": 3506,
+            "end": 3508
+          },
+          {
+            "start": 3513,
+            "end": 3529
+          },
+          {
+            "start": 3545,
+            "end": 3552
+          },
+          {
+            "start": 3558,
+            "end": 3567
+          },
+          {
+            "start": 3573,
+            "end": 3582
+          },
+          {
+            "start": 3584,
+            "end": 3631
+          }
+        ],
+        "decoder": [
+          {
+            "buffered": 3633,
+            "fallback": 0,
+            "decoded": 3629,
+            "peakBufferedFrames": 31,
+            "cacheHits": 2,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 3633,
+            "fallback": 0,
+            "decoded": 3629,
+            "peakBufferedFrames": 31,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 3,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 3,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 3,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 1,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 3,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 6,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 6,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 8,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 8,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 8,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 8,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 5,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 5,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 5,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 1,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 5,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 20,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 1,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 20,
+            "fallback": 0,
+            "decoded": 60,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 6,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 6,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 4,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 14,
+            "fallback": 0,
+            "decoded": 60,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 14,
+            "fallback": 0,
+            "decoded": 60,
+            "peakBufferedFrames": 30,
+            "cacheHits": 5,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 5,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 5,
+            "fallback": 0,
+            "decoded": 0,
+            "peakBufferedFrames": 0,
+            "cacheHits": 5,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 5,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 5,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 6,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 6,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 10,
+            "fallback": 0,
+            "decoded": 60,
+            "peakBufferedFrames": 30,
+            "cacheHits": 1,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 10,
+            "fallback": 0,
+            "decoded": 60,
+            "peakBufferedFrames": 30,
+            "cacheHits": 7,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 5,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 5,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 13,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 13,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 5,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 5,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 6,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 6,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 5,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 5,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 8,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 8,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 9,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 9,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 25,
+            "fallback": 0,
+            "decoded": 60,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 25,
+            "fallback": 0,
+            "decoded": 60,
+            "peakBufferedFrames": 30,
+            "cacheHits": 1,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 16,
+            "fallback": 0,
+            "decoded": 60,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 16,
+            "fallback": 0,
+            "decoded": 60,
+            "peakBufferedFrames": 30,
+            "cacheHits": 7,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 6,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 6,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 9,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 9,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 12,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 12,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 37,
+            "fallback": 0,
+            "decoded": 60,
+            "peakBufferedFrames": 31,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 37,
+            "fallback": 0,
+            "decoded": 60,
+            "peakBufferedFrames": 31,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 9,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 31,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 9,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 31,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 5,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 31,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 5,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 31,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 19,
+            "fallback": 0,
+            "decoded": 60,
+            "peakBufferedFrames": 31,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 19,
+            "fallback": 0,
+            "decoded": 60,
+            "peakBufferedFrames": 31,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 10,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 10,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 12,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 12,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 12,
+            "fallback": 0,
+            "decoded": 60,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 12,
+            "fallback": 0,
+            "decoded": 60,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 50,
+            "fallback": 0,
+            "decoded": 59,
+            "peakBufferedFrames": 30,
+            "cacheHits": 1,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 50,
+            "fallback": 0,
+            "decoded": 59,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          }
+        ],
+        "model": null,
+        "profile": {
+          "readMs": 244578.99999996275,
+          "trackingMs": 517707.9000001401,
+          "frames": 8020,
+          "workerFrames": 8020,
+          "retryFrames": 754,
+          "pixelFractionSum": 585.1792068142178,
+          "cameraMs": 45877.29999990016,
+          "detectMs": 53363.60000037402,
+          "flowMs": 43119.299999699,
+          "anatomyMs": 13787.400000222027,
+          "coreMs": 192842.89999996126,
+          "conversionMs": 52607.10000001639,
+          "activeMs": 404343,
+          "stage": "opencv",
+          "sections": 1,
+          "workerThreads": 1,
+          "peakActivePasses": 2,
+          "seamDisputes": 0,
+          "resourcePolicy": {
+            "threads": 1,
+            "passes": 2,
+            "availableMemoryBytes": null,
+            "memorySource": "browser-conservative"
+          },
+          "retryIntervals": 34,
+          "backwardReruns": 0
+        }
+      },
+      "passed": true,
+      "finished": "2026-11-10T14:46:00.303Z"
+    },
+    {
+      "file": "straight final.mp4",
+      "checks": [
+        {
+          "name": "load and quick scan",
+          "passed": true,
+          "value": {
+            "frames": 324,
+            "proposals": 9
+          }
+        },
+        {
+          "name": "review and boundary gating",
+          "passed": true,
+          "value": [
+            {
+              "frame": 0,
+              "x": 442.0065247994147,
+              "y": 263.4166666666667
+            },
+            {
+              "frame": 40,
+              "x": 437.35807245623664,
+              "y": 258.71875
+            },
+            {
+              "frame": 81,
+              "x": 476.0416666666667,
+              "y": 290.60762396306427
+            },
+            {
+              "frame": 121,
+              "x": 531.0733809917724,
+              "y": 330.0733809917724
+            },
+            {
+              "frame": 162,
+              "x": 577.75,
+              "y": 379.37025071913115
+            },
+            {
+              "frame": 202,
+              "x": 620.2365207264331,
+              "y": 439.5
+            },
+            {
+              "frame": 242,
+              "x": 665.8822212125111,
+              "y": 493.4655545458445
+            },
+            {
+              "frame": 283,
+              "x": 704.8512219445926,
+              "y": 532.9033052779259
+            },
+            {
+              "frame": 323,
+              "x": 766.3814333116758,
+              "y": 563.6730999783424
+            }
+          ]
+        },
+        {
+          "name": "complete frame coverage and no automatic model stage",
+          "passed": true,
+          "value": {
+            "frames": 324,
+            "coverage": 1,
+            "gaps": 0
+          }
+        },
+        {
+          "name": "overlays at start, midpoint and end",
+          "passed": true,
+          "value": true
+        },
+        {
+          "name": "exports and area result",
+          "passed": true,
+          "value": {
+            "pdfBytes": 283202,
+            "xlsxBytes": 546173,
+            "area": "Approximate mean larval area: 2,962 px\u00b2 \u00b7 Observed range: 2,410\u20133,595 px\u00b2. Set a known reference area or dish size for physical units."
+          }
+        },
+        {
+          "name": "no runtime errors or internet requests",
+          "passed": true,
+          "value": true
+        }
+      ],
+      "started": "2026-11-10T06:10:31.755Z",
+      "build": "1.2.28+20261109.thorough-fixes",
+      "analysisSeconds": 180.761,
+      "result": {
+        "frames": 324,
+        "total": 324,
+        "coverage": 1,
+        "uncertain": [],
+        "decoder": [
+          {
+            "buffered": 324,
+            "fallback": 0,
+            "decoded": 324,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 324,
+            "fallback": 0,
+            "decoded": 324,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          }
+        ],
+        "model": null,
+        "profile": {
+          "readMs": 8893.499999986961,
+          "trackingMs": 326129.69999997877,
+          "frames": 648,
+          "workerFrames": 648,
+          "retryFrames": 0,
+          "pixelFractionSum": 498.45103190104453,
+          "cameraMs": 3641.200000008568,
+          "detectMs": 73240.19999998435,
+          "flowMs": 47316.89999999665,
+          "anatomyMs": 23853.50000000745,
+          "coreMs": 149966.1999999974,
+          "conversionMs": 7337.800000023097,
+          "activeMs": 171845,
+          "stage": "opencv",
+          "sections": 1,
+          "workerThreads": 1,
+          "peakActivePasses": 2,
+          "seamDisputes": 0,
+          "resourcePolicy": {
+            "threads": 1,
+            "passes": 2,
+            "availableMemoryBytes": null,
+            "memorySource": "browser-conservative"
+          },
+          "retryIntervals": 0,
+          "backwardReruns": 0
+        }
+      },
+      "passed": true,
+      "finished": "2026-11-10T06:14:14.859Z"
+    },
+    {
+      "file": "curved final.mp4",
+      "checks": [
+        {
+          "name": "load and quick scan",
+          "passed": true,
+          "value": {
+            "frames": 331,
+            "proposals": 9
+          }
+        },
+        {
+          "name": "review and boundary gating",
+          "passed": true,
+          "value": [
+            {
+              "frame": 0,
+              "x": 509.3328619912288,
+              "y": 549.5520833333334
+            },
+            {
+              "frame": 41,
+              "x": 457.52341345126047,
+              "y": 522.0625
+            },
+            {
+              "frame": 83,
+              "x": 403.55931288249786,
+              "y": 483.15625
+            },
+            {
+              "frame": 124,
+              "x": 345.97408907396806,
+              "y": 423.4166666666667
+            },
+            {
+              "frame": 165,
+              "x": 314.0104166666667,
+              "y": 373.68529469995804
+            },
+            {
+              "frame": 206,
+              "x": 289.5833333333333,
+              "y": 337.5946120492482
+            },
+            {
+              "frame": 248,
+              "x": 267.6666666666667,
+              "y": 283.3345692649244
+            },
+            {
+              "frame": 289,
+              "x": 259.55278567519593,
+              "y": 222.19861900852925
+            },
+            {
+              "frame": 330,
+              "x": 258.75,
+              "y": 173.44998113054152
+            }
+          ]
+        },
+        {
+          "name": "complete frame coverage and no automatic model stage",
+          "passed": true,
+          "value": {
+            "frames": 331,
+            "coverage": 1,
+            "gaps": 0
+          }
+        },
+        {
+          "name": "overlays at start, midpoint and end",
+          "passed": true,
+          "value": true
+        },
+        {
+          "name": "exports and area result",
+          "passed": true,
+          "value": {
+            "pdfBytes": 279738,
+            "xlsxBytes": 537165,
+            "area": "Approximate mean larval area: 3,116 px\u00b2 \u00b7 Observed range: 2,496\u20134,025 px\u00b2. Set a known reference area or dish size for physical units."
+          }
+        },
+        {
+          "name": "no runtime errors or internet requests",
+          "passed": true,
+          "value": true
+        }
+      ],
+      "started": "2026-11-10T06:14:14.922Z",
+      "build": "1.2.28+20261109.thorough-fixes",
+      "analysisSeconds": 180.724,
+      "result": {
+        "frames": 331,
+        "total": 331,
+        "coverage": 1,
+        "uncertain": [],
+        "decoder": [
+          {
+            "buffered": 331,
+            "fallback": 0,
+            "decoded": 331,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 331,
+            "fallback": 0,
+            "decoded": 331,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          }
+        ],
+        "model": null,
+        "profile": {
+          "readMs": 8232.199999973178,
+          "trackingMs": 336865.3999999836,
+          "frames": 662,
+          "workerFrames": 662,
+          "retryFrames": 0,
+          "pixelFractionSum": 492.7375000000004,
+          "cameraMs": 2488.5000000018626,
+          "detectMs": 76654.1999999918,
+          "flowMs": 58606.29999998957,
+          "anatomyMs": 18177.000000018626,
+          "coreMs": 157651.49999999627,
+          "conversionMs": 6716.600000003353,
+          "activeMs": 177305,
+          "stage": "opencv",
+          "sections": 1,
+          "workerThreads": 1,
+          "peakActivePasses": 2,
+          "seamDisputes": 0,
+          "resourcePolicy": {
+            "threads": 1,
+            "passes": 2,
+            "availableMemoryBytes": null,
+            "memorySource": "browser-conservative"
+          },
+          "retryIntervals": 0,
+          "backwardReruns": 0
+        }
+      },
+      "passed": true,
+      "finished": "2026-11-10T06:17:58.602Z"
+    },
+    {
+      "file": "irregular.mp4",
+      "checks": [
+        {
+          "name": "load and quick scan",
+          "passed": true,
+          "value": {
+            "frames": 446,
+            "proposals": 9
+          }
+        },
+        {
+          "name": "review and boundary gating",
+          "passed": true,
+          "value": [
+            {
+              "frame": 0,
+              "x": 409.9059605507278,
+              "y": 300.5726272173945
+            },
+            {
+              "frame": 56,
+              "x": 556.9257319988712,
+              "y": 400.25
+            },
+            {
+              "frame": 111,
+              "x": 678.122222719656,
+              "y": 409.1458333333333
+            },
+            {
+              "frame": 167,
+              "x": 767.4850639167042,
+              "y": 383.5357694166291
+            },
+            {
+              "frame": 223,
+              "x": 825.25,
+              "y": 399.27960239103317
+            },
+            {
+              "frame": 278,
+              "x": 742.1644176226949,
+              "y": 439.875
+            },
+            {
+              "frame": 334,
+              "x": 548.5901645370213,
+              "y": 417.8333333333333
+            },
+            {
+              "frame": 389,
+              "x": 512.5267875601371,
+              "y": 407
+            },
+            {
+              "frame": 445,
+              "x": 467.5416666666667,
+              "y": 232.6576211364383
+            }
+          ]
+        },
+        {
+          "name": "complete frame coverage and no automatic model stage",
+          "passed": true,
+          "value": {
+            "frames": 446,
+            "coverage": 0.9708520179372198,
+            "gaps": 3
+          }
+        },
+        {
+          "name": "overlays at start, midpoint and end",
+          "passed": true,
+          "value": true
+        },
+        {
+          "name": "exports and area result",
+          "passed": true,
+          "value": {
+            "pdfBytes": 271983,
+            "xlsxBytes": 556260,
+            "area": "Approximate mean larval area: 3,648 px\u00b2 \u00b7 Observed range: 2,212\u20134,930 px\u00b2. Set a known reference area or dish size for physical units."
+          }
+        },
+        {
+          "name": "no runtime errors or internet requests",
+          "passed": true,
+          "value": true
+        }
+      ],
+      "started": "2026-11-10T06:17:58.649Z",
+      "build": "1.2.28+20261109.thorough-fixes",
+      "analysisSeconds": 195.47,
+      "result": {
+        "frames": 446,
+        "total": 446,
+        "coverage": 0.9708520179372198,
+        "uncertain": [
+          {
+            "start": 217,
+            "end": 220
+          },
+          {
+            "start": 252,
+            "end": 254
+          },
+          {
+            "start": 257,
+            "end": 262
+          }
+        ],
+        "decoder": [
+          {
+            "buffered": 446,
+            "fallback": 0,
+            "decoded": 446,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 446,
+            "fallback": 0,
+            "decoded": 446,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 6,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 6,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 5,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 5,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 8,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          },
+          {
+            "buffered": 8,
+            "fallback": 0,
+            "decoded": 30,
+            "peakBufferedFrames": 30,
+            "cacheHits": 0,
+            "backend": "WebCodecs",
+            "sharedPeakFrames": 9,
+            "sharedLimitFrames": 9
+          }
+        ],
+        "model": null,
+        "profile": {
+          "readMs": 14939.5,
+          "trackingMs": 337616.5000000242,
+          "frames": 930,
+          "workerFrames": 930,
+          "retryFrames": 38,
+          "pixelFractionSum": 926.0406249999999,
+          "cameraMs": 1990.2999999988824,
+          "detectMs": 89518.89999999851,
+          "flowMs": 54558.500000011176,
+          "anatomyMs": 14232.999999960884,
+          "coreMs": 161791.09999999218,
+          "conversionMs": 4289.599999988452,
+          "activeMs": 180108,
+          "stage": "opencv",
+          "sections": 1,
+          "workerThreads": 1,
+          "peakActivePasses": 2,
+          "seamDisputes": 0,
+          "resourcePolicy": {
+            "threads": 1,
+            "passes": 2,
+            "availableMemoryBytes": null,
+            "memorySource": "browser-conservative"
+          },
+          "retryIntervals": 3,
+          "backwardReruns": 0
+        }
+      },
+      "passed": true,
+      "finished": "2026-11-10T06:23:31.005Z"
+    }
+  ],
+  "finished": "2026-11-10T06:23:31.092Z",
+  "note": "L6 corrected run supersedes the first workflow-only pass after visual review found a reflection endpoint. Runs overlapped other tests; durations are observations, not isolated performance benchmarks.",
+  "csvChecks": [
+    {
+      "file": "03-05-2026 da Gal4 x w1118 L4.MP4",
+      "rows": 3648,
+      "columns": 53,
+      "consistentColumns": true,
+      "matchesFrames": true
+    },
+    {
+      "file": "03-05-2026 da Gal4 x w1118 L6.MP4",
+      "rows": 3633,
+      "columns": 53,
+      "consistentColumns": true,
+      "matchesFrames": true
+    },
+    {
+      "file": "straight final.mp4",
+      "rows": 324,
+      "columns": 53,
+      "consistentColumns": true,
+      "matchesFrames": true
+    },
+    {
+      "file": "curved final.mp4",
+      "rows": 331,
+      "columns": 53,
+      "consistentColumns": true,
+      "matchesFrames": true
+    },
+    {
+      "file": "irregular.mp4",
+      "rows": 446,
+      "columns": 53,
+      "consistentColumns": true,
+      "matchesFrames": true
+    }
+  ]
+}

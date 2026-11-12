@@ -1,0 +1,300 @@
+[
+  {
+    "status": "Checks complete · verified · saved",
+    "fps": 30,
+    "decoder": [
+      {
+        "buffered": 324,
+        "fallback": 0,
+        "decoded": 324,
+        "peakBufferedFrames": 30,
+        "backend": "WebCodecs"
+      },
+      {
+        "buffered": 324,
+        "fallback": 0,
+        "decoded": 324,
+        "peakBufferedFrames": 30,
+        "backend": "WebCodecs"
+      }
+    ],
+    "seed": {
+      "x": 447.20473744292235,
+      "y": 258.9170662100456
+    },
+    "headFrames": 271,
+    "frames": 324,
+    "totalFrames": 324,
+    "coverage": 1,
+    "outlineFrames": 324,
+    "anchors": 17,
+    "endpoint": {
+      "frame": 323,
+      "x": 766.3814333116758,
+      "y": 563.6730999783424
+    },
+    "reasons": {
+      "undefined": 9,
+      "": 315
+    },
+    "review": [],
+    "file": "straight final.mp4",
+    "proposals": [
+      {
+        "frame": 0,
+        "x": 442.0065247994147,
+        "y": 263.4166666666667
+      },
+      {
+        "frame": 40,
+        "x": 437.35807245623664,
+        "y": 258.71875
+      },
+      {
+        "frame": 81,
+        "x": 476.0416666666667,
+        "y": 290.60762396306427
+      },
+      {
+        "frame": 121,
+        "x": 531.0733809917724,
+        "y": 330.0733809917724
+      },
+      {
+        "frame": 162,
+        "x": 577.75,
+        "y": 379.37025071913115
+      },
+      {
+        "frame": 202,
+        "x": 620.2365207264331,
+        "y": 439.5
+      },
+      {
+        "frame": 242,
+        "x": 665.8822212125111,
+        "y": 493.4655545458445
+      },
+      {
+        "frame": 283,
+        "x": 704.8512219445926,
+        "y": 532.9033052779259
+      },
+      {
+        "frame": 323,
+        "x": 766.3814333116758,
+        "y": 563.6730999783424
+      }
+    ],
+    "acceptedProposals": true,
+    "elapsedSeconds": 92.405,
+    "errors": []
+  },
+  {
+    "status": "Checks complete · review uncertain intervals · saved",
+    "fps": 30,
+    "decoder": [
+      {
+        "buffered": 337,
+        "fallback": 0,
+        "decoded": 392,
+        "peakBufferedFrames": 30,
+        "backend": "WebCodecs"
+      },
+      {
+        "buffered": 337,
+        "fallback": 0,
+        "decoded": 392,
+        "peakBufferedFrames": 30,
+        "backend": "WebCodecs"
+      }
+    ],
+    "seed": {
+      "x": 515.6439001209608,
+      "y": 547.0962070157249
+    },
+    "headFrames": 328,
+    "frames": 331,
+    "totalFrames": 331,
+    "coverage": 0.9939577039274925,
+    "outlineFrames": 329,
+    "anchors": 20,
+    "endpoint": {
+      "frame": 330,
+      "x": 258.75,
+      "y": 173.44998113054152
+    },
+    "reasons": {
+      "undefined": 9,
+      "": 320,
+      "Body centerline could not be verified": 2
+    },
+    "review": [
+      {
+        "start": 294,
+        "end": 294
+      },
+      {
+        "start": 329,
+        "end": 329
+      }
+    ],
+    "file": "curved final.mp4",
+    "proposals": [
+      {
+        "frame": 0,
+        "x": 509.3328619912288,
+        "y": 549.5520833333334
+      },
+      {
+        "frame": 41,
+        "x": 457.52341345126047,
+        "y": 522.0625
+      },
+      {
+        "frame": 83,
+        "x": 403.55931288249786,
+        "y": 483.15625
+      },
+      {
+        "frame": 124,
+        "x": 345.97408907396806,
+        "y": 423.4166666666667
+      },
+      {
+        "frame": 165,
+        "x": 314.0104166666667,
+        "y": 373.68529469995804
+      },
+      {
+        "frame": 206,
+        "x": 289.5833333333333,
+        "y": 337.5946120492482
+      },
+      {
+        "frame": 248,
+        "x": 267.6666666666667,
+        "y": 283.3345692649244
+      },
+      {
+        "frame": 289,
+        "x": 259.55278567519593,
+        "y": 222.19861900852925
+      },
+      {
+        "frame": 330,
+        "x": 258.75,
+        "y": 173.44998113054152
+      }
+    ],
+    "acceptedProposals": true,
+    "elapsedSeconds": 81.686,
+    "errors": []
+  },
+  {
+    "status": "Checks complete · review uncertain intervals · saved",
+    "fps": 30,
+    "decoder": [
+      {
+        "buffered": 614,
+        "fallback": 0,
+        "decoded": 656,
+        "peakBufferedFrames": 30,
+        "backend": "WebCodecs"
+      },
+      {
+        "buffered": 614,
+        "fallback": 0,
+        "decoded": 746,
+        "peakBufferedFrames": 30,
+        "backend": "WebCodecs"
+      }
+    ],
+    "seed": {
+      "x": 406.52357780095,
+      "y": 301.74846483605603
+    },
+    "headFrames": 274,
+    "frames": 446,
+    "totalFrames": 446,
+    "coverage": 0.6636771300448431,
+    "outlineFrames": 294,
+    "anchors": 21,
+    "endpoint": {
+      "frame": 445,
+      "x": 467.5416666666667,
+      "y": 232.6576211364383
+    },
+    "reasons": {
+      "undefined": 6,
+      "": 290,
+      "Passes disagree": 126,
+      "No unambiguous matching blob": 6,
+      "Motion and appearance checks disagree": 7,
+      "Movement exceeds physical limit (one frame)": 2,
+      "Body centerline could not be verified": 9
+    },
+    "review": [
+      {
+        "start": 112,
+        "end": 222
+      },
+      {
+        "start": 235,
+        "end": 259
+      },
+      {
+        "start": 261,
+        "end": 265
+      },
+      {
+        "start": 392,
+        "end": 392
+      },
+      {
+        "start": 396,
+        "end": 397
+      },
+      {
+        "start": 403,
+        "end": 408
+      }
+    ],
+    "file": "irregular.mp4",
+    "proposals": [
+      {
+        "frame": 0,
+        "x": 409.9059605507278,
+        "y": 300.5726272173945
+      },
+      {
+        "frame": 56,
+        "x": 556.9257319988712,
+        "y": 400.25
+      },
+      {
+        "frame": 111,
+        "x": 678.122222719656,
+        "y": 409.1458333333333
+      },
+      {
+        "frame": 223,
+        "x": 825.25,
+        "y": 399.27960239103317
+      },
+      {
+        "frame": 278,
+        "x": 742.1644176226949,
+        "y": 439.875
+      },
+      {
+        "frame": 445,
+        "x": 467.5416666666667,
+        "y": 232.6576211364383
+      }
+    ],
+    "acceptedProposals": true,
+    "elapsedSeconds": 118.343,
+    "errors": []
+  }
+]

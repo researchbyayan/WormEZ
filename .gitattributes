@@ -1,0 +1,11 @@
+# Preserve binary model, media, and validation artifacts without text conversion.
+*.pdf binary
+*.xlsx binary
+*.pt binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webm binary
+*.mp4 binary
+*.MP4 binary
+*.woff2 binary

@@ -1,0 +1,20 @@
+{
+  "source": "tests/petri-evaluation/source-photo.webm",
+  "description": "Actual detector on supplied real validation photo, repeated in a short preview clip.",
+  "status": {
+    "available": true,
+    "backend": "PyTorch CPU segmentation"
+  },
+  "seconds": 0.822,
+  "rim": {
+    "frame": 0,
+    "ellipse": {
+      "x": 212.35960388183594,
+      "y": 225.38662719726562,
+      "width": 224.6896209716797,
+      "height": 320.28631591796875,
+      "angle": 1.5637484041280563
+    }
+  },
+  "errors": []
+}

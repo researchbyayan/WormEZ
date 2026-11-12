@@ -1,0 +1,22 @@
+node_modules/
+electron/node_modules/
+tapir-helper/.venv/
+tapir-helper/__pycache__/
+dist-electron/
+test-results/
+playwright-report/
+.DS_Store
+
+
+training/larva-mask/output/
+training/larva-mask/__pycache__/
+
+__pycache__/
+*.pyc
+*.pyo
+
+# Large model checkpoint (124 MB, over GitHub limit). Download: https://huggingface.co/google/tapnet/blob/main/tapir_checkpoint_panning.pt
+tapir-helper/tapir_checkpoint_panning.pt
+node_modules
+electron/node_modules
+undefined

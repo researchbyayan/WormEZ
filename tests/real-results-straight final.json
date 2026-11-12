@@ -1,0 +1,57 @@
+[
+  {
+    "status": "Checks complete · review amber intervals",
+    "frames": 324,
+    "totalFrames": 324,
+    "coverage": 0.9753086419753086,
+    "outlineFrames": 237,
+    "anchors": 12,
+    "review": [
+      {
+        "start": 316,
+        "end": 323
+      }
+    ],
+    "file": "straight final.mp4",
+    "errors": []
+  },
+  {
+    "status": "Checks complete · verified",
+    "frames": 331,
+    "totalFrames": 331,
+    "coverage": 1,
+    "outlineFrames": 314,
+    "anchors": 12,
+    "review": [],
+    "file": "curved final.mp4",
+    "errors": []
+  },
+  {
+    "status": "Checks complete · review amber intervals",
+    "frames": 446,
+    "totalFrames": 446,
+    "coverage": 0.9439461883408071,
+    "outlineFrames": 394,
+    "anchors": 28,
+    "review": [
+      {
+        "start": 217,
+        "end": 220
+      },
+      {
+        "start": 237,
+        "end": 239
+      },
+      {
+        "start": 243,
+        "end": 254
+      },
+      {
+        "start": 257,
+        "end": 262
+      }
+    ],
+    "file": "irregular.mp4",
+    "errors": []
+  }
+]

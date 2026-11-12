@@ -1,0 +1,305 @@
+{
+  "started": "2026-11-09T23:31:15.018Z",
+  "scope": "New reference-area tools, Petri detection, overlay presentation, calibration, issue placement, screensaver preview and clip isolation. Two repetitions at different frames/widths. No full tracking reruns or biological accuracy claims.",
+  "cases": [
+    {
+      "file": "03-05-2026 da Gal4 x w1118 L4.MP4",
+      "round": 1,
+      "checks": [
+        {
+          "name": "load and isolate clip",
+          "passed": true,
+          "details": {
+            "file": "03-05-2026 da Gal4 x w1118 L4.MP4",
+            "frameCount": 3648,
+            "calibration": "none",
+            "mask": false,
+            "running": false,
+            "workers": {
+              "threads": 0,
+              "states": 0,
+              "pending": 0
+            }
+          }
+        },
+        {
+          "name": "actual Petri detector and border-or-explicit-rejection",
+          "passed": true,
+          "details": {
+            "outcome": "expected rejection",
+            "seconds": 2.227,
+            "reason": "No full dish-sized region was found. Use a frame that shows the whole dish."
+          }
+        },
+        {
+          "name": "manual rim tools and calibration mechanics (test circle, not a detected dish)",
+          "passed": true,
+          "details": {
+            "input": "Five deliberately placed circle points and artificial 10 mm reference; interaction/calculation test only",
+            "mmPerPixel": 0.027777777777777776
+          }
+        },
+        {
+          "name": "rectangle, subtract, local undo and redo",
+          "passed": true
+        },
+        {
+          "name": "ellipse, circle constraint and add/intersect",
+          "passed": true
+        },
+        {
+          "name": "freehand lasso and keyboard undo",
+          "passed": true
+        },
+        {
+          "name": "magic wand live tolerance and contiguous toggle",
+          "passed": true
+        },
+        {
+          "name": "save packed mask, exact area and low-opacity green",
+          "passed": true,
+          "details": {
+            "width": 1280,
+            "height": 720,
+            "pixels": 230400,
+            "recount": 230400,
+            "scale": null
+          }
+        },
+        {
+          "name": "known-area calibration, units, and global undo/redo",
+          "passed": false,
+          "error": "Expected values to be strictly equal:\n+ actual - expected\n\n+ 1.0000000000000002\n- 1\n"
+        },
+        {
+          "name": "Cancel/Escape preserve saved mask and calibration",
+          "passed": true
+        },
+        {
+          "name": "frame-specific mask and navigation",
+          "passed": true
+        },
+        {
+          "name": "screensaver preview, grammar, Escape and click dismissal",
+          "passed": true
+        },
+        {
+          "name": "no runtime errors or external requests",
+          "passed": true
+        }
+      ],
+      "started": "2026-11-09T23:31:20.720Z",
+      "frames": 3648,
+      "frame": 0,
+      "elapsedSeconds": 44.511
+    },
+    {
+      "file": "03-05-2026 da Gal4 x w1118 L6.MP4",
+      "round": 1,
+      "checks": [
+        {
+          "name": "load and isolate clip",
+          "passed": true,
+          "details": {
+            "file": "03-05-2026 da Gal4 x w1118 L6.MP4",
+            "frameCount": 3633,
+            "calibration": "none",
+            "mask": false,
+            "running": false,
+            "workers": {
+              "threads": 0,
+              "states": 0,
+              "pending": 0
+            }
+          }
+        },
+        {
+          "name": "actual Petri detector and border-or-explicit-rejection",
+          "passed": true,
+          "details": {
+            "outcome": "expected rejection",
+            "seconds": 4.09,
+            "reason": "No reliable complete dish rim found. Mark points around the dish rim manually."
+          }
+        },
+        {
+          "name": "manual rim tools and calibration mechanics (test circle, not a detected dish)",
+          "passed": true,
+          "details": {
+            "input": "Five deliberately placed circle points and artificial 10 mm reference; interaction/calculation test only",
+            "mmPerPixel": 0.027777777777777776
+          }
+        },
+        {
+          "name": "rectangle, subtract, local undo and redo",
+          "passed": true
+        },
+        {
+          "name": "ellipse, circle constraint and add/intersect",
+          "passed": true
+        },
+        {
+          "name": "freehand lasso and keyboard undo",
+          "passed": true
+        },
+        {
+          "name": "magic wand live tolerance and contiguous toggle",
+          "passed": true
+        },
+        {
+          "name": "save packed mask, exact area and low-opacity green",
+          "passed": true,
+          "details": {
+            "width": 1280,
+            "height": 720,
+            "pixels": 230400,
+            "recount": 230400,
+            "scale": null
+          }
+        },
+        {
+          "name": "known-area calibration, units, and global undo/redo",
+          "passed": false,
+          "error": "Expected values to be strictly equal:\n+ actual - expected\n\n+ 1.0000000000000002\n- 1\n"
+        },
+        {
+          "name": "Cancel/Escape preserve saved mask and calibration",
+          "passed": true
+        },
+        {
+          "name": "frame-specific mask and navigation",
+          "passed": true
+        },
+        {
+          "name": "screensaver preview, grammar, Escape and click dismissal",
+          "passed": true
+        },
+        {
+          "name": "no runtime errors or external requests",
+          "passed": true
+        }
+      ],
+      "started": "2026-11-09T23:32:05.232Z",
+      "frames": 3633,
+      "frame": 0,
+      "elapsedSeconds": 44.114
+    },
+    {
+      "file": "straight final.mp4",
+      "round": 1,
+      "checks": [
+        {
+          "name": "load and isolate clip",
+          "passed": true,
+          "details": {
+            "file": "straight final.mp4",
+            "frameCount": 324,
+            "calibration": "none",
+            "mask": false,
+            "running": false,
+            "workers": {
+              "threads": 0,
+              "states": 0,
+              "pending": 0
+            }
+          }
+        },
+        {
+          "name": "actual Petri detector and border-or-explicit-rejection",
+          "passed": true,
+          "details": {
+            "outcome": "expected rejection",
+            "seconds": 2.836,
+            "reason": "No full dish-sized region was found. Use a frame that shows the whole dish."
+          }
+        },
+        {
+          "name": "manual rim tools and calibration mechanics (test circle, not a detected dish)",
+          "passed": true,
+          "details": {
+            "input": "Five deliberately placed circle points and artificial 10 mm reference; interaction/calculation test only",
+            "mmPerPixel": 0.027777777777777776
+          }
+        },
+        {
+          "name": "rectangle, subtract, local undo and redo",
+          "passed": true
+        },
+        {
+          "name": "ellipse, circle constraint and add/intersect",
+          "passed": true
+        },
+        {
+          "name": "freehand lasso and keyboard undo",
+          "passed": true
+        },
+        {
+          "name": "magic wand live tolerance and contiguous toggle",
+          "passed": true
+        },
+        {
+          "name": "save packed mask, exact area and low-opacity green",
+          "passed": true,
+          "details": {
+            "width": 1280,
+            "height": 720,
+            "pixels": 230400,
+            "recount": 230400,
+            "scale": null
+          }
+        },
+        {
+          "name": "known-area calibration, units, and global undo/redo",
+          "passed": false,
+          "error": "Expected values to be strictly equal:\n+ actual - expected\n\n+ 1.0000000000000002\n- 1\n"
+        },
+        {
+          "name": "Cancel/Escape preserve saved mask and calibration",
+          "passed": true
+        },
+        {
+          "name": "frame-specific mask and navigation",
+          "passed": true
+        },
+        {
+          "name": "screensaver preview, grammar, Escape and click dismissal",
+          "passed": true
+        },
+        {
+          "name": "no runtime errors or external requests",
+          "passed": true
+        }
+      ],
+      "started": "2026-11-09T23:32:49.358Z",
+      "frames": 324,
+      "frame": 0,
+      "elapsedSeconds": 55.833
+    },
+    {
+      "file": "curved final.mp4",
+      "round": 1,
+      "checks": [
+        {
+          "name": "load and isolate clip",
+          "passed": true,
+          "details": {
+            "file": "curved final.mp4",
+            "frameCount": 331,
+            "calibration": "none",
+            "mask": false,
+            "running": false,
+            "workers": {
+              "threads": 0,
+              "states": 0,
+              "pending": 0
+            }
+          }
+        }
+      ],
+      "started": "2026-11-09T23:33:45.195Z",
+      "frames": 331,
+      "frame": 0
+    }
+  ],
+  "build": "1.2.21+20261109.reference-areas"
+}

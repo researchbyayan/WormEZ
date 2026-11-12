@@ -1,0 +1,1196 @@
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+:root{--ui-glass:color-mix(in srgb,var(--panel,#fff) 78%,transparent);--ui-shadow:0 14px 50px rgba(20,30,24,.12);--ui-radius:14px}
+#wormezReactShell{position:relative;z-index:30}
+.app-bar{min-height:66px;display:grid;grid-template-columns:max-content 1fr auto;align-items:center;gap:18px;padding:8px max(24px,calc((100vw - 1240px)/2 + 24px));position:sticky;top:0;z-index:25;background:color-mix(in srgb,var(--ground) 84%,transparent);border-bottom:1px solid color-mix(in srgb,var(--rule) 80%,transparent);backdrop-filter:blur(22px) saturate(1.2)}
+.app-identity{display:inline-grid;grid-template-columns:max-content;justify-items:stretch;gap:4px;min-width:0}.app-wordmark{font:italic 500 33px/.95 var(--serif);letter-spacing:-.02em}.app-tagline{box-sizing:border-box;width:100%;padding:2px 3px;border:1px solid var(--rule-strong);border-radius:4px;text-align:center;color:var(--ink-faint);font:9px/1.3 var(--sans);letter-spacing:.025em;text-transform:uppercase;white-space:nowrap}
+.workflow-status{justify-self:center;display:flex;align-items:baseline;justify-content:center;min-width:0;max-width:100%;color:var(--ink-soft);font:500 12px/1.35 var(--sans);text-align:center}.status-copy{min-width:0}.working-dots{display:inline-flex;flex:none;width:1.15em;margin-left:2px}.working-dots i{font-style:normal}.working-dots i:nth-child(2){animation:wormez-dot-two 1.2s steps(1,end) infinite}.working-dots i:nth-child(3){animation:wormez-dot-three 1.2s steps(1,end) infinite}@keyframes wormez-dot-two{0%,32%{visibility:hidden}33%,100%{visibility:visible}}@keyframes wormez-dot-three{0%,65%{visibility:hidden}66%,100%{visibility:visible}}@media(prefers-reduced-motion:reduce){.working-dots i{animation:none!important}}
+.workflow-rail{display:flex;align-items:center;gap:6px}.workflow-step{display:flex;align-items:center;gap:7px;padding:7px 9px;border-radius:999px;color:var(--ink-faint);white-space:nowrap}.workflow-step span{width:21px;height:21px;border:1px solid var(--rule-strong);border-radius:50%;display:grid;place-items:center;font:10px/1 var(--mono)}.workflow-step b{font-size:11px;font-weight:500}.workflow-step.active{background:var(--panel);box-shadow:0 1px 5px #0000000d;color:var(--ink)}.workflow-step.active span{background:var(--accent);border-color:var(--accent);color:white}.workflow-step.complete span{border-color:var(--accent);color:var(--accent)}
+.app-actions{justify-self:end;display:flex;align-items:center;gap:7px}.load-action,.camera-action{border:0;border-radius:999px;padding:5px 11px;font:500 11px var(--sans);cursor:pointer;white-space:nowrap}.load-action{background:var(--accent);color:white}.camera-action{background:var(--panel);color:var(--ink);box-shadow:inset 0 0 0 1px var(--rule-strong)}.load-action:hover,.camera-action:hover{filter:brightness(1.06)}
+.more-menu{position:relative}.more-menu summary{list-style:none;cursor:pointer;border-radius:50%;width:34px;height:34px;display:grid;place-items:center;color:var(--ink-soft)}.more-menu summary::-webkit-details-marker{display:none}.more-menu[open] summary{background:var(--panel)}.more-menu>button{position:absolute;right:0;top:38px;z-index:5;width:132px;text-align:left;border:1px solid var(--rule);background:var(--panel);color:var(--ink);padding:9px 12px;cursor:pointer}.more-menu>button+button{top:73px}.more-menu>button:first-of-type{border-radius:9px 9px 0 0}.more-menu>button:last-of-type{border-radius:0 0 9px 9px}
+.diagnostics-drawer,.method-drawer{position:fixed;right:18px;top:76px;z-index:50;width:min(440px,calc(100vw - 36px));max-height:calc(100vh - 94px);overflow:auto;padding:18px;background:color-mix(in srgb,var(--panel) 94%,transparent);border:1px solid var(--rule);border-radius:var(--ui-radius);box-shadow:var(--ui-shadow);backdrop-filter:blur(24px)}.diagnostics-drawer header,.method-drawer header{display:flex;justify-content:space-between;align-items:center}.diagnostics-drawer header button,.method-drawer header button{border:0;background:transparent;font-size:22px;color:var(--ink-soft);cursor:pointer}.diagnostics-drawer pre{font:11px/1.7 var(--mono);white-space:pre-wrap;padding:12px;background:var(--ground);border-radius:9px}.diagnostics-drawer>button{border:1px solid var(--rule-strong);background:var(--panel);border-radius:999px;padding:7px 12px;color:var(--ink);cursor:pointer}.method-drawer p{color:var(--ink-soft);font-size:12px}.method-drawer dl{display:grid;grid-template-columns:105px 1fr;gap:8px 12px;font-size:11px}.method-drawer dt{font-weight:600}.method-drawer dd{margin:0;color:var(--ink-soft);font-family:var(--sans)}
+.method-flow{margin-top:14px}.method-flow h3{margin:0 0 8px;font:600 11px var(--sans);color:var(--ink)}.method-flow ol{margin:0;padding:0;list-style:none;display:grid;gap:0}.method-flow li{position:relative;padding:7px 10px;border:1px solid var(--rule);border-radius:8px;font-size:11px;background:var(--ground)}.method-flow li+li{margin-top:16px}.method-flow li+li::before{content:'↓';position:absolute;top:-17px;left:50%;color:var(--ink-faint);font-size:14px}.method-outcomes{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:16px}.method-outcomes>div{padding:9px;border:1px solid var(--rule);border-radius:8px;font-size:11px;background:var(--ground)}.method-outcomes strong{display:block;margin-bottom:4px;color:var(--ink)}.method-details{margin-top:16px;border-top:1px solid var(--rule);padding-top:12px}.method-details summary{cursor:pointer;font-size:11px;font-weight:600}.method-details dl{margin:12px 0 0}
+html.react-ui .masthead{display:none}html.react-ui .shell{padding-top:20px}
+html.react-ui body[data-pointer-mode="landmark"] #headPane{display:block}
+html.react-ui body[data-phase="results"] #verificationPane{order:1}
+html.react-ui body[data-phase="results"] #kfList{max-height:140px}
+@media(max-width:1100px){.app-bar{grid-template-columns:max-content 1fr auto}}
+@media(max-width:760px){.app-bar{grid-template-columns:1fr auto;gap:8px;padding-inline:14px}.app-identity{grid-column:1}.app-actions{grid-column:2;grid-row:1;justify-self:end;gap:4px}.workflow-status{grid-column:1/-1;grid-row:2;justify-self:start;text-align:left}.load-action,.camera-action{padding:7px 10px}}
+@media(max-width:900px){html.react-ui .workspace>.stage{order:-2}html.react-ui .controls>.adv{order:2!important}html.react-ui body[data-phase="results"] .controls>#verificationPane{order:1!important}}
+.more-menu>button{width:164px}
+.method-outcomes{position:relative}.method-outcomes::before{content:'↓';position:absolute;top:-17px;left:50%;color:var(--ink-faint);font-size:14px}
+.app-actions .lg-button{font:500 11px var(--sans);height:30px;min-height:30px;white-space:nowrap}
+.app-actions .lg-button.load-action{background:var(--accent);color:white;box-shadow:0 2px 8px color-mix(in srgb,var(--accent) 20%,transparent)}
+.app-actions .lg-button.camera-action{background:var(--lg-glass);color:var(--ink);box-shadow:inset 0 0 0 1px var(--lg-edge)}
+.diagnostics-drawer header .lg-button,.method-drawer header .lg-button{min-width:34px;min-height:34px}
+
+.more-menu>button:nth-of-type(2){top:73px}.more-menu>button:nth-of-type(3){top:108px}
+.settings-drawer{position:fixed;right:18px;top:76px;z-index:50;width:min(360px,calc(100vw - 36px));padding:18px;background:var(--panel);border:1px solid var(--rule);border-radius:var(--ui-radius);box-shadow:var(--ui-shadow);color:var(--ink);animation:settings-enter .16s ease-out both}
+.settings-drawer header{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}.settings-drawer header strong{font-size:14px}.settings-drawer header .lg-button{min-width:32px;min-height:32px}
+.settings-drawer fieldset{border:0;border-bottom:1px solid var(--rule);padding:0 0 16px;margin:0 0 5px}.settings-drawer legend{font-size:12px;font-weight:600}.settings-drawer p,.settings-drawer small{font-size:11px;line-height:1.45;color:var(--ink-soft)}.settings-drawer p{margin:5px 0 12px}
+.settings-options{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}.settings-options button{border:1px solid var(--rule-strong);border-radius:9px;padding:5px 4px;background:var(--panel);color:var(--ink);font:500 11px var(--sans);cursor:pointer}.settings-options button[aria-pressed="true"]{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}
+.settings-toggle{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid var(--rule);cursor:pointer}.settings-toggle:last-child{border-bottom:0;padding-bottom:0}.settings-toggle span{display:grid;gap:3px}.settings-toggle strong{font-size:12px}.settings-toggle input{accent-color:var(--accent);width:17px;height:17px;flex:none}
+.settings-drawer :focus-visible,.more-menu :focus-visible{outline:2px solid var(--accent);outline-offset:2px}@keyframes settings-enter{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
+html.react-ui #soundAlertsRow{display:none}
+html.react-ui[data-glass="on"] body{background:radial-gradient(circle at 12% 12%,color-mix(in srgb,var(--accent) 8%,transparent),transparent 32%),radial-gradient(circle at 90% 85%,color-mix(in srgb,var(--seed) 7%,transparent),transparent 38%),var(--ground)}
+html.react-ui[data-glass="on"] .app-bar,html.react-ui[data-glass="on"] .settings-drawer,html.react-ui[data-glass="on"] .method-drawer,html.react-ui[data-glass="on"] .diagnostics-drawer{background:color-mix(in srgb,var(--panel) 76%,transparent);backdrop-filter:blur(28px) saturate(1.25);border-color:color-mix(in srgb,var(--rule-strong) 70%,transparent)}
+html.react-ui[data-glass="on"] .controls .panel,html.react-ui[data-glass="on"] .workspace>.adv,html.react-ui[data-glass="on"] .stage>.transport,html.react-ui[data-glass="on"] .pointer-dock{background:color-mix(in srgb,var(--panel) 76%,transparent);backdrop-filter:blur(20px) saturate(1.15);border-color:color-mix(in srgb,var(--rule-strong) 72%,transparent);box-shadow:0 12px 32px rgba(20,27,23,.07),inset 0 1px rgba(255,255,255,.24)}
+html.react-ui[data-glass="on"] .app-actions .lg-button.camera-action,html.react-ui[data-glass="on"] .more-menu>button,html.react-ui[data-glass="on"] .settings-options button:not([aria-pressed="true"]){background:color-mix(in srgb,var(--panel) 72%,transparent);backdrop-filter:blur(16px)}
+@media(prefers-reduced-transparency:reduce){html.react-ui[data-glass="on"] :is(.app-bar,.settings-drawer,.method-drawer,.diagnostics-drawer,.controls .panel,.workspace>.adv,.stage>.transport,.pointer-dock){background:var(--panel);backdrop-filter:none}}
+@media(prefers-reduced-motion:reduce){.settings-drawer{animation:none}}
+.settings-drawer{position:relative;top:auto;right:auto;margin:12px max(24px,calc((100vw - 1240px)/2 + 24px)) 0 auto;max-height:none}
+@media(max-width:760px){.settings-drawer{width:calc(100% - 28px);margin:10px 14px 0}}
+
+/* Desktop workspace: compact navigation at the edge, video in the main pane. */
+.app-sidebar{position:fixed;inset:0 auto 0 0;z-index:29;width:var(--sidebar-w);display:flex;flex-direction:column;padding:24px 12px 14px;border-right:1px solid var(--rule);background:var(--panel)}
+.app-sidebar .app-identity{align-self:flex-start;margin:1px 10px 36px}.app-sidebar .app-wordmark{font-size:27px}.app-sidebar .app-tagline{font-size:9px}
+.sidebar-label{text-align:center;margin:0 12px 9px;color:var(--ink-faint);font:600 10px var(--sans);letter-spacing:.07em;text-transform:uppercase}
+.stage-list{list-style:none;margin:0;padding:0;display:grid;gap:4px}.stage-list li{display:flex;align-items:center;gap:10px;min-height:34px;padding:5px 10px;border-radius:9px;color:var(--ink-soft);font:500 12px var(--sans)}.stage-list li.active{background:color-mix(in srgb,var(--accent) 11%,var(--panel));color:var(--ink);font-weight:600}.stage-list li.complete{color:var(--accent)}.stage-symbol{display:grid;place-items:center;width:18px;color:var(--ink-faint);font-size:13px}.stage-list li.active .stage-symbol,.stage-list li.complete .stage-symbol{color:var(--accent)}.stage-pulse{margin-left:auto;width:6px;height:6px;border-radius:50%;background:var(--accent);animation:pulse 1.2s infinite}
+.sidebar-settings{margin-top:auto;display:flex;align-items:center;gap:10px;width:100%;min-height:34px;padding:5px 11px;border:0;border-radius:9px;background:transparent;color:var(--ink-soft);font:500 12px var(--sans);text-align:left;cursor:pointer}.sidebar-settings:hover,.sidebar-settings:focus-visible{background:var(--accent-soft);color:var(--ink)}.sidebar-settings i{width:18px;text-align:center}
+html.react-ui .app-bar{margin-left:var(--sidebar-w);min-height:62px;grid-template-columns:minmax(0,1fr) auto;gap:16px;padding:8px 20px;background:var(--panel)}
+html.react-ui .workflow-status{justify-self:start;align-items:center;text-align:left;gap:9px;overflow:hidden;white-space:nowrap}html.react-ui .workflow-status strong{font:600 13px var(--sans);color:var(--ink)}html.react-ui .status-copy{overflow:hidden;text-overflow:ellipsis;font-size:11px}
+html.react-ui .shell{max-width:none;width:calc(100% - var(--sidebar-w));margin-left:var(--sidebar-w);margin-right:0;padding:20px 20px 52px}
+html.react-ui[data-glass="on"] .app-sidebar{background:color-mix(in srgb,var(--panel) 82%,transparent);backdrop-filter:blur(28px) saturate(1.2)}
+
+.settings-scrim{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:16px;background:rgba(20,24,22,.28);backdrop-filter:blur(3px)}
+.settings-modal{width:min(800px,100%);max-height:calc(100vh - 32px);overflow:hidden;display:flex;flex-direction:column;border:1px solid var(--rule-strong);border-radius:14px;background:var(--panel);box-shadow:0 24px 80px rgba(0,0,0,.2);color:var(--ink);animation:settings-enter .16s ease-out both}
+.settings-modal>header{display:flex;align-items:center;justify-content:space-between;min-height:54px;padding:10px 16px;border-bottom:1px solid var(--rule)}.settings-modal>header strong{font:600 14px var(--sans)}.settings-modal>header .lg-button{min-width:30px;min-height:30px}
+.settings-layout{display:grid;grid-template-columns:180px minmax(0,1fr);min-height:300px;overflow:auto}.settings-layout>nav{display:flex;flex-direction:column;gap:3px;padding:16px 10px;border-right:1px solid var(--rule)}.settings-layout>nav button{display:flex;align-items:center;gap:10px;min-height:34px;padding:7px 10px;border:0;border-radius:8px;background:transparent;color:var(--ink-soft);font:500 12px var(--sans);text-align:left;cursor:pointer}.settings-layout>nav button.selected{background:color-mix(in srgb,var(--ink) 9%,var(--panel));color:var(--ink);font-weight:600}.settings-layout>nav button i{width:16px;text-align:center}
+.settings-content{padding:22px 24px;overflow:auto}.settings-content h2{font:600 15px var(--sans);margin:0 0 22px}.settings-row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:58px;padding:11px 0;border-bottom:1px solid var(--rule);font:12px var(--sans)}.settings-row:last-child{border-bottom:0}.settings-row>div:first-child,.settings-row>span{display:grid;gap:3px}.settings-row strong{font-size:12px}.settings-row small{color:var(--ink-soft);font-size:11px}.settings-content .settings-options{width:220px;flex:none}.settings-content .settings-options button{font-size:10px}.settings-modal :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+@media(max-width:900px){.app-sidebar{position:relative;inset:auto;width:100%;height:auto;display:grid;grid-template-columns:1fr auto;gap:8px;padding:11px 14px}.app-sidebar .app-identity{margin:0}.app-sidebar .sidebar-label{display:none}.app-sidebar nav{grid-column:1/-1;grid-row:2;min-width:0}.stage-list{display:flex;overflow:auto}.stage-list li{flex:none}.sidebar-settings{grid-column:2;grid-row:1;align-self:start;margin:0;width:auto}.app-sidebar .app-wordmark{font-size:24px}html.react-ui .app-bar{margin-left:0;padding-inline:14px}html.react-ui .shell{width:100%;margin:0;padding-inline:14px}}
+@media(max-width:600px){html.react-ui .app-bar{grid-template-columns:1fr auto}html.react-ui .workflow-status{display:grid;gap:1px}.settings-layout{grid-template-columns:1fr}.settings-layout>nav{flex-direction:row;border-right:0;border-bottom:1px solid var(--rule);padding:8px}.settings-content{padding:16px}.settings-row{align-items:flex-start;flex-direction:column}.settings-content .settings-options{width:100%}}
+@media(min-width:901px) and (max-width:1300px){html.react-ui .workspace{display:flex;flex-direction:column}html.react-ui .workspace>.stage{width:100%;position:static}html.react-ui .controls{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;width:100%}html.react-ui .controls>section{min-width:0}html.react-ui .workspace>.adv{width:100%}}
+@media(prefers-reduced-motion:reduce){.stage-pulse,.settings-modal{animation:none}}
+
+/* Warm olive glass: the optical plates stay on the workspace edge, clear of video. */
+.vitrio-scene{position:fixed;inset:0;z-index:0;pointer-events:none;background:radial-gradient(ellipse at 5% 5%,rgba(123,151,84,.22),transparent 32%),radial-gradient(ellipse at 88% 90%,rgba(119,137,75,.15),transparent 34%),var(--ground)}
+html.react-ui[data-glass="on"] .shell{position:relative;z-index:1}
+html.react-ui[data-glass="on"] .app-sidebar{background:color-mix(in srgb,var(--panel) 68%,transparent);border-right-color:rgba(110,127,82,.2);box-shadow:inset -1px 0 rgba(255,255,255,.52),8px 0 28px rgba(63,78,45,.04)}
+html.react-ui[data-glass="on"] .app-bar{background:color-mix(in srgb,var(--panel) 72%,transparent);box-shadow:inset 0 1px rgba(255,255,255,.7),0 8px 24px rgba(61,75,42,.05)}
+html.react-ui[data-glass="on"] :is(.controls .panel,.workspace>.adv,.stage,.stage>.transport,.pointer-dock,.method-drawer,.diagnostics-drawer){border:1px solid color-mix(in srgb,var(--rule-strong) 78%,transparent);border-radius:14px;box-shadow:0 12px 34px rgba(58,70,41,.07),inset 0 1px rgba(255,255,255,.72)}
+html.react-ui[data-glass="on"] :is(.controls .panel,.workspace>.adv,.stage>.transport,.pointer-dock,.method-drawer,.diagnostics-drawer){background:color-mix(in srgb,var(--panel) 74%,transparent);backdrop-filter:blur(24px) saturate(1.22)}
+html.react-ui[data-glass="on"] .settings-modal{background:color-mix(in srgb,var(--panel) 82%,transparent);border-color:rgba(120,139,89,.34);backdrop-filter:blur(32px) saturate(1.25);box-shadow:0 28px 80px rgba(39,51,32,.2),inset 0 1px rgba(255,255,255,.8)}
+html.react-ui[data-glass="on"] .settings-scrim{background:rgba(46,57,35,.16);backdrop-filter:blur(8px)}
+.settings-toggle input[type="checkbox"]{appearance:none;-webkit-appearance:none;width:40px;height:23px;flex:none;margin:0;border:1px solid var(--rule-strong);border-radius:999px;background:color-mix(in srgb,var(--ink-faint) 22%,var(--panel));box-shadow:inset 0 1px 3px rgba(30,39,24,.12);cursor:pointer;position:relative;transition:background .16s,border-color .16s,box-shadow .16s}
+.settings-toggle input[type="checkbox"]::before{content:"";position:absolute;top:2px;left:2px;width:17px;height:17px;border-radius:50%;background:var(--panel);box-shadow:0 1px 3px rgba(29,37,22,.22);transition:transform .16s}
+.settings-toggle input[type="checkbox"]:checked{background:var(--accent);border-color:var(--accent)}
+.settings-toggle input[type="checkbox"]:checked::before{transform:translateX(17px)}
+.settings-toggle input[type="checkbox"]:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+@media(prefers-reduced-motion:reduce){.settings-toggle input[type="checkbox"],.settings-toggle input[type="checkbox"]::before{transition:none}}
+@media(prefers-reduced-transparency:reduce){html.react-ui[data-glass="on"] :is(.app-sidebar,.app-bar,.controls .panel,.workspace>.adv,.stage>.transport,.pointer-dock,.method-drawer,.diagnostics-drawer,.settings-modal){background:var(--panel);backdrop-filter:none}.vitrio-scene{background:var(--ground)}}
+
+.about-panel{max-width:510px}.about-heading{display:flex;align-items:baseline;gap:10px}.about-heading strong{font:italic 500 26px var(--serif)}.about-heading span{color:var(--ink-faint);font:10px var(--mono)}.about-panel>p,.about-group>p{margin:6px 0 0;color:var(--ink-soft);font-size:12px}.about-group{margin-top:22px;padding-top:18px;border-top:1px solid var(--rule)}.about-group h3{margin:0 0 9px;color:var(--ink-faint);font:600 10px var(--sans);letter-spacing:.08em;text-transform:uppercase}.about-group>strong{font-size:13px}.about-group>a{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--rule);color:var(--ink);text-decoration:none}.about-group>a:last-of-type{border-bottom:0}.about-group>a span{display:grid;gap:2px}.about-group>a strong{font-size:12px}.about-group>a small{color:var(--ink-soft);font-size:11px}.about-group>a i{color:var(--ink-faint);font-size:11px}.about-group>a:hover strong{color:var(--accent)}.about-licenses{margin-top:10px;font-size:11px}.about-licenses summary{width:max-content;cursor:pointer;color:var(--ink-soft)}.about-licenses ul{margin:9px 0 0;padding-left:18px;color:var(--ink-soft);line-height:1.8}
+.settings-modal>header .lg-button i,.method-drawer header .lg-button i,.diagnostics-drawer header .lg-button i{font-size:13px}
+.more-menu>button i{width:15px;margin-right:5px;color:var(--accent);text-align:center}
+.app-actions .lg-button i{font-size:11px}
+.interval-chip button i{font-size:11px}
+.stage-list li{cursor:pointer;transition:background .16s,color .16s}.stage-list li.previewed:not(.active){background:color-mix(in srgb,var(--accent) 7%,var(--panel))}.stage-list li:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.stage-preview{margin:17px 4px 0;padding:11px;border:1px solid color-mix(in srgb,var(--rule-strong) 75%,transparent);border-radius:12px;background:color-mix(in srgb,var(--panel) 80%,transparent);box-shadow:0 9px 28px rgba(48,60,36,.06),inset 0 1px rgba(255,255,255,.6);animation:stage-preview-enter .17s ease-out both;pointer-events:none}
+.stage-preview-art{height:66px;margin-bottom:10px;border-radius:8px;background:linear-gradient(135deg,color-mix(in srgb,var(--accent-soft) 75%,var(--panel)),var(--panel));display:flex;align-items:center;justify-content:center;gap:14px;color:var(--accent);font-size:21px;position:relative;overflow:hidden}.stage-preview-art .preview-or{color:var(--ink-faint);font:10px var(--mono)}.stage-preview-art .preview-timeline{position:absolute;bottom:15px;left:19px;right:19px;height:2px;background:var(--rule-strong);display:flex;justify-content:space-between}.preview-timeline i{display:block;width:8px;height:8px;margin-top:-3px;border:2px solid var(--accent);border-radius:50%;background:var(--panel)}.preview-art-1>.fas{position:absolute;top:8px;left:calc(50% - 5px);font-size:17px}.preview-art-2{gap:10px}.preview-verified{display:grid;place-items:center;width:30px;height:30px;border:1px solid var(--accent);border-radius:50%;background:var(--panel);font-size:12px}.preview-art-3 svg{position:absolute;inset:7px 20px;width:calc(100% - 40px);height:52px;fill:none;stroke:var(--track);stroke-width:3;stroke-linecap:round}.preview-art-3>.fas{position:absolute;right:9px;top:7px;font-size:13px}.stage-preview>strong{font-size:12px}.stage-preview p{margin:5px 0 8px;color:var(--ink-soft);font-size:11px;line-height:1.45}.stage-preview>small{color:var(--accent);font:9px var(--mono)}@keyframes stage-preview-enter{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:900px){.stage-preview{margin:9px 0 0}.stage-preview-art{height:46px}.stage-preview p{max-width:55ch}}
+@media(prefers-reduced-motion:reduce){.stage-list li{transition:none}.stage-preview{animation:none}}
+
+/* Nested glass surfaces share a 10 px inset and a matching radius step. */
+:root{--ui-radius:18px;--ui-inset:10px;--ui-inner-radius:8px}
+.stage-preview{padding:var(--ui-inset);border-radius:var(--ui-radius)}
+.stage-preview-art{border-radius:var(--ui-inner-radius)}
+.settings-modal{border-radius:22px}
+.settings-layout>nav button{border-radius:10px}
+.stage-list li{border-radius:10px}
+.more-menu>button:first-of-type{border-radius:12px 12px 0 0}.more-menu>button:last-of-type{border-radius:0 0 12px 12px}
+
+/* The overflow menu uses one panel, so rows cannot overlap or cover the video. */
+.more-menu-panel{position:absolute;right:0;top:calc(100% + 5px);z-index:35;min-width:205px;display:grid;gap:2px;padding:5px;border:1px solid var(--rule-strong);border-radius:12px;background:var(--panel);box-shadow:var(--ui-shadow)}
+.more-menu-panel>button{display:flex;align-items:center;gap:8px;min-height:34px;padding:7px 9px;border:0;border-radius:8px;background:transparent;color:var(--ink);font:500 11px var(--sans);white-space:nowrap;text-align:left;cursor:pointer}
+.more-menu-panel>button:hover,.more-menu-panel>button:focus-visible{background:var(--accent-soft)}
+.more-menu-panel>button i{width:15px;color:var(--accent);text-align:center}
+html.react-ui .app-bar:has(.more-menu[open]){padding-bottom:91px}
+
+/* Stage rows remain keyboard buttons; opening a preview expands inside the sidebar. */
+.stage-list li{padding:0;gap:0}
+.stage-trigger{width:100%;min-height:34px;display:flex;align-items:center;gap:10px;padding:5px 10px;border:0;border-radius:inherit;background:transparent;color:inherit;font:inherit;text-align:left;cursor:pointer}
+.stage-trigger:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.stage-preview.expanded{pointer-events:auto}
+.stage-preview-heading{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:8px;color:var(--ink-faint);font:600 9px var(--sans);letter-spacing:.07em;text-transform:uppercase}
+.stage-preview-heading button{display:grid;place-items:center;width:23px;height:23px;border:0;border-radius:50%;background:transparent;color:var(--ink-soft);cursor:pointer}
+.stage-preview-heading button:hover,.stage-preview-heading button:focus-visible{background:var(--accent-soft);color:var(--ink)}
+.stage-preview ul{margin:10px 0;padding-left:17px;color:var(--ink-soft);font:10px/1.5 var(--sans)}
+.stage-preview li+li{margin-top:5px}
+@media(max-width:900px){html.react-ui .app-bar:has(.more-menu[open]){padding-bottom:91px}}
+
+/* Native macOS window: keep the controls in the title area and let the desktop
+   backdrop refract through the existing glass surfaces. */
+html.react-ui.desktop-app[data-glass="on"] body{background:color-mix(in srgb,var(--ground) 76%,transparent)}
+html.react-ui.desktop-app[data-glass="on"] .vitrio-scene{background:radial-gradient(ellipse at 5% 5%,rgba(123,151,84,.2),transparent 32%),radial-gradient(ellipse at 88% 90%,rgba(119,137,75,.14),transparent 34%),color-mix(in srgb,var(--ground) 56%,transparent)}
+html.react-ui.desktop-app .app-sidebar{padding-top:57px}
+html.react-ui.desktop-app .app-sidebar::before{content:"";position:absolute;inset:0 0 auto;height:48px;-webkit-app-region:drag}
+html.react-ui.desktop-app .app-bar{-webkit-app-region:drag}
+html.react-ui.desktop-app .app-bar :is(button,summary,input,select){-webkit-app-region:no-drag}
+html.react-ui.desktop-app[data-glass="on"] .app-sidebar{background:color-mix(in srgb,var(--panel) 56%,transparent);backdrop-filter:blur(32px) saturate(1.3)}
+html.react-ui.desktop-app[data-glass="on"] .app-bar{background:color-mix(in srgb,var(--panel) 58%,transparent);backdrop-filter:blur(30px) saturate(1.25)}
+html.react-ui.desktop-app[data-glass="on"] :is(.controls .panel,.workspace>.adv,.stage>.transport,.pointer-dock,.method-drawer,.diagnostics-drawer){background:color-mix(in srgb,var(--panel) 66%,transparent);backdrop-filter:blur(28px) saturate(1.3)}
+@media(max-width:900px){html.react-ui.desktop-app .app-sidebar{padding-top:57px}}
+@media(prefers-reduced-transparency:reduce){html.react-ui.desktop-app[data-glass="on"] body,html.react-ui.desktop-app[data-glass="on"] .vitrio-scene,html.react-ui.desktop-app[data-glass="on"] :is(.app-sidebar,.app-bar,.controls .panel,.workspace>.adv,.stage>.transport,.pointer-dock,.method-drawer,.diagnostics-drawer){background:var(--panel);backdrop-filter:none}}
+
+/* Keep compact control labels readable alongside the scientific mono and wordmark serif. */
+.app-actions .lg-button,.more-menu-panel>button{font-family:var(--sans);font-weight:500}
+
+/* One collapsible sidebar owns navigation and secondary actions. */
+.sidebar-top{position:relative;display:flex;align-items:flex-start;justify-content:center;min-height:70px}
+.sidebar-top .app-identity{margin:1px 0 36px}
+.collapsed-brand{display:none}
+.sidebar-collapse{display:grid;place-items:center;flex:none;width:28px;height:28px;margin:0 2px;border:0;border-radius:8px;background:transparent;color:var(--ink-soft);cursor:pointer}
+.sidebar-collapse:hover,.sidebar-collapse:focus-visible{background:var(--accent-soft);color:var(--accent)}
+.sidebar-utilities{margin-top:auto;display:grid;gap:3px}
+.sidebar-utilities .sidebar-settings{margin-top:0}
+.sidebar-utilities .sidebar-settings[aria-expanded="true"]{background:var(--accent-soft);color:var(--accent)}
+@media(min-width:901px){
+  html.react-ui.sidebar-collapsed .app-sidebar{width:92px;padding-inline:10px}
+  html.react-ui.sidebar-collapsed .app-bar{margin-left:92px}
+  html.react-ui.sidebar-collapsed .shell{width:calc(100% - 92px);margin-left:92px}
+  .app-sidebar.collapsed .app-identity,.app-sidebar.collapsed .sidebar-label,.app-sidebar.collapsed .stage-name,.app-sidebar.collapsed .sidebar-utilities span,.app-sidebar.collapsed .stage-preview{display:none}
+  .app-sidebar.collapsed .sidebar-top{justify-content:center}
+  .app-sidebar.collapsed .collapsed-brand{display:block;width:34px;height:34px;margin-top:1px;border-radius:9px;box-shadow:0 3px 11px rgba(29,58,37,.16)}
+  .app-sidebar.collapsed .stage-trigger,.app-sidebar.collapsed .sidebar-settings{justify-content:center;padding-inline:0}
+  .app-sidebar.collapsed .stage-symbol,.app-sidebar.collapsed .sidebar-settings i{width:auto}
+  .app-sidebar.collapsed .stage-pulse{position:absolute;right:2px;margin:0}
+}
+@media(max-width:900px){
+  .app-sidebar .sidebar-top{grid-column:1;grid-row:1;min-height:0;justify-content:flex-start;gap:12px}
+  .app-sidebar .sidebar-top .app-identity{margin:0}
+  .app-sidebar .sidebar-utilities{grid-column:2;grid-row:1;display:flex;align-items:flex-start;gap:2px;margin:0}
+  .app-sidebar .sidebar-utilities .sidebar-settings{width:32px;justify-content:center;padding:7px 0}
+  .app-sidebar .sidebar-utilities .sidebar-settings span{display:none}
+  .app-sidebar.collapsed nav{display:none}
+  .app-sidebar.collapsed .sidebar-utilities{display:flex}
+}
+
+/* ChemEZ's top-bar toggle: a quiet two-column glyph that travels with content. */
+html.react-ui .app-bar{grid-template-columns:30px minmax(0,1fr) auto;gap:12px}
+.app-bar .sidebar-collapse{width:30px;height:30px;margin:0;padding:5px;border:1px solid transparent;border-radius:8px;background:transparent;box-shadow:none;color:var(--ink-soft);font-size:17px}
+.app-bar .sidebar-collapse:hover,.app-bar .sidebar-collapse:focus-visible{background:var(--accent-soft);color:var(--accent)}
+html.react-ui .workflow-status{gap:4px;color:var(--ink-soft);font-weight:400}
+html.react-ui .workflow-status .status-copy{font-size:12px;letter-spacing:.01em}
+@media(max-width:600px){html.react-ui .app-bar{grid-template-columns:30px minmax(0,1fr) auto;gap:8px}.app-bar .workflow-status{grid-column:2;grid-row:1}.app-bar .app-actions{grid-column:3;grid-row:1}}
+
+/* Refractive rims stay on the chrome and controls, outside the video image. */
+html.react-ui[data-glass="on"] :is(.controls .panel,.workspace>.adv,.stage>.transport,.pointer-dock,.stage-preview,.settings-modal){position:relative}
+html.react-ui[data-glass="on"] :is(.app-sidebar,.app-bar,.controls .panel,.workspace>.adv,.stage>.transport,.pointer-dock,.stage-preview,.settings-modal,.method-drawer,.diagnostics-drawer)::after{
+  content:"";position:absolute;inset:0;z-index:1;border:1.5px solid transparent;border-radius:inherit;pointer-events:none;
+  background:linear-gradient(145deg,rgba(255,255,255,.84) 0%,rgba(255,255,255,.32) 32%,color-mix(in srgb,var(--accent) 20%,transparent) 67%,rgba(26,54,35,.22) 100%) border-box;
+  -webkit-mask:linear-gradient(#fff 0 0) padding-box,linear-gradient(#fff 0 0);
+  -webkit-mask-composite:xor;mask-composite:exclude;
+}
+html.react-ui[data-glass="on"] :is(.app-sidebar,.app-bar)::after{border-radius:0}
+html.react-ui[data-glass="on"] :is(.controls .panel,.workspace>.adv,.stage>.transport,.pointer-dock,.stage-preview,.settings-modal,.method-drawer,.diagnostics-drawer){box-shadow:0 12px 32px color-mix(in srgb,var(--accent) 9%,transparent),inset 0 1px rgba(255,255,255,.65),inset 0 -1px color-mix(in srgb,var(--accent) 15%,transparent)}
+html.react-ui[data-glass="on"] .app-sidebar{box-shadow:inset -1px 0 rgba(255,255,255,.68),inset -3px 0 color-mix(in srgb,var(--accent) 10%,transparent),8px 0 28px color-mix(in srgb,var(--accent) 7%,transparent)}
+html.react-ui[data-glass="on"] .app-bar{box-shadow:inset 0 1px rgba(255,255,255,.74),inset 0 -2px color-mix(in srgb,var(--accent) 9%,transparent),0 8px 24px color-mix(in srgb,var(--accent) 6%,transparent)}
+@media(prefers-reduced-transparency:reduce){html.react-ui[data-glass="on"] :is(.app-sidebar,.app-bar,.controls .panel,.workspace>.adv,.stage>.transport,.pointer-dock,.stage-preview,.settings-modal,.method-drawer,.diagnostics-drawer)::after{display:none}}
+
+/* ChemEZ-style window rim: bend only the outer 22 px, never the working area. */
+@media(min-width:901px){html.react-ui.desktop-app[data-glass="on"] .app-sidebar{border-bottom-right-radius:13px;overflow:hidden}}
+.vitrio-scene .glass-light{position:absolute;border-radius:50%;filter:blur(36px);opacity:.65}
+.vitrio-scene .glass-light.one{width:46vw;height:46vw;left:-12vw;top:-18vw;background:radial-gradient(circle,#6eaa8159,transparent 70%)}
+.vitrio-scene .glass-light.two{width:40vw;height:40vw;right:-10vw;bottom:-16vw;background:radial-gradient(circle,#3f6b4a45,transparent 70%)}
+.vitrio-scene .glass-light.three{width:30vw;height:30vw;left:38vw;bottom:-8vw;background:radial-gradient(circle,#9bc9a533,transparent 70%)}
+.vitrio-scene .glass-streaks{position:absolute;inset:0;opacity:0;background:repeating-linear-gradient(115deg,transparent 0 46px,#ffffff59 46px 49px,transparent 49px 92px,#9bc9a540 92px 94px,transparent 94px 140px)}
+.lqg-lens[data-surface="wormez-window"],.lqg-glass[data-surface="wormez-window"]{
+  pointer-events:none!important;
+  -webkit-mask-image:linear-gradient(to right,#000 0 4px,transparent 22px calc(100% - 22px),#000 calc(100% - 4px)),linear-gradient(to bottom,#000 0 4px,transparent 22px calc(100% - 22px),#000 calc(100% - 4px));
+  mask-image:linear-gradient(to right,#000 0 4px,transparent 22px calc(100% - 22px),#000 calc(100% - 4px)),linear-gradient(to bottom,#000 0 4px,transparent 22px calc(100% - 22px),#000 calc(100% - 4px));
+  mask-composite:add;
+}
+.lqg-lens .vitrio-scene .glass-streaks{opacity:1}
+.lqg-lens .vitrio-scene .glass-light{opacity:1;filter:blur(18px)}
+
+/* Consistent control text: 12px for header and segmented buttons. */
+.app-actions .lg-button,.load-action,.camera-action{font-size:12px}.settings-options button,.settings-content .settings-options button{font-size:12px}
+
+/* Sidebar: solid white in light mode regardless of the glass setting; the workspace keeps its green tint. */
+html.react-ui:not([data-theme="dark"]) .app-sidebar,html.react-ui[data-glass="on"]:not([data-theme="dark"]) .app-sidebar{background:#fff;backdrop-filter:none}
+@media(prefers-color-scheme:dark){html.react-ui:not([data-theme="light"]) .app-sidebar,html.react-ui[data-glass="on"]:not([data-theme="light"]) .app-sidebar{background:var(--panel)}}
+
+/* Scrollbar after ChemEZ: slim rounded green thumb over a faint dotted track, hidden until scrolling or hover. */
+html{scrollbar-width:thin;scrollbar-color:color-mix(in srgb,var(--accent) 45%,transparent) transparent}
+::-webkit-scrollbar{width:12px;height:12px}
+::-webkit-scrollbar-track{background:linear-gradient(to bottom,color-mix(in srgb,var(--ink) 18%,transparent) 50%,transparent 0) center/1px 4px repeat-y;margin:6px 0}
+::-webkit-scrollbar-thumb{background-color:transparent;border:3px solid transparent;border-radius:999px;background-clip:padding-box;transition:background-color .2s}
+html.scroll-awake ::-webkit-scrollbar-thumb,:hover::-webkit-scrollbar-thumb{background-color:color-mix(in srgb,var(--accent) 48%,transparent)}
+::-webkit-scrollbar-thumb:hover,::-webkit-scrollbar-thumb:active{border-width:2px;background-color:color-mix(in srgb,var(--accent) 70%,transparent)}
+::-webkit-scrollbar-corner{background:transparent}
+/* Wordmark centered over its tagline box. */
+.app-identity .app-wordmark{text-align:center;justify-self:center}
+.app-identity .app-tagline{text-align:center}
+
+/* Header pinned to the window: its sticky parent (#wormezReactShell) is only header-tall, so sticky scrolled away. */
+html.react-ui .app-bar{position:fixed;top:0;left:0;right:0;z-index:28}
+html.react-ui body{padding-top:62px}
+@media(max-width:900px){html.react-ui .app-bar{position:sticky;margin-left:0}html.react-ui body{padding-top:0}}
+
+/* Fixed narrow sidebar (collapse removed). */
+:root{--sidebar-w:172px}
+.app-sidebar{padding:22px 8px 12px}
+.app-sidebar .app-identity{margin:1px 6px 30px}
+.app-sidebar .app-wordmark{font-size:24px}
+.stage-list li,.sidebar-settings{padding-inline:8px;gap:8px}
+/* Header: status takes the free space now that the collapse button is gone. */
+html.react-ui .app-bar{grid-template-columns:minmax(0,1fr) auto}
+:root{--sidebar-w:180px}
+.stage-list li,.stage-name,.sidebar-settings span{white-space:nowrap}
+
+/* ==========================================================================
+   Design system layer (2026-11-08)
+   Roles: Lexend/Segoe UI = all interface text · serif italic = WormEZ wordmark only
+   · mono caps = section headings only. Scale: 11 / 12 / 13 / 15 / 20.
+   ========================================================================== */
+@font-face{font-family:'Lexend';font-style:normal;font-weight:100 900;font-display:swap;src:url('../lib/fonts/lexend-latin-wght-normal.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Lexend';font-style:normal;font-weight:100 900;font-display:swap;src:url('../lib/fonts/lexend-latin-ext-wght-normal.woff2') format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+:root{
+  --sans:'Lexend','Segoe UI',system-ui,-apple-system,sans-serif;
+  --t-cap:11px;--t-sm:12px;--t-body:13px;--t-value:15px;--t-title:20px;
+  --r-card:16px;--r-ctl:10px;--gap:14px;
+}
+html.react-ui body,html.react-ui button,html.react-ui input,html.react-ui select,html.react-ui textarea{font-family:var(--sans);font-feature-settings:"tnum" 1;letter-spacing:-.005em}
+html.react-ui body{font-size:var(--t-body);font-weight:350;-webkit-font-smoothing:antialiased}
+
+/* Serif only on the wordmark (and the launch screen). Everything else that borrowed it returns to the UI face. */
+html.react-ui .file-label .empty,html.react-ui .empty-state .drop,html.react-ui .m-primary,html.react-ui .progress-card h2,html.react-ui .about-heading strong{font-family:var(--sans);font-style:normal}
+html.react-ui .empty-state .drop{font-size:var(--t-title);font-weight:500;letter-spacing:-.015em}
+html.react-ui .m-primary{font-weight:500;letter-spacing:-.02em}
+
+/* Mono caps only for section headings; numbers and readouts use the UI face with tabular figures. */
+html.react-ui .panel>h2,html.react-ui .panel h2:first-child,html.react-ui .sidebar-label{font:500 var(--t-cap)/1.2 var(--mono);letter-spacing:.09em;text-transform:uppercase;color:var(--ink-soft)}
+html.react-ui .frame-counter,html.react-ui .frame-counter b,html.react-ui .zoom-readout,html.react-ui #zoomReadout,html.react-ui .review-count,html.react-ui .num-in,html.react-ui .m-sub,html.react-ui .field-label,html.react-ui .interval-chip{font-family:var(--sans);font-variant-numeric:tabular-nums}
+html.react-ui .frame-counter{font-size:var(--t-sm);color:var(--ink-soft)}html.react-ui .frame-counter b{font-weight:600;color:var(--ink)}
+
+/* Uniform text sizes */
+html.react-ui .help,html.react-ui .panel p,html.react-ui .seed-note,html.react-ui .pointer-hint,html.react-ui .file-label{font-size:var(--t-body);line-height:1.5}
+html.react-ui .help small,html.react-ui .field-label,html.react-ui .num-row label,html.react-ui .m-label,html.react-ui .review-count{font-size:var(--t-sm);font-weight:400;color:var(--ink-soft)}
+html.react-ui .btn,html.react-ui .lg-button,html.react-ui .load-action,html.react-ui .camera-action,html.react-ui select{font-size:var(--t-sm);font-weight:500}
+
+/* Wordmark: the italic serif spans exactly the tagline box below it. */
+html.react-ui .app-sidebar .app-identity{display:grid;grid-template-columns:max-content;gap:6px;margin:4px auto 30px;justify-items:stretch}
+html.react-ui .app-sidebar .app-wordmark{font:italic 500 34px/1 var(--serif);letter-spacing:-.01em;text-align:center}
+html.react-ui .app-sidebar .app-tagline{font:500 7.5px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;text-align:center;padding:4px 0;white-space:nowrap}
+
+/* Panels: one radius, one padding, one gap. */
+html.react-ui .workspace{gap:var(--gap)}
+html.react-ui .workspace>.controls{display:flex;flex-direction:column;gap:var(--gap)}
+html.react-ui .workspace>.controls>.panel{margin:0;padding:18px 18px 16px;border-radius:var(--r-card)}
+html.react-ui .panel>h2{margin:0 0 10px;display:flex;align-items:center;gap:8px}
+html.react-ui .stage{border-radius:var(--r-card);overflow:hidden}
+
+/* The controls under the video are one dock, not four floating cards. */
+html.react-ui .stage>#anchorReview>.progress-card,
+html.react-ui .stage>.pointer-dock,
+html.react-ui .stage>.transport{margin:0!important;border:0!important;border-top:1px solid var(--rule)!important;border-radius:0!important;box-shadow:none!important;background:transparent!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;padding:10px 16px!important}
+html.react-ui .stage>#anchorReview{margin:0;position:static}
+html.react-ui .stage>#anchorReview>.progress-card{background:color-mix(in srgb,var(--accent) 6%,transparent)!important}
+html.react-ui .stage>.pointer-dock{min-height:0;padding-block:6px!important}
+html.react-ui .stage>.transport:last-child{padding-bottom:14px!important}
+
+/* Buttons: three tiers only : primary, secondary, ghost. No one-off coloured outlines. */
+html.react-ui .btn{border-radius:var(--r-ctl);min-height:30px;padding:5px 12px}
+html.react-ui .btn.pill{border-radius:999px}
+html.react-ui #setLenBtn,html.react-ui .btn.calib,html.react-ui .btn.lavender{border-color:var(--rule-strong)!important;color:var(--ink)!important;background:var(--panel)!important}
+html.react-ui .btn:disabled{opacity:.45}
+
+/* Anchor list: compact rows, colour edge (purple = system, green = you), readable when disabled. */
+html.react-ui #kfList{display:grid;gap:4px;max-height:220px;overflow:auto;padding-right:2px}
+html.react-ui #kfList .anchor-row{margin:0!important;justify-content:flex-start;text-align:left;min-height:30px;padding:6px 10px;border-radius:8px;border:1px solid var(--rule);background:color-mix(in srgb,var(--panel) 70%,transparent);font-size:var(--t-sm);font-weight:400;color:var(--ink);opacity:1}
+html.react-ui #kfList .anchor-row:disabled{opacity:.7}
+html.react-ui #kfList .anchor-row.selected{border-color:var(--accent);background:var(--accent-soft)}
+
+/* Number fields line up as a single column of values. */
+html.react-ui .num-row{display:grid;grid-template-columns:1fr minmax(84px,40%);align-items:center;gap:10px;min-height:34px}
+html.react-ui .num-row>select,html.react-ui .num-row>.num-in{width:100%;justify-self:end}
+html.react-ui .num-in,html.react-ui select{height:32px;border-radius:8px}
+html.react-ui .workspace>.controls>*{margin:0!important}
+html.react-ui .workspace>.controls>[hidden],html.react-ui .workspace>.controls>:empty{display:none!important}
+html.react-ui .num-row{grid-template-columns:auto minmax(120px,62%)}
+html.react-ui .num-row>.num-in{max-width:120px}
+html.react-ui .num-row{grid-template-columns:max-content minmax(0,1fr)}
+html.react-ui .num-row>select{max-width:none}
+html.react-ui .num-row:has(>#scalePreset){grid-template-columns:1fr;gap:6px}html.react-ui .num-row>#scalePreset{width:100%}
+
+/* Sidebar is the glass: frosted, with user-adjustable opacity (Settings → Sidebar glass). */
+:root{--sidebar-alpha:.82}
+html.react-ui .app-sidebar,html.react-ui[data-glass="on"] .app-sidebar,html.react-ui.desktop-app[data-glass="on"] .app-sidebar{
+  background:rgba(255,255,255,var(--sidebar-alpha))!important;
+  backdrop-filter:blur(30px) saturate(1.6)!important;-webkit-backdrop-filter:blur(30px) saturate(1.6)!important;
+  border-right:1px solid rgba(255,255,255,.6)!important;
+  box-shadow:inset -1px 0 rgba(0,0,0,.05),6px 0 24px rgba(30,40,30,.05)!important}
+html[data-theme="dark"].react-ui .app-sidebar{background:rgba(28,32,30,var(--sidebar-alpha))!important;border-right-color:rgba(255,255,255,.08)!important}
+@media (prefers-color-scheme:dark){html.react-ui:not([data-theme="light"]) .app-sidebar{background:rgba(28,32,30,var(--sidebar-alpha))!important;border-right-color:rgba(255,255,255,.08)!important}}
+html.react-ui .stage-list li.active{background:rgba(63,107,74,.10)}
+html.react-ui .opacity-control{display:flex;align-items:center;gap:8px}html.react-ui .opacity-control input{width:120px;accent-color:var(--accent)}html.react-ui .opacity-control output{font-size:var(--t-sm);min-width:36px;text-align:right;font-variant-numeric:tabular-nums}
+/* Wordmark and tagline box at identical width (113px), compact. */
+html.react-ui .app-sidebar .app-identity{grid-template-columns:max-content;justify-content:center;margin:4px auto 28px}
+html.react-ui .app-sidebar .app-wordmark{font-size:28px}
+html.react-ui .app-sidebar .app-tagline{font-size:6.9px;letter-spacing:.03em;padding:3px 5px;width:auto}
+
+/* ==========================================================================
+   ChemEZ system, light edition (from ChemEZ docs/blueprints/chat-window-sheet.png)
+   White ground by default · neutral alpha surfaces · accent only on actions.
+   ========================================================================== */
+html.react-ui:not([data-theme="dark"]){--ground:#ffffff;--panel:#ffffff;--rule:rgba(20,30,22,.08);--rule-strong:rgba(20,30,22,.14)}
+@media (prefers-color-scheme:dark){html.react-ui:not([data-theme="light"]){--ground:#16181a;--panel:#1e2124}}
+html.react-ui:not([data-theme="dark"]) body,html.react-ui:not([data-theme="dark"]){background:#ffffff!important}
+
+/* Top bar: H1 66 · pad-x 22 */
+html.react-ui .app-bar{min-height:66px;height:66px;padding:0 22px!important;background:rgba(255,255,255,.72)!important;border-bottom:1px solid var(--rule)!important;box-shadow:none!important;backdrop-filter:blur(25px) saturate(1.25)!important}
+html.react-ui body{padding-top:66px}
+
+/* Sidebar: G1 glass · pad-x 12 · rows H2 40 · pitch +2 · R2 9 */
+html.react-ui .app-sidebar,html.react-ui[data-glass="on"] .app-sidebar,html.react-ui.desktop-app[data-glass="on"] .app-sidebar{backdrop-filter:blur(25px) saturate(1.25)!important;-webkit-backdrop-filter:blur(25px) saturate(1.25)!important;padding-inline:12px!important;border-right:1px solid var(--rule)!important;box-shadow:none!important;border-bottom-right-radius:0!important}
+html.react-ui.desktop-app .app-sidebar{padding-top:58px!important}
+html.react-ui .stage-list{gap:2px}
+html.react-ui .stage-list>li{height:40px;min-height:40px;padding:0 10px;border-radius:9px;border:1px solid transparent}
+html.react-ui .stage-list li.active{background:rgba(20,30,22,.05);border-color:transparent;color:var(--ink)}
+html.react-ui .stage-list li:hover:not(.active){background:rgba(20,30,22,.03)}
+html.react-ui .sidebar-settings{min-height:40px;border-radius:9px}
+
+/* Neutral surfaces: hairline, no shadow, 12px corners. */
+html.react-ui .workspace>.controls>.panel,html.react-ui .workspace>section.panel,html.react-ui .panel.stage,html.react-ui main .panel,html.react-ui .workspace>.adv{
+  background:#ffffff!important;border:1px solid var(--rule)!important;box-shadow:none!important;backdrop-filter:none!important;border-radius:12px!important}
+html[data-theme="dark"].react-ui .workspace>.controls>.panel,html[data-theme="dark"].react-ui .panel.stage,html[data-theme="dark"].react-ui main .panel{background:var(--panel)!important}
+html.react-ui .stage>.stage-header{background:transparent;border-bottom:1px solid var(--rule)}
+html.react-ui .stage>#anchorReview>.progress-card{background:rgba(63,107,74,.04)!important}
+
+/* Buttons: quiet secondary, accent only for the primary action. */
+html.react-ui .btn:not(.primary){background:#ffffff;border:1px solid var(--rule-strong);box-shadow:none;color:var(--ink)}
+html.react-ui .btn:not(.primary):hover:not(:disabled){background:rgba(20,30,22,.04)}
+html.react-ui .btn.primary{box-shadow:none}
+html.react-ui .btn.ghost{background:transparent;border-color:transparent}
+html.react-ui .btn.ghost:hover:not(:disabled){background:rgba(20,30,22,.05)}
+html.react-ui .btn[aria-pressed="true"]{background:var(--accent-soft)!important;color:var(--accent)!important;border-color:color-mix(in srgb,var(--accent) 25%,transparent)!important}
+html.react-ui .num-row:has(>#scalePreset)>#scalePreset{justify-self:stretch;width:100%}
+html.react-ui .panel:not(.progress-card){box-shadow:none!important}
+html.react-ui:not([data-theme="dark"]) .panel:not(.progress-card){background:#ffffff!important;border:1px solid var(--rule)!important;backdrop-filter:none!important}
+html.react-ui #scalePreset{display:block;width:100%!important;max-width:none!important;grid-column:1/-1}
+/* Glass throughout: the whole window is one translucent sheet over the desktop (macOS vibrancy
+   supplies the blur). In-app panels are solid. Only things that float over content are glass. */
+html.react-ui.desktop-app:not([data-theme="dark"]),html.react-ui.desktop-app:not([data-theme="dark"]) body{background:rgba(255,255,255,var(--sidebar-alpha))!important}
+html[data-theme="dark"].react-ui.desktop-app,html[data-theme="dark"].react-ui.desktop-app body{background:rgba(22,24,26,var(--sidebar-alpha))!important}
+html.react-ui.desktop-app .app-sidebar{background:transparent!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+/* Floating over content: top bar (content scrolls under it) stays glass. */
+html.react-ui.desktop-app .app-bar{background:rgba(255,255,255,calc(var(--sidebar-alpha) * .55))!important}
+/* Settings is a solid sheet, not glass. */
+html.react-ui .settings-modal{background:#ffffff!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;box-shadow:0 24px 80px rgba(0,0,0,.18)!important;border:1px solid var(--rule)!important}
+html[data-theme="dark"].react-ui .settings-modal{background:#1e2124!important}
+html.react-ui .settings-modal *{backdrop-filter:none!important}
+
+/* Edge refraction: vitrio's full-window lens bends a soft light layer at all four edges.
+   The layer itself is transparent so the window glass and desktop still show through. */
+html.react-ui.desktop-app .vitrio-scene,html.react-ui .vitrio-scene{background:transparent!important}
+html.react-ui .vitrio-scene .glass-light{opacity:.35}
+html.react-ui .lqg-lens .vitrio-scene .glass-light{opacity:1}
+html.react-ui[data-glass="off"] .vitrio-scene{display:none}
+
+/* Header actions: plain, solid buttons in every mode. */
+html.react-ui .top-action{display:inline-flex;align-items:center;gap:7px;height:32px;padding:0 14px;border-radius:999px;border:1px solid var(--rule-strong);background:#ffffff;color:var(--ink);font:500 var(--t-sm)/1 var(--sans);cursor:pointer;white-space:nowrap;box-shadow:none}
+html.react-ui .top-action:hover{background:#f5f7f5}
+html.react-ui .top-action.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+html.react-ui .top-action.primary:hover{background:color-mix(in srgb,var(--accent) 88%,#000)}
+html.react-ui .top-action:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+html.react-ui .top-action i{font-size:11px}
+html[data-theme="dark"].react-ui .top-action:not(.primary){background:#26292c;color:var(--ink)}
+/* glisse buttons (settings/drawer close etc.): solid, no glass filter */
+html.react-ui .lg-button{backdrop-filter:none!important;-webkit-backdrop-filter:none!important;background:#ffffff!important;border:1px solid var(--rule-strong)!important;box-shadow:none!important;color:var(--ink)!important}
+html.react-ui .lg-button::before,html.react-ui .lg-button::after{display:none!important}
+html.react-ui .vitrio-scene .glass-light{opacity:.5}
+html.react-ui .lqg-lens .vitrio-scene .glass-streaks{opacity:.9}
+/* Wider refracting rim on all four window edges. */
+.lqg-lens[data-surface="wormez-window"],.lqg-glass[data-surface="wormez-window"]{
+  -webkit-mask-image:linear-gradient(to right,#000 0 8px,transparent 30px calc(100% - 30px),#000 calc(100% - 8px)),linear-gradient(to bottom,#000 0 8px,transparent 30px calc(100% - 30px),#000 calc(100% - 8px))!important;
+  mask-image:linear-gradient(to right,#000 0 8px,transparent 30px calc(100% - 30px),#000 calc(100% - 8px)),linear-gradient(to bottom,#000 0 8px,transparent 30px calc(100% - 30px),#000 calc(100% - 8px))!important}
+
+/* ==========================================================================
+   Glass edges on every surface (ChemEZ specular rim, light edition).
+   Fill stays solid; the edge is a 1.5px rim lit from 135°, an inner bevel and a faint chromatic fringe.
+   ========================================================================== */
+html.react-ui[data-glass="on"] :is(.panel,.stage,.btn,.top-action,.num-in,select,.settings-modal,.stage-list li.active,#kfList .anchor-row,.lg-button){position:relative}
+html.react-ui[data-glass="on"] :is(.workspace .panel,.panel.stage,.btn,.top-action,.num-in,.settings-modal,.stage-list li.active,#kfList .anchor-row,.lg-button)::after{
+  content:'';position:absolute;inset:0;border-radius:inherit;pointer-events:none;padding:1.5px;z-index:2;
+  background:linear-gradient(135deg,#ffffff 0%,rgba(0,0,0,.16) 14%,rgba(255,255,255,.9) 36%,rgba(0,0,0,.07) 62%,rgba(0,0,0,.22) 86%,#ffffff 100%);
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude}
+/* the rim replaces the flat hairline */
+html.react-ui[data-glass="on"] :is(.workspace .panel,.panel.stage,.btn:not(.ghost),.top-action,.num-in,.settings-modal,.lg-button):not(.anchor-row){border-color:transparent!important}html.react-ui[data-glass="on"] #kfList .anchor-row{border-top-color:transparent!important;border-right-color:transparent!important;border-bottom-color:transparent!important}
+/* inner bevel + chromatic fringe */
+html.react-ui[data-glass="on"] :is(.workspace .panel,.panel.stage,.settings-modal){
+  box-shadow:inset 0 1px 0 #ffffff,inset 0 -1px 0 rgba(0,0,0,.05),inset 1px 0 0 rgba(255,122,217,.07),inset -1px 0 0 rgba(106,231,255,.09),0 1px 3px rgba(20,40,25,.04)!important}
+html.react-ui[data-glass="on"] :is(.btn:not(.ghost),.top-action,.num-in,.lg-button,#kfList .anchor-row){
+  box-shadow:inset 0 1px 0 #ffffff,inset 0 -1px 0 rgba(0,0,0,.06),inset 1px 0 0 rgba(255,122,217,.06),inset -1px 0 0 rgba(106,231,255,.08)!important}
+/* primary (green) controls: brighter rim so it reads on the accent fill */
+html.react-ui[data-glass="on"] :is(.btn.primary,.top-action.primary)::after{background:linear-gradient(135deg,rgba(255,255,255,.95) 0%,rgba(205,255,225,.7) 14%,rgba(255,255,255,.12) 40%,rgba(0,0,0,.08) 65%,rgba(170,255,205,.55) 86%,rgba(255,255,255,.85) 100%)}
+html.react-ui[data-glass="on"] :is(.btn.primary,.top-action.primary){box-shadow:inset 0 1px 0 rgba(255,255,255,.35),inset 0 -1px 0 rgba(0,0,0,.18)!important}
+/* ghost buttons get the rim only on hover/pressed */
+html.react-ui[data-glass="on"] .btn.ghost::after{opacity:0;transition:opacity .15s}
+html.react-ui[data-glass="on"] .btn.ghost:is(:hover,[aria-pressed="true"])::after{opacity:1}
+/* select elements can't take pseudo-elements: bevel only */
+html.react-ui[data-glass="on"] select{box-shadow:inset 0 1px 0 #fff,inset 0 -1px 0 rgba(0,0,0,.06),0 0 0 1px rgba(25,45,30,.10)!important;border-color:transparent!important}
+/* sidebar edge */
+html.react-ui[data-glass="on"] .app-sidebar{box-shadow:inset -1px 0 0 rgba(255,255,255,.9),inset -2px 0 0 rgba(0,0,0,.08)!important}
+html.react-ui[data-glass="on"] .btn:disabled::after{opacity:.5}
+/* dark theme rim */
+html[data-theme="dark"].react-ui[data-glass="on"] :is(.workspace .panel,.panel.stage,.btn:not(.primary),.top-action:not(.primary),.num-in,.settings-modal,.stage-list li.active,#kfList .anchor-row,.lg-button)::after{background:linear-gradient(135deg,#ffffff 0%,#ffffff33 14%,#00000066 38%,#ffffff1a 62%,#00000080 86%,#ffffffb3 100%)}
+/* Purple rim for what the system proposes, green for what the user set. */
+html.react-ui[data-glass="on"] #kfList .anchor-row.anchor-system::after,
+html.react-ui[data-glass="on"] .stage>#anchorReview>.progress-card::after{background:linear-gradient(135deg,#ffffff 0%,rgba(125,91,166,.55) 14%,rgba(255,255,255,.85) 38%,rgba(125,91,166,.18) 62%,rgba(125,91,166,.6) 86%,#ffffff 100%)}
+html.react-ui[data-glass="on"] #kfList .anchor-row.anchor-user::after{background:linear-gradient(135deg,#ffffff 0%,rgba(46,158,91,.55) 14%,rgba(255,255,255,.85) 38%,rgba(46,158,91,.18) 62%,rgba(46,158,91,.6) 86%,#ffffff 100%)}
+html.react-ui[data-glass="on"] .stage>#anchorReview>.progress-card{position:relative}
+html.react-ui[data-glass="on"] .stage>#anchorReview>.progress-card::after{content:'';position:absolute;inset:0;pointer-events:none;padding:1.5px;-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude}
+html.react-ui .stage>#anchorReview>.progress-card{background:rgba(125,91,166,.04)!important}
+/* ChemEZ scrollbar (light edition): overlay bar on the working area only; native bar hidden. */
+html.react-ui{scrollbar-width:none}html.react-ui::-webkit-scrollbar,html.react-ui body::-webkit-scrollbar{width:0;height:0;display:none}
+.work-scrollbar{position:fixed;z-index:60;right:8px;width:14px;display:flex;flex-direction:column;align-items:center;pointer-events:none;opacity:0;transition:opacity .25s ease}
+.work-scrollbar.awake,.work-scrollbar:hover{opacity:.64}
+.work-scrollbar.idle{display:none}
+.work-scrollbar-track{position:relative;flex:1;width:100%;pointer-events:auto;cursor:pointer}
+.work-scrollbar-thumb{position:absolute;left:50%;transform:translateX(-50%);width:12px;border-radius:3px;box-sizing:border-box;cursor:grab;
+  background:linear-gradient(180deg,rgba(255,255,255,.85),rgba(240,242,240,.7) 45%,rgba(230,234,231,.6))!important;
+  border:1px solid rgba(0,0,0,.22);box-shadow:inset 0 1px 0 #fff,inset 0 -1px 0 rgba(0,0,0,.12),0 2px 8px rgba(0,0,0,.18);
+  -webkit-backdrop-filter:blur(8px) saturate(1.4);backdrop-filter:blur(8px) saturate(1.4);transition:width .12s ease,border-color .12s ease}
+.work-scrollbar-track:hover .work-scrollbar-thumb,.work-scrollbar-thumb:active{width:14px;border-color:rgba(0,0,0,.32)}
+html[data-glass="off"] .work-scrollbar-thumb{-webkit-backdrop-filter:none;backdrop-filter:none}
+html[data-theme="dark"] .work-scrollbar-thumb{background:linear-gradient(180deg,#ffffff2e,#ffffff14 45%,#ffffff0a)!important;border-color:#ffffff66}
+@media(prefers-reduced-motion:reduce){.work-scrollbar{transition:none}}
+/* Icon buttons (zoom −/+, undo, redo, step): no rim, round, soft hover only. */
+html.react-ui .btn.icon{width:28px;height:28px;min-height:28px;padding:0;border-radius:50%!important;display:inline-flex;align-items:center;justify-content:center;border:0!important;box-shadow:none!important;background:transparent}
+html.react-ui .btn.icon::after{display:none!important}
+html.react-ui .btn.icon:hover:not(:disabled){background:rgba(0,0,0,.06)!important}
+
+/* Sidebar rows stay inside the sidebar; busy stage blinks its icon instead of a dot. */
+html.react-ui .stage-list{margin:0;padding:0}
+html.react-ui .stage-list>li{box-sizing:border-box;width:100%;max-width:100%}
+html.react-ui .stage-list>li .stage-trigger{width:100%;min-width:0}
+html.react-ui .stage-pulse{display:none!important}
+@keyframes stage-blink{0%,100%{opacity:1}50%{opacity:.25}}
+html.react-ui .stage-list li.busy .stage-symbol{animation:stage-blink 1.1s ease-in-out infinite}
+@media(prefers-reduced-motion:reduce){html.react-ui .stage-list li.busy .stage-symbol{animation:none;opacity:.6}}
+/* Dark theme (explicit, or System on a dark Mac): keep controls dark. */
+html[data-theme="dark"].react-ui .btn:not(.primary),html[data-theme="dark"].react-ui .lg-button,html[data-theme="dark"].react-ui .top-action:not(.primary){background:#26292c!important;color:var(--ink)!important}
+html[data-theme="dark"].react-ui .btn.ghost,html[data-theme="dark"].react-ui .btn.icon{background:transparent!important}
+html[data-theme="dark"].react-ui .stage-list li.active{background:rgba(255,255,255,.07)}
+@media (prefers-color-scheme:dark){
+  html.react-ui:not([data-theme]) .btn:not(.primary),html.react-ui:not([data-theme]) .lg-button,html.react-ui:not([data-theme]) .top-action:not(.primary){background:#26292c!important;color:var(--ink)!important}
+  html.react-ui:not([data-theme]) .btn.ghost,html.react-ui:not([data-theme]) .btn.icon{background:transparent!important}
+  html.react-ui.desktop-app:not([data-theme]),html.react-ui.desktop-app:not([data-theme]) body{background:rgba(22,24,26,var(--sidebar-alpha))!important}
+  html.react-ui:not([data-theme]) .panel:not(.progress-card),html.react-ui:not([data-theme]) .settings-modal{background:var(--panel)!important}
+  html.react-ui:not([data-theme]) .app-bar{background:rgba(22,24,26,.6)!important}
+}
+html[data-theme="dark"].react-ui .app-bar{background:rgba(22,24,26,.6)!important}
+
+/* ---- Final consistency pass (2026-11-08) ---- */
+/* Sidebar: in the desktop app it is part of the one window glass sheet in every theme. */
+html.react-ui.desktop-app[data-glass] .app-sidebar,html.react-ui.desktop-app .app-sidebar{background:transparent!important}
+/* Browser (no vibrancy): solid white in light, near-black in dark. */
+html.react-ui:not(.desktop-app)[data-theme="dark"] .app-sidebar{background:#121415!important}
+@media (prefers-color-scheme:dark){html.react-ui:not(.desktop-app):not([data-theme]) .app-sidebar{background:#121415!important}}
+html[data-theme="dark"].react-ui.desktop-app,html[data-theme="dark"].react-ui.desktop-app body{background:rgba(14,15,16,var(--sidebar-alpha))!important}
+html[data-theme="dark"].react-ui .app-sidebar .app-wordmark{color:#f1f1ef}
+html[data-theme="dark"].react-ui .app-sidebar .app-tagline{color:#c9ccc8;border-color:rgba(255,255,255,.3)}
+html[data-theme="dark"].react-ui .stage-list li{color:#b9bdb8}
+html[data-theme="dark"].react-ui .stage-list li.active{color:#f1f1ef;background:rgba(255,255,255,.08)}
+
+/* Buttons: softer, more natural glass edge (panels keep theirs). */
+html.react-ui[data-glass="on"] :is(.btn,.top-action,.lg-button,.num-in)::after{opacity:.55}
+html.react-ui[data-glass="on"] :is(.btn.primary,.top-action.primary)::after{opacity:.6}
+html.react-ui[data-glass="on"] .btn.ghost:not(:hover):not([aria-pressed="true"])::after{opacity:0}
+html.react-ui[data-glass="on"] :is(.btn:not(.ghost),.top-action,.num-in,.lg-button){box-shadow:inset 0 1px 0 rgba(255,255,255,.7),inset 0 -1px 0 rgba(0,0,0,.05)!important}
+html[data-theme="dark"].react-ui[data-glass="on"] :is(.btn:not(.ghost),.top-action,.num-in,.lg-button){box-shadow:inset 0 1px 0 rgba(255,255,255,.08),inset 0 -1px 0 rgba(0,0,0,.3)!important}
+
+/* Disabled controls: same colour as enabled, just faded (no white wash). */
+html.react-ui .btn:disabled,html.react-ui .top-action:disabled{opacity:.42;filter:none}
+html[data-theme="dark"].react-ui .btn:disabled:not(.primary){background:#26292c!important;color:var(--ink)!important}
+html[data-theme="dark"].react-ui .btn.primary{background:var(--accent)!important;color:#fff!important}
+
+/* Close buttons in Settings and drawers: small neutral circle, theme-coloured. */
+html.react-ui .lg-button:is([aria-label^="Close"]){width:30px;height:30px;min-height:30px;padding:0!important;border-radius:50%!important;display:inline-flex;align-items:center;justify-content:center}
+html[data-theme="dark"].react-ui .lg-button{background:#2a2d30!important;color:#e6e6e3!important;border-color:rgba(255,255,255,.12)!important}
+
+/* Gaps: every stacked block in the workspace sits var(--gap) apart. */
+html.react-ui .workspace{row-gap:var(--gap);column-gap:var(--gap)}
+html.react-ui main>.panel,html.react-ui .workspace~.panel,html.react-ui .workspace~section,html.react-ui .workspace~details{margin-top:var(--gap)!important}
+@media (max-width:1100px){html.react-ui .workspace>.controls{margin-top:0}html.react-ui .workspace{display:flex;flex-direction:column;gap:var(--gap)}}
+/* Keep the placement ✓/× hidden until an anchor is pending (the icon rule must not unhide them). */
+html.react-ui .pointer-dock .btn.icon.pointer-commit{display:none!important}
+html.react-ui .stage:has(.canvas-wrap.has-pending-anchor) .pointer-dock .btn.icon.pointer-commit{display:inline-flex!important}
+html.react-ui .btn[hidden]{display:none!important}
+/* No colour cast: the refracted light layer is neutral, so the window keeps its true white/black. */
+html.react-ui .vitrio-scene .glass-light.one{background:radial-gradient(circle,rgba(255,255,255,.55),transparent 70%)!important}
+html.react-ui .vitrio-scene .glass-light.two{background:radial-gradient(circle,rgba(200,200,200,.35),transparent 70%)!important}
+html.react-ui .vitrio-scene .glass-light.three{background:radial-gradient(circle,rgba(255,255,255,.3),transparent 70%)!important}
+html.react-ui .lqg-lens .vitrio-scene .glass-streaks{background:repeating-linear-gradient(115deg,transparent 0 46px,#ffffff59 46px 49px,transparent 49px 92px,#ffffff2a 92px 94px,transparent 94px 140px)!important}
+html[data-theme="dark"].react-ui #headChart{filter:invert(.9) hue-rotate(180deg);border-radius:8px}
+@media (prefers-color-scheme:dark){html.react-ui:not([data-theme]) #headChart{filter:invert(.9) hue-rotate(180deg);border-radius:8px}}
+/* One scrollbar only: the right column no longer scrolls on its own; all native bars hidden. */
+html.react-ui .workspace>.controls{position:static!important;max-height:none!important;overflow:visible!important}
+html.react-ui *{scrollbar-width:none}
+html.react-ui *::-webkit-scrollbar{width:0!important;height:0!important;display:none!important}
+/* Stacked layout: no negative margins; the flex gap alone spaces the video card and panels. */
+html.react-ui .workspace>.panel.stage,html.react-ui .workspace>.controls{margin:0!important}
+
+/* Video card: sticky beside the right column (wide layout), plain flow when stacked. */
+html.react-ui .workspace>.panel.stage{position:sticky!important;top:82px}
+
+/* Scrollbar jump chevron (ChemEZ): appears inside the thumb while more content is below. */
+.work-scrollbar-thumb{display:flex;align-items:flex-end;justify-content:center;overflow:hidden}
+.work-scrollbar-latest{pointer-events:auto;width:100%;height:0;margin:0;padding:0;border:0;background:transparent;color:#2b302c;font-size:10px;display:grid;place-items:center;opacity:0;cursor:pointer;transition:height .14s ease,opacity .14s ease}
+.work-scrollbar.has-more .work-scrollbar-latest{height:18px;opacity:1}
+.work-scrollbar-latest:hover{color:#000}
+@keyframes chevron-nudge{0%,100%{transform:translateY(0)}50%{transform:translateY(2px)}}
+.work-scrollbar-latest:hover i{animation:chevron-nudge .7s ease-in-out infinite}
+html[data-theme="dark"] .work-scrollbar-latest{color:#e8ece9}
+.work-scrollbar.has-more{opacity:.64}
+@media(prefers-reduced-motion:reduce){.work-scrollbar-latest{transition:none}.work-scrollbar-latest:hover i{animation:none}}
+/* Room for the scrollbar: content keeps clear of the 8px + 14px bar on the right. */
+html.react-ui body{padding-right:30px!important}
+
+/* ---- Shape system (one value per role) ----
+   text buttons: 32px pill · icon buttons: 32px circle · inputs/selects: 32px, r10
+   list rows: r9 · panels: r12 · sidebar rows: 40px, r9 */
+html.react-ui .btn:not(.icon):not(.anchor-row):not(.anchor-marker),html.react-ui .top-action,html.react-ui .lg-button:not([aria-label^="Close"]){height:32px;min-height:32px;border-radius:999px!important;padding:0 14px;display:inline-flex;align-items:center;justify-content:center;gap:7px}
+html.react-ui .btn.icon,html.react-ui .lg-button[aria-label^="Close"]{width:32px!important;height:32px!important;min-height:32px!important;border-radius:50%!important}
+html.react-ui .num-in,html.react-ui select{height:32px!important;border-radius:10px!important}
+html.react-ui #kfList .anchor-row{height:32px;min-height:32px;border-radius:9px!important}
+html.react-ui .panel:not(.progress-card),html.react-ui .settings-modal{border-radius:12px!important}
+html.react-ui .stage-list>li .stage-trigger{height:100%;min-height:38px}
+html.react-ui #calibBtn{width:100%}
+html.react-ui .work-scrollbar-latest{font-family:inherit}
+/* Rims on every panel (Results cards included) and on anchor rows. */
+html.react-ui[data-glass="on"] .panel:not(.progress-card){position:relative}
+html.react-ui[data-glass="on"] .panel:not(.progress-card)::after{content:'';position:absolute;inset:0;border-radius:inherit;pointer-events:none;padding:1.5px;z-index:2;
+  background:linear-gradient(135deg,#ffffff 0%,rgba(0,0,0,.16) 14%,rgba(255,255,255,.9) 36%,rgba(0,0,0,.07) 62%,rgba(0,0,0,.22) 86%,#ffffff 100%);
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;opacity:1}
+html[data-theme="dark"].react-ui[data-glass="on"] .panel:not(.progress-card)::after{background:linear-gradient(135deg,#ffffff 0%,#ffffff33 14%,#00000066 38%,#ffffff1a 62%,#00000080 86%,#ffffffb3 100%)}
+html.react-ui[data-glass="on"] .panel:not(.progress-card){border-color:transparent!important}
+html.react-ui[data-glass="on"] #kfList .anchor-row::after{opacity:.55!important}
+/* Dropdown arrow: custom chevron that is visible in both themes. */
+html.react-ui select{-webkit-appearance:none;appearance:none;padding-right:30px!important;background-repeat:no-repeat!important;background-position:right 11px center!important;background-size:10px 6px!important;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%23262b27' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")!important}
+html[data-theme="dark"].react-ui select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%23e8ebe8' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")!important;background-color:#26292c!important;color:var(--ink)!important}
+@media (prefers-color-scheme:dark){html.react-ui:not([data-theme]) select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%23e8ebe8' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")!important;background-color:#26292c!important}}
+html.react-ui .btn:disabled,html.react-ui .top-action:disabled{opacity:.58}
+/* Sidebar stage preview: footnote in the UI face as a quiet one-line tag, not green mono. */
+html.react-ui .stage-preview small{display:inline-block;margin-top:8px;padding:3px 8px;border-radius:999px;background:rgba(0,0,0,.05);color:var(--ink-soft);font:500 10.5px/1.4 var(--sans);letter-spacing:0;white-space:nowrap;max-width:100%;overflow:hidden;text-overflow:ellipsis}
+html[data-theme="dark"].react-ui .stage-preview small{background:rgba(255,255,255,.07)}
+html.react-ui .stage-preview{border-radius:12px;box-shadow:0 8px 28px rgba(0,0,0,.12)}
+html.react-ui .stage-preview strong{font:600 13px var(--sans)}
+html.react-ui .stage-preview p{font-size:12px;line-height:1.5;color:var(--ink-soft)}
+/* One header style everywhere, matching ANALYSIS SETTINGS: UI face, 600, spaced caps, faint ink. */
+html.react-ui :is(.panel>h2,.panel h2:first-child,.sidebar-label,details.adv>summary,.area-feature>summary,.stage-preview-heading,.mgroup-title,.adv-sep-title,.settings-content>h2,.method-flow h3){
+  font-family:var(--sans)!important;font-size:11px!important;font-weight:600!important;letter-spacing:.12em!important;text-transform:uppercase!important;color:var(--ink-faint)!important}
+html.react-ui .settings-content>h2{margin-bottom:8px}
+/* Bigger disclosure triangle */
+html.react-ui details.adv>summary::before,html.react-ui .area-feature>summary::before{font-size:14px!important;line-height:1;width:14px;display:inline-block;text-align:center}
+/* Preview footnote: show the whole text */
+html.react-ui .stage-preview small{white-space:normal!important;overflow:visible!important;text-overflow:clip!important;border-radius:8px;display:block;width:fit-content}
+html.react-ui details.adv>summary::before{content:''!important;width:0!important;height:0;border-style:solid;border-width:5.5px 0 5.5px 8px;border-color:transparent transparent transparent var(--accent);font-size:0!important;transition:transform .15s ease;margin-right:4px}
+html.react-ui details.adv[open]>summary::before{content:''!important;transform:rotate(90deg)}
+/* Head · center · tail panel: buttons carry the colour key, so no duplicate legend. */
+html.react-ui #landmarkKey .landmark-legend{display:none}
+html.react-ui #landmarkKey{margin-top:10px;padding-top:10px;border-top:1px solid var(--rule)}
+html.react-ui #landmarkKey .help{margin:0;font-size:var(--t-sm);color:var(--ink-faint)}
+html.react-ui #headPane>div[style*="flex-wrap"]{display:grid!important;grid-template-columns:repeat(3,1fr);gap:8px!important;margin:12px 0!important}
+html.react-ui #headPane>div[style*="flex-wrap"]>.btn{width:100%;padding:0 10px}
+html.react-ui #headPane>div[style*="flex-wrap"]>.btn[hidden]{display:none!important}
+html.react-ui #headPane #approveHead:not([hidden]),html.react-ui #headPane #rejectHead:not([hidden]){grid-column:span 3}
+html.react-ui .landmark-badge{width:18px;height:18px;border-radius:5px;font:600 10px/1 var(--sans);display:inline-grid;place-items:center}
+html.react-ui #headPane .help{margin:0}
+html.react-ui #anatomyNote{color:var(--ink-soft)}
+/* Settings close: centered neutral circle */
+html.react-ui .settings-close{width:30px;height:30px;padding:0;border-radius:50%;border:1px solid var(--rule-strong);background:var(--panel);color:var(--ink-soft);display:grid;place-items:center;cursor:pointer;font-size:12px;line-height:1}
+html.react-ui .settings-close:hover{background:rgba(0,0,0,.05);color:var(--ink)}
+html.react-ui .settings-close i{display:block;width:12px;height:12px;line-height:12px;text-align:center}
+html[data-theme="dark"].react-ui .settings-close{background:#2a2d30;border-color:rgba(255,255,255,.12);color:#d8dbd8}
+html.react-ui .settings-action{height:30px;padding:0 14px;border-radius:999px;border:1px solid var(--rule-strong);background:var(--panel);color:var(--ink);font:500 var(--t-sm) var(--sans);cursor:pointer}
+html.react-ui .settings-action:hover{background:rgba(0,0,0,.04)}
+html[data-theme="dark"].react-ui .settings-action{background:#2a2d30}
+
+/* Default ground: soft neutral grey (not white), tinted glass in the desktop app. Panels stay white. */
+:root{--glass-tint:236,237,237;--glass-tint-dark:14,15,16}
+html.react-ui:not([data-theme="dark"]){--ground:rgb(var(--glass-tint))}
+html.react-ui.desktop-app:not([data-theme="dark"]),html.react-ui.desktop-app:not([data-theme="dark"]) body{background:rgba(var(--glass-tint),var(--sidebar-alpha))!important}
+html.react-ui:not(.desktop-app):not([data-theme="dark"]),html.react-ui:not(.desktop-app):not([data-theme="dark"]) body{background:rgb(var(--glass-tint))!important}
+html.react-ui:not(.desktop-app):not([data-theme="dark"]) .app-sidebar{background:rgb(244,245,245)!important}
+html.react-ui:not([data-theme="dark"]) .app-bar{background:rgba(var(--glass-tint),calc(var(--sidebar-alpha) * .6))!important}
+html[data-theme="dark"].react-ui.desktop-app,html[data-theme="dark"].react-ui.desktop-app body{background:rgba(var(--glass-tint-dark),var(--sidebar-alpha))!important}
+@media (prefers-color-scheme:dark){html.react-ui:not([data-theme]){--ground:#16181a}}
+
+/* Transport row never wraps a lone button: frame-step labels collapse to icons when tight. */
+@media (max-width:1320px){html.react-ui .frame-step span{display:none}html.react-ui .frame-step{width:32px;padding:0!important;border-radius:50%!important}html.react-ui .playback-speed{font-size:0;gap:0}html.react-ui .playback-speed select{font-size:var(--t-sm)}}
+/* Nothing is text-selectable except fields you type into. */
+html.react-ui,html.react-ui *{-webkit-user-select:none!important;user-select:none!important}
+html.react-ui input:not([type=range]):not([type=checkbox]),html.react-ui textarea,html.react-ui [contenteditable="true"]{-webkit-user-select:text!important;user-select:text!important}
+html.react-ui img,html.react-ui canvas,html.react-ui a{-webkit-user-drag:none}
+
+/* Surfaces vs ground: sidebar + top bar match the panels (white / dark grey); the ground behind them is
+   grey in light mode and black in dark mode. The Window glass slider applies to all of it. */
+:root{--surface:255,255,255;--surface-dark:30,33,36;--glass-tint-dark:0,0,0}
+html.react-ui.desktop-app .app-sidebar,html.react-ui.desktop-app[data-glass] .app-sidebar{background:rgba(var(--surface),var(--sidebar-alpha))!important}
+html.react-ui:not(.desktop-app) .app-sidebar{background:rgb(var(--surface))!important}
+html.react-ui .app-bar{background:rgba(var(--surface),calc(.35 + var(--sidebar-alpha) * .6))!important}
+html[data-theme="dark"].react-ui .app-sidebar,html[data-theme="dark"].react-ui.desktop-app[data-glass] .app-sidebar{background:rgba(var(--surface-dark),var(--sidebar-alpha))!important}
+html[data-theme="dark"].react-ui:not(.desktop-app) .app-sidebar{background:rgb(var(--surface-dark))!important}
+html[data-theme="dark"].react-ui .app-bar{background:rgba(var(--surface-dark),calc(.35 + var(--sidebar-alpha) * .6))!important}
+html[data-theme="dark"].react-ui.desktop-app,html[data-theme="dark"].react-ui.desktop-app body{background:rgba(var(--glass-tint-dark),var(--sidebar-alpha))!important}
+html[data-theme="dark"].react-ui:not(.desktop-app),html[data-theme="dark"].react-ui:not(.desktop-app) body{background:#000!important}
+html[data-theme="dark"]{--panel:#1e2124}
+html[data-theme="dark"].react-ui .panel:not(.progress-card),html[data-theme="dark"].react-ui .settings-modal{background:rgb(var(--surface-dark))!important}
+@media (prefers-color-scheme:dark){
+  html.react-ui:not([data-theme]) .app-sidebar{background:rgba(var(--surface-dark),var(--sidebar-alpha))!important}
+  html.react-ui:not([data-theme]) .app-bar{background:rgba(var(--surface-dark),calc(.35 + var(--sidebar-alpha) * .6))!important}
+  html.react-ui.desktop-app:not([data-theme]),html.react-ui.desktop-app:not([data-theme]) body{background:rgba(0,0,0,var(--sidebar-alpha))!important}
+  html.react-ui:not([data-theme]) .panel:not(.progress-card){background:rgb(var(--surface-dark))!important}
+}
+html.react-ui:not([data-theme="dark"]) .app-bar,html.react-ui.desktop-app:not([data-theme="dark"]) .app-bar{background:rgba(var(--surface),calc(.35 + var(--sidebar-alpha) * .6))!important}
+/* Heading case: every word of headings and button labels starts with a capital. */
+html.react-ui :is(button,.btn,.top-action,h1,h2,h3,summary,.settings-row strong,.settings-modal header strong,.stage-name,.sidebar-settings span,.stage-preview strong,.stage-preview-heading,#anchorReviewTitle,#selectedAnchorTitle,.progress-card h2,.m-label,.mgroup-title,.badge,label.playback-speed){text-transform:capitalize}
+/* keep: file-type labels, frame/time rows, units, symbols */
+html.react-ui :is(#exportXlsx,#exportPoints,#kfList .anchor-row,.work-scrollbar-latest,#zoomReadout,.anchor-marker){text-transform:none}
+html.react-ui :is(.panel>h2,.panel h2:first-child,.sidebar-label,details.adv>summary,.area-feature>summary,.stage-preview-heading,.mgroup-title,.adv-sep-title,.settings-content>h2){text-transform:capitalize!important;letter-spacing:.02em!important;font-size:12.5px!important;color:var(--ink-soft)!important}
+html.react-ui .badge{text-transform:capitalize!important;letter-spacing:.02em!important}
+/* Thin window outline: dark line in light mode, light line in dark mode. */
+html.react-ui.desktop-app body::after{content:'';position:fixed;inset:0;border:1px solid rgba(0,0,0,.45);border-radius:10px;pointer-events:none;z-index:2147483000}
+html[data-theme="dark"].react-ui.desktop-app body::after{border-color:rgba(255,255,255,.55)}
+@media (prefers-color-scheme:dark){html.react-ui.desktop-app:not([data-theme]) body::after{border-color:rgba(255,255,255,.55)}}
+html.react-ui.desktop-app.ui-booting body::after{display:none}
+
+/* Side by side down to 940px windows: video left, a narrower panel column right. Stack only below that. */
+html.react-ui .workspace{display:grid!important;grid-template-columns:minmax(0,1fr) clamp(300px,28vw,380px)!important;align-items:start;gap:var(--gap)!important}
+html.react-ui .workspace>*{min-width:0}
+@media (max-width:939px){html.react-ui .workspace{display:flex!important;flex-direction:column!important;gap:var(--gap)!important}html.react-ui .workspace>.panel.stage{position:relative!important;top:0!important}}
+/* Rounded focus ring (no square green box around collapsible sections). */
+html.react-ui details,html.react-ui details>summary{outline:none}
+html.react-ui details>summary:focus-visible{outline:2px solid var(--accent);outline-offset:-2px;border-radius:12px}
+html.react-ui .workspace>.adv:focus-within{outline:none}
+/* Video card fills the window height beside the panels; the video area takes the remaining space. */
+@media (min-width:940px){
+  html.react-ui .workspace>.panel.stage{display:flex;flex-direction:column;height:calc(100vh - 66px - 40px);min-height:520px}
+  html.react-ui .workspace>.panel.stage>.canvas-wrap{flex:1 1 auto;aspect-ratio:auto!important;min-height:220px;height:auto}
+  html.react-ui .workspace>.panel.stage>:not(.canvas-wrap){flex:none}
+}
+html.react-ui #kfList .anchor-row{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block;line-height:30px}
+/* Small windows (< 1200px): the video keeps the full width; panels go underneath, two per row, to keep scrolling short. */
+@media (max-width:1199px){
+  html.react-ui .workspace{display:flex!important;flex-direction:column!important;gap:var(--gap)!important}
+  html.react-ui .workspace>.panel.stage{position:relative!important;top:0!important;width:100%;height:calc(100vh - 66px - 40px)!important;min-height:460px}
+  html.react-ui .workspace>.controls{display:grid!important;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));align-items:start;gap:var(--gap)!important}
+  html.react-ui .workspace>.controls>details.adv{grid-column:1/-1}
+}
+@media (max-width:939px){html.react-ui .workspace>.panel.stage{height:auto!important;min-height:0}html.react-ui .workspace>.panel.stage>.canvas-wrap{aspect-ratio:16/9!important;flex:none}}
+/* Let the video give back vertical space when the window is short. */
+@media (max-height:850px) {
+  html.react-ui .workspace > .panel.stage {
+    height: auto !important;
+    min-height: 0;
+  }
+  html.react-ui .workspace > .panel.stage > .canvas-wrap {
+    flex: none;
+    min-height: 0;
+    max-height: 48vh;
+  }
+}
+@media (min-width:940px) and (max-height:850px) {
+  html.react-ui .workspace > .panel.stage > .canvas-wrap {
+    height: 48vh;
+  }
+}
+/* Wordmark: serif "Worm" + EZ glyph at cap height, theme coloured. */
+.wordmark{display:inline-flex;align-items:baseline;gap:.03em;white-space:nowrap;color:inherit}
+.wordmark .ez-glyph{display:inline-block;height:.74em;aspect-ratio:996/691;background:currentColor;
+  -webkit-mask:url('../lib/ez-mark.svg') center/contain no-repeat;mask:url('../lib/ez-mark.svg') center/contain no-repeat;transform:translateY(.02em)}
+html.react-ui .about-heading strong{font:italic 500 30px/1 var(--serif)!important;color:var(--ink)}
+html.react-ui .about-heading strong .ez-glyph{height:.72em}
+html.react-ui .about-heading .wordmark,html.react-ui .about-heading .wordmark>span{font:italic 500 32px/1 var(--serif)!important;letter-spacing:-.01em!important;color:var(--ink)!important;text-transform:none!important}
+html.react-ui .about-heading{display:flex;align-items:baseline;gap:12px}
+html.react-ui .about-heading>span{font:500 11px var(--sans)!important;color:var(--ink-faint);letter-spacing:.02em}
+/* About: wordmark with the same tagline box as the sidebar, version beside it. */
+html.react-ui .about-heading{display:flex;align-items:center;gap:14px;margin-bottom:6px}
+html.react-ui .about-identity{display:inline-grid;grid-template-columns:max-content;gap:6px;justify-items:stretch}
+html.react-ui .about-identity .app-wordmark,html.react-ui .about-identity .wordmark,html.react-ui .about-identity .wordmark>span{font:italic 500 32px/1 var(--serif)!important;text-align:center;justify-content:center;color:var(--ink)!important;text-transform:none!important;letter-spacing:-.01em!important}
+html.react-ui .about-identity .app-tagline{font:500 8px/1 var(--sans)!important;letter-spacing:.05em!important;text-transform:uppercase!important;text-align:center;padding:4px 6px;border:1px solid var(--rule-strong);border-radius:4px;color:var(--ink-soft)!important;white-space:nowrap}
+html.react-ui .about-version{font:500 11px var(--sans)!important;color:var(--ink-faint);letter-spacing:.02em;text-transform:none!important}
+
+/* Pending corrections need a visible confirmation action in every theme. */
+html.react-ui #pointerConfirm{width:32px;height:32px;min-height:32px;background:#3f6b4a!important;color:#fff!important;border:0!important;box-shadow:none!important}
+html.react-ui #pointerConfirm:hover:not(:disabled){background:#355b3f!important;color:#fff!important}
+html.react-ui #pointerConfirm i{color:inherit!important;opacity:1!important}
+html.react-ui .btn.primary:not(.icon){background:#3f6b4a!important;color:#fff!important}
+html.react-ui .btn.primary:not(.icon):hover:not(:disabled){background:#355b3f!important;color:#fff!important}
+html.react-ui .btn.primary:disabled{opacity:.58;filter:none}
+html.react-ui #canvasWrap[data-aim-mode="rim"]{--aim-color:#2e9e5b}
+html.react-ui #analysisCurtain:not([hidden]){pointer-events:auto;background:rgba(15,20,18,.13);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+html.react-ui #analysisCurtain .progress-card{background:color-mix(in srgb,var(--panel) 94%,transparent);color:var(--ink)}
+html.react-ui .screensaver-settings{display:flex;align-items:center;gap:12px}
+html.react-ui .screensaver-settings .settings-toggle{padding:0;border:0}
+html.react-ui .biology-screensaver{position:fixed;inset:0;z-index:2000;display:grid;place-items:center;padding:clamp(24px,6vw,90px);background:radial-gradient(ellipse at 20% 15%,#fff,transparent 70%),#eceded;color:#444749;cursor:pointer;outline:none;animation:screensaver-in .3s ease-out}
+html.react-ui .screensaver-copy{width:min(720px,100%);text-align:center}
+html.react-ui .screensaver-eyebrow{font:500 12px var(--sans);letter-spacing:.12em;text-transform:none;color:#657068}
+html.react-ui .screensaver-copy p{min-height:5em;margin:22px 0;font:350 clamp(20px,3.2vw,36px)/1.6 var(--sans);text-wrap:balance}
+html.react-ui .type-caret{display:inline-block;width:2px;height:1em;margin-left:4px;vertical-align:-.12em;background:currentColor;animation:type-caret 1s steps(1,end) infinite}
+html.react-ui .screensaver-dismiss{position:absolute;bottom:36px;left:24px;right:24px;text-align:center;font:400 11px var(--sans);color:#657068}
+html.react-ui[data-screensaver="on"] .work-scrollbar{visibility:hidden}
+html[data-theme="dark"].react-ui .biology-screensaver{background:radial-gradient(ellipse at 20% 15%,#1b201e,transparent 70%),#090c0b;color:#e8ebe9}
+html[data-theme="dark"].react-ui :is(.screensaver-eyebrow,.screensaver-dismiss){color:#a3afa8}
+@media(prefers-color-scheme:dark){html.react-ui:not([data-theme]) .biology-screensaver{background:radial-gradient(ellipse at 20% 15%,#1b201e,transparent 70%),#090c0b;color:#e8ebe9}html.react-ui:not([data-theme]) :is(.screensaver-eyebrow,.screensaver-dismiss){color:#a3afa8}}
+@keyframes screensaver-in{from{opacity:0}to{opacity:1}}
+@keyframes type-caret{0%,50%{opacity:1}51%,100%{opacity:0}}
+@media(prefers-reduced-motion:reduce){html.react-ui .biology-screensaver,html.react-ui .type-caret{animation:none}html.react-ui .type-caret{display:none}}
+
+/* Issues stay beside the source frame, with a compact readable message. */
+html.react-ui #errorPanel.video-issue{position:absolute;z-index:14;left:12px;bottom:12px;right:auto;top:auto;width:min(360px,calc(100% - 24px));max-height:min(230px,calc(100% - 24px));margin:0;padding:10px 12px;border:1px solid color-mix(in srgb,var(--ink) 16%,transparent);border-radius:12px;background:color-mix(in srgb,var(--panel) 72%,transparent);color:var(--ink);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 5px 18px #0002;overflow:auto;animation:video-card-enter .16s ease-out both;transition:background .16s}
+html.react-ui #errorPanel.video-issue:hover,html.react-ui #errorPanel.video-issue:focus-within{background:color-mix(in srgb,var(--panel) 96%,transparent)}
+html.react-ui #errorPanel.video-issue.top{top:12px;bottom:auto}
+html.react-ui #errorPanel.video-issue.right{right:12px;left:auto}
+html.react-ui #errorSummary{padding-right:27px;font-size:12px;font-weight:600;cursor:pointer;line-height:1.5}
+html.react-ui #errorList{font-size:12px;line-height:1.5;overflow-wrap:anywhere}
+html.react-ui #errorList p{margin:7px 0 0}
+html.react-ui #errorPanel #dismissErrors{position:absolute;right:5px;top:5px;width:26px;height:26px;min-height:26px;padding:0;border:0;background:transparent;color:var(--ink);border-radius:50%}
+html.react-ui #errorPanel #dismissErrors:hover{background:color-mix(in srgb,var(--ink) 10%,transparent)}
+html.react-ui #errorPanel #dismissErrors:focus-visible,html.react-ui #errorSummary:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+@media(prefers-reduced-motion:reduce){html.react-ui #errorPanel.video-issue{animation:none;transition:none}}
+
+html.react-ui #errorPanel,html.react-ui #errorPanel summary,html.react-ui .screensaver-dismiss{text-transform:none!important}
+
+html.react-ui dialog.reference-editor{width:min(1120px,94vw);max-width:94vw;max-height:94vh;padding:16px;border:1px solid var(--rule);border-radius:18px;background:var(--panel);color:var(--ink);box-shadow:0 20px 80px #0004;overflow:auto}
+dialog.reference-editor::backdrop{background:#15201966;backdrop-filter:blur(5px)}
+.reference-editor header,.reference-tools,.reference-options,.reference-editor footer{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.reference-editor header{justify-content:space-between}.reference-editor header h2{margin:0;font-size:17px}.reference-editor header p{margin:5px 0 12px;font-size:12px;color:var(--ink-soft)}
+.reference-tools,.reference-options{margin:8px 0}.reference-tools [aria-pressed=true]{background:var(--accent);color:white}.reference-options label{display:flex;align-items:center;gap:6px;font-size:12px}.reference-options [hidden]{display:none}.reference-options input[type=range]{width:120px}
+.reference-canvas{background:#0a0b0c;border-radius:10px;text-align:center;overflow:hidden}.reference-canvas canvas{display:block;margin:auto;width:auto;max-width:100%;height:auto;max-height:60vh;touch-action:none}
+.reference-editor footer{margin-top:12px;font-size:12px}.reference-editor footer [data-help]{color:var(--ink-soft);margin-right:auto}.reference-editor .btn{min-height:28px}.reference-editor header,.reference-editor footer,.reference-editor label{text-transform:none!important}
+@media(max-width:600px){html.react-ui dialog.reference-editor{padding:10px}.reference-editor footer [data-help]{flex-basis:100%}.reference-tools .btn{font-size:11px;padding:5px 8px}.reference-canvas canvas{max-height:none}}
+
+html.react-ui .reference-editor h2,html.react-ui .reference-editor [data-help]{text-transform:none!important}
+
+/* Content-sized inspector cards; compact columns pack without tall empty rows. */
+html.react-ui #kfList{max-height:none!important;overflow:visible}
+@media(max-width:1199px){
+  html.react-ui .workspace>.controls[data-fluid-panels="true"]{grid-auto-rows:1px;grid-auto-flow:row dense;row-gap:0!important;column-gap:var(--gap)!important;align-items:start}
+  html.react-ui .workspace>.controls[data-fluid-panels="true"]>*{align-self:start;order:0!important;height:auto;min-width:0}
+}
+
+html.react-ui #areaFeature>h2{margin-bottom:10px}
+html.react-ui #areaEstimate{font-size:13px;line-height:1.6;color:var(--ink);font-weight:500}
+html.react-ui #areaReadout{line-height:1.75;overflow-wrap:anywhere;margin:10px 0}
+html.react-ui .screensaver-source{display:inline-block;color:inherit;opacity:.55;font:400 11px/1.5 var(--sans);text-decoration:none;text-transform:none!important;max-width:100%;overflow-wrap:anywhere}
+html.react-ui .screensaver-source:hover,html.react-ui .screensaver-source:focus-visible{opacity:1;text-decoration:underline}
+html.react-ui .screensaver-source i{font-size:9px;margin-left:3px}
+html.react-ui .screensaver-copy p{font-size:clamp(19px,2.6vw,30px);min-height:6em}
+html.react-ui .biology-screensaver{overflow-y:auto}
+/* An empty workspace presents loading actions, not controls for a missing clip. */
+html.react-ui body[data-media-ready="false"] #pointerDock,
+html.react-ui body[data-media-ready="false"] .stage>.transport,
+html.react-ui body[data-media-ready="false"] .workspace>.controls{display:none!important}
+html.react-ui body:is([data-phase="scanning"],[data-phase="reviewing"],[data-phase="reviewingBoundary"],[data-phase="ready"]) #verificationPane{display:none!important}
+html.react-ui body:is([data-phase="scanning"],[data-phase="reviewing"],[data-phase="reviewingBoundary"],[data-phase="ready"]):not([data-pointer-mode="landmark"]) #headPane{display:none!important}
+
+/* Five user stages share a single video, inspector and transport. */
+html.react-ui body:not([data-workspace-stage="results"]) :is(#analysisResults,#displacementResult,#bodyAnalysisResults){display:none!important}
+html.react-ui body:not([data-workspace-stage="results"]) #measurementSetup{display:none!important}
+html.react-ui body[data-workspace-stage="videos"] .workspace>.controls{display:none!important}
+html.react-ui body[data-workspace-stage="setup"] .workspace>.controls>:not(#scalePane):not(#setupPanel):not(#anchorsPane){display:none!important}
+html.react-ui body[data-workspace-stage="fit"] .workspace>.controls>:not(#headPane):not(#verificationPane):not(#anchorsPane):not(#multiWormPanel){display:none!important}
+html.react-ui body[data-workspace-stage="analyze"] .workspace>.controls>:not(#measurementSetup){display:none!important}
+html.react-ui body[data-workspace-stage="results"] .workspace>.controls>:not(#verificationPane):not(#headPane):not(#measurementSetup){display:none!important}
+html.react-ui body:not([data-workspace-stage="fit"]):not([data-workspace-stage="results"]) :is(#recoverGaps,#connectGaps){display:none!important}
+.guided-actions{display:flex;flex-wrap:wrap;gap:8px;align-items:center;width:100%;padding-top:6px}.guided-actions small{display:block;font-size:10px;color:var(--ink-soft)}
+#measurementSetup label{display:block;margin:12px 0}#measurementSetup details{margin:14px 0}#measurementSetup button{margin-top:12px}
+#bodyAnalysisResults{margin-top:20px}#bendTraceCanvas{width:100%;height:auto;max-height:260px;cursor:crosshair;outline-offset:4px}#bodyFrameReadout{margin:10px 0}
+.video-queue{margin:20px 28px 20px calc(var(--sidebar-width,180px) + 24px);max-width:calc(100% - var(--sidebar-width,180px) - 54px)}
+.queue-heading,.queue-actions,.queue-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.queue-heading{justify-content:space-between}.queue-actions{margin:12px 0}.queue-rows{max-height:280px;overflow:auto}.queue-row{padding:8px 0;border-top:1px solid var(--rule);font-size:12px}.queue-select{flex:1;min-width:180px;text-align:left;overflow-wrap:anywhere}.queue-select[aria-current="true"]{background:color-mix(in srgb,var(--accent) 12%,transparent)}.queue-row small{width:100%;color:var(--ink-soft)}
+@media(max-width:1199px){.video-queue{margin-left:calc(var(--sidebar-width,180px) + 18px);margin-right:22px}.app-actions{gap:5px}.top-action{font-size:11px;padding-inline:10px}}
+
+/* Compact, aligned calibration fields without stacked button-like borders. */
+html.react-ui #scalePane .num-row,html.react-ui #scalePane .num-row:has(>#scalePreset){grid-template-columns:minmax(95px,1fr) minmax(110px,1.2fr);gap:12px;min-height:36px;align-items:center}
+html.react-ui #scalePane #scalePreset{grid-column:auto;width:100%!important}
+html.react-ui #scalePane .num-row>select,html.react-ui #scalePane .num-row>.num-in{max-width:none;width:100%;height:28px!important;min-height:28px;padding:3px 9px;border:1px solid color-mix(in srgb,var(--ink) 13%,transparent);border-radius:7px!important;box-shadow:none!important;background-color:color-mix(in srgb,var(--ink) 2%,var(--panel));font-size:12px;line-height:20px;transition:border-color 150ms ease,background-color 150ms ease,box-shadow 150ms ease}
+html.react-ui #scalePane .num-row>select{appearance:none;padding-right:25px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='m3 4.5 3 3 3-3' fill='none' stroke='%236c746c' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 9px center}
+html.react-ui #scalePane .num-row>:is(select,input):hover:not(:disabled){border-color:color-mix(in srgb,var(--accent) 45%,transparent)}
+html.react-ui #scalePane .num-row>:is(select,input):focus-visible{outline:2px solid color-mix(in srgb,var(--accent) 45%,transparent);outline-offset:2px;border-color:var(--accent)}
+html.react-ui #scalePane input::-webkit-inner-spin-button{opacity:0}html.react-ui #scalePane input:hover::-webkit-inner-spin-button,html.react-ui #scalePane input:focus::-webkit-inner-spin-button{opacity:1}
+html.react-ui #scalePane .setup-actions{gap:7px;flex-wrap:wrap}html.react-ui #scalePane .btn{min-height:28px;padding:4px 10px;height:28px!important;border-radius:8px!important;font-size:12px}
+@media(pointer:coarse){html.react-ui #scalePane .num-row>:is(select,input),html.react-ui #scalePane .btn{min-height:36px;height:36px!important}}
+@media(prefers-reduced-motion:reduce){html.react-ui #scalePane .num-row>:is(select,input){transition:none}}
+
+html.react-ui[data-glass="on"] #scalePane .num-row>:is(select,input){box-shadow:none!important;border-color:color-mix(in srgb,var(--ink) 13%,transparent)!important}
+
+html.react-ui #multiWormPanel{display:none!important}
+
+
+html.react-ui .screensaver-copy p {
+  animation: screensaver-text-in 600ms ease-out both;
+}
+@keyframes screensaver-text-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  html.react-ui .screensaver-copy p { animation: none; }
+}
+
+html.react-ui .settings-layout > nav {
+  background: color-mix(in srgb, var(--ink) 2.5%, transparent);
+}
+html.react-ui .settings-layout > nav button:hover {
+  background: color-mix(in srgb, var(--ink) 4%, transparent);
+}
+html.react-ui .settings-layout > nav button.selected {
+  background: color-mix(in srgb, var(--accent) 9%, transparent);
+  box-shadow: inset 2px 0 color-mix(in srgb, var(--accent) 55%, transparent);
+}
+html.react-ui .settings-group-heading {
+  margin: 16px 0 0;
+  padding: 5px 8px;
+  border-radius: 5px;
+  background: color-mix(in srgb, var(--ink) 3%, transparent);
+  color: var(--ink-soft);
+  font: 500 11px var(--sans);
+}
+
+
+html.react-ui .workspace > .panel.stage:fullscreen {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100% !important;
+  min-height: 0;
+  max-height: none;
+  top: 0;
+  margin: 0;
+  border-radius: 0 !important;
+}
+html.react-ui .workspace > .panel.stage:fullscreen > .canvas-wrap {
+  flex: 1 1 0;
+  height: auto;
+  min-height: 0;
+  max-height: none;
+  aspect-ratio: auto !important;
+}
+html.react-ui .workspace > .panel.stage:fullscreen > :is(.pointer-dock, .zoom-tools),
+html.react-ui .stage:fullscreen > .transport > :not(#playBtn, .playback-speed, #prevBtn, #nextBtn, #expandVideo, .timeline-row),
+html.react-ui .stage:fullscreen .timeline-anchor-actions {
+  display: none !important;
+}
+
+/* Compact chrome must not create an implicit third grid column. */
+@media (max-width:900px) {
+  html.react-ui .app-sidebar {grid-template-columns:minmax(0,1fr) auto;min-width:0;box-sizing:border-box}
+  html.react-ui .app-sidebar nav {max-width:100%;overflow:hidden}
+  html.react-ui .stage-list {max-width:100%;min-width:0}
+}
+@media (max-width:600px) {
+  html.react-ui .app-bar .workflow-status {grid-column:1;grid-row:1;min-width:0}
+  html.react-ui .app-bar .app-actions {grid-column:2;grid-row:1;min-width:0}
+}
+
+/* One player bar below the picture; editing and analysis keep their own rows. */
+html.react-ui .stage > .player-controls {
+  flex:none;display:flex;align-items:center;gap:6px;padding:7px 12px 9px;
+  background:var(--panel);border-top:1px solid var(--rule);
+}
+html.react-ui .player-controls .timeline-row {margin:0 0 3px;gap:10px}
+html.react-ui .player-controls > .btn {
+  width:32px;height:30px;min-height:30px;padding:0;border:0;border-radius:8px;
+  background:transparent;box-shadow:none;color:var(--ink);display:inline-grid;place-items:center;
+}
+html.react-ui .player-controls > .btn:hover:not(:disabled) {background:var(--accent-soft)}
+html.react-ui .player-controls #playBtn {width:36px;font-size:16px}
+html.react-ui .player-controls .frame-step > span[aria-hidden="true"] {display:none}
+html.react-ui #playerTime {font-size:11px;font-variant-numeric:tabular-nums;white-space:nowrap;color:var(--ink-soft);margin-left:7px}
+html.react-ui .player-spacer {flex:1;min-width:0}
+html.react-ui .player-controls .playback-speed {gap:5px;margin:0;font-size:12px;color:var(--ink-soft)}
+html.react-ui .player-controls .playback-speed select {height:28px;min-height:28px;max-width:76px;padding-block:2px;border-radius:7px}
+html.react-ui .player-controls .playback-speed i {font-size:12px}
+html.react-ui .stage:fullscreen > .transport:not(.player-controls) {display:none!important}
+html.react-ui .stage:fullscreen > .player-controls > :is(#playerTime,.player-spacer) {display:initial!important}
+@media(max-width:480px){
+  html.react-ui .stage > .player-controls {padding-inline:7px;gap:2px}
+  html.react-ui .player-controls > .btn {width:28px}
+  html.react-ui #playerTime {font-size:10px;margin-left:2px}
+  html.react-ui .player-controls .playback-speed i {display:none}
+}
+
+/* Quiet tool groups, separate from playback and scientific actions. */
+html.react-ui .player-controls .frame-step {width:auto;gap:5px;padding-inline:6px;font-size:10px}
+html.react-ui .player-controls .frame-step > span[aria-hidden="true"] {display:inline}
+html.react-ui .player-controls #playerTime {order:0;margin-left:0;margin-right:5px}
+html.react-ui .player-controls #expandVideo svg {width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:2;stroke-linejoin:miter}
+html.react-ui .player-controls .playback-speed {position:relative;width:30px;height:30px;display:grid;place-items:center;cursor:pointer;border-radius:7px}
+html.react-ui .player-controls .playback-speed:hover {background:var(--accent-soft)}
+html.react-ui .player-controls .playback-speed i {display:block;font-size:14px}
+html.react-ui .player-controls .playback-speed select {position:absolute;inset:0;width:100%;height:100%;max-width:none;opacity:0;cursor:pointer}
+html.react-ui .player-controls .playback-speed:focus-within {outline:2px solid var(--accent);outline-offset:1px}
+html.react-ui .video-edit-tools,html.react-ui .video-view-tools {min-width:0;padding:10px;display:flex;flex-direction:column;gap:7px;border:1px solid var(--rule);border-radius:10px}
+html.react-ui .video-edit-tools {background:linear-gradient(150deg,color-mix(in srgb,var(--panel) 94%,#d7a4a4),var(--panel))}
+html.react-ui .video-view-tools {background:linear-gradient(210deg,color-mix(in srgb,var(--panel) 94%,#8cafd0),var(--panel))}
+html.react-ui :is(.video-edit-tools,.video-view-tools) h3 {font-size:10px;font-weight:500;color:var(--ink-soft);margin:0 0 3px}
+html.react-ui .video-edit-tools > .btn {justify-content:flex-start;gap:7px;border-radius:7px;font-size:11px;padding:6px}
+html.react-ui .video-view-tools :is(.pointer-dock,.zoom-tools) {padding:0;border:0;background:transparent;box-shadow:none;display:flex;flex-direction:column;align-items:stretch;gap:6px}
+html.react-ui .video-view-tools .pointer-hint {font:10px var(--sans);white-space:normal;overflow:visible;flex:none}
+html.react-ui .video-view-tools .display-toggles {flex-wrap:wrap;gap:4px}
+html.react-ui .video-view-tools .zoom-range {flex:none;display:flex;flex-wrap:wrap;gap:4px}
+html.react-ui .video-view-tools #zoomLevel {order:4;flex:1 1 100%;min-width:0}
+html.react-ui .video-view-tools #viewNote:empty {display:none}
+html.react-ui .video-view-tools .timeline-anchor-actions {display:flex;flex-wrap:wrap;justify-content:center;border-top:1px solid var(--rule);padding-top:7px;gap:3px}
+html.react-ui .video-view-tools #pointerPlaceAnchor {order:-1;flex:1 1 100%;font-size:10px}
+html.react-ui .stage:has(.canvas-wrap.has-pending-anchor) .pointer-commit {display:inline-grid}
+html.react-ui .analysis-controls {justify-content:flex-start}
+html.react-ui .analysis-controls #runBtn {margin-left:auto}
+html.react-ui .workspace > .stage:fullscreen {display:flex!important;padding:0}
+html.react-ui .stage:fullscreen > :is(.video-view-tools,.video-edit-tools) {display:none!important}
+html.react-ui .stage:fullscreen > .player-controls {width:100%;box-sizing:border-box}
+html.react-ui .stage:fullscreen > .canvas-wrap {aspect-ratio:auto!important;max-height:none;flex:1 1 0;height:auto!important}
+@media(max-width:480px){html.react-ui .player-controls .frame-step {font-size:9px;gap:3px;padding-inline:2px}html.react-ui .player-controls #playerTime {font-size:9px;margin-right:0}html.react-ui .player-controls .player-spacer {display:none}}
+
+html.react-ui .video-edit-dialog {width:min(940px,calc(100vw - 30px));max-height:90vh;box-sizing:border-box;overflow:auto;padding:18px;border:1px solid var(--rule);border-radius:16px;background:var(--panel);color:var(--ink);box-shadow:0 20px 70px #0003}
+html.react-ui .video-edit-dialog::backdrop {background:#17251c55;backdrop-filter:blur(5px)}
+html.react-ui .video-edit-dialog header {display:flex;justify-content:space-between;align-items:flex-start;gap:10px;margin-bottom:12px}
+html.react-ui .video-edit-dialog h2 {margin:0;font-size:15px}
+html.react-ui .video-edit-dialog header p {margin:5px 0 0;font-size:11px;color:var(--ink-soft)}
+html.react-ui .video-edit-dialog :is(.edit-tabs,.edit-seek,.edit-trim,footer,.edit-files,.edit-cut-list) {display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-block:10px}
+html.react-ui .video-edit-dialog .edit-tabs [aria-pressed="true"] {background:var(--accent-soft);border-color:var(--accent)}
+html.react-ui .video-edit-dialog .edit-preview {position:relative;display:flex;justify-content:center;background:#101412;border-radius:9px;overflow:hidden}
+html.react-ui .video-edit-dialog video {display:none}
+html.react-ui .video-edit-dialog canvas {display:block;max-width:100%;max-height:45vh;width:auto;height:auto;touch-action:none}
+html.react-ui .video-edit-dialog .edit-seek input {flex:1;min-width:90px;accent-color:var(--accent)}
+html.react-ui .video-edit-dialog output {font-size:11px;font-variant-numeric:tabular-nums}
+html.react-ui .video-edit-dialog input[type="number"] {width:85px}
+html.react-ui .video-edit-dialog label {font-size:11px;display:flex;gap:5px;align-items:center}
+html.react-ui .video-edit-dialog footer {justify-content:flex-end}
+html.react-ui .video-edit-dialog [hidden] {display:none!important}
+html.react-ui .player-controls #expandVideo svg {width:19px!important;min-width:19px;max-width:none;height:19px!important;flex:none;display:block}
+html.react-ui .video-edit-dialog .trim-handles {position:relative;flex:1 1 100%;height:26px;margin:4px 0;background:linear-gradient(to right,var(--rule) var(--trim-left,0%),#b8c8b6 var(--trim-left,0%),#b8c8b6 var(--trim-right,100%),var(--rule) var(--trim-right,100%)) center/100% 4px no-repeat}
+html.react-ui .video-edit-dialog .trim-handles input {position:absolute;inset:0;width:100%;height:26px;margin:0;padding:0;appearance:none;background:transparent;pointer-events:none;border:0;box-shadow:none}
+html.react-ui .video-edit-dialog .trim-handles input::-webkit-slider-runnable-track {height:4px;background:transparent}
+html.react-ui .video-edit-dialog .trim-handles input::-webkit-slider-thumb {appearance:none;width:12px;height:20px;margin-top:-8px;border:2px solid var(--panel);border-radius:3px;background:var(--accent);box-shadow:0 0 0 1px var(--accent);pointer-events:auto;cursor:ew-resize}
+html.react-ui .video-edit-dialog .trim-handles input::-moz-range-track {height:4px;background:transparent}
+html.react-ui .video-edit-dialog .trim-handles input::-moz-range-thumb {width:10px;height:18px;border:2px solid var(--panel);border-radius:3px;background:var(--accent);pointer-events:auto;cursor:ew-resize}
+html.react-ui .player-controls #resetBtn {width:auto;display:inline-flex;gap:4px;padding-inline:5px;font-size:10px;white-space:nowrap}
+@media(max-width:600px){html.react-ui .player-controls #resetBtn span {display:none}html.react-ui .player-controls #resetBtn {width:28px;justify-content:center}}
+
+/* Equal rails in both windowed and maximized layouts. */
+html.react-ui .workspace > .panel.stage:not(:fullscreen) {
+ display:grid!important;grid-template-columns:clamp(82px,9vw,116px) minmax(0,1fr) clamp(82px,9vw,116px);
+ grid-template-rows:auto minmax(0,1fr) auto auto auto;gap:0 6px;height:auto!important;min-height:0;padding-bottom:6px;
+}
+html.react-ui .stage > .stage-header {grid-column:1/-1;grid-row:1}
+html.react-ui .stage > .canvas-wrap {grid-column:2;grid-row:2;width:100%;height:auto!important;min-height:0;aspect-ratio:auto!important;align-self:stretch;max-height:62vh}
+html.react-ui .stage > .video-edit-tools,html.react-ui .stage > .video-view-tools {grid-row:2;box-sizing:border-box;margin:0;display:flex;flex-direction:column;padding:8px;gap:5px;border-radius:9px}
+html.react-ui .stage > .video-edit-tools {grid-column:1;margin-left:5px;margin-right:0}
+html.react-ui .stage > .video-view-tools {grid-column:3;margin-left:0;margin-right:5px}
+html.react-ui .video-view-tools :is(.pointer-dock,.zoom-tools) {gap:4px;flex-direction:column;flex-wrap:nowrap}
+html.react-ui .video-view-tools .pointer-dock {box-shadow:none!important;border:0!important;border-radius:0;background:transparent!important}
+html.react-ui .video-view-tools .pointer-hint {font-size:9px;line-height:1.35}
+html.react-ui .video-view-tools .btn {font-size:10px;min-height:24px;padding:3px 4px;max-width:100%;white-space:normal}
+html.react-ui .video-view-tools .display-toggles {display:flex;flex-wrap:wrap;gap:3px}
+html.react-ui .video-view-tools .display-toggles .btn {font-size:9px}
+html.react-ui .video-view-tools .zoom-range {font-size:10px;gap:3px;flex:0 0 auto;min-width:0}
+html.react-ui .video-view-tools .zoom-range .icon {width:22px;height:24px;min-width:0}
+html.react-ui .video-view-tools .timeline-anchor-actions {padding-top:5px;gap:2px}
+html.react-ui .video-view-tools #pointerPlaceAnchor {font-size:9px}
+html.react-ui .stage > .player-controls {grid-column:1/-1;grid-row:3;display:grid;grid-template-columns:minmax(0,1fr) 70px 36px 70px minmax(0,1fr);grid-template-rows:auto 32px;align-items:center;gap:3px 2px;padding:6px 10px 7px}
+html.react-ui .player-controls .timeline-row {grid-column:1/-1;grid-row:1;width:100%;margin-bottom:2px}
+html.react-ui .player-controls #playerTime {grid-column:1;grid-row:2;justify-self:start}
+html.react-ui .player-controls #prevBtn {grid-column:2;grid-row:2;justify-self:center;display:inline-flex;justify-content:center;font-size:10px;padding:0 2px}
+html.react-ui .player-controls #playBtn {grid-column:3;grid-row:2;justify-self:center;width:32px;height:30px;padding:0!important;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;outline-offset:2px}
+html.react-ui .player-controls #playBtn::before,html.react-ui .player-controls #playBtn::after {display:none!important}
+html.react-ui .player-controls #playBtn i {font-size:20px;background:linear-gradient(145deg,color-mix(in srgb,var(--ink) 20%,white),var(--ink) 48%,color-mix(in srgb,var(--ink) 60%,white));background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;-webkit-text-stroke:.3px color-mix(in srgb,var(--ink) 55%,transparent);filter:drop-shadow(0 1px 1px #0002)}
+html.react-ui .player-controls #nextBtn {grid-column:4;grid-row:2;justify-self:center;display:inline-flex;justify-content:center;font-size:10px;padding:0 2px}
+html.react-ui .player-controls .player-spacer {display:none!important}
+html.react-ui .player-secondary {grid-column:5;grid-row:2;justify-self:end;display:flex;align-items:center;gap:5px;min-width:0}
+html.react-ui .player-secondary > .btn {flex:none;height:28px;min-height:28px;padding:0 4px;border:0!important;box-shadow:none!important;background:transparent!important}
+html.react-ui .player-controls #resetBtn {font-size:9px;gap:3px;padding:0 3px}
+html.react-ui .stage > .analysis-controls {grid-column:1/-1;grid-row:4;display:flex;flex-wrap:nowrap;align-items:center;gap:4px;padding:7px 9px;min-width:0;overflow-x:auto;container-type:inline-size}
+html.react-ui .analysis-controls .guided-actions {display:contents}
+html.react-ui .analysis-controls .btn {flex:0 0 auto;min-width:0;min-height:27px;height:27px;padding:3px clamp(3px,.65cqw,8px);font-size:clamp(9px,1.3cqw,11px);white-space:nowrap;line-height:1.2}
+html.react-ui .analysis-controls :is(#undoBtn,#redoBtn) {width:26px;padding:0;min-width:26px}
+html.react-ui .analysis-controls #runBtn {margin-left:auto}
+html.react-ui .analysis-controls [hidden] {display:none!important}
+html.react-ui .workspace-notice {grid-column:1/-1;grid-row:5;margin:0;padding:0 10px;font-size:10px}
+html.react-ui .workspace-notice:empty {display:none}
+html.react-ui .stage:fullscreen > .player-controls {display:grid;width:100%}
+html.react-ui .stage:fullscreen > .player-controls > .player-secondary {display:flex!important}
+html.react-ui .stage:fullscreen > .workspace-notice {display:none}
+@media(max-width:600px){
+ html.react-ui .stage > .player-controls {grid-template-columns:minmax(0,1fr) 48px 32px 48px minmax(0,1fr);padding-inline:6px}
+ html.react-ui .player-controls :is(#prevBtn,#nextBtn) {font-size:8px;gap:2px}
+ html.react-ui .player-controls #playerTime {font-size:8px}
+ html.react-ui .player-secondary {gap:1px}
+ html.react-ui .player-secondary > .btn {width:24px}
+ html.react-ui .player-secondary .playback-speed {width:24px}
+}
+html.react-ui[data-glass="on"] .workspace > .panel.stage .player-controls #playBtn {background:transparent!important;border:0!important;box-shadow:none!important;border-radius:0!important}
+html.react-ui[data-glass="on"] .workspace > .panel.stage .player-controls #playBtn::before,html.react-ui[data-glass="on"] .workspace > .panel.stage .player-controls #playBtn::after {display:none!important;content:none!important}
+html.react-ui .stage:fullscreen > .player-controls > #playerSecondary {display:flex!important}
+html.react-ui .stage > #anchorReview {grid-column:1/-1;grid-row:5;min-width:0}
+html.react-ui .stage > .workspace-notice {grid-row:6}
+html.react-ui .stage:fullscreen > #anchorReview {display:none!important}
+html.react-ui .stage > .analysis-controls {gap:2px;padding-inline:7px}
+html.react-ui .analysis-controls .btn {padding-inline:clamp(2px,.4cqw,5px);font-size:clamp(9px,1.2cqw,10.5px)}
+html.react-ui .stage > .analysis-controls {padding:7px!important}
+html.react-ui .stage > .player-controls {padding:6px 10px 7px!important}
+html.react-ui .player-controls .player-secondary #resetBtn {width:max-content!important;min-width:64px;display:inline-flex;align-items:center;justify-content:center;gap:4px;padding:0 4px!important}
+html.react-ui .player-controls .player-secondary #expandVideo {width:30px!important;min-width:30px;padding:0!important;display:inline-grid;place-items:center}
+html.react-ui .player-controls .player-secondary .playback-speed {flex:0 0 30px;min-width:30px}
+@media(max-width:600px){html.react-ui .player-controls .player-secondary #resetBtn {width:24px!important;min-width:24px}html.react-ui .player-controls .player-secondary #expandVideo {width:24px!important;min-width:24px}html.react-ui .player-controls .player-secondary .playback-speed {flex-basis:24px;min-width:24px}}
+
+/* ==========================================================================
+   Video workspace consistency pass (2026-11-11): rails, empty state, sidebar label, action sizes.
+   Rules: DESIGN.md §3 (no decorative colour), §6 (one shape per role), §4 (spacing).
+   ========================================================================== */
+/* Rails: neutral, content height, aligned to the top of the video, one control style. */
+html.react-ui .workspace > .panel.stage:not(:fullscreen){grid-template-columns:128px minmax(0,1fr) 128px}
+html.react-ui .stage > :is(.video-edit-tools,.video-view-tools){align-self:start;background:rgba(0,0,0,.025)!important;border:1px solid var(--rule)!important;border-radius:12px!important;padding:10px!important;gap:6px!important}
+html[data-theme="dark"].react-ui .stage > :is(.video-edit-tools,.video-view-tools){background:rgba(255,255,255,.035)!important}
+html.react-ui :is(.video-edit-tools,.video-view-tools) h3{font:600 12px/1.2 var(--sans)!important;color:var(--ink-soft)!important;margin:0 0 4px!important;text-transform:capitalize}
+html.react-ui :is(.video-edit-tools,.video-view-tools) .btn:not(.icon){width:100%;height:30px!important;min-height:30px!important;padding:0 10px!important;justify-content:flex-start!important;gap:8px!important;font:500 12px/1 var(--sans)!important;white-space:nowrap!important;border-radius:999px!important}
+html.react-ui :is(.video-edit-tools,.video-view-tools) .btn i{width:14px;text-align:center;font-size:11px}
+html.react-ui .video-view-tools .pointer-hint{display:none!important}
+html.react-ui .video-view-tools .pointer-dock{display:flex!important;flex-direction:column!important;gap:6px!important}
+html.react-ui .video-view-tools #pointerPan{width:100%;height:30px!important;border-radius:999px!important;justify-content:flex-start;padding:0 10px!important}
+html.react-ui .video-view-tools #pointerPan::after{content:"Pan";font:500 12px var(--sans);margin-left:8px}
+html.react-ui .video-view-tools .display-toggles{display:grid!important;grid-template-columns:1fr;gap:6px!important}
+html.react-ui .video-view-tools .zoom-tools{display:flex!important;flex-direction:column!important;gap:6px!important;border-top:1px solid var(--rule)!important;padding-top:8px!important}
+/* Zoom group: label / − 128% + / slider */
+html.react-ui .video-view-tools .zoom-range{display:grid!important;grid-template-columns:28px 1fr 28px;align-items:center;row-gap:4px;font-size:0!important}
+html.react-ui .video-view-tools .zoom-range::before{content:"Zoom";grid-column:1/-1;grid-row:1;font:600 12px var(--sans);color:var(--ink-soft)}
+html.react-ui .video-view-tools #zoomOut{grid-column:1;grid-row:2;width:28px!important;height:28px!important;min-height:28px!important}
+html.react-ui .video-view-tools #zoomReadout{grid-column:2;grid-row:2;justify-self:center;font:500 12px var(--sans)!important}
+html.react-ui .video-view-tools #zoomIn{grid-column:3;grid-row:2;width:28px!important;height:28px!important;min-height:28px!important}
+html.react-ui .video-view-tools #zoomLevel{grid-column:1/-1;grid-row:3;width:100%!important;order:0!important}
+/* Anchor navigation: Place Anchor full width, ‹ › beneath */
+html.react-ui .video-view-tools .timeline-anchor-actions{display:grid!important;grid-template-columns:1fr 1fr;gap:6px!important;border-top:1px solid var(--rule)!important;padding-top:8px!important}
+html.react-ui .video-view-tools #pointerPlaceAnchor{grid-column:1/-1;font-size:12px!important}
+html.react-ui .video-view-tools .timeline-anchor-actions .btn.icon{justify-self:center;width:28px!important;height:28px!important}
+
+/* No clip yet: the video card spans the whole work area (no empty rail columns, no empty right column). */
+html.react-ui body[data-workspace-stage="videos"] .workspace{grid-template-columns:minmax(0,1fr)!important}
+
+/* Sidebar section label left-aligned with the rows. */
+html.react-ui .app-sidebar .sidebar-label{text-align:left!important;align-self:stretch;margin:0 12px 9px!important}
+
+/* Primary/secondary analysis actions at the standard button size. */
+html.react-ui .analysis-controls :is(#runBtn,#pauseBtn){height:32px!important;min-height:32px!important;font:500 12px/1 var(--sans)!important;padding:0 14px!important}
+html.react-ui .workspace > .panel.stage:not(:fullscreen){grid-template-columns:136px minmax(0,1fr) 136px}
+html.react-ui .video-view-tools #zoomLevel{min-width:0!important;max-width:100%!important;box-sizing:border-box;margin:0!important}
+html.react-ui .video-view-tools .zoom-range{width:100%;min-width:0;box-sizing:border-box}
+html.react-ui :is(.video-edit-tools,.video-view-tools) .btn:not(.icon){overflow:hidden;text-overflow:ellipsis;padding:0 9px!important;gap:7px!important}
+html.react-ui body[data-media-ready="false"] .stage > .canvas-wrap{height:min(62vh,560px)!important;max-height:none!important}
+/* Tool-group tints (owner's brief): edit tools a very slight red, fitting/view tools a very slight blue, mostly white. */
+html.react-ui .stage > .video-edit-tools{background:linear-gradient(165deg,rgba(214,84,84,.09) 0%,rgba(214,84,84,.03) 45%,rgba(255,255,255,0) 100%),#fff!important;border-color:rgba(214,84,84,.16)!important}
+html.react-ui .stage > .video-view-tools{background:linear-gradient(195deg,rgba(70,120,200,.09) 0%,rgba(70,120,200,.03) 45%,rgba(255,255,255,0) 100%),#fff!important;border-color:rgba(70,120,200,.16)!important}
+html[data-theme="dark"].react-ui .stage > .video-edit-tools{background:linear-gradient(165deg,rgba(214,84,84,.14),rgba(214,84,84,.04) 45%,transparent),rgb(30,33,36)!important;border-color:rgba(214,84,84,.22)!important}
+html[data-theme="dark"].react-ui .stage > .video-view-tools{background:linear-gradient(195deg,rgba(70,120,200,.16),rgba(70,120,200,.05) 45%,transparent),rgb(30,33,36)!important;border-color:rgba(70,120,200,.24)!important}
+/* Equal rails: both fill the video row, so they always share one height (and the same 136px width). */
+html.react-ui .stage > :is(.video-edit-tools,.video-view-tools){align-self:stretch!important;height:auto!important}
+
+/* Before a video loads the side panels stay in place, dimmed and inactive, so the layout never jumps. */
+html.react-ui body[data-media-ready="false"] .stage > :is(.video-edit-tools,.video-view-tools){display:flex!important;opacity:.45;pointer-events:none;filter:saturate(.6)}
+html.react-ui body[data-media-ready="false"] .stage > .canvas-wrap{grid-column:2!important}
+/* Fixed-size rails (like Photoshop's toolbar): 131 × 452px in every window size; only the video resizes.
+   452px fits the full View & Anchors tool set. Rails sit at the top of the video row. */
+html.react-ui .stage > :is(.video-edit-tools,.video-view-tools){align-self:start!important;width:131px!important;min-width:131px!important;max-width:131px!important;height:452px!important;min-height:452px!important;max-height:452px!important;box-sizing:border-box!important;flex:none!important}
+html.react-ui .workspace > .panel.stage:not(:fullscreen){grid-template-columns:136px minmax(0,1fr) 136px!important}
+html.react-ui .stage > .canvas-wrap{min-height:452px}
+
+/* Rail and sidebar formatting: centered section headings, faint dividers, zoom as [−] slider [+]. */
+html.react-ui .app-sidebar .sidebar-label{text-align:center!important;margin:0 0 9px!important}
+html.react-ui :is(.video-edit-tools,.video-view-tools) h3{text-align:center!important;width:100%;padding-bottom:7px;margin:0 0 2px!important;border-bottom:1px solid var(--rule)}
+html.react-ui .video-view-tools .pointer-dock{padding-bottom:8px!important;border-bottom:1px solid var(--rule)!important}
+html.react-ui .video-view-tools .zoom-tools{border-top:0!important;padding-top:0!important}
+html.react-ui .video-view-tools .zoom-range{grid-template-columns:24px minmax(0,1fr) 24px!important;column-gap:6px;row-gap:3px!important;padding-top:8px;border-top:1px solid var(--rule)}
+html.react-ui .video-view-tools .zoom-range::before{text-align:center;grid-column:1/-1!important;grid-row:1!important}
+html.react-ui .video-view-tools #zoomOut{grid-column:1!important;grid-row:2!important;width:24px!important;height:24px!important;min-height:24px!important}
+html.react-ui .video-view-tools #zoomLevel{grid-column:2!important;grid-row:2!important;align-self:center}
+html.react-ui .video-view-tools #zoomIn{grid-column:3!important;grid-row:2!important;width:24px!important;height:24px!important;min-height:24px!important}
+html.react-ui .video-view-tools #zoomReadout{grid-column:1/-1!important;grid-row:3!important;justify-self:center;font-size:11px!important;color:var(--ink-soft)}
+html.react-ui .video-view-tools .timeline-anchor-actions{border-top:1px solid var(--rule)!important;padding-top:8px!important}
+/* Fixed rail height raised to fit the divided sections (465px content). */
+html.react-ui .stage > :is(.video-edit-tools,.video-view-tools){height:468px!important;min-height:468px!important;max-height:468px!important}
+html.react-ui .stage > .canvas-wrap{min-height:468px}
+/* Analysis row: all actions (including gap recovery) stay on one line; tighter padding only here. */
+html.react-ui .analysis-controls{gap:6px!important;flex-wrap:nowrap!important}
+html.react-ui .analysis-controls .btn:not(.icon){padding:0 10px!important}
+html.react-ui .analysis-controls :is(#runBtn,#pauseBtn){padding:0 10px!important}
+html.react-ui .analysis-controls .btn.icon{width:32px!important;height:32px!important;min-height:32px!important}
+
+/* Video area always matches the side panels (468px) and the frame is centered inside it. */
+html.react-ui .workspace > .panel.stage:not(:fullscreen) > .canvas-wrap{height:468px!important;min-height:468px!important;max-height:none!important;align-self:start!important;display:flex;align-items:center;justify-content:center}
+
+/* Playback row: crisp solid play icon; frame steps at the standard 12px, equal width. */
+html.react-ui .player-controls #playBtn i{background:none!important;-webkit-text-fill-color:currentColor!important;-webkit-text-stroke:0!important;color:var(--ink)!important;font-size:18px!important;filter:none!important}
+html.react-ui .player-controls #playBtn:hover i{color:var(--accent)!important}
+html.react-ui .player-controls :is(#prevBtn,#nextBtn){font:500 12px/1 var(--sans)!important;width:84px!important;justify-content:center!important;gap:6px!important;padding:0!important}
+html.react-ui .player-controls :is(#prevBtn,#nextBtn) i{font-size:10px}
+html.react-ui .stage > .player-controls{grid-template-columns:minmax(0,1fr) 84px 40px 84px minmax(0,1fr)!important}
+html.react-ui .player-controls #resetBtn{font:500 12px/1 var(--sans)!important}
+
+/* Analysis actions: centered, one font, equal widths that share the row. */
+html.react-ui .analysis-controls{justify-content:center!important;gap:6px!important}
+html.react-ui .analysis-controls #runBtn{margin-left:0!important}
+html.react-ui .analysis-controls .btn:not(.icon){flex:1 1 0;max-width:150px;min-width:0;justify-content:center!important;font:500 12px/1 var(--sans)!important;padding:0 8px!important;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+html.react-ui .analysis-controls .btn:not(.icon) i{font-size:11px}
+html.react-ui .analysis-controls .btn.icon{flex:none}
+/* Status box at the foot of the Edit Video rail (view status line). Hidden when empty. */
+html.react-ui .video-edit-tools .rail-status{margin-top:auto;display:block;padding:8px 9px;border:1px solid var(--rule);border-radius:9px;background:rgba(255,255,255,.75);font:500 11px/1.4 var(--sans)!important;color:var(--ink-soft);text-align:center;white-space:normal}
+html.react-ui .video-edit-tools .rail-status:empty{display:none!important}
+html[data-theme="dark"].react-ui .video-edit-tools .rail-status{background:rgba(255,255,255,.04)}
+html.react-ui .video-edit-tools .rail-status:not(:empty){display:block!important}
+/* Step icons hug the play button: "−1 Frame ⏮ ▶ ⏭ +1 Frame". */
+html.react-ui .player-controls #prevBtn{flex-direction:row-reverse!important;justify-content:flex-start!important}
+html.react-ui .player-controls #nextBtn{justify-content:flex-start!important}
+
+/* Pending anchor: ✓ / × appear in the View & Anchors rail as a full-width pair, and the prompt over the video wraps
+   instead of being cut off. */
+html.react-ui .video-view-tools .pointer-dock{flex-wrap:wrap!important}
+html.react-ui .stage:has(.canvas-wrap.has-pending-anchor) .video-view-tools .pointer-commit{width:calc(50% - 3px)!important;height:30px!important;border-radius:999px!important}
+html.react-ui .stage:has(.canvas-wrap.has-pending-anchor) .video-view-tools .pointer-dock{flex-direction:row!important;justify-content:space-between}
+html.react-ui .stage:has(.canvas-wrap.has-pending-anchor) .video-view-tools .pointer-dock>:not(.pointer-commit){flex:1 1 100%}
+html.react-ui .hint-banner{white-space:normal!important;max-width:calc(100% - 24px);text-align:center;line-height:1.35}
+html.react-ui .stage:has(.canvas-wrap.has-pending-anchor) .video-view-tools .timeline-anchor-actions .btn.icon{display:none!important}
+/* Narrower sidebar (160px) and a centered Settings button. */
+:root{--sidebar-w:160px;--sidebar-width:160px}
+html.react-ui .app-sidebar{width:160px!important}
+html.react-ui .sidebar-utilities{justify-items:center}
+html.react-ui .sidebar-settings{justify-content:center!important;width:auto!important;padding:5px 14px!important}
+
+/* ==========================================================================
+   Permanent video card (2026-11-11): the card is always 800px wide (rails 136 + video + rails 136) and never
+   resizes. Windows ≥ 1334px (e.g. maximized) put the panels beside it, taking all remaining width; otherwise the
+   panels sit underneath in an 800px block. Equal 20px margins left and right; the overlay scrollbar floats.
+   ========================================================================== */
+@media (min-width:1000px){
+html.react-ui body{padding-right:20px!important}
+html.react-ui .workspace{display:grid!important;grid-template-columns:800px!important;justify-content:start!important;gap:var(--gap)!important;flex-direction:initial!important;margin-right:0!important}
+html.react-ui .workspace>.panel.stage{width:800px!important;max-width:800px!important;min-width:800px!important;position:relative!important;top:0!important;box-sizing:border-box}
+html.react-ui .workspace>.controls{width:800px!important;display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;align-items:start;gap:var(--gap)!important}
+html.react-ui .workspace>.controls>details.adv{grid-column:1/-1}
+}
+@media (min-width:1334px){
+  html.react-ui .workspace{grid-template-columns:800px minmax(300px,1fr)!important}
+  html.react-ui .workspace>.panel.stage{position:sticky!important;top:82px!important}
+  html.react-ui .workspace>.controls{width:auto!important;display:flex!important;flex-direction:column!important}
+}
+@media (min-width:1000px){html.react-ui body[data-workspace-stage="videos"] .workspace{grid-template-columns:800px!important}}
+
+/* Rails v3: Overlays live under Edit Video; headers stand out; Pan shows when active; anchor card avoids the larva. */
+html.react-ui :is(.video-edit-tools,.video-view-tools) :is(h3,.rail-subhead){font:600 12.5px/1.2 var(--sans)!important;color:var(--ink)!important;letter-spacing:.01em;text-align:center!important;width:100%;margin:0 0 2px!important;padding-bottom:7px!important;border-bottom:1px solid var(--rule)}
+html.react-ui .video-edit-tools .rail-subhead{margin-top:8px!important;padding-top:10px;border-top:1px solid var(--rule)}
+html.react-ui .video-view-tools .zoom-range::before{font:600 12.5px var(--sans)!important;color:var(--ink)!important}
+html[data-theme="dark"].react-ui :is(.video-edit-tools,.video-view-tools) :is(h3,.rail-subhead){color:#e8ebe8!important}
+html.react-ui .video-edit-tools .display-toggles{display:grid!important;grid-template-columns:1fr;gap:6px!important;width:100%}
+html.react-ui .video-edit-tools .display-toggles .btn{width:100%;height:30px!important;min-height:30px!important;padding:0 10px!important;justify-content:center!important;font:500 12px/1 var(--sans)!important;border-radius:999px!important}
+html.react-ui .video-view-tools .pointer-dock{padding-bottom:8px!important}
+/* Pan: visibly on when active; greyed out at 100% zoom (nothing to pan). */
+html.react-ui .video-view-tools #pointerPan.pointer-mode{background:var(--accent-soft)!important;color:var(--accent)!important;border-color:color-mix(in srgb,var(--accent) 25%,transparent)!important}
+html.react-ui .video-view-tools #pointerPan:disabled{opacity:.45}
+/* Anchor card: bottom by default, top when the anchor is in the lower half of the view. */
+html.react-ui .selected-anchor-card.dock-top{top:12px!important;bottom:auto!important}
+/* Update prompt */
+.update-card{position:fixed;right:18px;bottom:18px;z-index:80;width:300px;padding:14px 16px;border-radius:12px;border:1px solid var(--rule);background:var(--panel);box-shadow:0 12px 32px rgba(0,0,0,.16);font:12.5px var(--sans);color:var(--ink)}
+.update-card b{display:block;font-size:13.5px;margin-bottom:4px}.update-card p{margin:0 0 10px;color:var(--ink-soft);line-height:1.4}
+.update-card div{display:flex;justify-content:flex-end;gap:8px}.update-card progress{width:100%;height:6px;accent-color:var(--accent)}
+.update-card button{height:30px;padding:0 12px;border-radius:999px;font:500 12px var(--sans);cursor:pointer}
+.update-later{background:transparent;border:1px solid var(--rule-strong);color:var(--ink)}.update-go{background:var(--accent);border:0;color:#fff}

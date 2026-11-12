@@ -1,0 +1,363 @@
+{
+  "qualityHash": "28364470e425cdb9f44829eb83f733edf51a4caae0dd7fa6be9ef6bbb16d1638",
+  "mode": "engine-stress",
+  "preflight": {
+    "phase": "ready",
+    "anchors": [
+      {
+        "frame": 0,
+        "x": 409.9059605507278,
+        "y": 300.5726272173945
+      },
+      {
+        "frame": 56,
+        "x": 556.9257319988712,
+        "y": 400.25
+      },
+      {
+        "frame": 111,
+        "x": 678.122222719656,
+        "y": 409.1458333333333
+      },
+      {
+        "frame": 167,
+        "x": 767.4850639167042,
+        "y": 383.5357694166291
+      },
+      {
+        "frame": 223,
+        "x": 825.25,
+        "y": 399.27960239103317
+      },
+      {
+        "frame": 278,
+        "x": 742.1644176226949,
+        "y": 439.875
+      },
+      {
+        "frame": 334,
+        "x": 548.5901645370213,
+        "y": 417.8333333333333
+      },
+      {
+        "frame": 389,
+        "x": 512.5267875601371,
+        "y": 407
+      },
+      {
+        "frame": 445,
+        "x": 467.5416666666667,
+        "y": 232.6576211364383
+      }
+    ],
+    "unavailable": [],
+    "boundaries": {
+      "start": 0,
+      "end": 445
+    }
+  },
+  "analysisWallMs": 25521.799999999814,
+  "file": "irregular.mp4",
+  "bodyLength": 129.75616455078125,
+  "width": 1280,
+  "height": 720,
+  "baseline": false,
+  "accelerated": true,
+  "points": [
+    {
+      "frame": 0,
+      "x": 409.9059605507278,
+      "y": 300.5726272173945,
+      "status": "manual"
+    },
+    {
+      "frame": 1,
+      "x": 418.125,
+      "y": 304.68338979522423,
+      "status": "verified"
+    },
+    {
+      "frame": 2,
+      "x": 426.6693804216788,
+      "y": 310.8777137550121,
+      "status": "verified"
+    },
+    {
+      "frame": 3,
+      "x": 430.38249925010666,
+      "y": 314.375,
+      "status": "verified"
+    },
+    {
+      "frame": 4,
+      "x": 433.48942223370784,
+      "y": 316.375,
+      "status": "verified"
+    },
+    {
+      "frame": 5,
+      "x": 428.39334230559643,
+      "y": 313.6875,
+      "status": "verified"
+    },
+    {
+      "frame": 6,
+      "x": 431.66961121903114,
+      "y": 317.5,
+      "status": "verified"
+    },
+    {
+      "frame": 7,
+      "x": 433.7419166587512,
+      "y": 319.7419166587512,
+      "status": "verified"
+    },
+    {
+      "frame": 8,
+      "x": 435.4615293792031,
+      "y": 320.3052793792031,
+      "status": "verified"
+    },
+    {
+      "frame": 9,
+      "x": 439.6805283316826,
+      "y": 326.6805283316826,
+      "status": "verified"
+    },
+    {
+      "frame": 10,
+      "x": 443.5729166666667,
+      "y": 332.03086438047956,
+      "status": "verified"
+    },
+    {
+      "frame": 11,
+      "x": 444.1973677475344,
+      "y": 330.8958333333333,
+      "status": "verified"
+    },
+    {
+      "frame": 12,
+      "x": 442.5625,
+      "y": 328.3436236300535,
+      "status": "verified"
+    },
+    {
+      "frame": 13,
+      "x": 439.1103688793807,
+      "y": 325.40625,
+      "status": "verified"
+    },
+    {
+      "frame": 14,
+      "x": 444.54279241432675,
+      "y": 332.12612574766007,
+      "status": "verified"
+    },
+    {
+      "frame": 15,
+      "x": 445.75438434894386,
+      "y": 334.25438434894386,
+      "status": "verified"
+    },
+    {
+      "frame": 16,
+      "x": 451.57068835865226,
+      "y": 341.25818835865226,
+      "status": "verified"
+    },
+    {
+      "frame": 17,
+      "x": 454.4237367146352,
+      "y": 345.0799867146352,
+      "status": "verified"
+    },
+    {
+      "frame": 18,
+      "x": 456.38682418728996,
+      "y": 347.05349085395665,
+      "status": "verified"
+    },
+    {
+      "frame": 19,
+      "x": 456.04233954579,
+      "y": 345.1354166666667,
+      "status": "verified"
+    },
+    {
+      "frame": 20,
+      "x": 458.3469066287041,
+      "y": 348.3885732953708,
+      "status": "verified"
+    },
+    {
+      "frame": 21,
+      "x": 463.2938770242838,
+      "y": 353.2083333333333,
+      "status": "verified"
+    },
+    {
+      "frame": 22,
+      "x": 466.5833333333333,
+      "y": 358.3970639144087,
+      "status": "verified"
+    },
+    {
+      "frame": 23,
+      "x": 470.3652690323715,
+      "y": 360.125,
+      "status": "verified"
+    },
+    {
+      "frame": 24,
+      "x": 468.22623873607006,
+      "y": 357.5595720694034,
+      "status": "verified"
+    },
+    {
+      "frame": 25,
+      "x": 468.7083333333333,
+      "y": 357.36772481005664,
+      "status": "verified"
+    },
+    {
+      "frame": 26,
+      "x": 468.15508014345943,
+      "y": 356.61341347679274,
+      "status": "verified"
+    },
+    {
+      "frame": 27,
+      "x": 473.4929916373478,
+      "y": 361.25,
+      "status": "verified"
+    },
+    {
+      "frame": 28,
+      "x": 482.125,
+      "y": 368.4930058160069,
+      "status": "verified"
+    },
+    {
+      "frame": 29,
+      "x": 484.220120071309,
+      "y": 371.0534534046423,
+      "status": "verified"
+    },
+    {
+      "frame": 30,
+      "x": 485.85556367524384,
+      "y": 371.35556367524384,
+      "status": "verified"
+    },
+    {
+      "frame": 31,
+      "x": 484.59670790379107,
+      "y": 369.5625,
+      "status": "verified"
+    },
+    {
+      "frame": 32,
+      "x": 485.03125,
+      "y": 369.83261343759284,
+      "status": "verified"
+    },
+    {
+      "frame": 33,
+      "x": 493.8152271939912,
+      "y": 374.96875,
+      "status": "verified"
+    },
+    {
+      "frame": 34,
+      "x": 496.8700532428189,
+      "y": 377.4013032428189,
+      "status": "verified"
+    },
+    {
+      "frame": 35,
+      "x": 502.0181224098044,
+      "y": 380.5520833333333,
+      "status": "verified"
+    },
+    {
+      "frame": 36,
+      "x": 503.7708333333333,
+      "y": 381.773261217856,
+      "status": "verified"
+    },
+    {
+      "frame": 37,
+      "x": 504.8418169431638,
+      "y": 381.5520833333333,
+      "status": "verified"
+    },
+    {
+      "frame": 38,
+      "x": 503.9895715914781,
+      "y": 380.7499882581448,
+      "status": "verified"
+    },
+    {
+      "frame": 39,
+      "x": 511.17585345536617,
+      "y": 384.59252012203285,
+      "status": "verified"
+    }
+  ],
+  "profile": {
+    "readMs": 4316.60000000149,
+    "trackingMs": 35783.50000000093,
+    "frames": 80,
+    "workerFrames": 80,
+    "retryFrames": 0,
+    "pixelFractionSum": 76.04062499999999,
+    "cameraMs": 937.6999999992549,
+    "detectMs": 8918.999999996275,
+    "flowMs": 4764.000000000931,
+    "anatomyMs": 2872.5999999968335,
+    "coreMs": 17740.699999992736,
+    "conversionMs": 488.5000000046566,
+    "activeMs": 23655,
+    "stage": "opencv",
+    "sections": 1,
+    "workerThreads": 1,
+    "peakActivePasses": 2,
+    "seamDisputes": 0,
+    "resourcePolicy": {
+      "threads": 1,
+      "passes": 2,
+      "availableMemoryBytes": null,
+      "memorySource": "browser-conservative"
+    },
+    "retryIntervals": 0,
+    "backwardReruns": 0
+  },
+  "decoder": [
+    {
+      "buffered": 40,
+      "fallback": 0,
+      "decoded": 60,
+      "peakBufferedFrames": 30,
+      "cacheHits": 0,
+      "backend": "WebCodecs",
+      "sharedPeakFrames": 9,
+      "sharedLimitFrames": 9
+    },
+    {
+      "buffered": 40,
+      "fallback": 0,
+      "decoded": 60,
+      "peakBufferedFrames": 30,
+      "cacheHits": 0,
+      "backend": "WebCodecs",
+      "sharedPeakFrames": 9,
+      "sharedLimitFrames": 9
+    }
+  ],
+  "coverage": 1,
+  "frames": 40,
+  "tapir": null,
+  "errors": [],
+  "peakBrowserRssMB": 1310.94140625
+}

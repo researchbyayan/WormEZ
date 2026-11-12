@@ -1,0 +1,122 @@
+[
+  {
+    "status": "Multiple or unclear candidates — click the worm, then Track.",
+    "fps": 5,
+    "seed": null,
+    "headFrames": 0,
+    "frames": 0,
+    "totalFrames": 608,
+    "outlineFrames": 0,
+    "anchors": 0,
+    "review": [],
+    "file": "03-05-2026 da Gal4 x w1118 L4.MP4",
+    "errors": []
+  },
+  {
+    "status": "Checks complete · review uncertain intervals",
+    "fps": 5,
+    "seed": {
+      "x": 630.2330383480826,
+      "y": 352.35103244837757
+    },
+    "headFrames": 285,
+    "frames": 605,
+    "totalFrames": 605,
+    "coverage": 0.6429752066115703,
+    "outlineFrames": 389,
+    "anchors": 90,
+    "review": [
+      {
+        "start": 0,
+        "end": 108
+      },
+      {
+        "start": 116,
+        "end": 116
+      },
+      {
+        "start": 118,
+        "end": 118
+      },
+      {
+        "start": 261,
+        "end": 261
+      },
+      {
+        "start": 263,
+        "end": 263
+      },
+      {
+        "start": 319,
+        "end": 319
+      },
+      {
+        "start": 401,
+        "end": 481
+      },
+      {
+        "start": 584,
+        "end": 604
+      }
+    ],
+    "file": "03-05-2026 da Gal4 x w1118 L6.MP4",
+    "errors": []
+  },
+  {
+    "status": "Checks complete · review uncertain intervals",
+    "fps": 5,
+    "seed": {
+      "x": 378.2909760589318,
+      "y": 172.14180478821362
+    },
+    "headFrames": 0,
+    "frames": 54,
+    "totalFrames": 54,
+    "coverage": 0,
+    "outlineFrames": 0,
+    "anchors": 0,
+    "review": [
+      {
+        "start": 0,
+        "end": 53
+      }
+    ],
+    "file": "straight final.mp4",
+    "errors": []
+  },
+  {
+    "status": "Multiple or unclear candidates — click the worm, then Track.",
+    "fps": 5,
+    "seed": null,
+    "headFrames": 0,
+    "frames": 0,
+    "totalFrames": 55,
+    "outlineFrames": 0,
+    "anchors": 0,
+    "review": [],
+    "file": "curved final.mp4",
+    "errors": []
+  },
+  {
+    "status": "Checks complete · review uncertain intervals",
+    "fps": 5,
+    "seed": {
+      "x": 444.65408805031444,
+      "y": 230.9559748427673
+    },
+    "headFrames": 0,
+    "frames": 74,
+    "totalFrames": 74,
+    "coverage": 0,
+    "outlineFrames": 0,
+    "anchors": 0,
+    "review": [
+      {
+        "start": 0,
+        "end": 73
+      }
+    ],
+    "file": "irregular.mp4",
+    "errors": []
+  }
+]

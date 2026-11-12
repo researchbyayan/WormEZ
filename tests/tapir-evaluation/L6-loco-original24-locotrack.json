@@ -1,0 +1,231 @@
+{
+  "clip": "L6-loco-original24",
+  "frames": 24,
+  "checkpoint": "locotrack_small.ckpt",
+  "seed_source_px": [
+    630.0,
+    352.0
+  ],
+  "model_load_s": 0.16,
+  "inference_s": 6.43,
+  "visible_frames": 24,
+  "note": "Visibility is a model judgment, not biological ground truth.",
+  "tracks": [
+    {
+      "frame": 0,
+      "x": 630.030647277832,
+      "y": 352.0127868652344,
+      "visible": true,
+      "wormez_x": 630,
+      "wormez_y": 351.81852119577667,
+      "wormez_status": "manual"
+    },
+    {
+      "frame": 1,
+      "x": 630.2415771484375,
+      "y": 352.1274719238281,
+      "visible": true,
+      "wormez_x": 630.9951333266681,
+      "wormez_y": 353,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 2,
+      "x": 629.8716278076172,
+      "y": 352.03709411621094,
+      "visible": true,
+      "wormez_x": 629.8535533905932,
+      "wormez_y": 351.8535533905933,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 3,
+      "x": 629.8692398071289,
+      "y": 351.7880859375,
+      "visible": true,
+      "wormez_x": 630,
+      "wormez_y": 353,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 4,
+      "x": 630.100227355957,
+      "y": 351.6391830444336,
+      "visible": true,
+      "wormez_x": 630,
+      "wormez_y": 352.3094344171788,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 5,
+      "x": 629.88916015625,
+      "y": 351.6035614013672,
+      "visible": true,
+      "wormez_x": 629.5,
+      "wormez_y": 351.5,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 6,
+      "x": 629.9905548095703,
+      "y": 352.06324768066406,
+      "visible": true,
+      "wormez_x": 630,
+      "wormez_y": 352.223630190868,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 7,
+      "x": 629.7974166870117,
+      "y": 351.9162139892578,
+      "visible": true,
+      "wormez_x": 629,
+      "wormez_y": 351.4935128642536,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 8,
+      "x": 629.8371124267578,
+      "y": 351.3371124267578,
+      "visible": true,
+      "wormez_x": 630,
+      "wormez_y": 351.1957024364477,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 9,
+      "x": 629.9019165039062,
+      "y": 351.73046112060547,
+      "visible": true,
+      "wormez_x": 630,
+      "wormez_y": 351.41933262731567,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 10,
+      "x": 629.7330703735352,
+      "y": 350.9899139404297,
+      "visible": true,
+      "wormez_x": 629,
+      "wormez_y": 350.80679085850977,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 11,
+      "x": 629.8676147460938,
+      "y": 351.19244384765625,
+      "visible": true,
+      "wormez_x": 630,
+      "wormez_y": 351.98577636777566,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 12,
+      "x": 629.6928176879883,
+      "y": 351.1419982910156,
+      "visible": true,
+      "wormez_x": 629,
+      "wormez_y": 350.8121517860286,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 13,
+      "x": 629.5728759765625,
+      "y": 350.95641326904297,
+      "visible": true,
+      "wormez_x": 629,
+      "wormez_y": 350.8121517860286,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 14,
+      "x": 629.8720245361328,
+      "y": 351.10916900634766,
+      "visible": true,
+      "wormez_x": 630,
+      "wormez_y": 350.4935128642536,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 15,
+      "x": 629.7746658325195,
+      "y": 351.05773162841797,
+      "visible": true,
+      "wormez_x": 629,
+      "wormez_y": 350.71880164774024,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 16,
+      "x": 629.8600082397461,
+      "y": 351.02772521972656,
+      "visible": true,
+      "wormez_x": 629.1831879325025,
+      "wormez_y": 351,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 17,
+      "x": 629.8660430908203,
+      "y": 350.57826232910156,
+      "visible": true,
+      "wormez_x": 629.3044496963356,
+      "wormez_y": 350,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 18,
+      "x": 629.8128814697266,
+      "y": 350.6737747192383,
+      "visible": true,
+      "wormez_x": 629,
+      "wormez_y": 350.71880164774024,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 19,
+      "x": 629.8667297363281,
+      "y": 351.0836410522461,
+      "visible": true,
+      "wormez_x": 629.5218843372004,
+      "wormez_y": 350,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 20,
+      "x": 629.7817535400391,
+      "y": 350.8520278930664,
+      "visible": true,
+      "wormez_x": 629,
+      "wormez_y": 350.9910400745751,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 21,
+      "x": 629.8220520019531,
+      "y": 350.80970001220703,
+      "visible": true,
+      "wormez_x": 629.0181217162988,
+      "wormez_y": 350.01812171629877,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 22,
+      "x": 629.7294006347656,
+      "y": 350.7206115722656,
+      "visible": true,
+      "wormez_x": 629,
+      "wormez_y": 349.2035161694222,
+      "wormez_status": "verified"
+    },
+    {
+      "frame": 23,
+      "x": 629.5706787109375,
+      "y": 350.8211212158203,
+      "visible": true,
+      "wormez_x": 629,
+      "wormez_y": 349.7955367774825,
+      "wormez_status": "verified"
+    }
+  ]
+}

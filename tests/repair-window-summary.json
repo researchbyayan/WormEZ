@@ -1,0 +1,37 @@
+[
+  {
+    "clip": "l4",
+    "frames": 60,
+    "coverage": 1,
+    "errors": [],
+    "seconds": 8.398099999999628
+  },
+  {
+    "clip": "l6",
+    "frames": 40,
+    "coverage": 1,
+    "errors": [],
+    "seconds": 6.256099999999628
+  },
+  {
+    "clip": "straight",
+    "frames": 40,
+    "coverage": 1,
+    "errors": [],
+    "seconds": 37.273
+  },
+  {
+    "clip": "curved",
+    "frames": 40,
+    "coverage": 1,
+    "errors": [],
+    "seconds": 24.529200000000188
+  },
+  {
+    "clip": "irregular",
+    "frames": 40,
+    "coverage": 1,
+    "errors": [],
+    "seconds": 25.521799999999814
+  }
+]

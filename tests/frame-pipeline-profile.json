@@ -1,0 +1,182 @@
+{
+  "date": "2026-11-08",
+  "recording": "03-05-2026 da Gal4 x w1118 L4.MP4",
+  "mode": "standalone full-recording engine stress test",
+  "setup": {
+    "phase": "reviewingBoundary",
+    "anchors": [
+      {
+        "frame": 0,
+        "x": 639.8535533905932,
+        "y": 356.1464466094067
+      },
+      {
+        "frame": 456,
+        "x": 672.8430659412027,
+        "y": 341
+      },
+      {
+        "frame": 912,
+        "x": 691.1537003931986,
+        "y": 306.84629960680144
+      },
+      {
+        "frame": 1368,
+        "x": 701,
+        "y": 269.27763654538205
+      },
+      {
+        "frame": 1824,
+        "x": 712,
+        "y": 231
+      },
+      {
+        "frame": 2279,
+        "x": 701.6464466094068,
+        "y": 184.64644660940672
+      },
+      {
+        "frame": 2735,
+        "x": 673,
+        "y": 143.6089078360225
+      },
+      {
+        "frame": 3191,
+        "x": 648,
+        "y": 104.27111209072203
+      }
+    ],
+    "unavailable": [],
+    "boundaries": {
+      "start": 0,
+      "end": null
+    }
+  },
+  "note": "The test calls the engine directly, including endpoint recovery and retries with an unapproved final boundary. Normal UI Start remains gated on approved visible boundaries. Coverage is two-pass consistency, not biological accuracy.",
+  "baseline": {
+    "analysisWallMs": 301889.8999999985,
+    "file": "03-05-2026 da Gal4 x w1118 L4.MP4",
+    "bodyLength": 18.23310661315918,
+    "width": 1280,
+    "height": 720,
+    "baseline": false,
+    "accelerated": false,
+    "profile": {
+      "readMs": 311849.09999993816,
+      "trackingMs": 187442.4999999404,
+      "frames": 11385,
+      "workerFrames": 11385,
+      "pixelFractionSum": 11385,
+      "cameraMs": 13192.899999994785,
+      "detectMs": 18692.5000000149,
+      "flowMs": 11796.899999909103,
+      "anatomyMs": 2342.7000001743436,
+      "coreMs": 55613.70000000298,
+      "conversionMs": 11722.200000029057,
+      "activeMs": 300741,
+      "stage": "opencv"
+    },
+    "decoder": [
+      {
+        "buffered": 3981,
+        "fallback": 0,
+        "decoded": 4184,
+        "peakBufferedFrames": 31,
+        "cacheHits": 0,
+        "backend": "WebCodecs",
+        "sharedPeakFrames": 0,
+        "sharedLimitFrames": 0
+      },
+      {
+        "buffered": 7404,
+        "fallback": 0,
+        "decoded": 7770,
+        "peakBufferedFrames": 31,
+        "cacheHits": 0,
+        "backend": "WebCodecs",
+        "sharedPeakFrames": 0,
+        "sharedLimitFrames": 0
+      }
+    ],
+    "coverage": 0.8599232456140351,
+    "frames": 3648,
+    "tapir": null,
+    "errors": [],
+    "peakBrowserRssMB": 1607.21484375
+  },
+  "optimized": {
+    "mode": "engine-stress",
+    "analysisWallMs": 169477.8999999985,
+    "file": "03-05-2026 da Gal4 x w1118 L4.MP4",
+    "bodyLength": 18.23310661315918,
+    "width": 1280,
+    "height": 720,
+    "baseline": false,
+    "accelerated": true,
+    "profile": {
+      "readMs": 140773.40000016987,
+      "trackingMs": 128659.2999997735,
+      "frames": 11385,
+      "workerFrames": 11385,
+      "retryFrames": 666,
+      "pixelFractionSum": 827.9564832898621,
+      "cameraMs": 15933.099999986589,
+      "detectMs": 17688.400000080466,
+      "flowMs": 12973.79999934882,
+      "anatomyMs": 1348.8000003919005,
+      "coreMs": 57931.70000012964,
+      "conversionMs": 15639.700000450015,
+      "activeMs": 168428,
+      "stage": "opencv",
+      "retryIntervals": 15,
+      "backwardReruns": 1
+    },
+    "decoder": [
+      {
+        "buffered": 3981,
+        "fallback": 0,
+        "decoded": 4154,
+        "peakBufferedFrames": 31,
+        "cacheHits": 6,
+        "backend": "WebCodecs",
+        "sharedPeakFrames": 9,
+        "sharedLimitFrames": 9
+      },
+      {
+        "buffered": 7404,
+        "fallback": 0,
+        "decoded": 7770,
+        "peakBufferedFrames": 31,
+        "cacheHits": 9,
+        "backend": "WebCodecs",
+        "sharedPeakFrames": 9,
+        "sharedLimitFrames": 9
+      }
+    ],
+    "coverage": 0.8599232456140351,
+    "frames": 3648,
+    "tapir": null,
+    "errors": [],
+    "peakBrowserRssMB": 1669.03515625
+  },
+  "identicalCoordinatesAndStatuses": true,
+  "pointSHA256": "b8324a09be1bf9d3946b51fd70823121c5fba0458238c93bb4b3051a6b245703",
+  "speedup": 1.7812936081931696,
+  "pixelVolumeReduction": 0.9272765495573243,
+  "memoryNote": "Sampled sum of browser process RSS, which may double-count shared pages; excludes Python helper.",
+  "l6IntervalCheck": {
+    "frames": 90,
+    "source": "03-05-2026 da Gal4 x w1118 L6.MP4",
+    "identicalCoordinatesAndStatuses": true,
+    "identicalAnatomyAndMetrics": true,
+    "qualitySHA256": "35b7cc5c9f3b93db34d38375ee5e645e3bb47d257e4fabcff41c56255b8821c9",
+    "coverage": 1,
+    "baselineSeconds": 8.92839999999851,
+    "optimizedSeconds": 7.388099999994039
+  },
+  "pixelChecks": {
+    "L4": "zero pixel difference for cropped frames 0,1,29,30,last",
+    "L6": "zero pixel difference for cropped frames 0,1,29,30,last",
+    "sharedReader": "all five tested frames reused without a second decode"
+  }
+}

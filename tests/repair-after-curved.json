@@ -1,0 +1,363 @@
+{
+  "qualityHash": "fc19ace45ab41a695e560b6582e62203cf39ad0181645db6e4a78e8c7127bc6d",
+  "mode": "engine-stress",
+  "preflight": {
+    "phase": "ready",
+    "anchors": [
+      {
+        "frame": 0,
+        "x": 509.3328619912288,
+        "y": 549.5520833333334
+      },
+      {
+        "frame": 41,
+        "x": 457.52341345126047,
+        "y": 522.0625
+      },
+      {
+        "frame": 83,
+        "x": 403.55931288249786,
+        "y": 483.15625
+      },
+      {
+        "frame": 124,
+        "x": 345.97408907396806,
+        "y": 423.4166666666667
+      },
+      {
+        "frame": 165,
+        "x": 314.0104166666667,
+        "y": 373.68529469995804
+      },
+      {
+        "frame": 206,
+        "x": 289.5833333333333,
+        "y": 337.5946120492482
+      },
+      {
+        "frame": 248,
+        "x": 267.6666666666667,
+        "y": 283.3345692649244
+      },
+      {
+        "frame": 289,
+        "x": 259.55278567519593,
+        "y": 222.19861900852925
+      },
+      {
+        "frame": 330,
+        "x": 258.75,
+        "y": 173.44998113054152
+      }
+    ],
+    "unavailable": [],
+    "boundaries": {
+      "start": 0,
+      "end": 330
+    }
+  },
+  "analysisWallMs": 24529.200000000186,
+  "file": "curved final.mp4",
+  "bodyLength": 125.90528869628906,
+  "width": 1280,
+  "height": 720,
+  "baseline": false,
+  "accelerated": true,
+  "points": [
+    {
+      "frame": 0,
+      "x": 509.3328619912288,
+      "y": 549.5520833333334,
+      "status": "manual"
+    },
+    {
+      "frame": 1,
+      "x": 508.83390368665243,
+      "y": 547.5,
+      "status": "verified"
+    },
+    {
+      "frame": 2,
+      "x": 508.60517038894403,
+      "y": 547.8125,
+      "status": "verified"
+    },
+    {
+      "frame": 3,
+      "x": 510.4879025179326,
+      "y": 547.0729166666666,
+      "status": "verified"
+    },
+    {
+      "frame": 4,
+      "x": 505.15289498757556,
+      "y": 546.2083333333334,
+      "status": "verified"
+    },
+    {
+      "frame": 5,
+      "x": 500.6734778211951,
+      "y": 545.6875,
+      "status": "verified"
+    },
+    {
+      "frame": 6,
+      "x": 499.20520954746917,
+      "y": 544.2052095474692,
+      "status": "verified"
+    },
+    {
+      "frame": 7,
+      "x": 497.9429322964059,
+      "y": 544.474182296406,
+      "status": "verified"
+    },
+    {
+      "frame": 8,
+      "x": 495.3427602858346,
+      "y": 544.6666666666666,
+      "status": "verified"
+    },
+    {
+      "frame": 9,
+      "x": 495.8562028131166,
+      "y": 544.6999528131166,
+      "status": "verified"
+    },
+    {
+      "frame": 10,
+      "x": 494.78206521496014,
+      "y": 543.625,
+      "status": "verified"
+    },
+    {
+      "frame": 11,
+      "x": 493.52096699812586,
+      "y": 543.5626336647925,
+      "status": "verified"
+    },
+    {
+      "frame": 12,
+      "x": 497.2285094641714,
+      "y": 543.9166666666666,
+      "status": "verified"
+    },
+    {
+      "frame": 13,
+      "x": 497.25410020036406,
+      "y": 542.9166666666666,
+      "status": "verified"
+    },
+    {
+      "frame": 14,
+      "x": 493.33304401517364,
+      "y": 541.125,
+      "status": "verified"
+    },
+    {
+      "frame": 15,
+      "x": 492.4166666666667,
+      "y": 541.7851885721163,
+      "status": "verified"
+    },
+    {
+      "frame": 16,
+      "x": 485.463734769818,
+      "y": 539.3854166666666,
+      "status": "verified"
+    },
+    {
+      "frame": 17,
+      "x": 482.40056614796384,
+      "y": 537.0833333333334,
+      "status": "verified"
+    },
+    {
+      "frame": 18,
+      "x": 482.6656491453987,
+      "y": 536.6666666666666,
+      "status": "verified"
+    },
+    {
+      "frame": 19,
+      "x": 482.49372485692686,
+      "y": 538.0104166666666,
+      "status": "verified"
+    },
+    {
+      "frame": 20,
+      "x": 482.6188640559977,
+      "y": 538.3333333333334,
+      "status": "verified"
+    },
+    {
+      "frame": 21,
+      "x": 483.8141826905398,
+      "y": 539,
+      "status": "verified"
+    },
+    {
+      "frame": 22,
+      "x": 483,
+      "y": 537.0018008596518,
+      "status": "verified"
+    },
+    {
+      "frame": 23,
+      "x": 483.6359101618541,
+      "y": 537,
+      "status": "verified"
+    },
+    {
+      "frame": 24,
+      "x": 482.8396166980937,
+      "y": 536.6833666980938,
+      "status": "verified"
+    },
+    {
+      "frame": 25,
+      "x": 480.92778445149605,
+      "y": 535.65625,
+      "status": "verified"
+    },
+    {
+      "frame": 26,
+      "x": 479.0416666666667,
+      "y": 534.6020287809587,
+      "status": "verified"
+    },
+    {
+      "frame": 27,
+      "x": 475.58942855574986,
+      "y": 532.1727618890832,
+      "status": "verified"
+    },
+    {
+      "frame": 28,
+      "x": 471.06052818207223,
+      "y": 529.6646948487389,
+      "status": "verified"
+    },
+    {
+      "frame": 29,
+      "x": 470.2353307087876,
+      "y": 529.2769973754542,
+      "status": "verified"
+    },
+    {
+      "frame": 30,
+      "x": 468.08778409815596,
+      "y": 529.3125,
+      "status": "verified"
+    },
+    {
+      "frame": 31,
+      "x": 468.23277573707355,
+      "y": 529.2083333333334,
+      "status": "verified"
+    },
+    {
+      "frame": 32,
+      "x": 466.9839197044489,
+      "y": 528.8589197044489,
+      "status": "verified"
+    },
+    {
+      "frame": 33,
+      "x": 467.6039063127397,
+      "y": 528.9375,
+      "status": "verified"
+    },
+    {
+      "frame": 34,
+      "x": 466.46135727502514,
+      "y": 527.6666666666666,
+      "status": "verified"
+    },
+    {
+      "frame": 35,
+      "x": 469.05555459653976,
+      "y": 528.28125,
+      "status": "verified"
+    },
+    {
+      "frame": 36,
+      "x": 467.43090881696514,
+      "y": 527.3333333333334,
+      "status": "verified"
+    },
+    {
+      "frame": 37,
+      "x": 466.0587867889713,
+      "y": 526.537953455638,
+      "status": "verified"
+    },
+    {
+      "frame": 38,
+      "x": 462.9375,
+      "y": 524.7081062320941,
+      "status": "verified"
+    },
+    {
+      "frame": 39,
+      "x": 459.75,
+      "y": 523.1967437298279,
+      "status": "verified"
+    }
+  ],
+  "profile": {
+    "readMs": 2698.5999999968335,
+    "trackingMs": 33437.70000000484,
+    "frames": 80,
+    "workerFrames": 80,
+    "retryFrames": 0,
+    "pixelFractionSum": 80,
+    "cameraMs": 127.40000000037253,
+    "detectMs": 5706.100000002421,
+    "flowMs": 3720.000000002794,
+    "anatomyMs": 6234.5999999996275,
+    "coreMs": 15976,
+    "conversionMs": 452.89999999292195,
+    "activeMs": 22286,
+    "stage": "opencv",
+    "sections": 1,
+    "workerThreads": 1,
+    "peakActivePasses": 2,
+    "seamDisputes": 0,
+    "resourcePolicy": {
+      "threads": 1,
+      "passes": 2,
+      "availableMemoryBytes": null,
+      "memorySource": "browser-conservative"
+    },
+    "retryIntervals": 0,
+    "backwardReruns": 0
+  },
+  "decoder": [
+    {
+      "buffered": 40,
+      "fallback": 0,
+      "decoded": 60,
+      "peakBufferedFrames": 30,
+      "cacheHits": 0,
+      "backend": "WebCodecs",
+      "sharedPeakFrames": 9,
+      "sharedLimitFrames": 9
+    },
+    {
+      "buffered": 40,
+      "fallback": 0,
+      "decoded": 60,
+      "peakBufferedFrames": 30,
+      "cacheHits": 0,
+      "backend": "WebCodecs",
+      "sharedPeakFrames": 9,
+      "sharedLimitFrames": 9
+    }
+  ],
+  "coverage": 1,
+  "frames": 40,
+  "tapir": null,
+  "errors": [],
+  "peakBrowserRssMB": 1321.6796875
+}

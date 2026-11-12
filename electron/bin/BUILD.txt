@@ -1,0 +1,36 @@
+FFmpeg 9.0.2 "Lei" - Intel macOS build for WormEZ
+Source: https://ffmpeg.org/releases/ffmpeg-9.0.2.tar.xz
+SHA-256: 8c3850283eb25fa026482078a04051e0be17347b09ef81a0849bec15a96e002e
+License: LGPL-2.1-or-later (GPL components were not enabled)
+
+Original configure command (retained ffprobe build):
+./configure --disable-everything --disable-doc --disable-debug --disable-ffplay
+--disable-network --disable-x86asm --disable-bzlib --disable-zlib --disable-iconv
+--enable-ffmpeg --enable-ffprobe
+--enable-protocol=file
+--enable-demuxer=mov,matroska,avi,asf,mpegts,mpegps,mpegvideo,mjpeg
+--enable-decoder=h264,hevc,vp8,vp9,mpeg1video,mpeg2video,mpeg4,wmv1,wmv2,wmv3,vc1,mjpeg,prores,rawvideo
+--enable-parser=h264,hevc,vp8,vp9,mpeg4video,mpegvideo,vc1,mjpeg
+--enable-encoder=h264_videotoolbox,mpeg4 --enable-muxer=mp4,mov
+--enable-filter=scale,format,fps --enable-swscale --enable-avfilter
+--enable-videotoolbox
+
+Networking is disabled. WormEZ passes only local paths selected or recorded by the
+user. Audio is omitted from normalized analysis copies. Conversion first tries
+H.264 VideoToolbox, then falls back to FFmpeg's native MPEG-4 encoder in MP4.
+
+Prepared but not linked:
+libvpx 1.15.2 source was downloaded for a VP9/WebM fallback test.
+Source: https://github.com/webmproject/libvpx/archive/v1.15.2/libvpx-1.15.2.tar.gz
+SHA-256: 26fcd3db88045dee380e581862a6ef106f49b74b6396ee95c2993a260b4636aa
+The static libvpx build succeeded, but FFmpeg/libvpx configure probes were too
+slow for this iteration and the app now uses the built-in MPEG-4 fallback.
+
+2026-11-11: FFmpeg-only rebuild for non-destructive video preparation.
+Same pinned source and SHA-256 above. Same codec/container/protocol support.
+Additional configure flags: --disable-autodetect --disable-ffprobe
+Filter list: --enable-filter=scale,format,fps,trim,setpts,crop
+Build: make -j4 ffmpeg
+Architecture: x86_64 macOS. No GPL components or network protocols enabled.
+New ffmpeg SHA-256: 0eacfa1a4239cad905c61233b026e8443e9e15f2587145bad03067b2bc18616a
+ffprobe was retained unchanged.

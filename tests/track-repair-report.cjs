@@ -1,0 +1,7 @@
+const fs=require('fs'),path=require('path'),T=require('../lib/tracking.js'),F=require('../lib/one-euro.js');
+const results=[];
+for(const file of fs.readdirSync('tests').filter(p=>p.startsWith('trace-')&&p.endsWith('.json'))){const raw=JSON.parse(fs.readFileSync(path.join('tests',file))),segments=[];let part=[];for(const p of raw){if(T.accepted(p)){if(part.length&&p.frame!==part.at(-1).frame+1){segments.push(part);part=[]}part.push(p)}else if(part.length){segments.push(part);part=[]}}if(part.length)segments.push(part);
+ const lengths=raw.map(p=>p.anatomy?.length).filter(x=>x>0).sort((a,b)=>a-b),L=lengths[Math.floor(lengths.length/2)]||20;
+ const rough=pts=>pts.slice(2).reduce((s,p,i)=>s+Math.hypot(p.x-2*pts[i+1].x+pts[i].x,p.y-2*pts[i+1].y+pts[i].y),0);
+ let before=0,after=0,maxShift=0;for(const segment of segments){const smooth=F.smoothSegment(segment,30,L);before+=rough(segment);after+=rough(smooth);for(let i=0;i<segment.length;i++){maxShift=Math.max(maxShift,Math.hypot(segment[i].x-smooth[i].x,segment[i].y-smooth[i].y));if((i===0||i===segment.length-1||segment[i].origin==='manual')&&(segment[i].x!==smooth[i].x||segment[i].y!==smooth[i].y))throw Error('Anchor or endpoint moved')}}results.push({file,frames:raw.length,segments:segments.length,roughnessBefore:before,roughnessAfter:after,maxDisplayShiftPx:maxShift,bodyLength:L})}
+fs.writeFileSync('tests/track-repair-report.json',JSON.stringify(results,null,2));console.log(results);

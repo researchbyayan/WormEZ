@@ -1,0 +1,66 @@
+[
+  {
+    "framesPerPass": 180,
+    "sequential": {
+      "seconds": 27.250800000000744,
+      "decoder": {
+        "buffered": 0,
+        "fallback": 360,
+        "backend": "Compatibility"
+      }
+    },
+    "concurrent": {
+      "seconds": 4.411199999999255,
+      "decoders": [
+        {
+          "buffered": 180,
+          "fallback": 0,
+          "decoded": 180,
+          "peakBufferedFrames": 30,
+          "backend": "WebCodecs"
+        },
+        {
+          "buffered": 180,
+          "fallback": 0,
+          "decoded": 180,
+          "peakBufferedFrames": 30,
+          "backend": "WebCodecs"
+        }
+      ]
+    },
+    "speedup": 6.177638737759645,
+    "file": "03-05-2026 da Gal4 x w1118 L4.MP4"
+  },
+  {
+    "framesPerPass": 180,
+    "sequential": {
+      "seconds": 25.00960000000149,
+      "decoder": {
+        "buffered": 0,
+        "fallback": 360,
+        "backend": "Compatibility"
+      }
+    },
+    "concurrent": {
+      "seconds": 4.831199999999255,
+      "decoders": [
+        {
+          "buffered": 180,
+          "fallback": 0,
+          "decoded": 180,
+          "peakBufferedFrames": 30,
+          "backend": "WebCodecs"
+        },
+        {
+          "buffered": 180,
+          "fallback": 0,
+          "decoded": 180,
+          "peakBufferedFrames": 30,
+          "backend": "WebCodecs"
+        }
+      ]
+    },
+    "speedup": 5.176684881604022,
+    "file": "03-05-2026 da Gal4 x w1118 L6.MP4"
+  }
+]

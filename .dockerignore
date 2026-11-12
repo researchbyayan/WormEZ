@@ -1,0 +1,8 @@
+node_modules
+electron/node_modules
+dist-electron
+test-results
+playwright-report
+.DS_Store
+*.dmg
+*.zip

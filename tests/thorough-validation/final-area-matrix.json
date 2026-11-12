@@ -1,0 +1,37 @@
+[
+  {
+    "recording": "L4",
+    "surface": "isolated browser + actual local model",
+    "checks": 13,
+    "passed": true,
+    "source": "l4-areas-isolated/results.json"
+  },
+  {
+    "recording": "L6",
+    "surface": "native Electron",
+    "checks": 13,
+    "passed": true,
+    "source": "native-areas/results.json"
+  },
+  {
+    "recording": "straight",
+    "surface": "native Electron",
+    "checks": 13,
+    "passed": true,
+    "source": "native-areas/results.json"
+  },
+  {
+    "recording": "curved",
+    "surface": "native Electron",
+    "checks": 13,
+    "passed": true,
+    "source": "native-areas/results.json"
+  },
+  {
+    "recording": "irregular",
+    "surface": "native Electron",
+    "checks": 13,
+    "passed": true,
+    "source": "irregular-native-observed/results.json"
+  }
+]

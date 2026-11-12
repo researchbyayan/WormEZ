@@ -1,0 +1,94 @@
+{
+  "name": "wormez",
+  "version": "1.2.28",
+  "description": "Offline larval movement analysis desktop application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build:mac": "electron-builder --mac dir",
+    "dist:mac": "electron-builder --mac dmg"
+  },
+  "devDependencies": {
+    "electron": "31.7.7",
+    "electron-builder": "25.1.8"
+  },
+  "build": {
+    "appId": "org.wormez.app",
+    "productName": "WormEZ",
+    "asar": true,
+    "directories": {
+      "output": "../dist-electron"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "resource-capacity.cjs",
+      "package.json",
+      "video-edit-service.cjs",
+      "video-edits.cjs",
+      "updater.cjs",
+      "release-info.cjs"
+    ],
+    "extraResources": [
+      {
+        "from": "../WormEZ.html",
+        "to": "app/WormEZ.html"
+      },
+      {
+        "from": "../lib",
+        "to": "app/lib"
+      },
+      {
+        "from": "../dist-ui",
+        "to": "app/dist-ui"
+      }
+    ],
+    "mac": {
+      "category": "public.app-category.education",
+      "icon": "icon-1024.png",
+      "target": [
+        {
+          "target": "dmg",
+          "arch": [
+            "arm64"
+          ]
+        }
+      ],
+      "extraResources": [
+        {
+          "from": "bin",
+          "to": "bin"
+        }
+      ]
+    },
+    "artifactName": "WormEZ-${version}-${os}-${arch}.${ext}",
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "researchbyayan",
+        "repo": "WormEZ",
+        "releaseType": "release"
+      }
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "icon-1024.png"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "perMachine": false,
+      "deleteAppDataOnUninstall": false
+    }
+  },
+  "dependencies": {
+    "electron-updater": "6.8.11"
+  }
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "file": "trace-03-05-2026 da Gal4 x w1118 L4.json",
+    "frames": 3648,
+    "segments": 14,
+    "roughnessBefore": 1943.549807545103,
+    "roughnessAfter": 116.62159021716356,
+    "maxDisplayShiftPx": 1.4254955022466294,
+    "bodyLength": 17.818693778082338
+  },
+  {
+    "file": "trace-03-05-2026 da Gal4 x w1118 L6.json",
+    "frames": 3633,
+    "segments": 8,
+    "roughnessBefore": 1638.951593371809,
+    "roughnessAfter": 91.88912454974658,
+    "maxDisplayShiftPx": 1.2571535622595484,
+    "bodyLength": 15.714419528244006
+  },
+  {
+    "file": "trace-curved final.json",
+    "frames": 331,
+    "segments": 3,
+    "roughnessBefore": 996.9786992777476,
+    "roughnessAfter": 94.38945098604448,
+    "maxDisplayShiftPx": 8.11543007238392,
+    "bodyLength": 160.36584261332584
+  },
+  {
+    "file": "trace-irregular.json",
+    "frames": 446,
+    "segments": 7,
+    "roughnessBefore": 1633.0155078030073,
+    "roughnessAfter": 189.68415933860013,
+    "maxDisplayShiftPx": 12.043752278376187,
+    "bodyLength": 150.5469034797022
+  },
+  {
+    "file": "trace-straight final.json",
+    "frames": 324,
+    "segments": 1,
+    "roughnessBefore": 1144.093791115061,
+    "roughnessAfter": 84.74721176978488,
+    "maxDisplayShiftPx": 5.375029434038775,
+    "bodyLength": 144.100253730791
+  }
+]

@@ -1,0 +1,137 @@
+{
+  "scope": "New reference-area tools, Petri detection, overlay presentation, calibration, issue placement, screensaver preview and clip isolation. Two repetitions at different frames/widths. No full tracking reruns or biological accuracy claims.",
+  "desktopSource": "final/results.json (round 1)",
+  "compactSource": "compact-recheck/results.json (round 2, rerun after bringing rim tool/video into view)",
+  "videoCases": 10,
+  "checksPassed": 130,
+  "checksFailed": 0,
+  "cases": [
+    {
+      "file": "03-05-2026 da Gal4 x w1118 L4.MP4",
+      "round": 1,
+      "frame": 0,
+      "checksPassed": 13,
+      "checksFailed": 0,
+      "petri": {
+        "outcome": "expected rejection",
+        "seconds": 6.802,
+        "reason": "No full dish-sized region was found. Use a frame that shows the whole dish."
+      }
+    },
+    {
+      "file": "03-05-2026 da Gal4 x w1118 L6.MP4",
+      "round": 1,
+      "frame": 0,
+      "checksPassed": 13,
+      "checksFailed": 0,
+      "petri": {
+        "outcome": "expected rejection",
+        "seconds": 1.899,
+        "reason": "No reliable complete dish rim found. Mark points around the dish rim manually."
+      }
+    },
+    {
+      "file": "straight final.mp4",
+      "round": 1,
+      "frame": 0,
+      "checksPassed": 13,
+      "checksFailed": 0,
+      "petri": {
+        "outcome": "expected rejection",
+        "seconds": 2.931,
+        "reason": "No full dish-sized region was found. Use a frame that shows the whole dish."
+      }
+    },
+    {
+      "file": "curved final.mp4",
+      "round": 1,
+      "frame": 0,
+      "checksPassed": 13,
+      "checksFailed": 0,
+      "petri": {
+        "outcome": "expected rejection",
+        "seconds": 4.02,
+        "reason": "No full dish-sized region was found. Use a frame that shows the whole dish."
+      }
+    },
+    {
+      "file": "irregular.mp4",
+      "round": 1,
+      "frame": 0,
+      "checksPassed": 13,
+      "checksFailed": 0,
+      "petri": {
+        "outcome": "expected rejection",
+        "seconds": 2.328,
+        "reason": "No full dish-sized region was found. Use a frame that shows the whole dish."
+      }
+    },
+    {
+      "file": "03-05-2026 da Gal4 x w1118 L4.MP4",
+      "round": 2,
+      "frame": 1824,
+      "checksPassed": 13,
+      "checksFailed": 0,
+      "petri": {
+        "outcome": "expected rejection",
+        "seconds": 10.219,
+        "reason": "No full dish-sized region was found. Use a frame that shows the whole dish."
+      }
+    },
+    {
+      "file": "03-05-2026 da Gal4 x w1118 L6.MP4",
+      "round": 2,
+      "frame": 1816,
+      "checksPassed": 13,
+      "checksFailed": 0,
+      "petri": {
+        "outcome": "expected rejection",
+        "seconds": 3.05,
+        "reason": "The dish boundary is cropped. Choose a frame showing the whole dish or mark a known diameter manually."
+      }
+    },
+    {
+      "file": "straight final.mp4",
+      "round": 2,
+      "frame": 162,
+      "checksPassed": 13,
+      "checksFailed": 0,
+      "petri": {
+        "outcome": "expected rejection",
+        "seconds": 1.604,
+        "reason": "No full dish-sized region was found. Use a frame that shows the whole dish."
+      }
+    },
+    {
+      "file": "curved final.mp4",
+      "round": 2,
+      "frame": 165,
+      "checksPassed": 13,
+      "checksFailed": 0,
+      "petri": {
+        "outcome": "expected rejection",
+        "seconds": 1.591,
+        "reason": "No full dish-sized region was found. Use a frame that shows the whole dish."
+      }
+    },
+    {
+      "file": "irregular.mp4",
+      "round": 2,
+      "frame": 223,
+      "checksPassed": 13,
+      "checksFailed": 0,
+      "petri": {
+        "outcome": "expected rejection",
+        "seconds": 2.9,
+        "reason": "No full dish-sized region was found. Use a frame that shows the whole dish."
+      }
+    }
+  ],
+  "notes": [
+    "Desktop and compact cases were validated in separate successive snapshots; failures and reruns remain in source reports.",
+    "Initial Cmd+Z propagation and screensaver interruption were fixed and checked twice.",
+    "All sampled real-video automatic dish attempts must be interpreted from their reported outcomes; rejection is not a positive detection.",
+    "Manual rim circles and known-area values are explicit test inputs, not biological ground truth or certified calibration of these scenes.",
+    "Progress/count and fluid-layout changes are covered by separate targeted regressions."
+  ]
+}

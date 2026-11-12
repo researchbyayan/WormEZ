@@ -1,0 +1,39 @@
+{
+  "name": "wormez",
+  "version": "1.2.28",
+  "private": true,
+  "scripts": {
+    "test": "node --test tests/boundary.test.cjs tests/tracking.test.cjs tests/one-euro.test.cjs tests/area-change.test.cjs tests/multiworm.test.cjs tests/version-sync.test.cjs tests/pass-core.test.cjs tests/petri.test.cjs tests/screensaver.test.cjs tests/acceleration.test.cjs tests/parallel.test.cjs tests/fast-sections.test.cjs tests/selection.test.cjs tests/workspace-state.test.cjs tests/video-batch.test.cjs tests/video-edits.test.cjs tests/release-info.test.cjs",
+    "test:browser": "playwright test",
+    "test:tapir-browser": "node tests/tapir-browser.cjs",
+    "test:electron": "node tests/electron-smoke.cjs",
+    "check:ui": "tsc --noEmit",
+    "build:ui": "vite build",
+    "test:all": "npm run check:ui && npm run build:ui && npm test && npm run test:browser -- --workers=1",
+    "docker:build": "\"/Applications/Docker.app/Contents/Resources/bin/docker\" compose build",
+    "docker:test": "\"/Applications/Docker.app/Contents/Resources/bin/docker\" compose run --rm test",
+    "test:clips": "node tests/real-clips.cjs",
+    "test:decoder": "node tests/decoder-check.cjs",
+    "benchmark:decoder": "node tests/decoder-benchmark.cjs",
+    "build:mp4": "esbuild lib/mp4box-entry.js --bundle --format=iife --global-name=MP4Box --minify --outfile=lib/mp4box-2.4.1.js"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "fflate": "0.8.3",
+    "glisse": "0.5.0",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
+    "vitrio": "0.1.2"
+  },
+  "devDependencies": {
+    "@fontsource-variable/lexend": "^5.3.0",
+    "@playwright/test": "1.63.0",
+    "@types/react": "19.1.16",
+    "@types/react-dom": "19.1.9",
+    "@vitejs/plugin-react": "5.0.4",
+    "esbuild": "0.28.2",
+    "mp4box": "2.4.1",
+    "typescript": "5.9.2",
+    "vite": "7.1.7"
+  }
+}

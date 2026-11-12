@@ -1,0 +1,417 @@
+{
+  "model": "NanoTrackV2",
+  "weightsBytes": 1783047,
+  "clips": [
+    {
+      "clip": "03-05-2026 da Gal4 x w1118 L4.MP4",
+      "frames": 3645,
+      "windows": [
+        {
+          "target": 0,
+          "kind": "spread",
+          "seed": 0,
+          "frames": 60,
+          "seconds": 2.788,
+          "medianBodyLengthErrorVsTrace": 0.106,
+          "comparedFrames": 60,
+          "physicalJumps": 0,
+          "status": "diagnostic only"
+        },
+        {
+          "target": 911,
+          "kind": "spread",
+          "seed": 911,
+          "frames": 60,
+          "seconds": 1.834,
+          "medianBodyLengthErrorVsTrace": 0.047,
+          "comparedFrames": 60,
+          "physicalJumps": 0,
+          "status": "diagnostic only"
+        },
+        {
+          "target": 1822,
+          "kind": "spread",
+          "seed": 1822,
+          "frames": 60,
+          "seconds": 1.358,
+          "medianBodyLengthErrorVsTrace": 0.088,
+          "comparedFrames": 55,
+          "physicalJumps": 0,
+          "status": "diagnostic only"
+        },
+        {
+          "target": 2733,
+          "kind": "spread",
+          "seed": 2733,
+          "frames": 60,
+          "seconds": 2.005,
+          "medianBodyLengthErrorVsTrace": 0.1,
+          "comparedFrames": 60,
+          "physicalJumps": 0,
+          "status": "diagnostic only"
+        },
+        {
+          "target": 3584,
+          "kind": "spread",
+          "status": "no trusted nearby seed"
+        },
+        {
+          "target": 3083,
+          "kind": "gap 3084-3117",
+          "seed": 3083,
+          "frames": 60,
+          "seconds": 1.457,
+          "medianBodyLengthErrorVsTrace": 0.117,
+          "comparedFrames": 24,
+          "physicalJumps": 0,
+          "status": "diagnostic only"
+        },
+        {
+          "target": 2461,
+          "kind": "gap 2462-2467",
+          "seed": 2461,
+          "frames": 60,
+          "seconds": 1.72,
+          "medianBodyLengthErrorVsTrace": 0.082,
+          "comparedFrames": 52,
+          "physicalJumps": 0,
+          "status": "diagnostic only"
+        },
+        {
+          "target": 1857,
+          "kind": "gap 1858-1862",
+          "seed": 1857,
+          "frames": 60,
+          "seconds": 2.459,
+          "medianBodyLengthErrorVsTrace": 0.075,
+          "comparedFrames": 55,
+          "physicalJumps": 0,
+          "status": "diagnostic only"
+        }
+      ]
+    },
+    {
+      "clip": "03-05-2026 da Gal4 x w1118 L6.MP4",
+      "frames": 3630,
+      "windows": [
+        {
+          "target": 0,
+          "kind": "spread",
+          "seed": 0,
+          "frames": 60,
+          "seconds": 1.862,
+          "medianBodyLengthErrorVsTrace": 0.063,
+          "comparedFrames": 60,
+          "physicalJumps": 0,
+          "status": "diagnostic only"
+        },
+        {
+          "target": 907,
+          "kind": "spread",
+          "seed": 907,
+          "frames": 60,
+          "seconds": 1.221,
+          "medianBodyLengthErrorVsTrace": 0.116,
+          "comparedFrames": 60,
+          "physicalJumps": 0,
+          "status": "diagnostic only"
+        },
+        {
+          "target": 1815,
+          "kind": "spread",
+          "seed": 1815,
+          "frames": 60,
+          "seconds": 1.045,
+          "medianBodyLengthErrorVsTrace": 0.109,
+          "comparedFrames": 60,
+          "physicalJumps": 0,
+          "status": "diagnostic only"
+        },
+        {
+          "target": 2722,
+          "kind": "spread",
+          "seed": 2722,
+          "frames": 60,
+          "seconds": 1.011,
+          "medianBodyLengthErrorVsTrace": 0.034,
+          "comparedFrames": 1,
+          "physicalJumps": 0,
+          "status": "diagnostic only"
+        },
+        {
+          "target": 3569,
+          "kind": "spread",
+          "status": "no trusted nearby seed"
+        },
+        {
+          "target": 1545,
+          "kind": "gap 1546-1551",
+          "seed": 1545,
+          "frames": 60,
+          "seconds": 1.009,
+          "medianBodyLengthErrorVsTrace": 0.078,
+          "comparedFrames": 48,
+          "physicalJumps": 0,
+          "status": "diagnostic only"
+        },
+        {
+          "target": 1570,
+          "kind": "gap 1571-1576",
+          "seed": 1570,
+          "frames": 60,
+          "seconds": 1.073,
+          "medianBodyLengthErrorVsTrace": 0.065,
+          "comparedFrames": 54,
+          "physicalJumps": 0,
+          "status": "diagnostic only"
+        },
+        {
+          "target": 631,
+          "kind": "gap 632-635",
+          "seed": 631,
+          "frames": 60,
+          "seconds": 1.338,
+          "medianBodyLengthErrorVsTrace": 0.074,
+          "comparedFrames": 56,
+          "physicalJumps": 0,
+          "status": "diagnostic only"
+        }
+      ]
+    },
+    {
+      "clip": "straight final.mp4",
+      "frames": 324,
+      "windows": [
+        {
+          "target": 0,
+          "kind": "spread",
+          "seed": 0,
+          "frames": 60,
+          "seconds": 1.247,
+          "medianBodyLengthErrorVsTrace": 0.131,
+          "comparedFrames": 60,
+          "physicalJumps": 0,
+          "status": "diagnostic only"
+        },
+        {
+          "target": 81,
+          "kind": "spread",
+          "seed": 81,
+          "frames": 60,
+          "seconds": 1.238,
+          "medianBodyLengthErrorVsTrace": 0.078,
+          "comparedFrames": 60,
+          "physicalJumps": 0,
+          "status": "diagnostic only"
+        },
+        {
+          "target": 162,
+          "kind": "spread",
+          "seed": 162,
+          "frames": 60,
+          "seconds": 1.197,
+          "medianBodyLengthErrorVsTrace": 0.061,
+          "comparedFrames": 60,
+          "physicalJumps": 0,
+          "status": "diagnostic only"
+        },
+        {
+          "target": 243,
+          "kind": "spread",
+          "seed": 243,
+          "frames": 60,
+          "seconds": 1.357,
+          "medianBodyLengthErrorVsTrace": 0.117,
+          "comparedFrames": 60,
+          "physicalJumps": 0,
+          "status": "diagnostic only"
+        },
+        {
+          "target": 263,
+          "kind": "spread",
+          "seed": 263,
+          "frames": 60,
+          "seconds": 1.374,
+          "medianBodyLengthErrorVsTrace": 0.19,
+          "comparedFrames": 60,
+          "physicalJumps": 0,
+          "status": "diagnostic only"
+        }
+      ]
+    },
+    {
+      "clip": "curved final.mp4",
+      "frames": 331,
+      "windows": [
+        {
+          "target": 0,
+          "kind": "spread",
+          "seed": 0,
+          "frames": 60,
+          "seconds": 1.263,
+          "medianBodyLengthErrorVsTrace": 0.055,
+          "comparedFrames": 60,
+          "physicalJumps": 0,
+          "status": "diagnostic only"
+        },
+        {
+          "target": 82,
+          "kind": "spread",
+          "seed": 82,
+          "frames": 60,
+          "seconds": 1.285,
+          "medianBodyLengthErrorVsTrace": 0.033,
+          "comparedFrames": 60,
+          "physicalJumps": 0,
+          "status": "diagnostic only"
+        },
+        {
+          "target": 165,
+          "kind": "spread",
+          "seed": 165,
+          "frames": 60,
+          "seconds": 1.226,
+          "medianBodyLengthErrorVsTrace": 0.036,
+          "comparedFrames": 60,
+          "physicalJumps": 0,
+          "status": "diagnostic only"
+        },
+        {
+          "target": 248,
+          "kind": "spread",
+          "seed": 248,
+          "frames": 60,
+          "seconds": 1.164,
+          "medianBodyLengthErrorVsTrace": 0.05,
+          "comparedFrames": 59,
+          "physicalJumps": 0,
+          "status": "diagnostic only"
+        },
+        {
+          "target": 270,
+          "kind": "spread",
+          "seed": 270,
+          "frames": 60,
+          "seconds": 1.285,
+          "medianBodyLengthErrorVsTrace": 0.043,
+          "comparedFrames": 58,
+          "physicalJumps": 0,
+          "status": "diagnostic only"
+        },
+        {
+          "target": 293,
+          "kind": "gap 294-294",
+          "seed": 293,
+          "frames": 37,
+          "seconds": 0.775,
+          "medianBodyLengthErrorVsTrace": 0.049,
+          "comparedFrames": 35,
+          "physicalJumps": 0,
+          "status": "diagnostic only"
+        },
+        {
+          "target": 328,
+          "kind": "gap 329-329",
+          "seed": 328,
+          "frames": 2,
+          "seconds": 0.058,
+          "medianBodyLengthErrorVsTrace": 0.029,
+          "comparedFrames": 1,
+          "physicalJumps": 0,
+          "status": "diagnostic only"
+        }
+      ]
+    },
+    {
+      "clip": "irregular.mp4",
+      "frames": 446,
+      "windows": [
+        {
+          "target": 0,
+          "kind": "spread",
+          "seed": 0,
+          "frames": 60,
+          "seconds": 1.212,
+          "medianBodyLengthErrorVsTrace": 0.159,
+          "comparedFrames": 60,
+          "physicalJumps": 0,
+          "status": "diagnostic only"
+        },
+        {
+          "target": 111,
+          "kind": "spread",
+          "seed": 110,
+          "frames": 60,
+          "seconds": 1.267,
+          "medianBodyLengthErrorVsTrace": null,
+          "comparedFrames": 0,
+          "physicalJumps": 0,
+          "status": "diagnostic only"
+        },
+        {
+          "target": 223,
+          "kind": "spread",
+          "status": "no trusted nearby seed"
+        },
+        {
+          "target": 334,
+          "kind": "spread",
+          "seed": 334,
+          "frames": 60,
+          "seconds": 1.22,
+          "medianBodyLengthErrorVsTrace": 0.045,
+          "comparedFrames": 59,
+          "physicalJumps": 0,
+          "status": "diagnostic only"
+        },
+        {
+          "target": 385,
+          "kind": "spread",
+          "seed": 385,
+          "frames": 60,
+          "seconds": 1.219,
+          "medianBodyLengthErrorVsTrace": 0.158,
+          "comparedFrames": 51,
+          "physicalJumps": 0,
+          "status": "diagnostic only"
+        },
+        {
+          "target": 234,
+          "kind": "gap 235-259",
+          "seed": 234,
+          "frames": 60,
+          "seconds": 1.352,
+          "medianBodyLengthErrorVsTrace": 0.779,
+          "comparedFrames": 30,
+          "physicalJumps": 0,
+          "status": "diagnostic only"
+        },
+        {
+          "target": 402,
+          "kind": "gap 403-408",
+          "seed": 402,
+          "frames": 43,
+          "seconds": 0.878,
+          "medianBodyLengthErrorVsTrace": 0.112,
+          "comparedFrames": 37,
+          "physicalJumps": 0,
+          "status": "diagnostic only"
+        },
+        {
+          "target": 260,
+          "kind": "gap 261-265",
+          "seed": 260,
+          "frames": 60,
+          "seconds": 2.068,
+          "medianBodyLengthErrorVsTrace": 0.464,
+          "comparedFrames": 55,
+          "physicalJumps": 0,
+          "status": "diagnostic only"
+        }
+      ]
+    }
+  ],
+  "elapsedSeconds": 51.003,
+  "peakRssMiB": 139.9,
+  "warning": "Existing trace is not human-reviewed ground truth; do not promote based on this report."
+}

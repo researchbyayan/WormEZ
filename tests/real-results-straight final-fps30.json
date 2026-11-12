@@ -1,0 +1,93 @@
+[
+  {
+    "status": "Checks complete · verified · saved",
+    "fps": 30,
+    "decoder": [
+      {
+        "buffered": 324,
+        "fallback": 0,
+        "decoded": 324,
+        "peakBufferedFrames": 30,
+        "backend": "WebCodecs"
+      },
+      {
+        "buffered": 324,
+        "fallback": 0,
+        "decoded": 324,
+        "peakBufferedFrames": 30,
+        "backend": "WebCodecs"
+      }
+    ],
+    "seed": {
+      "x": 447.20473744292235,
+      "y": 258.9170662100456
+    },
+    "headFrames": 271,
+    "frames": 324,
+    "totalFrames": 324,
+    "coverage": 1,
+    "outlineFrames": 324,
+    "anchors": 17,
+    "endpoint": {
+      "frame": 323,
+      "x": 766.3814333116758,
+      "y": 563.6730999783424
+    },
+    "reasons": {
+      "undefined": 9,
+      "": 315
+    },
+    "review": [],
+    "file": "straight final.mp4",
+    "proposals": [
+      {
+        "frame": 0,
+        "x": 442.0065247994147,
+        "y": 263.4166666666667
+      },
+      {
+        "frame": 40,
+        "x": 437.35807245623664,
+        "y": 258.71875
+      },
+      {
+        "frame": 81,
+        "x": 476.0416666666667,
+        "y": 290.60762396306427
+      },
+      {
+        "frame": 121,
+        "x": 531.0733809917724,
+        "y": 330.0733809917724
+      },
+      {
+        "frame": 162,
+        "x": 577.75,
+        "y": 379.37025071913115
+      },
+      {
+        "frame": 202,
+        "x": 620.2365207264331,
+        "y": 439.5
+      },
+      {
+        "frame": 242,
+        "x": 665.8822212125111,
+        "y": 493.4655545458445
+      },
+      {
+        "frame": 283,
+        "x": 704.8512219445926,
+        "y": 532.9033052779259
+      },
+      {
+        "frame": 323,
+        "x": 766.3814333116758,
+        "y": 563.6730999783424
+      }
+    ],
+    "acceptedProposals": true,
+    "elapsedSeconds": 92.405,
+    "errors": []
+  }
+]

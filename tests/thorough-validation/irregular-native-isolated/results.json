@@ -1,0 +1,25 @@
+{
+  "started": "2026-11-10T14:52:35.513Z",
+  "scope": "New reference-area tools, Petri detection, overlay presentation, calibration, issue placement, screensaver preview and clip isolation. Two repetitions at different frames/widths. No full tracking reruns or biological accuracy claims.",
+  "cases": [
+    {
+      "file": "irregular.mp4",
+      "round": 1,
+      "checks": [
+        {
+          "name": "load and isolate clip",
+          "passed": false,
+          "error": "page.waitForFunction: Timeout 180000ms exceeded."
+        }
+      ],
+      "started": "2026-11-10T14:52:46.569Z",
+      "runtimeErrors": [],
+      "elapsedSeconds": 215.417
+    }
+  ],
+  "surface": "isolated native Electron",
+  "build": "1.2.28+20261109.thorough-fixes",
+  "finished": "2026-11-10T14:56:21.987Z",
+  "passed": 0,
+  "failed": 1
+}

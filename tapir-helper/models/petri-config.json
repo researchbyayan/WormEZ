@@ -1,0 +1,24 @@
+{
+  "architecture": "deeplabv3plus",
+  "encoder": "mobilenet_v2",
+  "classes": 3,
+  "dish_class": 1,
+  "input_size": [
+    416,
+    416
+  ],
+  "resize": "stretch",
+  "grayscale": true,
+  "mean": [
+    0.485,
+    0.456,
+    0.406
+  ],
+  "std": [
+    0.229,
+    0.224,
+    0.225
+  ],
+  "source": "Roboflow moldez_dish_finder/4; dataset PNG mask export _classes.csv; normalization from roboflow/inference DeepLabV3PlusSemanticSegmentation preprocess_means/preprocess_stds",
+  "mapping_note": "The exported _classes.csv lists Petri-Dish as 2, but actual v4 annotation masks encode dish pixels as 1. Checkpoint output channel 1 is validated against those masks; no mapping is inferred from display sort order."
+}

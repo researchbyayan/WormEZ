@@ -1,0 +1,13 @@
+{
+  "recorded": "2026-11-10T00:00:28.703Z",
+  "note": "Final source after targeted screenshot/layout/progress regressions; per-video source snapshots are described in README.",
+  "hashes": {
+    "WormEZ.html": "185ede28b59437e20c3e772b9651bc7cdb4739fd51801627741a304e87376680",
+    "lib/selection.js": "7196626625a9eac9509d1cd6cb1bcfb88cd3a3111c59ff626eb410f7cdf30d08",
+    "lib/selection-editor.js": "c0904f6f408874e950c8200f3ca6df9ff2e6d175bab65b41dc496df93678ba62",
+    "src/FluidPanels.tsx": "27a86749faaf53fdb93df03a69d651546a4c226405f912434e8210fdf713301d",
+    "dist-ui/wormez-ui.js": "7ea1776fa3439e9b935b04d209ca120445f188d4946af8f6d310e8de2460b7c1",
+    "dist-ui/wormez-ui.css": "6ac84ea2b16c632ffe226e0bf5efd6af8275ce308b889a64feea1fb8c335ca3b",
+    "src/BiologyScreensaver.tsx": "36fa56e34a5d30d5e8984ad74f15155aa3cb87b2b2ca0f40c918af4a001fda5c"
+  }
+}

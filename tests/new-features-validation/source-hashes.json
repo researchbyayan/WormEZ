@@ -1,0 +1,11 @@
+{
+  "recorded": "2026-11-09T23:32:25.867Z",
+  "hashes": {
+    "WormEZ.html": "04fc91a2d5812a0922ec39f37e655daf580e62b77178e9bab8da4c402153efb7",
+    "lib/selection.js": "7196626625a9eac9509d1cd6cb1bcfb88cd3a3111c59ff626eb410f7cdf30d08",
+    "lib/selection-editor.js": "c0904f6f408874e950c8200f3ca6df9ff2e6d175bab65b41dc496df93678ba62",
+    "dist-ui/wormez-ui.js": "b5f8b0958249eb3a9ee5c6dc7e79c5962269bb8c1f235dfd135fac625087cfb1",
+    "dist-ui/wormez-ui.css": "bc8dd3647529b1a3b2703c40118e297f31d2f05b05c68d2c734337ceb83fc7eb",
+    "src/BiologyScreensaver.tsx": "36fa56e34a5d30d5e8984ad74f15155aa3cb87b2b2ca0f40c918af4a001fda5c"
+  }
+}

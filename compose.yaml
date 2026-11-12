@@ -1,0 +1,9 @@
+services:
+  test:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    working_dir: /work/wormez
+    environment:
+      CI: "1"
+    command: ["npm", "run", "test:all"]

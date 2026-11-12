@@ -1,0 +1,9 @@
+torch==2.2.2
+torchvision==0.17.2
+segmentation-models-pytorch==0.5.0
+timm==0.9.16
+huggingface-hub==0.24.7
+Pillow==10.4.0
+safetensors==0.4.5
+tqdm==4.66.5
+numpy==1.26.4

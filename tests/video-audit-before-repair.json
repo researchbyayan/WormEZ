@@ -1,0 +1,60 @@
+[
+  {
+    "file": "03-05-2026 da Gal4 x w1118 L4.MP4",
+    "seconds": 50,
+    "issue": "page.waitForFunction: Timeout 45000ms exceeded.",
+    "errors": [],
+    "state": {
+      "phase": "scanning",
+      "loaded": true,
+      "running": true,
+      "totalFrames": 3648,
+      "message": "Scanning nine representative frames for stable larva candidates.",
+      "status": "Finding individual worms · frame 330/3648",
+      "proposals": [],
+      "worms": 0,
+      "errors": []
+    }
+  },
+  {
+    "file": "03-05-2026 da Gal4 x w1118 L6.MP4",
+    "seconds": 55,
+    "issue": "page.waitForFunction: Timeout 45000ms exceeded.",
+    "errors": [],
+    "state": {
+      "phase": "scanning",
+      "loaded": true,
+      "running": true,
+      "totalFrames": 3633,
+      "message": "Scanning nine representative frames for stable larva candidates.",
+      "status": "Finding individual worms · frame 210/3633",
+      "proposals": [],
+      "worms": 0,
+      "errors": []
+    }
+  },
+  {
+    "file": "curved final.mp4",
+    "seconds": 65,
+    "issue": "page.waitForFunction: Timeout 45000ms exceeded.",
+    "errors": [],
+    "state": {
+      "phase": "scanning",
+      "loaded": true,
+      "running": true,
+      "totalFrames": 331,
+      "message": "Scanning nine representative frames for stable larva candidates.",
+      "status": "Finding individual worms · frame 60/331",
+      "proposals": [],
+      "worms": 0,
+      "errors": []
+    }
+  },
+  {
+    "file": "irregular.mp4",
+    "seconds": 40,
+    "issue": "page.waitForFunction: Target page, context or browser has been closed",
+    "errors": [],
+    "state": null
+  }
+]

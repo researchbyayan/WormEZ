@@ -1,0 +1,40 @@
+const {test,expect}=require('@playwright/test');
+const path=require('node:path');
+test.setTimeout(180000);
+
+test('two worms get separate review sessions and selected sequential analysis',async({page})=>{
+  const errors=[];page.on('pageerror',e=>errors.push(e.message));
+  await page.goto('file://'+path.resolve('WormEZ.html'));
+  await page.evaluate(async()=>{await __wormez.runtime();});
+  await page.setInputFiles('#fileInput','samples/two_worms.webm');
+  await page.waitForFunction(()=>__wormez.state.loaded&&!__wormez.state.running,null,{timeout:120000});
+  const initial=await page.evaluate(()=>({multi:__wormez.state.multi?.worms.map(w=>({id:w.id,samples:w.track.samples.length,proposals:w.session.proposals.length})),phase:__wormez.state.workflowPhase}));
+  expect(initial.multi?.length).toBe(2);
+  expect(initial.multi.every(w=>w.samples>=40&&w.proposals>=2)).toBe(true);
+  const positions=await page.evaluate(()=>__wormez.state.multi.worms.map(w=>w.track.samples.reduce((sum,p)=>sum+p.y,0)/w.track.samples.length));
+  expect(Math.abs(positions[0]-positions[1])).toBeGreaterThan(40);
+  await expect(page.locator('#multiWormPanel')).toBeVisible();
+  await expect(page.locator('#runBtn')).toBeHidden();
+  await page.locator('#multiWormList input[type=checkbox]').last().uncheck();
+  for(let guard=0;guard<15&&await page.locator('#anchorReview').isVisible();guard++)await page.locator('#acceptReviewAnchor').click();
+  await page.waitForFunction(()=>__wormez.state.workflowPhase==='ready');
+  const first=await page.evaluate(()=>({id:__wormez.state.multi.activeId,keys:__wormez.state.keyframes.map(p=>p.frame)}));
+  await page.locator('#multiWormList button').last().click();
+  const second=await page.evaluate(()=>({id:__wormez.state.multi.activeId,keys:__wormez.state.keyframes.map(p=>p.frame)}));
+  expect(second.id).not.toBe(first.id);expect(second.keys).toHaveLength(0);
+  for(let guard=0;guard<15&&await page.locator('#anchorReview').isVisible();guard++)await page.locator('#acceptReviewAnchor').click();
+  await page.waitForFunction(()=>__wormez.state.workflowPhase==='ready');
+  await page.locator('#multiWormList button').first().click();
+  expect(await page.evaluate(()=>__wormez.state.keyframes.map(p=>p.frame))).toEqual(first.keys);
+  await page.locator('#multiWormList input[type=checkbox]').last().check();
+  await page.locator('#analyzeSelectedWorms').click();
+  await page.waitForFunction(()=>!__wormez.state.running&&!__wormez.state.multi.batchRunning&&__wormez.state.multi.worms.every(w=>w.session.track.length>0),null,{timeout:120000});
+  expect(await page.evaluate(()=>__wormez.state.multi.worms[0].session.track.length)).toBe(60);
+  expect(await page.evaluate(()=>__wormez.state.multi.worms[1].session.track.length)).toBe(60);
+  const results=await page.evaluate(()=>__wormez.state.multi.worms.map(w=>({coverage:w.session.metrics?.coverage,meanY:w.session.track.filter(p=>WormTracker.accepted(p)).reduce((s,p)=>s+p.y,0)/w.session.track.filter(WormTracker.accepted).length})));
+  for(let i=0;i<2;i++){expect(results[i].coverage).toBeGreaterThan(.7);expect(Math.abs(results[i].meanY-positions[i])).toBeLessThan(10);}
+  expect(await page.evaluate(()=>__wormez.buildSeries().recs[0].worm_id)).toBe(second.id);
+  const download=page.waitForEvent('download');await page.locator('#exportPoints').click();
+  expect((await download).suggestedFilename()).toContain(`_worm_${second.id}_points.csv`);
+  expect(errors).toEqual([]);
+});

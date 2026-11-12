@@ -1,0 +1,77 @@
+[
+  {
+    "file": "curved final.mp4",
+    "seconds": 18,
+    "issue": null,
+    "errors": [],
+    "state": {
+      "phase": "reviewingBoundary",
+      "loaded": true,
+      "running": false,
+      "totalFrames": 331,
+      "message": "Review the first and last visible anchors, then the clear interior suggestions.",
+      "status": "Finding individual worms · frame 331/331",
+      "proposals": [
+        {
+          "frame": 0,
+          "x": 515.6439001209608,
+          "y": 547.0962070157249,
+          "boundary": "start",
+          "status": "proposal"
+        },
+        {
+          "frame": 45,
+          "x": 454.42096407457933,
+          "y": 519.0267394270123,
+          "status": "proposal"
+        },
+        {
+          "frame": 75,
+          "x": 417.532196969697,
+          "y": 493.6155303030303,
+          "status": "proposal"
+        },
+        {
+          "frame": 120,
+          "x": 349.0460685833045,
+          "y": 426.4431358965477,
+          "status": "proposal"
+        },
+        {
+          "frame": 165,
+          "x": 314.77122310242146,
+          "y": 376.5419405584583,
+          "status": "proposal"
+        },
+        {
+          "frame": 210,
+          "x": 286.12874718419687,
+          "y": 329.1129786865361,
+          "status": "proposal"
+        },
+        {
+          "frame": 240,
+          "x": 271.8392282958199,
+          "y": 290.8536382041205,
+          "status": "proposal"
+        },
+        {
+          "frame": 285,
+          "x": 259.55402825505917,
+          "y": 224.45010818378512,
+          "status": "proposal"
+        },
+        {
+          "frame": 330,
+          "x": 259.097261039687,
+          "y": 171.4387305136327,
+          "boundary": "end",
+          "status": "proposal"
+        }
+      ],
+      "worms": 28,
+      "directDecoder": true,
+      "errors": []
+    }
+  }
+]

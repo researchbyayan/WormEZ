@@ -1,0 +1,26 @@
+{
+  "recording": "03-05-2026 da Gal4 x w1118 L6.MP4",
+  "conditions": "Controlled 4-logical-CPU / 8 GiB policy, 1.5 GiB available. Other validation overlapped; these timings are diagnostic, not an isolated benchmark. Scan proposals were auto-accepted, not biological ground truth. Summary transcribed from completed test output; temporary raw result files are no longer present.",
+  "sectioned": {
+    "seconds": 266.1768,
+    "coverage": 0.7255711533168181,
+    "sections": 4,
+    "workerThreads": 2,
+    "peakActivePasses": 4,
+    "peakBrowserRssMB": 1591.6640625,
+    "seamDisputes": 0,
+    "errors": []
+  },
+  "normal": {
+    "seconds": 222.3882,
+    "coverage": 0.7255711533168181,
+    "sections": 1,
+    "workerThreads": 2,
+    "peakActivePasses": 4,
+    "peakBrowserRssMB": 1572.21484375,
+    "errors": []
+  },
+  "centerAndStatusDifferences": 0,
+  "fullAnatomyAndMetricsHashesMatched": false,
+  "decision": "Keep conventional passes with two CV threads. Production sections require at least four CV threads; validate performance on larger hardware before claiming improvement. Retain bounded concurrent gap retries."
+}
