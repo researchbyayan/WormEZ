@@ -20,3 +20,5 @@ tapir-helper/tapir_checkpoint_panning.pt
 node_modules
 electron/node_modules
 undefined
+.cache/
+electron/bin-win/

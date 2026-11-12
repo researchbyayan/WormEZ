@@ -40,7 +40,7 @@ module.exports = function register({ ipcMain, app, BrowserWindow, dialog, toolPa
                 artifacts.push(output);
                 event.sender.send('wormez:video-edit-progress', { completed: index, total: pieces.length });
                 const encode = encoder => new Promise((resolve, reject) => {
-                    const args = ['-n', '-i', source, '-map', '0:v:0', '-an', '-vf', piece.filters, '-c:v', encoder, ...(encoder === 'h264_videotoolbox' ? ['-allow_sw', '1', '-q:v', '65'] : ['-q:v', '2']), '-fps_mode', 'passthrough', '-movflags', '+faststart', output];
+                    const args = ['-n', '-i', source, '-map', '0:v:0', '-an', '-vf', piece.filters, '-c:v', encoder, ...(encoder === 'h264_mf' ? ['-b:v', '8M'] : encoder === 'h264_videotoolbox' ? ['-allow_sw', '1', '-q:v', '65'] : ['-q:v', '2']), '-fps_mode', 'passthrough', '-movflags', '+faststart', output];
                     let error = '';
                     const child = spawn(toolPath('ffmpeg'), args, { stdio: ['ignore', 'ignore', 'pipe'] });
                     job.child = child;
@@ -49,7 +49,8 @@ module.exports = function register({ ipcMain, app, BrowserWindow, dialog, toolPa
                     child.on('close', code => { if(job.child===child)job.child = null; code === 0 ? resolve() : reject(new Error(job.cancelled ? 'Video editing cancelled.' : error.trim().split('\n').slice(-2).join(' ') || 'Video encoding failed.')); });
                 });
                 try {
-                    await encode('h264_videotoolbox');
+                    // Hardware H.264 (VideoToolbox on macOS, Media Foundation on Windows), else portable MPEG-4.
+                    await encode(process.platform === 'win32' ? 'h264_mf' : 'h264_videotoolbox');
                 }
                 catch (error) {
                     await fs.rm(output, { force: true });

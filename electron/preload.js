@@ -3,7 +3,7 @@ contextBridge.exposeInMainWorld('wormezDesktop',{
   downloadUpdate:()=>ipcRenderer.invoke('wormez:update-download'),
   installUpdate:()=>ipcRenderer.invoke('wormez:update-install'),
   onUpdate:fn=>{const l=(_e,v)=>fn(v);ipcRenderer.on('wormez:update',l);return()=>ipcRenderer.removeListener('wormez:update',l);},
-  build:'1.2.28+20261109.thorough-fixes',
+  build:'1.3.0+20261112.beta-windows-editing',
   resourceCapacity:()=>ipcRenderer.invoke('wormez:resource-capacity'),
   setAnalysisActive:active=>ipcRenderer.send('wormez:analysis-active',!!active),
   trackingWorkerSource:()=>ipcRenderer.invoke('wormez:tracking-worker-source'),

@@ -11,6 +11,7 @@ All runtime dependencies load locally; no CDN is required.
 | jsPDF | 2.5.2 | Existing vendored distribution | MIT, embedded in distribution |
 | Lexend (UI typeface, variable) | 5.x | npm `@fontsource-variable/lexend` | SIL OFL 1.1; `fonts/Lexend-OFL.txt` |
 | FFmpeg / ffprobe (Electron, Intel macOS) | 9.0.2 | Official source release | LGPL-2.1-or-later; `electron/bin/COPYING.LGPLv2.1` |
+| FFmpeg / ffprobe (Electron, Windows x64) | 8.1.3 (BtbN LGPL build) | Fetched by `scripts/fetch-ffmpeg-win.cjs`, SHA-256 pinned | LGPL-2.1-or-later; `electron/bin-win/LICENSE.txt` |
 | libvpx source (prepared, not linked) | 1.15.2 | WebM project source release | BSD-style; source hash recorded in `electron/bin/BUILD.txt` |
 
 OpenCV SHA-256: `63366510248adf3a7eddf3e793dd825404efb7df3749f4d6f8557c7fa4ca8aa0`.

@@ -107,7 +107,8 @@ ipcMain.handle('wormez:capture-append',async(_event,{id,data})=>{const rec=recor
 ipcMain.handle('wormez:capture-finish',async(_event,{id})=>{const rec=recordings.get(id);if(!rec)throw new Error('Recording session is no longer active');recordings.delete(id);return{name:rec.name,path:rec.path,url:pathToFileURL(rec.path).href,mimeType:rec.mimeType};});
 ipcMain.handle('wormez:capture-cancel',async(_event,{id})=>{const rec=recordings.get(id);if(!rec)return{cancelled:false};recordings.delete(id);await fs.rm(rec.path,{force:true});return{cancelled:true};});
 
-function toolPath(name){const bundled=app.isPackaged?path.join(process.resourcesPath,'bin',name):path.join(__dirname,'bin',name);return bundled;}
+// Bundled tools: electron/bin (macOS) or electron/bin-win (Windows, fetched by scripts/fetch-ffmpeg-win.cjs); packaged builds put either in resources/bin.
+function toolPath(name){const exe=process.platform==='win32'?name+'.exe':name;return app.isPackaged?path.join(process.resourcesPath,'bin',exe):path.join(__dirname,process.platform==='win32'?'bin-win':'bin',exe);}
 function runTool(name,args){return new Promise((resolve,reject)=>{const child=spawn(toolPath(name),args,{stdio:['ignore','pipe','pipe']});let stdout='',stderr='';child.stdout.on('data',b=>stdout+=b);child.stderr.on('data',b=>stderr+=b);child.on('error',()=>reject(new Error(`${name} is unavailable in this build`)));child.on('close',code=>code===0?resolve({stdout,stderr}):reject(new Error(stderr.trim()||`${name} failed with code ${code}`)));});}
 ipcMain.handle('wormez:probe-video',async(_event,{path:filePath})=>JSON.parse((await runTool('ffprobe',['-v','error','-show_streams','-show_format','-of','json',filePath])).stdout));
 ipcMain.handle('wormez:convert-video',async(_event,{path:filePath})=>{
@@ -115,7 +116,7 @@ ipcMain.handle('wormez:convert-video',async(_event,{path:filePath})=>{
   await fs.mkdir(dir,{recursive:true});
   const base=path.join(dir,`${path.parse(filePath).name}-${Date.now()}`);
   const attempts=[
-    {backend:'h264_videotoolbox',output:`${base}.mp4`,args:['-map','0:v:0','-an','-c:v','h264_videotoolbox','-allow_sw','1','-q:v','45','-movflags','+faststart']},
+    process.platform==='win32'?{backend:'h264_mf',output:`${base}.mp4`,args:['-map','0:v:0','-an','-c:v','h264_mf','-b:v','8M','-movflags','+faststart']}:{backend:'h264_videotoolbox',output:`${base}.mp4`,args:['-map','0:v:0','-an','-c:v','h264_videotoolbox','-allow_sw','1','-q:v','45','-movflags','+faststart']},
     {backend:'mpeg4_fallback',output:`${base}-fallback.mp4`,args:['-map','0:v:0','-an','-c:v','mpeg4','-q:v','3','-movflags','+faststart']}
   ];
   const errors=[];
