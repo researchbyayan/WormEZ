@@ -32,6 +32,7 @@ module.exports = function register({ ipcMain, app, BrowserWindow, dialog, toolPa
             if (job.cancelled)
                 return { cancelled: true, files: [] };
             const base = path.parse(source).name.replace(/[^\w .-]/g, '_'), id = crypto.randomUUID().slice(0, 8);
+            const usedEncoders = [];
             for (const [index, piece] of pieces.entries()) {
                 if (job.cancelled)
                     throw new Error('Video editing cancelled.');
@@ -40,7 +41,8 @@ module.exports = function register({ ipcMain, app, BrowserWindow, dialog, toolPa
                 artifacts.push(output);
                 event.sender.send('wormez:video-edit-progress', { completed: index, total: pieces.length });
                 const encode = encoder => new Promise((resolve, reject) => {
-                    const args = ['-n', '-i', source, '-map', '0:v:0', '-an', '-vf', piece.filters, '-c:v', encoder, ...(encoder === 'h264_mf' ? ['-b:v', '8M'] : encoder === 'h264_videotoolbox' ? ['-allow_sw', '1', '-q:v', '65'] : ['-q:v', '2']), '-fps_mode', 'passthrough', '-movflags', '+faststart', output];
+                    const quality = encoder === 'h264_mf' || encoder === 'libopenh264' ? ['-b:v', '8M', '-pix_fmt', 'yuv420p'] : encoder === 'h264_videotoolbox' ? ['-allow_sw', '1', '-q:v', '65', '-pix_fmt', 'yuv420p'] : ['-q:v', '2'];
+                    const args = ['-n', '-i', source, '-map', '0:v:0', '-an', '-vf', piece.filters, '-c:v', encoder, ...quality, '-fps_mode', 'passthrough', '-movflags', '+faststart', output];
                     let error = '';
                     const child = spawn(toolPath('ffmpeg'), args, { stdio: ['ignore', 'ignore', 'pipe'] });
                     job.child = child;
@@ -48,22 +50,35 @@ module.exports = function register({ ipcMain, app, BrowserWindow, dialog, toolPa
                     child.on('error', reject);
                     child.on('close', code => { if(job.child===child)job.child = null; code === 0 ? resolve() : reject(new Error(job.cancelled ? 'Video editing cancelled.' : error.trim().split('\n').slice(-2).join(' ') || 'Video encoding failed.')); });
                 });
-                try {
-                    // Hardware H.264 (VideoToolbox on macOS, Media Foundation on Windows), else portable MPEG-4.
-                    await encode(process.platform === 'win32' ? 'h264_mf' : 'h264_videotoolbox');
+                const validateWindowsPlayback = async file => {
+                    if (process.platform !== 'win32') return;
+                    const details = JSON.parse((await runTool('ffprobe', ['-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=codec_name,pix_fmt', '-of', 'json', file])).stdout);
+                    const stream = details.streams?.[0];
+                    if (stream?.codec_name !== 'h264' || stream?.pix_fmt !== 'yuv420p')
+                        throw new Error(`Encoder produced an unsupported video format (${stream?.codec_name || 'unknown'}, ${stream?.pix_fmt || 'unknown'}).`);
+                };
+                const candidates = process.platform === 'win32' ? ['h264_mf', 'libopenh264'] : ['h264_videotoolbox', 'mpeg4'];
+                let lastError;
+                for (const encoder of candidates) {
+                    try {
+                        await encode(encoder);
+                        await validateWindowsPlayback(output);
+                        usedEncoders.push(encoder);
+                        break;
+                    } catch (error) {
+                        lastError = error;
+                        await fs.rm(output, { force: true });
+                        if (job.cancelled) throw error;
+                    }
                 }
-                catch (error) {
-                    await fs.rm(output, { force: true });
-                    if (job.cancelled)
-                        throw error;
-                    await encode('mpeg4');
-                }
+                if (usedEncoders.length !== index + 1)
+                    throw new Error(`Could not create a playable edit. ${lastError?.message || ''}`.trim());
             }
             if(job.cancelled)throw new Error('Video editing cancelled.');
             const manifest = outputs[0] + '.wormez-edit.json';
             artifacts.push(manifest);
             const sourceStat = await fs.stat(source);
-            await fs.writeFile(manifest, JSON.stringify({ version: 1, source: { name: path.basename(source), size: sourceStat.size, lastModified: sourceStat.mtimeMs }, recipe, segments: pieces.map((piece, index) => ({ file: path.basename(outputs[index]), startFrame: piece.start, endFrameExclusive: piece.end })), audioOmitted: true }, null, 2));
+            await fs.writeFile(manifest, JSON.stringify({ version: 1, source: { name: path.basename(source), size: sourceStat.size, lastModified: sourceStat.mtimeMs }, recipe, segments: pieces.map((piece, index) => ({ file: path.basename(outputs[index]), startFrame: piece.start, endFrameExclusive: piece.end, encoder: usedEncoders[index] })), encoder: [...new Set(usedEncoders)].join(', '), audioOmitted: true }, null, 2));
             if(job.cancelled)throw new Error('Video editing cancelled.');
             return { files: outputs.map(file => ({ native: true, name: path.basename(file), path: file, url: pathToFileURL(file).href })) };
         }

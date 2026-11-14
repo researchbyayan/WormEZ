@@ -1,0 +1,62 @@
+name: Windows release
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-release:
+    runs-on: windows-latest
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: |
+            package-lock.json
+            electron/package-lock.json
+
+      - name: Install app dependencies
+        run: npm ci
+
+      - name: Verify app source
+        run: |
+          npm test
+          npm run build:ui
+
+      - name: Install Electron packaging dependencies
+        working-directory: electron
+        run: npm ci
+
+      - name: Fetch pinned Windows FFmpeg
+        run: node scripts/fetch-ffmpeg-win.cjs
+
+      - name: Verify Windows H.264 fallback and playback
+        run: node --test tests/windows-video-export.test.cjs tests/windows-electron-smoke.test.cjs
+
+      - name: Read release version
+        id: release-version
+        shell: bash
+        run: echo "version=${GITHUB_REF_NAME#v}" >> "$GITHUB_OUTPUT"
+
+      - name: Build Windows installer
+        working-directory: electron
+        run: npx electron-builder --win nsis --x64 --publish never
+
+      - name: Publish GitHub release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: WormEZ ${{ github.ref_name }}
+          generate_release_notes: true
+          files: |
+            dist-electron/WormEZ-${{ steps.release-version.outputs.version }}-win-x64.exe
+            dist-electron/WormEZ-${{ steps.release-version.outputs.version }}-win-x64.exe.blockmap
+            dist-electron/latest.yml

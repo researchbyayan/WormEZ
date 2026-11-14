@@ -116,13 +116,17 @@ ipcMain.handle('wormez:convert-video',async(_event,{path:filePath})=>{
   await fs.mkdir(dir,{recursive:true});
   const base=path.join(dir,`${path.parse(filePath).name}-${Date.now()}`);
   const attempts=[
-    process.platform==='win32'?{backend:'h264_mf',output:`${base}.mp4`,args:['-map','0:v:0','-an','-c:v','h264_mf','-b:v','8M','-movflags','+faststart']}:{backend:'h264_videotoolbox',output:`${base}.mp4`,args:['-map','0:v:0','-an','-c:v','h264_videotoolbox','-allow_sw','1','-q:v','45','-movflags','+faststart']},
-    {backend:'mpeg4_fallback',output:`${base}-fallback.mp4`,args:['-map','0:v:0','-an','-c:v','mpeg4','-q:v','3','-movflags','+faststart']}
+    process.platform==='win32'?{backend:'h264_mf',output:`${base}.mp4`,args:['-map','0:v:0','-an','-c:v','h264_mf','-b:v','8M','-pix_fmt','yuv420p','-movflags','+faststart']}:{backend:'h264_videotoolbox',output:`${base}.mp4`,args:['-map','0:v:0','-an','-c:v','h264_videotoolbox','-allow_sw','1','-q:v','45','-pix_fmt','yuv420p','-movflags','+faststart']},
+    ...(process.platform==='win32'?[{backend:'libopenh264',output:`${base}-fallback.mp4`,args:['-map','0:v:0','-an','-c:v','libopenh264','-b:v','8M','-pix_fmt','yuv420p','-movflags','+faststart']}]:[{backend:'mpeg4_fallback',output:`${base}-fallback.mp4`,args:['-map','0:v:0','-an','-c:v','mpeg4','-q:v','3','-movflags','+faststart']}])
   ];
   const errors=[];
   for(const attempt of attempts){
     try{
       await runTool('ffmpeg',['-y','-i',filePath,...attempt.args,attempt.output]);
+      if(process.platform==='win32'){
+        const details=JSON.parse((await runTool('ffprobe',['-v','error','-select_streams','v:0','-show_entries','stream=codec_name,pix_fmt','-of','json',attempt.output])).stdout),stream=details.streams?.[0];
+        if(stream?.codec_name!=='h264'||stream?.pix_fmt!=='yuv420p')throw new Error(`Encoder produced an unsupported video format (${stream?.codec_name||'unknown'}, ${stream?.pix_fmt||'unknown'}).`);
+      }
       return{name:path.basename(attempt.output),path:attempt.output,url:pathToFileURL(attempt.output).href,backend:attempt.backend};
     }catch(error){
       errors.push(`${attempt.backend}: ${error.message}`);
