@@ -62,6 +62,7 @@ test('Windows Electron exports playable edits and keeps window controls working'
         return { visible: win.isVisible(), minimizable: win.isMinimizable(), maximizable: win.isMaximizable(), closable: win.isClosable() };
     });
     assert.deepEqual(controls, { visible: true, minimizable: true, maximizable: true, closable: true });
+    await app.evaluate(({ BrowserWindow }) => { const win = BrowserWindow.getAllWindows()[0]; win.setSize(1100, 750); win.center(); });
     await page.evaluate(() => window.wormezDesktop.setMaximized(true));
     assert.equal((await page.evaluate(() => window.wormezDesktop.windowState())).maximized, true);
     const minimized = await app.evaluate(({ BrowserWindow }) => { const win = BrowserWindow.getAllWindows()[0]; win.minimize(); return win.isMinimized(); });
